@@ -32,3 +32,4 @@
 \contentsline {subsection}{\numberline {2.2.2}Effektive On Zeit}{22}{subsection.2.2.2}
 \contentsline {subsection}{\numberline {2.2.3}Effektive Fläche}{22}{subsection.2.2.3}
 \contentsline {section}{\numberline {2.3}Spektrum}{23}{section.2.3}
+\contentsline {section}{\numberline {2.4}TestFürsGit}{25}{section.2.4}

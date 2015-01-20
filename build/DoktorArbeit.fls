@@ -1,4 +1,4 @@
-PWD /net/home.e5.physik.tu-dortmund.de/vol/ph_e5v/e5b/homes/kfrantzen/Desktop/DrArbeit_geschrieben
+PWD /net/home.e5.physik.tu-dortmund.de/vol/ph_e5v/e5b/homes/kfrantzen/DrArbeit
 INPUT /usr/local/texlive/2014/texmf-var/web2c/luatex/lualatex.fmt
 INPUT ./DoktorArbeit.tex
 OUTPUT build/DoktorArbeit.log
