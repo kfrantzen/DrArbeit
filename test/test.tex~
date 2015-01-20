@@ -1,0 +1,40 @@
+\documentclass[
+  paper=a4,
+]{scrbook}
+
+\usepackage{fontspec}
+
+\usepackage{polyglossia}
+\setmainlanguage{german}
+
+\usepackage[math]{blindtext}
+
+% stellt den \enquote{} Befehl
+\usepackage[autostyle]{csquotes}
+
+% verbessert das allgemeine Schriftbild:
+\usepackage{microtype}
+
+
+\usepackage{eurosym}
+\usepackage[pdfusetitle,unicode]{hyperref}
+\usepackage{bookmark}
+\usepackage[shortcuts]{extdash}
+
+\author{test}
+\title{text}
+
+\begin{document}
+\frontmatter
+\maketitle
+\tableofcontents
+\mainmatter
+\chapter{test}
+ \blindtext
+ 
+ \blindtext
+ \section{test}
+ \blindtext
+ 
+ \blindtext
+\end{document}

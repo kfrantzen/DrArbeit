@@ -1,0 +1,171 @@
+\chapter{Analysekette}
+Die geht so:
+
+
+\section{Signal-Untergrund-Trennung und Energieschätzung}
+\subsection{GH Separation}
+Da das Signal-Untergrund-Verhältnis zwischen Gamma-Schauern aus der Quelle und hadronischen Schauern kleiner als 1\% ist (sogar für helle Quellen), werden gute Verfahren benötigt, das Signal bei dem ganzen Untergrund zu finden und davon zu trennen.
+In der Standard-MAGIC-Analysekette wird zu diesem Zweck ein Random Forest genutzt. [siehe Breimann]
+Dieser RF basiert auf einer Sammlung an Entscheidungsbäumen mit zufälligen Parametern in ihren Knoten.
+Um einen solchen RF zu trainieren, benötigt man ein Trainingsset aus MCs und Untergrunddaten, von denen die Klassenzugehörigkeit (Signal oder Untergrund) genau bekannt ist.
+Jedes dieser Events wird durch die in Kapitel blabla beschriebenen Imageparameter charakterisiert.
+Ausgangspunkt ist ein komplettes Sample in einem einzelnen Knoten, der dem kompletten Image Parameter-Raum entspricht.
+Danach wird jeder Knoten in 2 Nachfolgeknoten geteilt, indem in einem Bildparameter geschnitten wird, wobei die Wahl des Parameters im Knoten zufällig ist.
+Um die Klassifikationskraft eines Parameters zu bestimmen, wird der Gini-Index genutzt.
+Damit kann die Ungleichheit der beiden Verteilungen als Funktion des Schnittes benutzt, den man gerade angewendet hat.
+So bedeutet ein kleiner Gini-Koeffizient, dass die Verteilungen ähnlich sind und ein großer, dass sie ungleich sind. 
+Das geschieht so lange bis die Anzahl der Events in einem Knoten zu gering wird, oder in einem Knoten nur noch eine Klasse vertreten ist.
+In diesen Endknoten (terminal nodes) werden dann die Events mit einem Label (Gamma oder Hadron) versehen. 
+Befindet sich in einem Endknoten noch eine Mischung beider Klassen, wird ein Mittelwert vergeben.
+So folgt jedes Event einem Pfad durch die i verschiedenen Bäume und wird von allen klassifiziert.
+Danach wird ihm ein finales Label, die hadroness, zugewiesen:
+
+\begin{equation}
+ h(Event)=\frac{ \sum_{i=1} ^{n_{trees}} l_i(Event)}{n_{trees}}
+\end{equation}
+
+Der Splitting Prozess ist durch eine random split selection randomisiert.
+Die Parameter für das Splitten werden zufällig aus einer vorher begrenzten Menge gezogen und der Parameter mit dem minimalen Gini-Index zum splitten benutzt.
+
+\subsection{Energierekonstruktion}
+Die Energie der Primärteilchen ist proportional zur Anzahl der Chernkovphotonen im Schauer und so zum Parameter size.
+Allerdings ist Size abhängig vom Zenitwinkel, der Lage des Schauers in der Kamera, dem Impact Parameter und der Höhe des Schauermaximums.
+Beruhend auf dieser Tatsache wird nun eine Tabelle erstellt.
+Das MC Trainingsset wird nun in Bins für jeden Paremter, der für die Energierekonstruktion benutzt werden soll, aufgeteilt.
+So wird eine mehrdimensionale Tabelle mit der Energie der MC Events, die zu jedem Bin gehört, erstellt.
+Den realen Daten wird dann anhand ihrer Parameter das passende Energiebin in der Tabelle zugeteilt und so eine estimated Energy zugeordnet.
+
+
+\subsection{Position Reconstruction}
+Ziel ist es, die Herkunft des Primärteilchens zu rekonstruieren. 
+Der Abstand zwischen dem Schauerschwerpunkt und der Quellposition auf der Hauptachse in der Kamera wird mit dem Parameter DISP bezeichnet.
+Es gibt zwei Möglichkeiten, diesen Parameter zu rekonstruieren: Zum Einen sind dies Ghostbusting-MEthoden, die die Asymmetrie der Schauer benutzen oder aber RF.
+Wird mit zwei Teleskopen observiert, ist die Disp-Rekonstruktion einfacher.
+Wie in Abb. BILD zu sehen ist, ist perfektes Ghostbusting möglich.
+Nur eine der beiden möglichken QUellpositionen ist kompatibel mit dem anderen Teleskop und so its die bevorzugte Position der QUelle die, die näher am Schnittpunkt der beiden Hauptachsen liegt.
+
+
+
+\section{Lichtkurve}
+Der Gamma-ray-Fluss, d.h. die Rate der j rays pro Einheitsfläche ist Ausgangsgröße für die Lichtkurve:
+
+\begin{equation}
+ \Phi=\frac{d^2 N}{dS dt}. 
+\end{equation}
+
+Dafür wird die Anzahl der detektierten Gamms, die effektive Observationszeit und die effektive Fläche des Detektors benötigt.
+Nach der Energie differenziert ist diese Größe der differentielle Fluss pro Energie:
+
+\begin{equation}
+ \frac{d\Phi}{dE}=\frac{d^3N}{dSdtdE},
+\end{equation}
+
+bzw, der integrale Fluss:
+\begin{equation}
+ \Phi_{E>500GeV}=\int_{500GeV}^{\infty}\frac{d\Phi}{dE}dE.
+\end{equation}
+
+
+Die zeitliche Entwicklung des integralen Flusses wird nun Lichtkurve genannt.
+Das Binning kann nach Lust und Laune gewählt werden, tageweise oder minutenweise... Je nachdem, ob gerade irgendwas spannendes passiert (Flares oder so).
+
+\subsection{Anzahl der exzess gammas}
+Um die Anzahl der Gammateilchen aus der Quelle zu bestimmen, wird ein theta quadrat histogramm benutzt.
+Dies ist ein Histogramm der quadrierten Entfernungen zwischen der rekonstruierten Quellposition und der nominalen Quellposition.
+Gammas aus der Quelle haben ein kleineres theta während der Background eine annähernd flache Verteilung liefert. 
+
+BILDBILDBILD (abelardos talk in zeuthen, der auf der flute seite verlinkt ist)
+
+Um die Anzahl der wirklich Exzess-Events zu kriegen müssen von den Events aus der Quellrichtung noch die Background Events abgezogen werden und es wird meist noch ein Schnitt in theta quadrat gemacht.
+
+Die Beobachtungsmethode von MAGIC ist die wobble-Beobachtung, d.h. das Teleskop ist nicht direkt auf die Quelle ausgerichtet, sondern einen kleinen Winkel daneben.
+Dank der alt-zimutalen Montierung rotiert die Quelle um das Zentrum in der Kamera und es ist möglich einen Punkt gegenüber der Quelle als Off-Position zu benutzen.
+Vorteil dieser Methode ist, dass es keine extra Off-Datennahme geben muss.
+Allerdings tauchen so die Quellgammas auch in der Off-theta quadrat-Verteilung auf, haben aber ein großes theta quadrat.
+Eine Off-Position, die zu nahe an der Quelle ist, ist nicht zu empfehlen.
+
+\subsection{Effektive On Zeit}
+Die effektive On-Time berücksichtigt die Totzeit in der Datennahme.
+Abhängig vom Chip ist die Totzeit bei den aktuellen Chips bei 26$\mu$s.
+
+\subsection{Effektive Fläche}
+Als effektive Fläche wird die Fläche am Boden, die orthogonal zur Herkunftsrichtung der Schauerteilchen ist, bezeichnet.
+Die Größe dieser effektiven Fläche ist abhängig von der Energie und dem Zenitwinkel des Schauers.
+In MARS wird diese Größe mit Hilfe von MCs folgendermaßen berechnet:
+
+\begin{equation}
+ A_{eff}(E)=\frac{N_{\gamma, final}}{N_{\gamma, simulated}}A_{MC, total}
+\end{equation}
+
+Dafür wird eine bestimmte Anzahl an gammas ($N_{gamma, simulated}$) auf einer uniformen Fläche $A_{MC,total}$ simuliert. 
+Die Größe $N_{gamma, final}$ ist die Anzahl der Ga,,as, die das Cleaning und alle Cuts überlebt hat.
+
+
+\section{Spektrum}
+Bei der Messung mit IACTs handelt es sich um eine indirekte Messung.
+Die Energie des Schauerauslösenden Teilchens ist nicht direkt messbar.
+Die Bildparameter und damit auch die geschätzte Energie $E_{est}$ haben eine begrenzte Auflösung und fordern die Methode der Entfaltung.
+
+Die Probleme, die bei der Messung auftreten sind:
+
+\begin{itemize}
+ \item Begrenzte Akzeptanz: Nicht alle Schauer, die ein Teilchen auslöst können vom Teleskop detektiert werden.
+ \item Indirekte Messung: Da eine direkte Messung nicht möglich ist, wird anhand von gemessenen Parametern, wie der Größe des Schauers in der Kamera etwa, mit Hilfe eines RF die Energie geschätzt.
+       Die Vorraussetzung dafür ist, dass diese in echt gemessenen Parameter stark mit der Energie korrelliert sind.
+ \item Begrenzte Auflösung: Es ist nur möglich mit begrenzter Genauigkeit aus den Bildparametern die Energie zu rekonstruieren, d.h. es existiert eine Migration von Events.
+       Wird die geschätzte Energie gegen die reale Energie aufgetragen, erhält man eine verschmierte Diagonale.
+\end{itemize}
+
+Durch die Methode der Entfaltung können diese Probleme berücksichtigt werden und das Problem lässt sich mit der Fredholmschen Integralgleichung darstellen:
+
+\begin{equation}
+ g(y)= \int_c^d M(x,y) f(x) dx + b(y)
+\end{equation}
+
+mit g(y): gemessene Verteilung, f(x): gesuchte Verteilung, M(x,y): Migrationsmatrix bestimmt auf MCs, b(y): Background-Verteilung
+
+Diese Gleichung lässt sich auch bin-Weise darstellen:
+
+\begin{equation}
+ g_i=\sum_j M_{ij}f_j+b_i,
+\end{equation}
+
+wobei $M_{ij}$ nun die Wahrscheinlichkeit ist, dass ein Event in bin j in bin i gezählt wird.
+Abb. zeigt wie solch eine Migrationsmatrix aussieht.
+
+
+Das Ziel der Entfaltung ist nun die wahre Verteilung $f$ zu finden.
+Die Kovarianzmatrix der gesuchten Vertilung ergibt sich dann mit der Kovarianzmatrix der gemessenen Verteilung zu:
+
+\begin{equation}
+ V[f]=M^{-1}V[g](M^{-1})^T
+\end{equation}
+
+Da die Invertierung der Matrix oft zu oszillierenden Lösungen führt, versucht man die Minimierung der least squares.
+
+\begin{equation}
+ \Chi_0^2=(g-MF)^T V^{-1}[g](g-Mf).
+\end{equation}
+
+Dies gilt nur für Gaussverteilte Daten, also nicht für Bins mit kleinen Eventszahlen drinne.
+Für diese muss nun die Poisson-Statistik benutzt werden und der Log-Likelihood-Ausdruck minimiert werden:
+
+\begin{equation}
+ L_0(a)=\sum_i (g_i(a)-g_(i,m)\cdot ln g_i(a)).
+\end{equation}
+
+Außerdem ist es nötig, eine Regularisierung einzuführen, um die kleinen Ausdrücke in der Migrationsmatrix, die während der Entfaltung verstärkt werden, zu unterdrücken.
+Durch Einführung eines Regularisierungsterms werden Anforderungen an die Lösung gestellt, bei zu doller Regularisierung aber auch ein Bias eingeführt.
+
+Im Allgemeinen wird Regularisierung durch Addition eines Regularisierungsterms gemacht, sodass:
+
+\begin{equation}
+ \Chi^2=\Chi_0^2 +\frac{\tau}{2} Reg(f).
+\end{equation}
+
+Verschieden Arten der Regularisierung können in der Analyse gewählt werden.
+Es ist ebenfalls möglich, eine Vorwärtsfaltung durchzuführen, wobei ein bestimmtes Modell als Annahme gewählt wird und freie Parameter dieses Modells bestimmt werden.
+Zum Testen ist dies eine gute Alternative, allerdings keine richtige Entfaltung, da das Ergebnis Modellabhängig bleibt.
+
+
+
