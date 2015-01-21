@@ -9,14 +9,14 @@ Auch für die Methode der Entfaltung des Energiespektrums werden MC-Daten benöt
 
 Die komplette Produktion der MC-Daten für das MAGIC Experiment wurde im Rahmen dieser Doktorarbeit durchgeführt und wird in diesem Kapitel detailliert beschrieben.
 
-Es werden zunächst die Programme beschrieben, die in der MAGIC MC-Simulationskette und später in der Kalibrationskette genutzt werden.
-Angefangen mit der Simulation der Luftschauer mit CORSIKA über die Reflektor- und die Kamera-Simulation bis zur Berechnung der Bildparameter des bereinigten Events wird hier alles beschrieben.
+Es werden zunächst die Programme beschrieben, die in der MAGIC MC - Simulationskette und später in der Kalibrationskette genutzt werden.
+Angefangen mit der Simulation der Luftschauer mit \textit{CORSIKA} über die Reflektor- und die Kamera-Simulation bis zur Berechnung der Bildparameter des bereinigten Events wird hier alles beschrieben.
 Dabei bauen die Simulationsschritte aufeinander auf, sodass die simulierten Corsika-Events bis zum letzten Schritt weiter prozessiert werden.
 
-Für die eigentlichen Simulationsprogramme (CORSIKA, Reflector und Camera) wird jeweils eine Übersicht über einige wichtige Inputparameter, die den Programmen als text-Dateien,
+Für die eigentlichen Simulationsprogramme (\textit{CORSIKA}, \textit{Reflector} und \textit{Camera}) wird jeweils eine Übersicht über einige wichtige Inputparameter, die den Programmen als text-Dateien,
 sogenannten Inputcards, übergeben werden, gegeben.
 Nach Abschluss der Simulationskette liegen dann die MC Daten in der gleichen Form vor wie die aufgenommenen Daten der Teleskope. 
-Die anschließenden Schritte der Kalibrationskette (Sorcerer, Star und Superstar) werden ebenfalls beschrieben.
+Die anschließenden Schritte der Kalibrationskette (\textit{Sorcerer}, \textit{Star} und \textit{Superstar}) werden ebenfalls beschrieben.
 Diese Kalibration wird im MAGIC Datenzentrum genauso mit den real aufgenommenen Daten durchgeführt, sodass am Ende alle Daten (reale und simulierte) im gleichen Format vorliegen.
 
 Nachdem alle Programme zur Simulation und Kalibration erklärt wurden, wird auf die automatische Produktionsstruktur auf dem Rechencluster LiDO an der TU Dortmund eingegangen.
@@ -25,7 +25,7 @@ Nachdem alle Programme zur Simulation und Kalibration erklärt wurden, wird auf 
 \section{Schauersimulation mit CORSIKA}
 
 CORSIKA wurde am Forschungszentrum Karlsruhe ursprünglich für das KASCADE-Experiment entwickelt und wird heute in vielen Astroteilchenexperimenten eingesetzt.
-Mit CORSIKA werden ausgedehnte Luftschauer, ausgelöst von kosmischer Strahlung simuliert.
+Mit \textit{CORSIKA} werden ausgedehnte Luftschauer, ausgelöst von kosmischer Strahlung simuliert.
 
 Es können verschiedene Primärteilchen wie Protonen, Eisenkerne oder Photonen als Primärteilchen eingestellt werden.
 Diese Primärteilchen werden durch die Atmosphäre propagiert, wo sie Wechselwirkungen mit den Kernen der Luft eingehen und Schauer produzieren oder aber zerfallen.
@@ -40,22 +40,22 @@ Die entstandenen Schauer werden dann bis zum Teleskop simuliert.
 % \end{figure}
 
 \begin{figure}
- \begin{subfigure}{0.5\linewidth}
-  \includegraphics[width=0.7\linewidth]{./Plots/Photon_1TeV_CORSIKA.png}
+ \begin{subfigure}{0.4\textwidth}
+  \includegraphics[width=\textwidth]{./Plots/Photon_1TeV_CORSIKA.png}
   \caption{Simulation eines Schauers mit 1TeV-Photon als Primärteilchen}
  \end{subfigure}
- \hspace{0.5cm}
-  \begin{subfigure}{0.5\linewidth}
-  \includegraphics[width=0.7\linewidth]{./Plots/Proton_1TeV_CORSIKA.png}
+ \hspace{2.0cm}
+  \begin{subfigure}{0.4\textwidth}
+  \includegraphics[width=\textwidth]{./Plots/Proton_1TeV_CORSIKA.png}
   \caption{Simulation eines Schauers mit 1TeV-Proton als Primärteilchen}
  \end{subfigure}
-  \caption{Schauersimulation mit CORSIKA mit 1TeV Primärteilchen}
+  \caption{ Schauersimulation mit CORSIKA mit 1TeV Primärteilchen}
   \label{CORSIKA_Schauer}
  \end{figure}
 
 
 
-In Abb.\ref{CORSIKA_Schauer} sieht man die verschiedenen Eigenschaften der Schauer: Hadronische Schauer haben einen größeren Querschnitt verglichen mit elektromagnetischen.
+In Abb.\ref{CORSIKA_Schauer} sieht man die verschiedenen Eigenschaften der Schauer: Hadronische Schauer haben einen größeren Querschnitt und sind weniger kompakt verglichen mit elektromagnetischen.
 
 Es sind verschiedene Modelle für die hadronische Wechselwirkung bei hohen Energien und bei niedrigen Energien implementiert.
 Für die MAGIC MC-Simulation werden QGSJET II für die hadronische Wechselwirkung bei hohen Energien und FLUKA für die Wechselwirkung bei niedrigen Energien benutzt.
@@ -63,7 +63,7 @@ Elektromagnetische Prozesse werden mit dem EGS4-Modell beschrieben.
 Eine Simulation der Cherenkovphotonen, die von den geladenen Teilchen produziert werden, die durch die Luft propgaieren, erfolgt ebenfalls.
 
 \subsection{Mmcs}
-Eine speziell für das MAGIC-Teleskop adaptierte Version von CORSIKA wird in der Standardsimulation genutzt.
+Eine speziell für das MAGIC-Teleskop adaptierte Version von \textit{CORSIKA} wird in der Standardsimulation genutzt.
 In dieser Version wurde der Einfluss des Magnetfeldes vor der ersten Wechselwirkung auf das Primärteilchen vernachlässigt um zu verhindern, dass es zu weit vom Teleskop abgelenkt wird.
 Außerdem wurde die Simulation der Cherenkovwellenlänge eingebaut und es wurde eingebaut, dass alle Informationen über das Primärteilchen gespeichert werden.
 
@@ -71,12 +71,12 @@ Außerdem wurde die Simulation der Cherenkovwellenlänge eingebaut und es wurde 
 Die Inputcard enthält Informationen über den Teleskopstandort, die simulierten Schauer und über das Magnetfeld.
 
 Zunächst können allgemeine Angaben zur Anzahl der simulierten Events gemacht werden. 
-So erhält jeder CORSIKA-Run eine eigene Runnumer und die Anzahl der Schauer pro Run wird durch den Parameter $NSHOW$ angegeben.
+So erhält jeder \textit{CORSIKA}-Run eine eigene Runnumer und die Anzahl der Schauer pro Run wird durch den Parameter \texttt{NSHOW} angegeben.
 
 Außerdem erfolgen noch Einstellungen über die Eigenschaften der Schauer.
-Der Parameter $PRMPAR$ gibt die Art des Primärteilchens an und $ERANGE$ beschreibt den Energiebereich, in dem die Primärteilchen simuliert werden.
-Die Steigung des Energiespektrums wird mit dem Parameter $NSLOPE$ eingestellt.
-Zenit- und Azimutbereich, in dem die Schauer simuliert werden, werden durch $THETAP$ und $PHIP$ angegeben.
+Der Parameter \texttt{PRMPAR} gibt die Art des Primärteilchens an und \texttt{ERANGE} beschreibt den Energiebereich, in dem die Primärteilchen simuliert werden.
+Die Steigung des Energiespektrums wird mit dem Parameter \texttt{NSLOPE} eingestellt.
+Zenit- und Azimutbereich, in dem die Schauer simuliert werden, wer den durch \texttt{THETAP} und \texttt{PHIP} angegeben.
 
 Außerdem werden in CORSIKA noch Standortangaben zur Geographie des Teleskopstandortes gemacht.
 So wird die Höhe über NN im Parameter $OBSLEV$ angegeben und eine Angabe über die horizontale, bzw. vertikale Komponente des Magnetfeldes auf La Palam befindet sich im Parameter $MAGNET$.
@@ -476,9 +476,9 @@ Diese Datenbank beinhaltet die folgenden Tabellen:
 
 \begin{table}[!h]
 \centering
-\caption{Beispieltabelle mit willkürlichen Werten, für die Zahlenwerte wurde die S-Option aus SIunitx verwendet, für die Einheitenspalte die s-Option.}
+\caption{Auflistung der Tabellen, die in der Datenbank existieren....Hmpf!}
 \label{MYSQL_Tabellen}
-\begin{tabular}{c}
+\begin{tabular}{l}
   \toprule
   Tabbellen\\
   \midrule
@@ -506,64 +506,63 @@ Diese Datenbank beinhaltet die folgenden Tabellen:
   ObservationMode            \\
   ParticleType               \\
   Source                     \\
-  ZenithBinning   \\
+  ZenithBinning   	     \\
   \bottomrule
 \end{tabular}
 \end{table}
 
-
-
-
-+----------------------------+
-| $Tables_in_magicprod$        |
-+----------------------------+
-| AtmosphericModel           |
-| AzimuthBinning             |
-| FADCType                   |
-| M1CalibrationProcessStatus |
-| M1CameraCopytoGridStatus   |
-| M1StarCopytoGridStatus     |
-| M2CalibrationProcessStatus |
-| M2CameraCopytoGridStatus   |
-| M2StarCopytoGridStatus     |
-| MCCalibrationRuns          |
-| MCCameraRunData            |
-| MCCorsikaRunData           |
-| MCJobs                     |
-| MCPedestalRuns             |
-| MCReflectorRunData         |
-| MCRunData                  |
-| MCRunProcessStatus         |
-| MCStatistics               |
-| MCSuperstarProcessStatus   |
-| MCUserID                   |
-| MarsVersion                |
-| ObservationMode            |
-| ParticleType               |
-| Source                     |
-| ZenithBinning              |
-+----------------------------+
+% +----------------------------+
+% | $Tables_in_magicprod$        |
+% +----------------------------+
+% | AtmosphericModel           |
+% | AzimuthBinning             |
+% | FADCType                   |
+% | M1CalibrationProcessStatus |
+% | M1CameraCopytoGridStatus   |
+% | M1StarCopytoGridStatus     |
+% | M2CalibrationProcessStatus |
+% | M2CameraCopytoGridStatus   |
+% | M2StarCopytoGridStatus     |
+% | MCCalibrationRuns          |
+% | MCCameraRunData            |
+% | MCCorsikaRunData           |
+% | MCJobs                     |
+% | MCPedestalRuns             |
+% | MCReflectorRunData         |
+% | MCRunData                  |
+% | MCRunProcessStatus         |
+% | MCStatistics               |
+% | MCSuperstarProcessStatus   |
+% | MCUserID                   |
+% | MarsVersion                |
+% | ObservationMode            |
+% | ParticleType               |
+% | Source                     |
+% | ZenithBinning              |
+% +----------------------------+
 
 Die Tabelle MCJobs bietet eine Übersicht über alle Jobs. 
-Enthalten sind in dieser Tabelle u.a. die JobID, die jedem Job individuell zugewiesen wird, die erste und letzte Runnummer eines Jobs (der meistens aus 2000 Runs mit 1000 Events besteht), wann der Job gestartet wurde, wann Camera und Star beendet wurden und den Pfad zu den Daten.\newline
+Enthalten sind in dieser Tabelle u.a. die JobID, die jedem Job individuell zugewiesen wird, die erste und letzte Runnummer eines Jobs, wann der Job gestartet wurde, wann Camera und Star beendet wurden und den Pfad zu den Daten.\newline
 Die Tabellen M1CalibrationProcessStatus und M2CalibrationProcessStatus enthalten ebenfalls die JobID, und die Zeitpunkte wann Camera, Calibration und Star beendet worden. 
-Des Weiteren kann man den Startzeitpunkt und den Zeitpunkt eines Abbruchs des Jobs, sowie den zugehörigen Fehlercode, mit Hilfe dessen man schließen kann, welches Programm nicht durchgelaufen ist, sehen.\newline
-In den Tabellen MCCorsikaRunData,MCReflectorRunData und MCCameraRunData kann man die wichtigsten Inputparameter für die jeweiligen Programme sehen.\newline
+Des Weiteren kann man den Startzeitpunkt und den Zeitpunkt eines Abbruchs des Jobs, sowie den zugehörigen Fehlercode sehen, mit Hilfe dessen man schließen kann, welches Programm nicht durchgelaufen ist.
+
+In den Tabellen MCCorsikaRunData, MCReflectorRunData und MCCameraRunData kann man die wichtigsten Inputparameter für die jeweiligen Programme sehen.
+
 Die Tabelle MCRunData bietet eine Übersicht über die Runnumern, die innerhalb der einzelnen Programme verteilt wurden. 
-So gehört zu jeder Runnumer eine CorsikaRunNummer und eine ReflectorRunNummer und eine CameraRunNummer.
-Also bietet ein Job mit 2000 x 1000 Events Platz für 2000 RunNummern.\newline
-Die Tabelle MCRunProcessStatus ist eine Übersichtstabelle über die Zeitpunkte zu denen die jeweiligen Inputcards geschrieben und die Programme Corsika, Reflector und Camera beendet wurden.\newline
+So gehört zu jeder Runnumer eine CorsikaRunNummer, eine ReflectorRunNummer und eine CameraRunNummer.
+Also bietet ein Job mit 2000 x 1000 Events Platz für 2000 RunNummern pro Programm.
+
+Die Tabelle MCRunProcessStatus ist eine Übersichtstabelle über die Zeitpunkte zu denen die jeweiligen Inputcards geschrieben und die Programme Corsika, Reflector und Camera beendet wurden.
+
 Die gleiche Tabelle gibt es auch noch für Superstar. 
-
-
-
 
 
 \subsection{LiDO}
 Die Monte Carlo-Produktion wird an der TU Dortmund vorwiegend auf dem LiDo-Cluster (Linux Cluster Dortmund) durchgeführt. 
-Für die gesamte MAGIC Kollaboration werden die Gamma-MCs produziert und gespeichert.\newline
+Für die gesamte MAGIC Kollaboration werden hier die Gamma-MCs produziert und gespeichert.
+
 Dafür stehen insgesamt 3328 CPUs und 215TB Speicher auf dem LiDO zur Verfügung.
-Die Struktur des Cluster lässt sich Fig... entnehmen.
+Die Struktur des Cluster lässt sich Abb.\ref{LiDo} entnehmen.
 
 \begin{figure}[!h]
     \centering
@@ -574,20 +573,21 @@ Die Struktur des Cluster lässt sich Fig... entnehmen.
 
 
 Über die beiden Gateway-Server erhält man Zugriff auf die Rechenknoten und den Speicher.
-Wie in Bild .. zu sehen ist, gibt es verschiedene Knotentypen, die sich ind er Zahl der maximalen Jobs pro Queue und user unterscheiden und über ein Queuingsystem erreichbar sind:
+Wie in Abb.\ref{LiDo} zu sehen ist, gibt es verschiedene Knotentypen, die sich in der Zahl der maximalen Jobs pro Queue und Nutzer unterscheiden und über ein Queuingsystem erreichbar sind:
 
 \begin{itemize}
- \item Die infiniband Knoten sind für parallele Jobs reserviert, die die Infiniband interconnect nutzen
+ \item Die ib-Knoten sind für parallele Jobs reserviert, die die Infiniband interconnect nutzen
  \item eth-Knoten: Auf diesen Knoten werden serielle und parallele Jobs nutzt, die die GigabitEthernet Connection nutzen
  \item quad-Knoten: Für Anforderungen an viel Speicher oder parallele OpenMP/Shared Memory Jobs werden die quad Knoten genutzt
  \item GPU: Rechnungen auf Graphikkarten finden hier statt.
- \item nehalem: neue Testknoten mit längerer maximalen Walltime  als angegeben (80-90h) und mehr Arbeitsspecher als die eth-Knoten [sagt Tomasz]
+ \item nehalem: neue Testknoten mit einer maximaler Walltime von 96h und mehr Arbeitsspecher als die eth-Knoten
 \end{itemize}
 
 Die meisten Knoten haben drei verschiedene Queues, die sich in ihrer maximal zur Verfügung stehenden Walltime unterscheiden.
-Es gibt als die short Queues (eth, ib, quad) mit einer maximalen Walltime von 1h, die medium Queues (eth, $eth_nhm$, ib, quad) mit einer Walltime von 8h und die long Qeues mit einer maximalen Walltime von 48h. 
-Falls es doch mal länger dauern sollte, gibt es noch die ultralong Queue (eth) mit einer maximalen Walltime von 672h.
-Um also einen Job zu starten, gibt man den benötigten Speicher und eine maximale Walltime an und submittet den Job in das Queuingsystem. \newline
+Es gibt als die short Queues (eth, ib, quad) mit einer maximalen Walltime von 1h, die medium Queues (eth, eth\_nhm, ib, quad) mit einer Walltime von 8h und die long Queues mit einer maximalen Walltime von 48h. 
+Falls es doch mal länger dauern sollte, gibt es noch die ultralong Queue (eth) mit einer maximalen Walltime von 2688h.
+Um also einen Job zu starten, gibt man den benötigten Speicher und eine maximale Walltime an und submittet den Job in das Queuingsystem.
+
 Für die MAGIC MC Produktion werden die eth-Knoten benutzt und pro Run 1000 Corsika Events produziert und weiter prozessiert. 
 Ein Standardjob von 2Mio Corsika Events wird also in 2000 Runs mit je 1000 Events drin aufgeteilt und somit 2000 Runs nacheinander an das Queuingsystem submitted.
 
@@ -607,11 +607,6 @@ Im Moment wird auf dem LiDO folgendes Speichervolumen für die Daten nach den ve
     \end{tabular}
 \end{table}
 
-
-
-BILDBILDBILD
-
-
 Alternativ kann auch noch der PhiDo Cluster für Testproduktionen, bzw. früher für dezidierte Protonsimulationen benutzt werden. 
 Dieser Cluster stellt 1200 CPUs und 200TB Speicher zur Verfügung, hat allerdings auch eine größere Auslastung, was dazu führt, dass eine komplette Produktion wesentlich länger dauert.
 
@@ -619,13 +614,11 @@ Dieser Cluster stellt 1200 CPUs und 200TB Speicher zur Verfügung, hat allerding
 
 \subsection{Wenn die MC fertig sind...}
 Sobald eine Produktion an MCs fertig gerechnet ist, werden die Daten ins Grid kopiert.
-Das heißt im Moment werden sie zum Rechenzentrum in Spanien PIC, kopiert und auf den dortigen Rechnern gespeichert, sodass sie immer über eine Internetseite erreichbar sind.
+Das heißt im Moment werden sie auf Computer im Rechenzentrum in Spanien PIC kopiert, welche zum Grid gehören und dort gespeichert, sodass sie immer über eine Internetseite erreichbar sind.
 Die Struktur, in der die MCs gespeichert sind, ist so: 
-MonteCarlo/Chipsatz der beiden Teloskope/PSF und Mirror fraction/ Teilchentyp/ Zenitbereich/ Observationsart/ Standart der Software/ Level der Prozessierung/ Versionsnummer
+MonteCarlo / Chipsatz der beiden Teloskope / PSF und Mirror fraction / Teilchentyp / Zenitbereich / Observationsart / Standart der Software / Level der Prozessierung / Versionsnummer \newline
 
-$$http://data.magic.pic.es/Data/MonteCarlo_Stereo/M1_DRS4_1039_M2_DRS4_1039/M1_PSF10.1_MF0.60_M2_PSF8.6_MF0.66/gammas/za05to35/ringwobble/std20140317/superstar/mc_v07/$$
-
-
+\url{http://data.magic.pic.es/Data/MonteCarlo_Stereo/M1_DRS4_1039_M2_DRS4_1039/M1_PSF10.1_MF0.60_M2_PSF8.6_MF0.66/gammas/za05to35/ringwobble/std20140317/superstar/mc_v07/}
 
 
 %Achten Sie bei ihren Plots auf ausreichend große Achsenbschriftungen, ausreichende Schriftdicken und gut unterscheidbare Farben.

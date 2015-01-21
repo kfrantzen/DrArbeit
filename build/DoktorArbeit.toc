@@ -7,29 +7,28 @@
 \contentsline {subsection}{\numberline {1.1.2}Inputcards}{3}{subsection.1.1.2}
 \contentsline {section}{\numberline {1.2}Simulation des Reflektors mit Reflector}{4}{section.1.2}
 \contentsline {subsection}{\numberline {1.2.1}Inputcards}{4}{subsection.1.2.1}
-\contentsline {section}{\numberline {1.3}Simulation von Kamera und Elektronik mit Cammmmmera}{5}{section.1.3}
+\contentsline {section}{\numberline {1.3}Simulation von Kamera und Elektronik mit Camera}{5}{section.1.3}
 \contentsline {subsection}{\numberline {1.3.1}StarFieldAdder und StarResponse}{5}{subsection.1.3.1}
 \contentsline {subsection}{\numberline {1.3.2}Simulation von Kamera und Elektronik}{6}{subsection.1.3.2}
-\contentsline {subsection}{\numberline {1.3.3}Inputcard}{6}{subsection.1.3.3}
+\contentsline {subsection}{\numberline {1.3.3}Inputcard}{7}{subsection.1.3.3}
 \contentsline {section}{\numberline {1.4}Calibration}{8}{section.1.4}
-\contentsline {subsection}{\numberline {1.4.1}Signalextraktion}{8}{subsection.1.4.1}
+\contentsline {subsection}{\numberline {1.4.1}Signalextraktion}{9}{subsection.1.4.1}
 \contentsline {subsection}{\numberline {1.4.2}Ankunftszeitbestimmung}{9}{subsection.1.4.2}
 \contentsline {section}{\numberline {1.5}Star - Image Cleaning und Bildparametrisierung}{10}{section.1.5}
 \contentsline {subsection}{\numberline {1.5.1}Image Cleaning}{10}{subsection.1.5.1}
 \contentsline {subsection}{\numberline {1.5.2}Bildparametrisierung}{11}{subsection.1.5.2}
-\contentsline {section}{\numberline {1.6}Superstar - Stereoskopische Rekonstruktion der Schauer}{13}{section.1.6}
-\contentsline {section}{\numberline {1.7}automatische MCProduktion hier in Dortmund geht so}{14}{section.1.7}
-\contentsline {subsection}{\numberline {1.7.1}Datenbank}{15}{subsection.1.7.1}
+\contentsline {section}{\numberline {1.6}Superstar - Stereoskopische Rekonstruktion der Schauer}{14}{section.1.6}
+\contentsline {section}{\numberline {1.7}Automatische MC-Produktion hier in Dortmund geht so}{15}{section.1.7}
+\contentsline {subsection}{\numberline {1.7.1}Datenbank}{16}{subsection.1.7.1}
 \contentsline {subsection}{\numberline {1.7.2}LiDO}{17}{subsection.1.7.2}
-\contentsline {subsection}{\numberline {1.7.3}Wenn die MC fertig sind...}{18}{subsection.1.7.3}
+\contentsline {subsection}{\numberline {1.7.3}Wenn die MC fertig sind...Keine Ahnung, ob das interessant ist...}{19}{subsection.1.7.3}
 \contentsline {chapter}{\numberline {2}Analysekette}{20}{chapter.2}
 \contentsline {section}{\numberline {2.1}Signal-Untergrund-Trennung und Energieschätzung}{20}{section.2.1}
 \contentsline {subsection}{\numberline {2.1.1}GH Separation}{20}{subsection.2.1.1}
-\contentsline {subsection}{\numberline {2.1.2}Energierekonstruktion}{21}{subsection.2.1.2}
+\contentsline {subsection}{\numberline {2.1.2}Energierekonstruktion mit Hilfe von Look up Tables}{21}{subsection.2.1.2}
 \contentsline {subsection}{\numberline {2.1.3}Position Reconstruction}{21}{subsection.2.1.3}
 \contentsline {section}{\numberline {2.2}Lichtkurve}{21}{section.2.2}
 \contentsline {subsection}{\numberline {2.2.1}Anzahl der exzess gammas}{22}{subsection.2.2.1}
 \contentsline {subsection}{\numberline {2.2.2}Effektive On Zeit}{22}{subsection.2.2.2}
-\contentsline {subsection}{\numberline {2.2.3}Effektive Fläche}{22}{subsection.2.2.3}
+\contentsline {subsection}{\numberline {2.2.3}Effektive Fläche}{23}{subsection.2.2.3}
 \contentsline {section}{\numberline {2.3}Spektrum}{23}{section.2.3}
-\contentsline {section}{\numberline {2.4}TestFürsGit}{25}{section.2.4}

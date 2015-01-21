@@ -1,4 +1,4 @@
-This is LuaTeX, Version beta-0.79.1 (TeX Live 2014) (rev 4971)  (format=lualatex 2015.1.12)  20 JAN 2015 14:04
+This is LuaTeX, Version beta-0.79.1 (TeX Live 2014) (rev 4971)  (format=lualatex 2015.1.12)  21 JAN 2015 16:31
  restricted \write18 enabled.
 **DoktorArbeit.tex
 (./DoktorArbeit.tex
@@ -382,7 +382,7 @@ luatexbase-attr: luatexbase.attributes["luaotfload@cursbase"] = 6
 luatexbase-attr: luatexbase.attributes["luaotfload@curscurs"] = 7
 luatexbase-attr: luatexbase.attributes["luaotfload@cursdone"] = 8
 luatexbase-attr: luatexbase.attributes["luaotfload@state"] = 9
-luaotfload | main : fontloader loaded in 0.073 seconds
+luaotfload | main : fontloader loaded in 0.068 seconds
 luatexbase-mcb: inserting 'luaotfload.node_processor'
 at position 1 in 'pre_linebreak_filter'
 luatexbase-mcb: inserting 'luaotfload.node_processor'
@@ -737,7 +737,7 @@ Package scrlayer-scrpage Info: deactivating warning for font element
 Package scrlayer-scrpage Info: auto-selection of `pagestyleset=KOMA-Script'.
 Package scrkbase Info: You've told me to extend the font selection of the
 (scrkbase)             element `sectioning' that is an alias of element
-(scrkbase)             `disposition' on input line 62.
+(scrkbase)             `disposition' on input line 64.
 
 
 Package scrlayer-scrpage Warning: Command deprecated!
@@ -751,7 +751,7 @@ Package scrlayer-scrpage Warning: Command deprecated!
 (scrlayer-scrpage)                `<line thickness>:<line length>' to setup
 (scrlayer-scrpage)                the line length and thickness, and
 (scrlayer-scrpage)                `\setkomafont' or `\addtokomafont' to
-(scrlayer-scrpage)                setup the colour on input line 65.
+(scrlayer-scrpage)                setup the colour on input line 67.
 
 
 (/net/home.e5.physik.tu-dortmund.de/vol/ph_e5v/e5b/homes/kfrantzen/texmf/tex/la
@@ -1047,15 +1047,15 @@ tinModernMath:mode=base;script=math;language=DFLT;+tlig;+trep;+ssty=1;"
 luaotfload | load : Lookup/name: "LatinModernMath" -> "latinmodern-math.otf"
 luaotfload | load : Lookup/name: "LatinModernMath" -> "latinmodern-math.otf"
 LaTeX Font Info:    Encoding `OT1' has changed to `EU2' for symbol font
-(Font)              `operators' in the math version `normal' on input line 84.
+(Font)              `operators' in the math version `normal' on input line 86.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
 (Font)                  OT1/cmr/m/n --> EU2/LatinModernMath(0)/m/n on input line
- 84.
+ 86.
 LaTeX Font Info:    Encoding `OT1' has changed to `EU2' for symbol font
-(Font)              `operators' in the math version `bold' on input line 84.
+(Font)              `operators' in the math version `bold' on input line 86.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
 (Font)                  OT1/cmr/bx/n --> EU2/LatinModernMath(0)/bx/n on input li
-ne 84.
+ne 86.
 luaotfload | load : Lookup/name: "LatinModernMath" -> "latinmodern-math.otf"
 luaotfload | load : Lookup/name: "LatinModernMath" -> "latinmodern-math.otf"
 luaotfload | load : Lookup/name: "LatinModernMath" -> "latinmodern-math.otf"
@@ -1112,15 +1112,15 @@ LT;+tlig;+trep;+ssty=1;"
 . 22\font =163840sp\relax 
 .................................................
 LaTeX Font Info:    Encoding `OMS' has changed to `EU2' for symbol font
-(Font)              `symbols' in the math version `normal' on input line 84.
+(Font)              `symbols' in the math version `normal' on input line 86.
 LaTeX Font Info:    Overwriting symbol font `symbols' in version `normal'
 (Font)                  OMS/cmsy/m/n --> EU2/LatinModernMath(1)/m/n on input lin
-e 84.
+e 86.
 LaTeX Font Info:    Encoding `OMS' has changed to `EU2' for symbol font
-(Font)              `symbols' in the math version `bold' on input line 84.
+(Font)              `symbols' in the math version `bold' on input line 86.
 LaTeX Font Info:    Overwriting symbol font `symbols' in version `bold'
 (Font)                  OMS/cmsy/b/n --> EU2/LatinModernMath(1)/bx/n on input li
-ne 84.
+ne 86.
 luaotfload | load : Lookup/name: "LatinModernMath" -> "latinmodern-math.otf"
 luaotfload | load : Lookup/name: "LatinModernMath" -> "latinmodern-math.otf"
 luaotfload | load : Lookup/name: "LatinModernMath" -> "latinmodern-math.otf"
@@ -1167,16 +1167,16 @@ LT;+tlig;+trep;+ssty=1;"
 . \fontdimen 12\font =393216sp\relax \fontdimen 13\font =0pt\relax 
 .................................................
 LaTeX Font Info:    Encoding `OMX' has changed to `EU2' for symbol font
-(Font)              `largesymbols' in the math version `normal' on input line 84
+(Font)              `largesymbols' in the math version `normal' on input line 86
 .
 LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `normal'
 (Font)                  OMX/cmex/m/n --> EU2/LatinModernMath(2)/m/n on input lin
-e 84.
+e 86.
 LaTeX Font Info:    Encoding `OMX' has changed to `EU2' for symbol font
-(Font)              `largesymbols' in the math version `bold' on input line 84.
+(Font)              `largesymbols' in the math version `bold' on input line 86.
 LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
 (Font)                  OMX/cmex/m/n --> EU2/LatinModernMath(2)/bx/n on input li
-ne 84.
+ne 86.
 
 (/usr/local/texlive/2014/texmf-dist/tex/latex/l3packages/xfrac/xfrac.sty
 (/usr/local/texlive/2014/texmf-dist/tex/latex/base/textcomp.sty
@@ -1511,7 +1511,7 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \@float@everytoks=\toks29
 \@floatcapt=\box269
 )
-Package scrhack Info: loading float hack on input line 122.
+Package scrhack Info: loading float hack on input line 124.
 
 (/usr/local/texlive/2014/texmf-dist/tex/latex/koma-script/float.hak
 File: float.hak 2014/10/28 v3.14 KOMA-Script package (hacking package float)
@@ -1839,7 +1839,7 @@ LaTeX Info: Redefining \pageref on input line 6369.
 )
 Package scrhack Info: hyperref hack deactivated because of
 (scrhack)             detection of hyperref version, that doesn't
-(scrhack)             need that hack, on input line 154.
+(scrhack)             need that hack, on input line 156.
 
 
 Package hyperref Message: Driver (autodetected): hpdftex.
@@ -2109,135 +2109,34 @@ Package tocbasic Info: character protrusion at toc deactivated on input line 65.
 ] (./Inhalt/04_MonteCarlos.tex
 Kapitel 1.
 
-Overfull \hbox (25.53703pt too wide) in paragraph at lines 12--15
-[][]\EU2/lmr/m/n/10.95 Es wer-den zu-nächst die Pro-gram-me be-schrie-ben, die
- in der MA-GIC MC-Simulationskette
- []
-
-
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [1
 
 ]
-<./Plots/Photon_1TeV_CORSIKA.png, id=61, 1027.84pt x 2055.68pt>
+<./Plots/Photon_1TeV_CORSIKA.png, id=60, 1027.84pt x 2055.68pt>
 File: ./Plots/Photon_1TeV_CORSIKA.png Graphic file (type png)
 
 <use ./Plots/Photon_1TeV_CORSIKA.png>
 Package pdftex.def Info: ./Plots/Photon_1TeV_CORSIKA.png used on input line 44.
-(pdftex.def)             Requested size: 138.02373pt x 276.03058pt.
+(pdftex.def)             Requested size: 157.7397pt x 315.45903pt.
 
-Underfull \hbox (badness 3724) in paragraph at lines 45--45
+Underfull \hbox (badness 1102) in paragraph at lines 45--45
 [][][][]\EU2/lmr/bx/n/10 (a)[][][]|\EU2/lmr/m/n/10 Si-mu-la-ti-on ei-nes Schau-
-ers mit 1TeV-
+ers mit
  []
 
-<./Plots/Proton_1TeV_CORSIKA.png, id=62, 1027.84pt x 2055.68pt>
+<./Plots/Proton_1TeV_CORSIKA.png, id=61, 1027.84pt x 2055.68pt>
 File: ./Plots/Proton_1TeV_CORSIKA.png Graphic file (type png)
 
 <use ./Plots/Proton_1TeV_CORSIKA.png>
 Package pdftex.def Info: ./Plots/Proton_1TeV_CORSIKA.png used on input line 49.
-(pdftex.def)             Requested size: 138.02373pt x 276.03058pt.
+(pdftex.def)             Requested size: 157.7397pt x 315.45903pt.
 
-Overfull \hbox (19.08813pt too wide) in paragraph at lines 43--52
-[][]$[]$   $[]$ 
- []
+Underfull \vbox (badness 2245) has occurred while \output is active []
 
-[2<./Plots/Photon_1TeV_CORSIKA.png><./Plots/Proton_1TeV_CORSIKA.png>] [3]
-[4]
-<./Plots/Signal_Job481_RunNr1513276_511_e3.0TeV_Zd32.2_fertig.png, id=85, 1226.
-5825pt x 1012.78375pt>
-File: ./Plots/Signal_Job481_RunNr1513276_511_e3.0TeV_Zd32.2_fertig.png Graphic f
-ile (type png)
-
-<use ./Plots/Signal_Job481_RunNr1513276_511_e3.0TeV_Zd32.2_fertig.png>
-Package pdftex.def Info: ./Plots/Signal_Job481_RunNr1513276_511_e3.0TeV_Zd32.2_f
-ertig.png used on input line 160.
-(pdftex.def)             Requested size: 236.61555pt x 195.36713pt.
- [5<./Plots/Signal_Job481_RunNr1513276_511_e3.0TeV_Zd32.2_fertig.png>] [6]
-Underfull \vbox (badness 1622) has occurred while \output is active []
-
- [7]
-<./Plots/Pedestal_fertig.png, id=106, 1210.5225pt x 1004.75375pt>
-File: ./Plots/Pedestal_fertig.png Graphic file (type png)
-
-<use ./Plots/Pedestal_fertig.png>
-Package pdftex.def Info: ./Plots/Pedestal_fertig.png used on input line 262.
-(pdftex.def)             Requested size: 236.61555pt x 196.3938pt.
- [8<./Plots/Pedestal_fertig.png>](compiling luc: /usr/local/texlive/2014/texmf-v
-ar/luatex-cache/generic/fonts/otf/lmroman6-regular.luc)(load luc: /net/home.e5.p
-hysik.tu-dortmund.de/vol/ph_e5v/e5b/homes/kfrantzen/.texlive2014/texmf-var/luate
-x-cache/generic/fonts/otf/lmroman6-regular.luc)
-luaotfload | load : Lookup/name: "LatinModernMath" -> "latinmodern-math.otf"
-LaTeX Font Info:    Font shape `EU2/LatinModernMath(1)/m/n' will be
-(Font)              scaled to size 5.00008pt on input line 291.
-luaotfload | load : Lookup/name: "LatinModernMath" -> "latinmodern-math.otf"
-LaTeX Font Info:    Font shape `EU2/LatinModernMath(2)/m/n' will be
-(Font)              scaled to size 4.99992pt on input line 291.
-luaotfload | load : Lookup/name: "LatinModernMath" -> "latinmodern-math.otf" <.
-/Plots/Signal_ArrivalTime_fertig.png, id=115, 1219.55624pt x 1013.7875pt>
-File: ./Plots/Signal_ArrivalTime_fertig.png Graphic file (type png)
-
-<use ./Plots/Signal_ArrivalTime_fertig.png>
-Package pdftex.def Info: ./Plots/Signal_ArrivalTime_fertig.png used on input lin
-e 299.
-(pdftex.def)             Requested size: 236.61555pt x 196.69pt.
- [9<./Plots/Signal_ArrivalTime_fertig.png>]
-Underfull \vbox (badness 1609) has occurred while \output is active []
-
- [10]
-<./Plots/Signal_gecleant_fertig.png, id=134, 1269.74374pt x 1102.1175pt>
-File: ./Plots/Signal_gecleant_fertig.png Graphic file (type png)
-
-<use ./Plots/Signal_gecleant_fertig.png>
-Package pdftex.def Info: ./Plots/Signal_gecleant_fertig.png used on input line 3
-42.
-(pdftex.def)             Requested size: 236.61555pt x 205.36844pt.
- [11<./Plots/Signal_gecleant_fertig.png>] <./Plots/CleaningBild.png, id=144, 91
-4.41624pt x 441.65pt>
-File: ./Plots/CleaningBild.png Graphic file (type png)
-
-<use ./Plots/CleaningBild.png>
-Package pdftex.def Info: ./Plots/CleaningBild.png used on input line 373.
-(pdftex.def)             Requested size: 354.91733pt x 171.42064pt.
- [12<./Plots/CleaningBild.png>]
-<./Plots/Superstar.png, id=151, 1090.0725pt x 584.1825pt>
-File: ./Plots/Superstar.png Graphic file (type png)
-
-<use ./Plots/Superstar.png>
-Package pdftex.def Info: ./Plots/Superstar.png used on input line 419.
-(pdftex.def)             Requested size: 354.91733pt x 190.2047pt.
- [13]
-<./Plots/Jobmanager.png, id=160, 1573.88pt x 684.5575pt>
-File: ./Plots/Jobmanager.png Graphic file (type png)
-
-<use ./Plots/Jobmanager.png>
-Package pdftex.def Info: ./Plots/Jobmanager.png used on input line 454.
-(pdftex.def)             Requested size: 354.91733pt x 154.36348pt.
- [14<./Plots/Superstar.png>]
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[15<./Plots/Jobmanager.png>]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [16]
-<./Plots/LiDO.png, id=178, 722.7pt x 542.025pt>
-File: ./Plots/LiDO.png Graphic file (type png)
- <use ./Plots/LiDO.png>
-Package pdftex.def Info: ./Plots/LiDO.png used on input line 569.
-(pdftex.def)             Requested size: 354.91733pt x 266.19005pt.
- [17<./Plots/LiDO.png>]
-Overfull \hbox (16.76509pt too wide) in paragraph at lines 601--608
- [][][] 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 616--620
-
- []
-
-LaTeX Font Info:    Try loading font information for EU2+lmtt on input line 621.
+ [2<./Plots/Photon_1TeV_CORSIKA.png><./Plots/Proton_1TeV_CORSIKA.png>]
+LaTeX Font Info:    Try loading font information for EU2+lmtt on input line 74.
 
 (/usr/local/texlive/2014/texmf-dist/tex/latex/euenc/eu2lmtt.fd
 File: eu2lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
@@ -2250,18 +2149,114 @@ Package microtype Info: Loading generic settings for font family
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 
-Overfull \hbox (11.72804pt too wide) in paragraph at lines 621--622
+[3] [4](compiling luc: /usr/local/texlive/2014/texmf-var/luatex-cache/generic/fo
+nts/otf/lmroman8-regular.luc)(load luc: /net/home.e5.physik.tu-dortmund.de/vol/p
+h_e5v/e5b/homes/kfrantzen/.texlive2014/texmf-var/luatex-cache/generic/fonts/otf/
+lmroman8-regular.luc)
+luaotfload | load : Lookup/name: "LatinModernMath" -> "latinmodern-math.otf"
+luaotfload | load : Lookup/name: "LatinModernMath" -> "latinmodern-math.otf"
+luaotfload | load : Lookup/name: "LatinModernMath" -> "latinmodern-math.otf"(com
+piling luc: /usr/local/texlive/2014/texmf-var/luatex-cache/generic/fonts/otf/lmr
+oman6-regular.luc)(load luc: /net/home.e5.physik.tu-dortmund.de/vol/ph_e5v/e5b/h
+omes/kfrantzen/.texlive2014/texmf-var/luatex-cache/generic/fonts/otf/lmroman6-re
+gular.luc)
+<./Plots/Signal_Job481_RunNr1513276_511_e3.0TeV_Zd32.2_fertig.png, id=84, 1226.
+5825pt x 1012.78375pt>
+File: ./Plots/Signal_Job481_RunNr1513276_511_e3.0TeV_Zd32.2_fertig.png Graphic f
+ile (type png)
+
+<use ./Plots/Signal_Job481_RunNr1513276_511_e3.0TeV_Zd32.2_fertig.png>
+Package pdftex.def Info: ./Plots/Signal_Job481_RunNr1513276_511_e3.0TeV_Zd32.2_f
+ertig.png used on input line 161.
+(pdftex.def)             Requested size: 236.61555pt x 195.36713pt.
+ [5<./Plots/Signal_Job481_RunNr1513276_511_e3.0TeV_Zd32.2_fertig.png>] [6] [7]
+<./Plots/Pedestal_fertig.png, id=105, 1210.5225pt x 1004.75375pt>
+File: ./Plots/Pedestal_fertig.png Graphic file (type png)
+
+<use ./Plots/Pedestal_fertig.png>
+Package pdftex.def Info: ./Plots/Pedestal_fertig.png used on input line 265.
+(pdftex.def)             Requested size: 236.61555pt x 196.3938pt.
+
+Underfull \vbox (badness 8170) has occurred while \output is active []
+
+ [8<./Plots/Pedestal_fertig.png>]
+<./Plots/Signal_ArrivalTime_fertig.png, id=113, 1219.55624pt x 1013.7875pt>
+File: ./Plots/Signal_ArrivalTime_fertig.png Graphic file (type png)
+
+<use ./Plots/Signal_ArrivalTime_fertig.png>
+Package pdftex.def Info: ./Plots/Signal_ArrivalTime_fertig.png used on input lin
+e 302.
+(pdftex.def)             Requested size: 236.61555pt x 196.69pt.
+ [9] [10<./Plots/Signal_ArrivalTime_fertig.png>]
+<./Plots/Signal_gecleant_fertig.png, id=134, 1269.74374pt x 1102.1175pt>
+File: ./Plots/Signal_gecleant_fertig.png Graphic file (type png)
+
+<use ./Plots/Signal_gecleant_fertig.png>
+Package pdftex.def Info: ./Plots/Signal_gecleant_fertig.png used on input line 3
+45.
+(pdftex.def)             Requested size: 236.61555pt x 205.36844pt.
+ [11]
+<./Plots/CleaningBild.png, id=144, 914.41624pt x 441.65pt>
+File: ./Plots/CleaningBild.png Graphic file (type png)
+
+<use ./Plots/CleaningBild.png>
+Package pdftex.def Info: ./Plots/CleaningBild.png used on input line 376.
+(pdftex.def)             Requested size: 354.91733pt x 171.42064pt.
+ [12<./Plots/Signal_gecleant_fertig.png>]
+[13<./Plots/CleaningBild.png>]
+<./Plots/Superstar.png, id=156, 1090.0725pt x 584.1825pt>
+File: ./Plots/Superstar.png Graphic file (type png)
+
+<use ./Plots/Superstar.png>
+Package pdftex.def Info: ./Plots/Superstar.png used on input line 422.
+(pdftex.def)             Requested size: 354.91733pt x 190.2047pt.
+
+<./Plots/Jobmanager.png, id=158, 1573.88pt x 684.5575pt>
+File: ./Plots/Jobmanager.png Graphic file (type png)
+
+<use ./Plots/Jobmanager.png>
+Package pdftex.def Info: ./Plots/Jobmanager.png used on input line 457.
+(pdftex.def)             Requested size: 354.91733pt x 154.36348pt.
+ [14<./Plots/Superstar.png>]
+Underfull \vbox (badness 6510) has occurred while \output is active []
+
+ [15<./Plots/Jobmanager.png>] [16] <./Plots/LiDO.png, id=180, 722.7pt x 542.025
+pt>
+File: ./Plots/LiDO.png Graphic file (type png)
+
+<use ./Plots/LiDO.png>
+Package pdftex.def Info: ./Plots/LiDO.png used on input line 572.
+(pdftex.def)             Requested size: 354.91733pt x 266.19005pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[17]
+Overfull \hbox (16.76509pt too wide) in paragraph at lines 604--611
+ [][][] 
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[18<./Plots/LiDO.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 623--624
+
+ []
+
+
+Overfull \hbox (11.72804pt too wide) in paragraph at lines 625--626
 [][][]$\EU2/lmtt/m/n/10.95 http : / / data . magic . pic . es / Data / MonteCar
 lo _ Stereo / M1 _ DRS4 _ 1039 _ M2 _ DRS4 _
  []
 
 
-Overfull \hbox (58.36143pt too wide) in paragraph at lines 621--622
+Overfull \hbox (58.36143pt too wide) in paragraph at lines 625--626
 \EU2/lmtt/m/n/10.95 1039 / M1 _ PSF10 . 1 _ MF0 . 60 _ M2 _ PSF8 . 6 _ MF0 . 66
  / gammas / za05to35 / ringwobble / std20140317 /
  []
 
-) (./Inhalt/05_Analysekette.tex [18] [19]
+) (./Inhalt/05_Analysekette.tex [19]
 Kapitel 2.
 [20
 
@@ -2270,10 +2265,10 @@ Kapitel 2.
 File: ./Plots/EnergyEst_EnergyTrue.pdf Graphic file (type pdf)
 
 <use ./Plots/EnergyEst_EnergyTrue.pdf>
-Package pdftex.def Info: ./Plots/EnergyEst_EnergyTrue.pdf used on input line 138
+Package pdftex.def Info: ./Plots/EnergyEst_EnergyTrue.pdf used on input line 126
 .
 (pdftex.def)             Requested size: 236.61555pt x 160.24867pt.
- [23]) [24<./Plots/EnergyEst_EnergyTrue.pdf>] [25]
+ [23] [24<./Plots/EnergyEst_EnergyTrue.pdf>]) [25]
 
 LaTeX Warning: Empty bibliography on input line 80.
 
@@ -2281,10 +2276,7 @@ LaTeX Warning: Empty bibliography on input line 80.
 
 
 
-] (./Inhalt/eid_versicherung.tex(compiling luc: /usr/local/texlive/2014/texmf-va
-r/luatex-cache/generic/fonts/otf/lmroman8-regular.luc)(load luc: /net/home.e5.ph
-ysik.tu-dortmund.de/vol/ph_e5v/e5b/homes/kfrantzen/.texlive2014/texmf-var/luatex
--cache/generic/fonts/otf/lmroman8-regular.luc)
+] (./Inhalt/eid_versicherung.tex
 Underfull \hbox (badness 10000) in paragraph at lines 10--12
 
  []
@@ -2302,41 +2294,42 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 85.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 85.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 85.
 Package rerunfilecheck Info: File `DoktorArbeit.aux' has not changed.
-(rerunfilecheck)             Checksum: 52F93FCEAC7CAEF4AB44764486C16565;14554.
+(rerunfilecheck)             Checksum: A71224DADE50509C72890CBE7D1884EC;14385.
 Package rerunfilecheck Info: File `DoktorArbeit.toc' has not changed.
-(rerunfilecheck)             Checksum: 97E50BAA14B2220DCD42D03D52423B82;2967.
+(rerunfilecheck)             Checksum: 581CCC30F040973520C2DF2BED9216EE;2960.
 Package logreq Info: Writing requests to 'DoktorArbeit.run.xml'.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 85.
 )
 
 Here is how much of LuaTeX's memory you used:
- 43724 strings out of 494693
+ 43725 strings out of 494693
  100000,1648299 words of node,token memory allocated
- 680 words of node memory still in use:
-   6 hlist, 2 vlist, 2 rule, 2 glue, 15 kern, 19 attribute, 57 glue_spec, 19 att
+ 687 words of node memory still in use:
+   6 hlist, 2 vlist, 2 rule, 2 glue, 15 kern, 19 attribute, 58 glue_spec, 19 att
 ribute_list, 1 action, 1 write nodes
-   avail lists: 1:48,2:9438,3:269,4:999,5:255,6:3124,7:274,8:16,9:513,10:986,11:
+   avail lists: 1:48,2:9257,3:265,4:911,5:246,6:3058,7:375,8:15,9:513,10:986,11:
 519,12:230
- 46161 multiletter control sequences out of 65536+600000
- 90 fonts using 25654491 bytes
- 70i,21n,104p,964b,890s stack positions out of 5000i,500n,10000p,200000b,100000s
+ 46162 multiletter control sequences out of 65536+600000
+ 91 fonts using 25779515 bytes
+ 70i,20n,104p,964b,939s stack positions out of 5000i,500n,10000p,200000b,100000s
 </usr/local/texlive/2014/texmf-dist/fonts/opentype/public/lm/lmroman8-regular.ot
-f></usr/local/texlive/2014/texmf-dist/fonts/opentype/public/lm/lmmono10-regular.
-otf></usr/local/texlive/2014/texmf-dist/fonts/opentype/public/lm-math/latinmoder
-n-math.otf></usr/local/texlive/2014/texmf-dist/fonts/opentype/public/lm/lmroman6
--regular.otf></usr/local/texlive/2014/texmf-dist/fonts/opentype/public/lm-math/l
-atinmodern-math.otf></usr/local/texlive/2014/texmf-dist/fonts/opentype/public/lm
--math/latinmodern-math.otf></usr/local/texlive/2014/texmf-dist/fonts/opentype/pu
+f></usr/local/texlive/2014/texmf-dist/fonts/opentype/public/lm-math/latinmodern-
+math.otf></usr/local/texlive/2014/texmf-dist/fonts/opentype/public/lm/lmroman6-r
+egular.otf></usr/local/texlive/2014/texmf-dist/fonts/opentype/public/lm-math/lat
+inmodern-math.otf></usr/local/texlive/2014/texmf-dist/fonts/opentype/public/lm-m
+ath/latinmodern-math.otf></usr/local/texlive/2014/texmf-dist/fonts/opentype/publ
+ic/lm/lmmono10-regular.otf></usr/local/texlive/2014/texmf-dist/fonts/opentype/pu
 blic/lm/lmroman10-bold.otf></usr/local/texlive/2014/texmf-dist/fonts/opentype/pu
 blic/lm/lmromanslant10-regular.otf></usr/local/texlive/2014/texmf-dist/fonts/ope
-ntype/public/lm/lmroman10-regular.otf></usr/local/texlive/2014/texmf-dist/fonts/
-opentype/public/lm/lmroman12-regular.otf></usr/local/texlive/2014/texmf-dist/fon
-ts/opentype/public/lm/lmsans10-bold.otf></usr/local/texlive/2014/texmf-dist/font
-s/opentype/public/lm/lmroman12-bold.otf>
-Output written on DoktorArbeit.pdf (31 pages, 3319853 bytes).
+ntype/public/lm/lmroman10-italic.otf></usr/local/texlive/2014/texmf-dist/fonts/o
+pentype/public/lm/lmroman10-regular.otf></usr/local/texlive/2014/texmf-dist/font
+s/opentype/public/lm/lmroman12-regular.otf></usr/local/texlive/2014/texmf-dist/f
+onts/opentype/public/lm/lmsans10-bold.otf></usr/local/texlive/2014/texmf-dist/fo
+nts/opentype/public/lm/lmroman12-bold.otf>
+Output written on DoktorArbeit.pdf (31 pages, 3326149 bytes).
 
-PDF statistics: 427 PDF objects out of 1000 (max. 8388607)
- 316 compressed objects within 4 object streams
- 92 named destinations out of 1000 (max. 131072)
- 105 words of extra memory for PDF output out of 10000 (max. 10000000)
+PDF statistics: 433 PDF objects out of 1000 (max. 8388607)
+ 319 compressed objects within 4 object streams
+ 91 named destinations out of 1000 (max. 131072)
+ 97 words of extra memory for PDF output out of 10000 (max. 10000000)
 
