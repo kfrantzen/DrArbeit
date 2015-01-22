@@ -406,6 +406,8 @@ INPUT ./Plots/Jobmanager.png
 INPUT ./Plots/LiDO.png
 INPUT ./Inhalt/05_Analysekette.tex
 INPUT ./Inhalt/05_Analysekette.tex
+INPUT ./Plots/Disp.png
+INPUT ./Plots/Theta2Example.png
 INPUT ./Plots/EnergyEst_EnergyTrue.pdf
 INPUT ./Inhalt/eid_versicherung.tex
 INPUT ./Inhalt/eid_versicherung.tex
