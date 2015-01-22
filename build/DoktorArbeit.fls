@@ -409,6 +409,8 @@ INPUT ./Inhalt/05_Analysekette.tex
 INPUT ./Plots/Disp.png
 INPUT ./Plots/Theta2Example.png
 INPUT ./Plots/EnergyEst_EnergyTrue.pdf
+INPUT ./Inhalt/06_Mrk421Analyse.tex
+INPUT ./Inhalt/06_Mrk421Analyse.tex
 INPUT ./Inhalt/eid_versicherung.tex
 INPUT ./Inhalt/eid_versicherung.tex
 INPUT /usr/local/texlive/2014/texmf-dist/fonts/tfm/public/eurosym/feymr10.tfm
