@@ -1,27 +1,74 @@
-\chapter{Monte Carlo-Daten}
+\chapter{Monte Carlo-Simulation}
 Ein großes Ziel in der Astroteilchenphysik ist es, Aussagen über die Energiespektren von astrophysikalischen Quellen zu machen.
 
-In der Cherenkovastronomie sind dafür Monte Carlo (MC)-Daten von grundlegender Bedeutung:
+In dieser Arbeit werden Daten analysiert, die von den beiden MAGIC-Teleskopen aufgenommen wurden, die in Kapitel \ref{sec:MAGIC} kurz beschrieben werden.
+
+In der Datenanalyse sind Monte Carlo (MC)-Daten von grundlegender Bedeutung:
 Für die Rekonstruktion eines Energiespektrums einer Gamma-Quelle müssen zunächst einmal Signalevents, die aus der Quelle kommen und Background-Events voneinander getrennt werden.
 Dies geschieht heutzutage mit künstlichen Lernalgorithmen, die auf wohl bekannten Beispieldaten, den MC-Daten, trainiert werden müssen.
 Auch für die Methode der Entfaltung des Energiespektrums werden MC-Daten benötigt.
 
 Die komplette Produktion der MC-Daten für das MAGIC Experiment wurde im Rahmen dieser Doktorarbeit durchgeführt und wird in diesem Kapitel detailliert beschrieben.
 
-Es werden zunächst die Programme beschrieben, die in der MAGIC MC - Simulationskette und später in der Kalibrationskette genutzt werden.
-Angefangen mit der Simulation der Luftschauer mit \textit{CORSIKA} über die Reflektor- und die Kamera-Simulation bis zur Berechnung der Bildparameter des bereinigten Events wird hier alles beschrieben.
+Es werden zunächst die Programme beschrieben, die in der MAGIC MC - Simulationskette genutzt werden.
+Angefangen mit der Simulation der Luftschauer mit \textit{CORSIKA} (Kapitel \ref{sec:Corsika}) über die Reflektor-Simulation (Kapitel \ref{sec:Reflector}) wird bis hin zur Kamera-Simulation (Kapitel \ref{sec:Camera}) hier alles beschrieben.
 Dabei bauen die Simulationsschritte aufeinander auf, sodass die simulierten Corsika-Events bis zum letzten Schritt weiter prozessiert werden.
 
 Für die eigentlichen Simulationsprogramme (\textit{CORSIKA}, \textit{Reflector} und \textit{Camera}) wird jeweils eine Übersicht über einige wichtige Inputparameter, die den Programmen als text-Dateien,
 sogenannten Inputcards, übergeben werden, gegeben.
 Nach Abschluss der Simulationskette liegen dann die MC Daten in der gleichen Form vor wie die aufgenommenen Daten der Teleskope. 
-Die anschließenden Schritte der Kalibrationskette (\textit{Sorcerer}, \textit{Star} und \textit{Superstar}) werden ebenfalls beschrieben.
+
+Die anschließenden Schritte der Kalibrationskette (\textit{Sorcerer}, \textit{Star} und \textit{Superstar}) von der Signalextraktion und Ankunftszeitbestimmung bis zur Berechnung der Stereo-Bildparameter der gecleanten Events werden in den Kapitel \ref{sec:Calibration} - Kapitel \ref{Superstar} ebenfalls beschrieben.
 Diese Kalibration wird im MAGIC Datenzentrum genauso mit den real aufgenommenen Daten durchgeführt, sodass am Ende alle Daten (reale und simulierte) im gleichen Format vorliegen.
 
-Nachdem alle Programme zur Simulation und Kalibration erklärt wurden, wird auf die automatische Produktionsstruktur auf dem Rechencluster LiDO an der TU Dortmund eingegangen.
+Nachdem alle Programme zur Simulation und Kalibration erklärt worden sind, wird auf die automatische Produktionsstruktur auf dem Rechencluster LiDO an der TU Dortmund eingegangen (Kapitel \ref{sec:Automatische MC-Produktion} ).
 
 % \vspace{\fill}
+
+
+\section{MAGIC}
+\label{sec:MAGIC}
+
+Die MAGIC-Teleskope sind zwei IACTs mit einem Spiegeldurchmesser von 17m, die sich auf dem Roque de los Muchachos auf der kanarischen Insel La Palma befinden (siehe Abb.\ref{MAGIC Teleskope}).
+
+\begin{figure}
+    \centering
+    \includegraphics[width=\textwidth]{./Plots/03_MonteCarlos/MAGIC-Telescopes.jpg}
+    \caption{MAGIC Teleskope auf dem Roque.[MAGIC Homepage]}
+    \label{MAGIC Teleskope}
+\end{figure}
+
+Das erste Teleskop -MAGIC I- ist 2004 in Betrieb gegangen und das zweite Teleskop - MAGIC II - 2009.
+In den Jahren 2011/2012 wurde ein großes Upgrade des Systems durchgeführt und sehr viel Hardware von MAGIC I durch neuere ersetzt.
+
+Die beiden großen Ziele des Experimentes sind das Erlangen einer niedrigen Energieschwelle und eine schnelle Ausrichtung der Teleskope auf eine Quelle.
+Die niedrige Energieschwelle wird durch die große Spiegelfläche, die große Pixelanzahl in der Kamera und die schnelle Ausleseelektronik erreicht.
+Durch die leichte Kohlefaser-Struktur der Mounts und die automatische Spiegelausrichtung ist es möglich, das Teleskop schnell und genau auf eine neue Quelle auszurichten.
+Es dauert ca 25s, das komplette Teleskop um 180° im Azimuth zu rotieren.
+
+Vor dem großen Kameraupgrade, was im Juni 2012 stattfand, bestand die Kamera von MAGIC I aus 577 Pixeln, unterteilt in 397 innere Pixel mit einem Durchmesser von 1inch und 180 äußere mit einem Durchmesser von 2 inch.
+Die Kamera hatte eine hexagonale Form.
+Die Kamera von MAGIC II bestand aus 1039 Pixeln mit je 1inch Durchmesser und einem totalen Field of View von etwa 3.5°.
+Nach dem Upgrade im Juni 2012 haben beide Teleskope das MAGIC II Kameradesign.
+
+Im Zentrum der Spiegel befindet sich bei beiden Teleskopen die Calibration Box.
+Diese sendet sehr kurze Lichtpulse mit konstanter Intensität in Richtung Kamera und dienen der Kalibration der einzelnen Pixel.
+Dies geschieht in den sogenannten Calibration Runs oder in den interleaved calibration runs, die während der Datennahme genommen werden.
+
+Das analoge Signal, welches aus den PMTs kommt, wird über optische Fasern zum Trigger und zum Readout im Countinghouise gebracht.
+
+Vor dem Upgrade hab es verschiedene Readout System für MAGIC I und MAGIC II:
+Das Readout-System von Magic1 basierte auf dem MUX-FADC_Board, welches robust war und eine gute Performance geliefert hat, allerdings teuer und unhandlich war.
+Das Readout-System von Magic 2 basierte auf dem DRS2 Chip, welcher unter recht hohem Rauschen litt.
+
+Nach dem Upgrade wurden beide Auslesesysteme mit dem DRS4-Chip ausgestattet, welcher sich durch wenig Noise, wenig Crosstalk und eine sehr kurze Totzeit auszeichnet.
+
+Der Trigger wird in verschiedene Level unterteilt:
+Der Level 0-Trigger ist beinhaltet einen Schwellwert (Discriminator Threshold) für jeden Pixel, die überschritten werden muss
+
+
 \section{Schauersimulation mit CORSIKA}
+\label{sec:Corsika}
 
 CORSIKA wurde am Forschungszentrum Karlsruhe ursprünglich für das KASCADE-Experiment entwickelt und wird heute in vielen Astroteilchenexperimenten eingesetzt.
 Mit \textit{CORSIKA} werden ausgedehnte Luftschauer, ausgelöst von kosmischer Strahlung simuliert.
@@ -40,12 +87,12 @@ Die entstandenen Schauer werden dann bis zum Teleskop simuliert.
 
 \begin{figure}
  \begin{subfigure}{0.4\textwidth}
-  \includegraphics[width=\textwidth]{./Plots/Photon_1TeV_CORSIKA.png}
+  \includegraphics[width=\textwidth]{./Plots/03_MonteCarlos/Photon_1TeV_CORSIKA.png}
   \caption{Simulation eines Schauers mit 1TeV-Photon als Primärteilchen}
  \end{subfigure}
  \hspace{2.0cm}
   \begin{subfigure}{0.4\textwidth}
-  \includegraphics[width=\textwidth]{./Plots/Proton_1TeV_CORSIKA.png}
+  \includegraphics[width=\textwidth]{./Plots/03_MonteCarlos/Proton_1TeV_CORSIKA.png}
   \caption{Simulation eines Schauers mit 1TeV-Proton als Primärteilchen}
  \end{subfigure}
   \caption{ Schauersimulation mit CORSIKA mit 1TeV Primärteilchen}
@@ -117,6 +164,7 @@ Der Parameter \texttt{CERTEL} beinhaltet Standort und Größe der Teleskope, die
 % \end{itemize}
 
 \section{Simulation des Reflektors mit Reflector}
+\label{sec:Reflector}
 Wie der Name schon sagt, wird im Programm \textit{Reflector} vor allem der Reflektor simuliert, allerdings kommen noch einige Zusatzfunktionen ins Spiel.
 
 Mit \textit{Reflector} wird zuerst die atmosphärische Absorption der Cherenkovstrahlung in der Luft simuliert. 
@@ -150,6 +198,7 @@ Eine Parametrisierung des Modells enthält abhängig von der Höhe die Dichte, d
 
 
 \section{Simulation von Kamera und Elektronik mit Camera}
+\label{sec:Camera}
 Das Programm \textit{Camera} simuliert das komplette Verhalten der Kamera inklusive der Beiträge des Nachthimmeluntergrundes (NSB).
 Es werden neben den Schauern also auch der diffuse NSB und Sterne im Field of View simuliert. 
 Des Weiteren werden der Trigger und das elektronische Rauschen simuliert, sodass bei einer Änderung der Hardware der Kamera, bzw der Elektronik nicht die komplette MC Kette noch einmal durchlaufen werden muss.
@@ -157,7 +206,7 @@ In Abb.\ref{Kamera-Bild} befindet sich ein generiertes Cherenkovevent in der Kam
 
 \begin{figure}
     \centering
-    \includegraphics[width=0.6\textwidth]{./Plots/Signal_Job481_RunNr1513276_511_e3.0TeV_Zd32.2_fertig.png}
+    \includegraphics[width=0.6\textwidth]{./Plots/03_MonteCarlos/Signal_Job481_RunNr1513276_511_e3.0TeV_Zd32.2_fertig.png}
     \caption{Darstellung eines simulierten Schauers mit einer Primärteilchenenergie von $\SI{3.0}{TeV}$ in der Kamera. Dargestellt ist der Pixelinhalt in [a.u.].}
     \label{Kamera-Bild}
 \end{figure}
@@ -254,6 +303,7 @@ Es erfolgt die gleiche Kalibration wie auch bei den echten Daten und die Einstel
 % \end{itemize}
 
 \section{Calibration}
+\label{sec:Calibration}
 Ziel der Kalibration ist es, für jeden Pixel die Ladung in Photoelektronen und die Ankunftszeit der Photonen zu bestimmen.
 Dafür muss der Lichtpuls extrahiert und die Baseline abgezogen werden.
 Die Baseline wird mit Hilfe von pedestal Events bestimmt, also Events mit zufälligem Trigger, welche keine Schauerpulse enthalten sollten und dann in den richtigen Events abgezogen [vgl. Abb.\ref{Kamera-Bild-Pedestal}].
@@ -261,7 +311,7 @@ Ziel der Calibration Runs - Events mit bekanntem Lichtpuls - ist es, die Konvers
 
 \begin{figure}
     \centering
-    \includegraphics[width=0.6\textwidth]{./Plots/Pedestal_fertig.png}
+    \includegraphics[width=0.6\textwidth]{./Plots/03_MonteCarlos/Pedestal_fertig.png}
     \caption{Darstellung eines simulierten Pedestal Events in der Kamera. Dargestellt ist der Pixelinhalt in [a.u.].}
     \label{Kamera-Bild-Pedestal}
 \end{figure}
@@ -298,7 +348,7 @@ Eine typische Verteilung der Ankunftszeiten für einen Cherenkovschauer in Kamer
 
 \begin{figure}
     \centering
-    \includegraphics[width=0.6\textwidth]{./Plots/Signal_ArrivalTime_fertig.png}
+    \includegraphics[width=0.6\textwidth]{./Plots/03_MonteCarlos/Signal_ArrivalTime_fertig.png}
     \caption{Darstellung der Ankunftszeiten eines Schauers in der Kamera. Dargestellt sind die Ankunftszeiten in time slices.}
     \label{Kamera-Bild-ArrivalTimes}
 \end{figure}
@@ -342,7 +392,7 @@ Abb.\ref{Kamera-Bild-gecleant} zeigt ein gecleantes Event in der Kamera.
 
 \begin{figure}
     \centering
-    \includegraphics[width=0.6\textwidth]{./Plots/Signal_gecleant_fertig.png}
+    \includegraphics[width=0.6\textwidth]{./Plots/03_MonteCarlos/Signal_gecleant_fertig.png}
     \caption{Darstellung des gecleanten Events in der Kamera.}
     \label{Kamera-Bild-gecleant}
 \end{figure}
@@ -373,7 +423,7 @@ Im Folgenden werden einige wichtige Bildparameter aufgelistet und beschrieben (v
 
 \begin{figure}
     \centering
-    \includegraphics[width=0.9\textwidth]{./Plots/CleaningBild.png}
+    \includegraphics[width=0.9\textwidth]{./Plots/03_MonteCarlos/CleaningBild.png}
     \caption{Beispielhafte Darstellung eines bereinigten Bildes und einiger Bildparameter in der alten MAGIC-Kamera.}
     \label{CleaningBild}
 \end{figure}
@@ -419,7 +469,7 @@ Auch die Höhe des Schauermaximums wird in Superstar bestimmt.
 
 \begin{figure}
     \centering
-    \includegraphics[width=0.9\textwidth]{./Plots/Superstar.png}
+    \includegraphics[width=0.9\textwidth]{./Plots/03_MonteCarlos/Superstar.png}
     \caption{Rekonstruierte Richtung und rekonstruierter Core Impact Punkt}
     \label{Superstar}
 \end{figure}
@@ -449,12 +499,13 @@ Die Cherenkovlichtdichte ist die Lichtdichte am Boden, die von einem 1m langen T
 
 
 \section{Automatische MC-Produktion hier in Dortmund geht so}
+\label{sec:Automatische MC-Produktion}
 
 Die Monte Carlo Produktion an der TU Dortmund geschieht automatisiert mit Hilfe von bash-Skripten und einer mysql-Datenbank siehe \ref{Jobmanager}.
 
 \begin{figure}
     \centering
-    \includegraphics[width=0.9\textwidth]{./Plots/Jobmanager.png}
+    \includegraphics[width=0.9\textwidth]{./Plots/03_MonteCarlos/Jobmanager.png}
     \caption{Schematische Darstellung der automatischen MC Produktionskette.}
     \label{Jobmanager}
 \end{figure}
@@ -569,7 +620,7 @@ Die Struktur des Clusters lässt sich Abb.\ref{LiDo} entnehmen.
 
 \begin{figure}[!h]
     \centering
-    \includegraphics[width=0.9\textwidth]{./Plots/LiDO.png}
+    \includegraphics[width=0.9\textwidth]{./Plots/03_MonteCarlos/LiDO.png}
     \caption{Schematische Darstellung des Rechenclusters LiDO.}
     \label{LiDo}
 \end{figure}
@@ -616,6 +667,7 @@ Dieser Cluster stellt 1200 CPUs und 200TB(ZAHLEN NACHGUCKEN) Speicher zur Verfü
 
 
 \subsection{Wenn die MC fertig sind...Keine Ahnung, ob das interessant ist...}
+\label{sec:Wenn die MCs fertig sind}
 Sobald eine Produktion an MCs fertig gerechnet ist, werden die Daten ins Grid kopiert.
 Das heißt im Moment werden sie auf Computer im Rechenzentrum in Spanien PIC kopiert, welche zum Grid gehören und dort gespeichert, sodass sie immer über eine Internetseite erreichbar sind.
 Die Struktur, in der die MCs gespeichert sind, ist so: 

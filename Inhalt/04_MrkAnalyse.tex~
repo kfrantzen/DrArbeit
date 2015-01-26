@@ -1,10 +1,15 @@
-\chapter{MAGIC Standardanalyse}
+\chapter{Analyse von Mrk 421 mit NAGIC STandardanalyse}
 Sowohl die Programme zur Kalibration, als auch die Standard-Analyseprogramme sind im MARS (MAGIC Analysis and Reconstruction Software) -Paket enthalten.
 Dieses Software Paket ist eine Sammlung an ROOT-Skripten und Macros.
-Im Folgenden werden die wichtigsten Programme zur Gamma-Hadron-Separation, Lichtkurven-Berechnung und Spektrumsrekonstruktion kurz erklärt.
+In den folgenden Kapiteln werden die wichtigsten Programme zur Gamma-Hadron-Separation (Kapitel \ref{sec:GH-Separation}), Lichtkurven-Berechnung (Kapitel \ref{sec:Lichtkurve}) und Spektrumsrekonstruktion (Kapitel \ref{sec:Unfolding}) kurz erklärt.
+
+Danach wird die Analyse der AGN durchgeführt.
+Der Datensatz des gesamten Jahres 2012 wird in vier Teile geteilt und einzeln analysiert. 
+In Abschnitt BLABLA werden dann alle Ergebnisse zu einer gesamten Lichtkurve zusammengefasst.
 
 
 \section{Signal-Untergrund-Trennung und Energieschätzung}
+\label{sec:GH-Separation}
 \subsection{GH Separation}
 Da das Signal-Untergrund-Verhältnis zwischen Gamma-Schauern aus der Quelle und hadronischen Schauern kleiner als 1\% ist (sogar für helle Quellen), werden gute Verfahren benötigt, um das Signal vom Untergrund zu trennen.
 In der Standard-MAGIC-Analysekette übernimmt diese Aufgabe das Programm \texttt{Coach} und es wird zu diesem Zweck ein Random Forest genutzt. [siehe Breimann]
@@ -50,7 +55,7 @@ Wie in Abb.\ref{Disp} zu sehen ist, ist perfektes Ghostbusting möglich.
 
 \begin{figure}
     \centering
-    \includegraphics[width=0.5\textwidth]{./Plots/Disp.png}
+    \includegraphics[width=0.5\textwidth]{./Plots/04_MrkAnalyse/Disp.png}
     \caption{Rekonstruktion des Parameters \texttt{Disp}}
     \label{Disp}
 \end{figure}
@@ -60,6 +65,7 @@ Nur eine der beiden möglichken Quellpositionen ist kompatibel mit dem anderen T
 
 
 \section{Berechnung der Lichtkurve}
+\label{sec:Lichtkurve}
 Der Gamma-Fluss, d.h. die Rate der  Gammateilchen pro Einheitsfläche ist Ausgangsgröße für die Lichtkurve:
 
 \begin{equation}
@@ -90,7 +96,7 @@ Gammas aus der Quelle haben ein kleineres theta während der Background eine ann
 
 \begin{figure}
     \centering
-    \includegraphics[width=0.8\textwidth]{./Plots/Theta2Example.png}
+    \includegraphics[width=0.8\textwidth]{./Plots/04_MrkAnalyse/Theta2Example.png}
     \caption{$\theta^2$-Verteilung... blabla}
     \label{Disp}
 \end{figure}
@@ -122,6 +128,7 @@ Die Größe $N_{\gamma, final}$ ist die Anzahl der Gammas, die das Cleaning und 
 
 
 \section{Entfaltung des Energiespektrumpfs}
+\label{sec:Unfolding}
 Bei der Messung mit IACTs handelt es sich um eine indirekte Messung.
 Die Energie des Schauer-auslösenden Teilchens ist nicht direkt messbar.
 Die Bildparameter und damit auch die geschätzte Energie $E_{est}$ haben eine begrenzte Auflösung und erfordern die Methode der Entfaltung.
@@ -138,7 +145,7 @@ Die Probleme, die bei der Messung auftreten sind:
 
 \begin{figure}
     \centering
-    \includegraphics[width=0.8\textwidth]{./Plots/EnergyEst_EnergyTrue.pdf}
+    \includegraphics[width=0.8\textwidth]{./Plots/04_MrkAnalyse/EnergyEst_EnergyTrue.pdf}
     \caption{Estimated Energy gegen True Energy.}
     \label{EnergyEst_EnergyTrue}
 \end{figure}
@@ -192,3 +199,40 @@ Im Allgemeinen wird Regularisierung durch Addition eines Regularisierungsterms g
 Verschiedene Arten der Regularisierung können in der Analyse gewählt werden.
 Es ist ebenfalls möglich, eine Vorwärtsfaltung durchzuführen, wobei ein bestimmtes Modell als Annahme gewählt wird und freie Parameter dieses Modells bestimmt werden.
 Zum Testen ist dies eine gute Alternative, allerdings keine richtige Entfaltung, da das Ergebnis Modellabhängig bleibt.
+
+\section{MrK421 Analyse}
+In diesem Abschnitt wird die Analyse der Daten beschrieben, wobei für jede der vier Datenepochen sowohl Lichtkurve als auch Spektrum gezeigt werden.
+Dabei wird die Analyse des zweiten Teils der Daten exemplarisch für die Stereo-Analyse erklärt ABSCHNITT BLABLA, während die anderen Zeitabschnitte des Jahres mit stereoskopischer Beobachtung ABSCHNITT BLA UND BLA analog ausgewertet werden.
+Auf die Mono-Datennanalyse wird in section BLABLA danach eingegangen.
+Zusammenfassend wird noch eine Lichtkurve aller Daten gezeigt.
+
+
+\subsection{Überblick über die Daten}
+Die Daten, die mir zur Verfügung standen, sind Daten der Quelle Mrk421, die 2012 genommen wurden.
+Die Daten gliedern sich so:
+Zu Beginn des Jahres, Februar-April kam es zu komischen Sachen in der Kamera, welche dazu führen, dass verschiedene MCs benutzt werden müssen, aber es gibt schon DRS4 in beiden Teleskopen.
+Die Analyse des ersten Teils der Daten befindet sich in Kapitel BLA und die Analyse des zweiten Teils ist in Kapitel BLABLA zu finden.
+Aufgrund des Ausfalls der MAGIC II-Kamera und dem Upgrade im Juni 2012 wurden im Zeitraum von Mai bis Dezember keine Stereo-Daten von Mrk421 genommen, nur Mono.  
+Nach dem erfolgreichen Upgrade, wurde dann im Dezember wieder stereoskopisch observiert. 
+Für diesen Zeitraum gibt es wieder spezielle MCs, die benutzt werden müssen.
+
+
+\subsection{Teil2.2}
+Anhand der genommenen Daten zwischen dem 18.3. und dem 27.4. wird nun die Analyse erklärt.
+Die anderen Abschnitte mit stereoskopisch genommenen Daten werden analog dazu analysiert. 
+
+
+\subsubsection{Data-/Off-Data-/MC-/Crab-Selection und Qualitätsmerkmale}
+
+
+\subsubsection{Lichtkurve}
+
+
+\subsubsection{Spektrum}
+Crabspektrum
+richtiges mrk421
+
+
+\subsection{Teil2.1}
+
+\subsection{Teil23}
