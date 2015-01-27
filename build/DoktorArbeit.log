@@ -1,4 +1,4 @@
-This is LuaTeX, Version beta-0.79.1 (TeX Live 2014) (rev 4971)  (format=lualatex 2015.1.12)  26 JAN 2015 16:19
+This is LuaTeX, Version beta-0.79.1 (TeX Live 2014) (rev 4971)  (format=lualatex 2015.1.12)  27 JAN 2015 15:12
  restricted \write18 enabled.
 **DoktorArbeit.tex
 (./DoktorArbeit.tex
@@ -1511,7 +1511,7 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \@float@everytoks=\toks29
 \@floatcapt=\box269
 )
-Package scrhack Info: loading float hack on input line 124.
+Package scrhack Info: loading float hack on input line 125.
 
 (/usr/local/texlive/2014/texmf-dist/tex/latex/koma-script/float.hak
 File: float.hak 2014/10/28 v3.14 KOMA-Script package (hacking package float)
@@ -1839,7 +1839,7 @@ LaTeX Info: Redefining \pageref on input line 6369.
 )
 Package scrhack Info: hyperref hack deactivated because of
 (scrhack)             detection of hyperref version, that doesn't
-(scrhack)             need that hack, on input line 156.
+(scrhack)             need that hack, on input line 157.
 
 
 Package hyperref Message: Driver (autodetected): hpdftex.
@@ -2308,11 +2308,105 @@ File: ./Plots/04_MrkAnalyse/EnergyEst_EnergyTrue.pdf Graphic file (type pdf)
 Package pdftex.def Info: ./Plots/04_MrkAnalyse/EnergyEst_EnergyTrue.pdf used on 
 input line 148.
 (pdftex.def)             Requested size: 315.48541pt x 213.66882pt.
- [26] [27<./Plots/04_MrkAnalyse/EnergyEst_EnergyTrue.pdf>] [28]) [29]
+ [26] [27<./Plots/04_MrkAnalyse/EnergyEst_EnergyTrue.pdf>] [28]
+<./Plots/04_MrkAnalyse/Datenset2/Mrk421_Part2.pdf, id=340, 569.12625pt x 385.44
+pt>
+File: ./Plots/04_MrkAnalyse/Datenset2/Mrk421_Part2.pdf Graphic file (type pdf)
+ <use ./Plots/04_MrkAnalyse/Datenset2/Mrk421_Part2.pdf>
+Package pdftex.def Info: ./Plots/04_MrkAnalyse/Datenset2/Mrk421_Part2.pdf used o
+n input line 241.
+(pdftex.def)             Requested size: 236.61555pt x 160.24867pt.
+ [29<./Plots/04_MrkAnalyse/Datenset2/Mrk421_Part2.pdf>]
+<./Plots/04_MrkAnalyse/Datenset2/Part2_2_Background_Zenith.pdf, id=397, 569.126
+25pt x 385.44pt>
+File: ./Plots/04_MrkAnalyse/Datenset2/Part2_2_Background_Zenith.pdf Graphic file
+ (type pdf)
+
+<use ./Plots/04_MrkAnalyse/Datenset2/Part2_2_Background_Zenith.pdf>
+Package pdftex.def Info: ./Plots/04_MrkAnalyse/Datenset2/Part2_2_Background_Zeni
+th.pdf used on input line 303.
+(pdftex.def)             Requested size: 236.61555pt x 160.24867pt.
+ [30]
+<./Plots/04_MrkAnalyse/Datenset2/Theta_Quadrat.pdf, id=411, 569.12625pt x 377.4
+1pt>
+File: ./Plots/04_MrkAnalyse/Datenset2/Theta_Quadrat.pdf Graphic file (type pdf)
+ <use ./Plots/04_MrkAnalyse/Datenset2/Theta_Quadrat.pdf>
+Package pdftex.def Info: ./Plots/04_MrkAnalyse/Datenset2/Theta_Quadrat.pdf used 
+on input line 324.
+(pdftex.def)             Requested size: 177.45866pt x 117.68118pt.
+luaotfload | load : Lookup/name: "LatinModernMath" -> "latinmodern-math.otf"
+LaTeX Font Info:    Font shape `EU2/LatinModernMath(1)/m/n' will be
+(Font)              scaled to size 7.00006pt on input line 325.
+luaotfload | load : Lookup/name: "LatinModernMath" -> "latinmodern-math.otf"
+LaTeX Font Info:    Font shape `EU2/LatinModernMath(2)/m/n' will be
+(Font)              scaled to size 6.99986pt on input line 325.
+luaotfload | load : Lookup/name: "LatinModernMath" -> "latinmodern-math.otf"
+<./Plots/04_MrkAnalyse/Datenset2/SpectralShape.pdf, id=412, 569.12625pt x 380.4
+2125pt>
+File: ./Plots/04_MrkAnalyse/Datenset2/SpectralShape.pdf Graphic file (type pdf)
+ <use ./Plots/04_MrkAnalyse/Datenset2/SpectralShape.pdf>
+Package pdftex.def Info: ./Plots/04_MrkAnalyse/Datenset2/SpectralShape.pdf used 
+on input line 331.
+(pdftex.def)             Requested size: 177.45866pt x 118.62012pt.
+
+<./Plots/04_MrkAnalyse/Datenset2/SED.pdf, id=413, 569.12625pt x 377.41pt>
+File: ./Plots/04_MrkAnalyse/Datenset2/SED.pdf Graphic file (type pdf)
+
+<use ./Plots/04_MrkAnalyse/Datenset2/SED.pdf>
+Package pdftex.def Info: ./Plots/04_MrkAnalyse/Datenset2/SED.pdf used on input l
+ine 338.
+(pdftex.def)             Requested size: 177.45866pt x 117.68118pt.
+
+<./Plots/04_MrkAnalyse/Datenset2/LC.pdf, id=414, 569.12625pt x 377.41pt>
+File: ./Plots/04_MrkAnalyse/Datenset2/LC.pdf Graphic file (type pdf)
+
+<use ./Plots/04_MrkAnalyse/Datenset2/LC.pdf>
+Package pdftex.def Info: ./Plots/04_MrkAnalyse/Datenset2/LC.pdf used on input li
+ne 345.
+(pdftex.def)             Requested size: 177.45866pt x 117.68118pt.
+
+<./Plots/04_MrkAnalyse/Datenset2/LC_Mrk421.pdf, id=419, 569.12625pt x 385.44pt>
+File: ./Plots/04_MrkAnalyse/Datenset2/LC_Mrk421.pdf Graphic file (type pdf)
+<use ./Plots/04_MrkAnalyse/Datenset2/LC_Mrk421.pdf>
+Package pdftex.def Info: ./Plots/04_MrkAnalyse/Datenset2/LC_Mrk421.pdf used on i
+nput line 372.
+(pdftex.def)             Requested size: 315.48541pt x 213.66882pt.
+ [31<./Plots/04_MrkAnalyse/Datenset2/Part2_2_Background_Zenith.pdf>] [32<./Plots
+/04_MrkAnalyse/Datenset2/Theta_Quadrat.pdf><./Plots/04_MrkAnalyse/Datenset2/Spec
+tralShape.pdf><./Plots/04_MrkAnalyse/Datenset2/SED.pdf><./Plots/04_MrkAnalyse/Da
+tenset2/LC.pdf>]
+<./Plots/04_MrkAnalyse/Datenset2/SED_Mrk421.pdf, id=666, 569.12625pt x 353.32pt
+>
+File: ./Plots/04_MrkAnalyse/Datenset2/SED_Mrk421.pdf Graphic file (type pdf)
+ <use ./Plots/04_MrkAnalyse/Datenset2/SED_Mrk421.pdf>
+Package pdftex.def Info: ./Plots/04_MrkAnalyse/Datenset2/SED_Mrk421.pdf used on 
+input line 382.
+(pdftex.def)             Requested size: 315.48541pt x 195.8631pt.
+
+<./Plots/04_MrkAnalyse/Datenset2/Crab_mit_Literatur.pdf, id=668, 569.12625pt x 
+408.52625pt>
+File: ./Plots/04_MrkAnalyse/Datenset2/Crab_mit_Literatur.pdf Graphic file (type 
+pdf)
+ <use ./Plots/04_MrkAnalyse/Datenset2/Crab_mit_Literatur.pdf>
+Package pdftex.def Info: ./Plots/04_MrkAnalyse/Datenset2/Crab_mit_Literatur.pdf 
+used on input line 393.
+(pdftex.def)             Requested size: 315.48541pt x 226.4667pt.
+
+<./Plots/04_MrkAnalyse/Datenset2/Spektrum_Mrk421.pdf, id=670, 569.12625pt x 408
+.52625pt>
+File: ./Plots/04_MrkAnalyse/Datenset2/Spektrum_Mrk421.pdf Graphic file (type pdf
+)
+ <use ./Plots/04_MrkAnalyse/Datenset2/Spektrum_Mrk421.pdf>
+Package pdftex.def Info: ./Plots/04_MrkAnalyse/Datenset2/Spektrum_Mrk421.pdf use
+d on input line 404.
+(pdftex.def)             Requested size: 315.48541pt x 226.4667pt.
+) [33<./Plots/04_MrkAnalyse/Datenset2/LC_Mrk421.pdf>] [34<./Plots/04_MrkAnalyse/
+Datenset2/SED_Mrk421.pdf><./Plots/04_MrkAnalyse/Datenset2/Crab_mit_Literatur.pdf
+>] [35<./Plots/04_MrkAnalyse/Datenset2/Spektrum_Mrk421.pdf>]
 
 LaTeX Warning: Empty bibliography on input line 81.
 
-[30
+[36
 
 
 
@@ -2328,15 +2422,15 @@ Underfull \hbox (badness 10000) in paragraph at lines 27--29
 
 )
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 86.
- [31]
+ [37]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 86.
  (./build/DoktorArbeit.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 86.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 86.
 Package rerunfilecheck Info: File `DoktorArbeit.aux' has not changed.
-(rerunfilecheck)             Checksum: BC65BC1E0E80AA88AC68C166A8CA7F4F;18461.
+(rerunfilecheck)             Checksum: 565FCE1F55A592DA98CCE16082AF7099;21615.
 Package rerunfilecheck Info: File `DoktorArbeit.toc' has not changed.
-(rerunfilecheck)             Checksum: 6CF28D370A140D6A027CEA6CA15FA365;3769.
+(rerunfilecheck)             Checksum: 195C9A1B2C9989799AB4CE6B6114D041;4036.
 
 
 LaTeX Warning: There were multiply-defined labels.
@@ -2346,15 +2440,15 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 86.
 )
 
 Here is how much of LuaTeX's memory you used:
- 43769 strings out of 494693
+ 43861 strings out of 494693
  100000,1648299 words of node,token memory allocated
- 711 words of node memory still in use:
-   6 hlist, 2 vlist, 2 rule, 2 glue, 15 kern, 19 attribute, 58 glue_spec, 19 att
+ 769 words of node memory still in use:
+   6 hlist, 2 vlist, 2 rule, 2 glue, 16 kern, 20 attribute, 58 glue_spec, 20 att
 ribute_list, 1 action, 1 write nodes
-   avail lists: 1:48,2:9257,3:303,4:901,5:238,6:3058,7:292,8:17,9:513,10:986,11:
+   avail lists: 1:48,2:9255,3:352,4:897,5:238,6:3058,7:292,8:18,9:513,10:986,11:
 519,12:230
- 46190 multiletter control sequences out of 65536+600000
- 91 fonts using 25779631 bytes
+ 46258 multiletter control sequences out of 65536+600000
+ 97 fonts using 28145711 bytes
  70i,20n,104p,964b,939s stack positions out of 5000i,500n,10000p,200000b,100000s
 </usr/local/texlive/2014/texmf-dist/fonts/opentype/public/lm/lmroman8-regular.ot
 f></usr/local/texlive/2014/texmf-dist/fonts/opentype/public/lm-math/latinmodern-
@@ -2370,10 +2464,10 @@ pentype/public/lm/lmroman10-regular.otf></usr/local/texlive/2014/texmf-dist/font
 s/opentype/public/lm/lmroman12-regular.otf></usr/local/texlive/2014/texmf-dist/f
 onts/opentype/public/lm/lmsans10-bold.otf></usr/local/texlive/2014/texmf-dist/fo
 nts/opentype/public/lm/lmroman12-bold.otf>
-Output written on DoktorArbeit.pdf (35 pages, 3942019 bytes).
+Output written on DoktorArbeit.pdf (41 pages, 4086180 bytes).
 
-PDF statistics: 491 PDF objects out of 1000 (max. 8388607)
- 369 compressed objects within 4 object streams
- 107 named destinations out of 1000 (max. 131072)
+PDF statistics: 1021 PDF objects out of 1200 (max. 8388607)
+ 630 compressed objects within 7 object streams
+ 125 named destinations out of 1000 (max. 131072)
  113 words of extra memory for PDF output out of 10000 (max. 10000000)
 

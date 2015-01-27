@@ -35,9 +35,12 @@
 \contentsline {section}{\numberline {2.3}Entfaltung des Energiespektrumpfs}{26}{section.2.3}
 \contentsline {section}{\numberline {2.4}MrK421 Analyse}{28}{section.2.4}
 \contentsline {subsection}{\numberline {2.4.1}Überblick über die Daten}{28}{subsection.2.4.1}
-\contentsline {subsection}{\numberline {2.4.2}Teil2.2}{29}{subsection.2.4.2}
-\contentsline {subsubsection}{\nonumberline Data-/Off-Data-/MC-/Crab-Selection und Qualitätsmerkmale}{29}{section*.17}
-\contentsline {subsubsection}{\nonumberline Lichtkurve}{29}{section*.18}
-\contentsline {subsubsection}{\nonumberline Spektrum}{29}{section*.19}
-\contentsline {subsection}{\numberline {2.4.3}Teil2.1}{29}{subsection.2.4.3}
-\contentsline {subsection}{\numberline {2.4.4}Teil23}{29}{subsection.2.4.4}
+\contentsline {subsection}{\numberline {2.4.2}Datenset 2}{29}{subsection.2.4.2}
+\contentsline {subsubsection}{\nonumberline Data-/Off-Data-/MC-/Crab-Selection und Qualitätsmerkmale}{29}{section*.18}
+\contentsline {subsubsection}{\nonumberline Coach und Melibea}{30}{section*.20}
+\contentsline {subsubsection}{\nonumberline Lichtkurve von Crab}{31}{section*.22}
+\contentsline {subsubsection}{\nonumberline Lichtkurve von Mrk421}{33}{section*.24}
+\contentsline {subsubsection}{\nonumberline Spektrum von Crab}{33}{section*.27}
+\contentsline {subsubsection}{\nonumberline Spektrum von Mrk421}{33}{section*.29}
+\contentsline {subsection}{\numberline {2.4.3}Teil2.1}{33}{subsection.2.4.3}
+\contentsline {subsection}{\numberline {2.4.4}Teil23}{33}{subsection.2.4.4}
