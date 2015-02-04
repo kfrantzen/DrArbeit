@@ -200,16 +200,16 @@ Verschiedene Arten der Regularisierung können in der Analyse gewählt werden.
 Es ist ebenfalls möglich, eine Vorwärtsfaltung durchzuführen, wobei ein bestimmtes Modell als Annahme gewählt wird und freie Parameter dieses Modells bestimmt werden.
 Zum Testen ist dies eine gute Alternative, allerdings keine richtige Entfaltung, da das Ergebnis Modellabhängig bleibt.
 
-\section{MrK421 Analyse}
+\section{Mrk 421 Analyse}
 In diesem Abschnitt wird die Analyse der Daten beschrieben, wobei für jede der vier Datenepochen sowohl Lichtkurve als auch Spektrum gezeigt werden.
-Dabei wird die Analyse des zweiten Teils der Daten exemplarisch für die Stereo-Analyse erklärt ABSCHNITT BLABLA, während die anderen Zeitabschnitte des Jahres mit stereoskopischer Beobachtung ABSCHNITT BLA UND BLA analog ausgewertet werden.
-Auf die Mono-Datennanalyse wird in section BLABLA danach eingegangen.
+Dabei wird die Analyse des Datensatz 2 der Daten exemplarisch für die Stereo-Analyse erklärt (Kapitel \ref{subsec:Datenset_2}), während die anderen Zeitabschnitte des Jahres mit stereoskopischer Beobachtung (Kapitel \ref{subsec:Datenset_1} und Kapitel \ref{subsec:Datenset_4}) analog ausgewertet werden.
+Auf die Mono-Datennanalyse wird in Kapitel \ref{subsec:Datenset_3} eingegangen.
 Zusammenfassend wird noch eine Lichtkurve aller Daten gezeigt.
 
 
 \subsection{Überblick über die Daten}
-Die Daten, die mir zur Verfügung standen, sind Daten der Quelle Mrk421, die 2012 genommen wurden.
-Die Daten gliedern sich so folgendermaßen:
+Die Daten, die für diese Analyse zur Verfügung standen, sind Daten der Quelle Mrk421, die 2012 genommen wurden.
+Die Daten gliedern sich folgendermaßen:
 
 \begin{itemize}
  \item Datenset 1: 2012-02-25 - 2012-02-29
@@ -218,23 +218,25 @@ Die Daten gliedern sich so folgendermaßen:
  \item Datenset 4: 2012-12-11 - 2012-12-23
 \end{itemize}
 
-Datenset 1 und Datenset 2 unterscheiden sich in ihrer PSF, weswegen zwei verschiedene MC-Sets verwendet werden.
-In beiden Zeitbereichen war eine Stereobeobachtung mit beiden Teleskopen möglich.
+Datenset 1 und Datenset 2 unterscheiden sich in ihrer PSF, weswegen zwei verschiedene MC-Sets in der Analyse verwendet werden.
+In beiden Zeitbereichen wurde stereoskopisch beobachtet.
 
 Beim 3. Datenset handelt es sich um Mono-Daten. 
-Aufgrund der kaputten MAGIC I - Kamera und der geplanten Upgrade-Pause, wurden nur MAGIC II betrieben.
+Aufgrund der kaputten MAGIC I - Kamera und der geplanten Upgrade-Pause, wurde nur MAGIC II betrieben.
 
-Im 4. Datenset war das Upgrade abgeschlossen und die alte MAGIC I Kamera durch eine neue Kamera ersetzt und es wurden wieder Stereobeobachtungen durchgeführt.
+Im 4. Datenset war das Upgrade abgeschlossen, die alte MAGIC I Kamera durch eine neue Kamera ersetzt und es wurden wieder Stereo-Beobachtungen durchgeführt.
 Aufgrund der Hardware-Veränderungen und einer anderen PSF wurden wieder neue MCs produziert.
 
-Die Analyse des ersten Teils der Daten befindet sich in Kapitel BLA und die des zweiten Teils in Kapitel BLABLA.
-Danach erfolgt die dritte Analyseperiode mit Stereobeobachtungen in Kapitel BLA.
-Die Mono-Analyse wird in Kapitel HORST beschrieben.
+Die Analyse des ersten Datensets befindet sich in Kapitel \ref{subsec:Datenset_1} und die des zweiten Datensets in Kapitel \ref{subsec:Datenset_2}.
+Danach erfolgt die dritte Analyseperiode mit Stereobeobachtungen in Kapitel \ref{subsec:Datenset_4}.
+Die Mono-Analyse wird in Kapitel \ref{subsec:Datenset_3} beschrieben.
 
 
 \subsection{Datenset 2}
-Anhand der genommenen Mrk421 - Daten zwischen dem 18.3.2012 und dem 27.4.2012 wird nun die Analyse erklärt.
-Diese Daten wurden unter einem Zenitwinkel von bis zu 30° genommen (siehe Abb.\ref{Datenset2_fZD}).
+\label{subsec:Datenset_2}
+Anhand der genommenen Mrk421-Daten, neun Tage zwischen dem 18.3.2012 und dem 27.4.2012, wird nun die Stereo-Analyse erklärt.
+
+Diese Daten wurden in einem Zenitwinkelbereich zwischen 12° und 30° genommen (siehe Abb.\ref{Datenset2_fZD}).
 
 \begin{figure}
     \centering
@@ -244,23 +246,24 @@ Diese Daten wurden unter einem Zenitwinkel von bis zu 30° genommen (siehe Abb.\
 \end{figure}
 
 
-Da dieser Datensatz die meisten Daten beinhaltet, wird die Analyse examplarisch und ausführlich hieran durchgeführt.
+Da dieser Datensatz die meisten Daten beinhaltet, wird die Analyse examplarisch hiermit durchgeführt.
 
 Als Off-Daten dienen Daten anderer Quellen, welche in der gleichen Zeitspanne wie die zu analysierende liegen.
 
-Mit Hilfe von Crab-Daten werden die Einstellungen für die Lichtkurvenbestimmung und Spektrumsrekonstruktion gesucht, da Crab einen bekannten stabilen Fluss hat. 
+Mit Hilfe von Crab-Daten werden die Einstellungen für die Lichtkurvenbestimmung und Entfaltung gesucht, da Crab einen bekannten stabilen Fluss hat. 
 
 
 \subsubsection{Data-/Off-Data-/MC-/Crab-Selection und Qualitätsmerkmale}
-Zunächst werden die Daten in diesem Zeitraum einem Datencheck unterzogen und die Daten herauszufiltern, die bei dunklen Bedingungen genommen wurden. 
+Zunächst werden die Superstar-Daten einem Datencheck unterzogen und die Daten herauszufiltern, die bei guten Bedingungen genommen wurden.
+Gute Bedingungen sind durch dunkle Nächte, wenig Störlicht durch z.B. Autoscheinwerfer und keine Hardware- oder Softwareprobleme gekennzeichnet.
 
-Dafür wurde zunächst ein Cut im DC (MI < 500, M II < 800) durchgeführt.
+Um dunkle Bedingungen zu gewährleisten wurde zunächst ein Cut im DC (MI < 500, M II < 800) NACHGUCKEN EINHEIT durchgeführt.
 Danach wurden mit Hilfe des MARS Macros \textit{Quate} alle Daten mit einem Zenitwinkel < 35° ausgewählt, Runs mit einer Länge unter 10s und Runs mit einer Abweichung des Pointing von 15arcmin verworfen.
-Außerdem wurden die Mittelwerte der Parameter Rate, Number of Islands, Concentration, Width, Length gebildet und ebenfalls Ausreißer aussortiert um eine gute Qualität der Daten zu gewährleisten.
+Außerdem wurden die Mittelwerte der Parameter Rate, \texttt{Number of Islands}, \texttt{Concentration}, \texttt{Width}, \texttt{Length} gebildet und ebenfalls Ausreißer aussortiert um eine gute Qualität der Daten zu gewährleisten.
 
 Diese Kriterien für den Datencheck wurden für die Mrk421-Daten, die Crab-Daten und die Off-Daten angewendet.
 
-In der Tabelle \ref{tab:Datenset2} ist aufgelistet, welche Daten nach der Datenauswahl für die Analyse zur Verfügung stehen.
+In der Tabelle \ref{tab:Datenset2} ist aufgelistet, welche Daten nach dem Datencheck für die Analyse zur Verfügung stehen.
 
 
 \begin{table}[!h]
@@ -272,31 +275,31 @@ In der Tabelle \ref{tab:Datenset2} ist aufgelistet, welche Daten nach der Datena
   Quelle & nachm Datencheck übbere Zeit\\
   \midrule
   \midrule
-  Mrk421 & 319min\\
+  Mrk421 & 272min\\
   \midrule
-  Crab & 400min\\
+  Crab & 161min\\
   \midrule
-  0FGLJ0631 & 113min \\
-  1ES1011 & 363min \\
-  1ES1426 & 428min \\
-  PG1553 & 1022min \\
-  PKS1222 & 277min \\
-  SegueJ & 3414min \\
+  0FGLJ0631 & 77min \\
+  1ES1011 & 492min \\
+  1ES1426 & 424min \\
+  PG1553 & 971min \\
+  PKS1222 & 247min \\
+  SegueJ & 3252min \\
   \bottomrule
   \bottomrule
 \end{tabular}
 \end{table}
 
-Für diesen Teil der Analyse wurden die in Dortmund produzierten Standard-MC-Daten im Zenitbereich 5-35° genommen, in deren Simulation die alte MAGIC I Kamera simuliert wurde, allerdings schon der neue DRS4-Chip benutzt wurde.
-Die PSF für MAGIC I ist 10.5 und die Mirror Fraction 0.58, während diese Werte für MAGIC II 10.2mm und 0.70 sind.
+Für diesen Teil der Analyse wurden die in Dortmund produzierten Standard-MC-Daten im Zenitbereich 5°-35° genommen, in deren Simulation die alte MAGIC I Kamera simuliert wurde, allerdings schon der neue DRS4-Chip benutzt wurde.
+Die PSF für MAGIC I ist 10.5mm und die Mirror Fraction 0.58, während diese Werte für MAGIC II 10.2mm und 0.70 sind.
 
 Es ist zu beachten, dass für alle Daten (Mrk 421/Crab/Off) und die MCs das gleiche Cleaning benutzt wird, da zu dieser Zeit zwei verschiedene Cleaning-Schwellen im Next-Neighbor-Cleaning gebräuchlich waren.
 Die Core und Neighbor-Schwelle beträgt in diesen Daten 6, bzw. 3.
 
 
 \subsubsection{Coach und Melibea}
-Für das Training des RF für die GH-Separation und die Disp-Estimation ist es wichtig, dass in jedem Zenitbin genug Background-Daten vorhanden sind.
-Wie in Abb.\ref{Datenset2_Zenitverteilung_Off} ist das gegeben.
+Für das Training des RF für die GH-Separation und die Disp-Estimation sowie das Erstellen der Look Up Tables zur Energierekonstruktik ist es wichtig, dass in jedem Zenitbin genug Background- und MC-Daten vorhanden sind.
+Wie in Abb.\ref{Datenset2_Zenitverteilung_Off} und Abb.\ref{Datenset2_Zenitverteilung_MC} zu sehen ist, ist diese Voraussetzung erfüllt.
 
 \begin{figure}
     \centering
@@ -305,16 +308,23 @@ Wie in Abb.\ref{Datenset2_Zenitverteilung_Off} ist das gegeben.
     \label{Datenset2_Zenitverteilung_Off}
 \end{figure}
 
-Der MC-Datensatz wird nun in zwei Teile geteilt.
+\begin{figure}
+    \centering
+    \includegraphics[width=0.6\textwidth]{./Plots/04_MrkAnalyse/Datenset2/MPointingPos_1.fZd.pdf}
+    \caption{Zenitverteilung der des Trainingssets der MC.}
+    \label{Datenset2_Zenitverteilung_MC}
+\end{figure}
+
+Der MC-Datensatz wird in zwei Teile geteilt.
 Der eine Teil, das Trainings-Set, wird zusammen mit den Off-Daten zum Trainieren des RF für die GH-Separtion und für Disp benutzt, sowie zum Aufstellen der Look Up Tables für die Energie.
 
-Sobald Coach beendet ist, werden in Melibea die Daten nach Gamma- und Hadron-Events klassifiziert und jedem Event eine geschätzte Energie und ein Disp-Wert zugeordnet.
+Sobald das Training der RF und das Erstellen der Look Up Tables in Coach beendet ist, werden in Melibea die Daten nach Gamma- und Hadron-Events klassifiziert und jedem Event eine geschätzte Energie und ein Disp-Wert zugeordnet.
 Das gleiche geschieht auch mit den Crab-Daten und dem anderen Teil der MCs, dem Test-Set.
 
 
 \subsubsection{Lichtkurve von Crab}
 Wie in Kapitel \ref{sec:Lichtkurve} beschrieben, wird nun sowohl für die Crab-Daten als auch für die Mrk421 Daten eine Lichtkurve erstellt.
-Mit Hilfe der Crab-Daten werden die passenden Parameter (Hadroneffizienz und Theta-Quadrat-Effizienz) für die Lichtkurven-Bestimmung für Mrk421 ausgewählt.
+Da der Fluss von Crab stabil und bekannt ist, werden mit Hilfe der Crab-Daten die passenden Parameter (Hadroneffizienz und Theta-Quadrat-Effizienz) für die Lichtkurven-Bestimmung in diesem Zeitraum für Mrk421 ausgewählt.
 
 Wie in Abb.\ref{Datenset2_Flute_Plots_Crab} zu sehen, ist es möglich mit Flute neben der Lichtkurve (vgl. Abb.\ref{Datenset2_LC_Crab}) auch noch einen Theta Quadrat Plot (vgl. Abb.\ref{Datenset2_theta^2_Crab}), sowie die spektrale Energie-Verteilung (vgl. Abb.\ref{Datenset2_SED_Crab}) zu berechnen.
 
@@ -353,8 +363,9 @@ Wie in Abb.\ref{Datenset2_Flute_Plots_Crab} zu sehen, ist es möglich mit Flute 
 \end{figure}
 
 In Abb.\ref{Datenset2_theta^2_Crab} ist der $\Theta^2$-Plot für Crab zu sehen, für kleine $\theta$ ist die Anzahl der Excess-Events wie zu erwarten sehr hoch.
-In Abb.\ref{Datenset2_SpectralShape_Crab}, bzw in Abb.\ref{Datenset2_SED_Crab} sieht man die spektrale Energiedichte, bzw. die spektrale Energiedichte gewichtet mit $E^2$.
-Wie zu sehen ist, passt das angenommene Spektrum gut zu den Daten, bzw. zum bekannten Crab-Spektrum.
+In Abb.\ref{Datenset2_SpectralShape_Crab} ist der Fluss, bzw. das differentielle Energiespektrum zu sehen.
+Abb.\ref{Datenset2_SED_Crab} zeigt die spektrale Energieverteilung.
+Wie in Abb.\ref{Datenset2_SpectralShape_Crab} und in Abb.\ref{Datenset2_SED_Crab} zu sehen ist, passt das angenommene Spektrum gut zu den Daten, bzw. zum bekannten Crab-Spektrum.
 Angenommen wurde folgendes Spektrum:
 
 \begin{equation}
@@ -362,7 +373,8 @@ dN/dE=\left(\frac{x}{300}\right)^{-2.31-0.26\cdot log10(x/300.)}
  %pow(x/300.,-2.31-0.26*log10(x/300.))
 \end{equation}
 
-Die Lichtkurve in Abb.\ref{Datenset2_LC_Crab} zeigt, dass der Crab-Fluss in diesem Zeitraum um den mittleren Fluss schwankt. 
+Die Lichtkurve in Abb.\ref{Datenset2_LC_Crab} zeigt, dass der Crab-Fluss in diesem Zeitraum um den mittleren Crab-Fluss schwankt.
+Die Parameter, die zum Erstellen der Lichtkurve in \textit{Flute} verwendet wurden, erweisen sich also als vernünftig.
 
 \subsubsection{Lichtkurve von Mrk421}
 Es wird nun mit den gleichen Effizienz-Einstellungen wie für Crab eine Lichtkurve für Mrk421 angefertigt.
@@ -375,7 +387,12 @@ Es wird nun mit den gleichen Effizienz-Einstellungen wie für Crab eine Lichtkur
 \end{figure}
 
 Abb.\ref{Datenset2_LC_Mrk421} zeigt, dass der Fluss von Mrk421 im Vergleich zu Crab wesentlich niedriger ist.
-Auch die spektrale Energieverteilung sieht anders aus (vgl. Abb.\ref{Datenset2_SED_Mrk421}).
+Auch die spektrale Energieverteilung sieht anders aus (vgl. Abb.\ref{Datenset2_SED_Mrk421}), da ein anderes Spektrum angenommen wurde:
+
+\begin{equation}
+dN/dE=\left(\frac{x}{300}\right)^{-2.75}.
+\end{equation}
+
 
 \begin{figure}
     \centering
@@ -386,7 +403,8 @@ Auch die spektrale Energieverteilung sieht anders aus (vgl. Abb.\ref{Datenset2_S
 
 
 \subsubsection{Spektrum von Crab}
-Abb.\ref{Datenset2_CombunFold_Crab} zeigt das entfaltet Spektrum von Crab mit Literaturwert.
+Mit Hilfe von CombUnfold wird nun das Spektrum von Crab entfaltet.
+Abb.\ref{Datenset2_CombunFold_Crab} zeigt das entfaltete Spektrum von Crab mit Literaturwert.
 
 \begin{figure}
     \centering
@@ -395,9 +413,12 @@ Abb.\ref{Datenset2_CombunFold_Crab} zeigt das entfaltet Spektrum von Crab mit Li
     \label{Datenset2_CombunFold_Crab}
 \end{figure}
 
+Es zeigt sich, dass die entfalteten Datenpunkte mit Tikhonov-Regularisierung sehr gut zum Literaturwert passen.
 
 \subsubsection{Spektrum von Mrk421}
-Abb.\ref{Datenset2_CombunFold_Mrk421} zeigt das entfaltet Spektrum von Mrk421 mit 5 verschiedenen Regularisierungssorten.
+Abb.\ref{Datenset2_CombunFold_Mrk421} zeigt das entfaltet Spektrum von Mrk421 mit 5 verschiedenen Regularisierungsmethoden.
+Wie man sieht, zeigen die entfalteten Datenpunkte keine großen Abweichung voneinander. 
+Lediglich für kleine Energien unterscheiden sich die Ergebnisse etwas.
 
 \begin{figure}
     \centering
@@ -406,7 +427,258 @@ Abb.\ref{Datenset2_CombunFold_Mrk421} zeigt das entfaltet Spektrum von Mrk421 mi
     \label{Datenset2_CombunFold_Mrk421}
 \end{figure}
 
+Es wurde der Fit, der in der Entfaltung mit Tikhonov-Regularisierung erstellt wurde zusätzlich dargestellt, da diese Regularisierungsmethode in den meisten Fällen die besten Ergebnisse lieferte.
+Folgende Funktion wurde angenommen:
 
-\subsection{Teil2.1}
+\begin{equation}
+ \frac{dF}{dE}=f_0\left( \frac{E}{r} \right)^\alpha.
+\end{equation}
 
-\subsection{Teil23}
+Der Fit lieferte das Ergebnis:
+
+\begin{equation}
+ \frac{dF}{dE}=2,74 \cdot 10^{-10}\left( \frac{E}{0,3 \si{TeV}} \right)^{-2.64} [Einheit].
+\end{equation}
+
+
+\FloatBarrier
+
+\subsection{Datenset 1}
+\label{subsec:Datenset_1}
+Der folgende Teil handelt von der kurzen Analyse der Daten vom 25.2.2012 und 29.2.2012.
+Da diese Daten eine andere PSF haben als die Daten aus Datenset 1, gibt es eigene MCs dafür und die Daten müssen getrennt von Datenset 2 analysiert werden.
+Die Daten an diesen zwei Tagen haben ebenfalls einen Zenitbereich bis 35°.
+
+\subsubsection{Datencheck}
+Der Datencheck für diese Daten geschieht analog zum Datencheck des Datensets 2. 
+Tabelle \ref{tab:Datenset1} zeigt, wieviel Mrk421-/Crab- und Off-Daten nach dem Datencheck übrig sind.
+
+\begin{table}[!h]
+\centering
+\caption{Daten nach Datencheck}
+\label{tab:Datenset1}
+\begin{tabular}{lc}
+  \toprule
+  Quelle & Obersvationszeit\\
+  \midrule
+  \midrule
+  Mrk421 & 70min\\
+  \midrule
+  Crab & 20min\\
+  \midrule
+  0FGLJ0631 & 3min \\
+  1ES1011 & 172min \\
+  HB89 & 87min \\
+  PG1553 & 115min \\
+  PKS1222 & 106min \\
+  SegueJ & 401min \\
+  \bottomrule
+  \bottomrule
+\end{tabular}
+\end{table}
+
+\subsubsection{Lichtkurve}
+Mit Hilfe von Crab-Daten wurden wieder die Einstellungen für die Lichtkurve von Mrk421 bestimmt, die sich in Abb.\ref{Datenset1_LC_Mrk421} befindet.
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.8\textwidth]{./Plots/04_MrkAnalyse/Datenset1/Datenset1_LC_Mrk421.pdf}
+    \caption{Lichtkurve von Mrk421.}
+    \label{Datenset1_LC_Mrk421}
+\end{figure}
+
+Wie man sehen kann, ist der Fluss an diesen beiden Tagen sehr niedrig verglichen mit den ersten Tagen aus Datenset 2.
+
+Die Lichtkurve von Crab beinhaltet nur 20min an Daten an einem Tag.
+Deswegen ist sie nicht so sehr spannend und aussagekräftig (vgl. Abb.\ref{Datenset1_LC_Crab}).
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.8\textwidth]{./Plots/04_MrkAnalyse/Datenset1/Datenset1_LC_Crab.pdf}
+    \caption{LC von Crab.}
+    \label{Datenset1_LC_Crab}
+\end{figure}
+
+\FloatBarrier
+
+\subsubsection{Spektrum}
+Analog zu Datenset 2 wurde auch wieder ein Spektrum bestimmt.
+Das Resultat befindet sich in Abb.\ref{Datenset1_Spektrum_Mrk421}
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.8\textwidth]{./Plots/04_MrkAnalyse/Datenset1/Spektrum_Mrk421.pdf}
+    \caption{Spektrum von Mrk421.}
+    \label{Datenset1_Spektrum_Mrk421}
+\end{figure}
+
+Es ist zu sehen, dass die Entfaltungen ohne Tikhonov-Regularisierung im hohen Energiebereich nicht mehr funktionieren.
+Auch bei kleinen Energien unterscheiden sie sich etwas.
+Aufgrund des großen Energiebereichs, in dem die Entfaltung mit Tikhonov-Regularisierung noch funktioniert, wird wieder dieser Fit der Punkte eingezeichnet.
+Der Fit lieferte folgendes Ergebnis:
+
+\begin{equation}
+ \frac{dF}{dE}=1,42 \cdot 10^{-11}\left( \frac{E}{0,3 \si{TeV}} \right)^{-3.01} [Einheit].
+\end{equation}
+
+Es wurde keine Entfaltung der Crab-Daten vorgenommen, da die Observationszeit sehr sehr kurz ist und ich nichts tolles erwarte.
+
+\FloatBarrier
+
+\subsection{Datenset 4}
+\label{subsec:Datenset_4}
+Dieses Datenset beinhaltet die ersten Daten, die von Mrk421 nach dem Austausch der MAGIC I Kamera genommen wurden. 
+Genauso wie Datenset 1 umfasst dieses Datenset nur wenige Tage. 
+An drei Tagen wurde Mrk421 im Stereo-Modus observiert. 
+
+\subsubsection{Datencheck}
+Der Datencheck für diese Daten geschieht analog zum Datencheck des Datensets 2. 
+Tabelle \ref{tab:Datenset4} zeigt, welche Mrk421-/Crab- und Off-Daten nach dem Datencheck übrig sind.
+
+\begin{table}[!h]
+\centering
+\caption{Daten nach Datencheck}
+\label{tab:Datenset4}
+\begin{tabular}{lc}
+  \toprule
+  Quelle & nachm Datencheck übbere Zeit\\
+  \midrule
+  \midrule
+  Mrk421 & 74min\\
+  \midrule
+  Crab & 852min\\
+  \midrule
+  1ES0229 & 221min \\
+  NGC1275 & 112min \\
+  SegueA & 900min  \\
+  \bottomrule
+  \bottomrule
+\end{tabular}
+\end{table}
+
+\subsubsection{Lichtkurve}
+Die Lichtkurve von Crab befindet sich in Abb. \ref{Datenset4_LC_Crab}.
+und die Lichtkurve von Mrk421 in Abb.\ref{Datenset4_LC_Mrk421} 
+Wie man sehen kann, liegen auch hier die Flüsse ganz schön niedrig.
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.8\textwidth]{./Plots/04_MrkAnalyse/Datenset4/Datenset4_LC_Crab.png}
+    \caption{Lichtkurve Crab.}
+    \label{Datenset4_LC_Crab}
+\end{figure}
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.8\textwidth]{./Plots/04_MrkAnalyse/Datenset4/Datenset4_LC_Mrk421.png}
+    \caption{Lichtkurve Mrk421.}
+    \label{Datenset4_LC_Mrk421}
+\end{figure}
+
+
+\subsubsection{Spektrum}
+Das entfaltete Spektrum von Mrk421 befindet sich in Abb.\ref{Datenset4_Spektrum_Mrk421}.
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.8\textwidth]{./Plots/04_MrkAnalyse/Datenset4/Datenset4_Spektrum_Mrk421.png}
+    \caption{Spektrum Mrk421.}
+    \label{Datenset4_Spektrum_Mrk421}
+\end{figure}
+
+Der Fit lieferte folgendes Ergebnis:
+
+\begin{equation}
+ \frac{dF}{dE}=3,14 \cdot 10^{-10}\left( \frac{E}{0,3 \si{TeV}} \right)^{-3.16} [Einheit].
+\end{equation}
+
+
+\FloatBarrier
+
+\subsection{Datenset 3}
+\label{subsec:Datenset_3}
+
+\subsubsection{Datencheck}
+Der Datencheck für diese Daten geschieht analog zum Datencheck der anderen Datensets.
+Es werden Daten auf Star-Level, und nicht Superstar-Level wie vorher, analysiert.
+Tabelle \ref{tab:Datenset3} zeigt, welche Mrk421-und Off-Daten nach dem Datencheck übrig sind.
+Ein Beobachtung von Crab gab es zu diesem Zeitraum nicht.
+
+\begin{table}[!h]
+\centering
+\caption{Daten nach Datencheck}
+\label{tab:Datenset3}
+\begin{tabular}{lc}
+  \toprule
+  Quelle & nachm Datencheck übbere Zeit\\
+  \midrule
+  \midrule
+  Mrk421 & 333min\\
+  \midrule
+  1ES1959 & 360min \\
+  AE-Aqr & 54min  \\
+  HD215227 & 649min \\
+  M87 & 64min \\
+  \bottomrule
+  \bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{Energieschätzung}
+Im Vergleich zu der Stereo-Analyse müssen für die Mono-Analyse ältere Programme benutzt werden.
+Es wird nicht \textit{Coach} zum Erstellen der RFs für die Disp-Bestimmunf und Gamma-Hadron-Separation benutzt, sondern \textit{Osteria}.
+Im Gegensatz zur Standardanalyse werden keine LUTs zur Energieschätzung benutzt, sondern ebenfalls RFs.
+Die GH-Separation und Disp-Bestimmung wird ebenfalls mit RFs durchgeführt.
+
+\subsubsection{Lichtkurve}
+Nachdem die Ereignisse klassifiziert worden sind und ihnen Disp- sowie eine geschätzte Energie zugeordnet worden sind, wird wieder eine Lichtkurve erstellt.
+Dies geschieht mit Hilfe des Programms \textit{Fluxlc}.
+Obwohl keine Crab-Daten zur Verfügung standen, um die Einstellungen für die Lichtkurve mit einem bekannten Fluss zu überprüfen, wird eine Lichtkurve für Mrk421 erstellt.
+Abb.\ref{Datenset3_LC_Mrk421} zeigt die Lichtkurve für Mrk421.
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.8\textwidth]{./Plots/04_MrkAnalyse/Datenset3/Datenset3_LC_Mrk421.png}
+    \caption{LC Mrk421.}
+    \label{Datenset3_LC_Mrk421}
+\end{figure}
+
+Es zeigt sich, dass der Fluss von Mrk421 in diesem Zeitbereich genau wie in den anderen Zeitbereichen ebenfalls sehr niedrig ist.
+
+
+\subsubsection{Spektrum}
+
+Wie in Abb.\ref{Datenset3_Spektrum_Mrk421} zu sehen ist, werden die Daten abschließend wieder entfaltet.
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.8\textwidth]{./Plots/04_MrkAnalyse/Datenset3/Datenset3_Spektrum_Mrk421.png}
+    \caption{Spektrum Mrk421.}
+    \label{Datenset3_Spektrum_Mrk421}
+\end{figure}
+
+Der Fit an die Datenpunkte liefert folgendes Ergebnis:
+
+\begin{equation}
+ \frac{dF}{dE}=(5,42 \pm 0.23) \cdot 10^{-10}\left( \frac{E}{0,3 \si{TeV}} \right)^{(-3.25 \pm 0.09)} [Einheit].
+\end{equation}
+
+\FloatBarrier
+
+
+\section{LC für Alles}
+
+Nachdem für jedes Datenset einzelne Lichtkurven erstellt worden sind, sieht man in Abb.\ref{Alles_LC_Mrk421} nun alle Daten in einer Lichtkurve dargestellt.
+Da zwischen dem 20.06.2012 und dem 10.12.2012 gar keine Daten von Mrk421 genommen wurden, weil die MAGIC I -Kamera außer Betrieb war und das große Upgrade durchgeführt wurde, klafft eine große Lücke in der Lichtkurve.
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.8\textwidth]{./Plots/04_MrkAnalyse/Alles_LC.png}
+    \caption{LC Mrk421.}
+    \label{Alles_LC_Mrk421}
+\end{figure}
+
+Es ist zu sehen, dass alle Datenpunkte etwa auf dem gleichen niedrigen Niveau liegen.
+Der Fluss von Crab wird zu keinem Zeitpunkt erreicht. 
+Physikalisch interessante Phänomene wie Flares sind auch nicht zu sehen.
+Im April 2013 trat beispielsweise ein Flare auf.

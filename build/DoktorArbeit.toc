@@ -33,14 +33,26 @@
 \contentsline {subsection}{\numberline {2.2.2}Effektive On Zeit}{25}{subsection.2.2.2}
 \contentsline {subsection}{\numberline {2.2.3}Effektive Fläche}{26}{subsection.2.2.3}
 \contentsline {section}{\numberline {2.3}Entfaltung des Energiespektrumpfs}{26}{section.2.3}
-\contentsline {section}{\numberline {2.4}MrK421 Analyse}{28}{section.2.4}
+\contentsline {section}{\numberline {2.4}Mrk 421 Analyse}{28}{section.2.4}
 \contentsline {subsection}{\numberline {2.4.1}Überblick über die Daten}{28}{subsection.2.4.1}
 \contentsline {subsection}{\numberline {2.4.2}Datenset 2}{29}{subsection.2.4.2}
 \contentsline {subsubsection}{\nonumberline Data-/Off-Data-/MC-/Crab-Selection und Qualitätsmerkmale}{29}{section*.18}
 \contentsline {subsubsection}{\nonumberline Coach und Melibea}{30}{section*.20}
-\contentsline {subsubsection}{\nonumberline Lichtkurve von Crab}{31}{section*.22}
-\contentsline {subsubsection}{\nonumberline Lichtkurve von Mrk421}{33}{section*.24}
-\contentsline {subsubsection}{\nonumberline Spektrum von Crab}{33}{section*.27}
-\contentsline {subsubsection}{\nonumberline Spektrum von Mrk421}{33}{section*.29}
-\contentsline {subsection}{\numberline {2.4.3}Teil2.1}{33}{subsection.2.4.3}
-\contentsline {subsection}{\numberline {2.4.4}Teil23}{33}{subsection.2.4.4}
+\contentsline {subsubsection}{\nonumberline Lichtkurve von Crab}{32}{section*.23}
+\contentsline {subsubsection}{\nonumberline Lichtkurve von Mrk421}{33}{section*.25}
+\contentsline {subsubsection}{\nonumberline Spektrum von Crab}{33}{section*.28}
+\contentsline {subsubsection}{\nonumberline Spektrum von Mrk421}{35}{section*.30}
+\contentsline {subsection}{\numberline {2.4.3}Datenset 1}{36}{subsection.2.4.3}
+\contentsline {subsubsection}{\nonumberline Datencheck}{36}{section*.32}
+\contentsline {subsubsection}{\nonumberline Lichtkurve}{36}{section*.34}
+\contentsline {subsubsection}{\nonumberline Spektrum}{38}{section*.37}
+\contentsline {subsection}{\numberline {2.4.4}Datenset 4}{38}{subsection.2.4.4}
+\contentsline {subsubsection}{\nonumberline Datencheck}{39}{section*.39}
+\contentsline {subsubsection}{\nonumberline Lichtkurve}{39}{section*.41}
+\contentsline {subsubsection}{\nonumberline Spektrum}{40}{section*.44}
+\contentsline {subsection}{\numberline {2.4.5}Datenset 3}{41}{subsection.2.4.5}
+\contentsline {subsubsection}{\nonumberline Datencheck}{41}{section*.46}
+\contentsline {subsection}{\numberline {2.4.6}Energieschätzung}{42}{subsection.2.4.6}
+\contentsline {subsubsection}{\nonumberline Lichtkurve}{42}{section*.48}
+\contentsline {subsubsection}{\nonumberline Spektrum}{42}{section*.50}
+\contentsline {section}{\numberline {2.5}LC für Alles}{43}{section.2.5}

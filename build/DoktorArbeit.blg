@@ -1,9 +1,9 @@
-[0] Config.pm:320> INFO - This is Biber 1.9
+[1] Config.pm:320> INFO - This is Biber 1.9
 [1] Config.pm:323> INFO - Logfile is 'build/DoktorArbeit.blg'
-[58] biber:277> INFO - === Tue Jan 27, 2015, 12:31:27
-[59] Biber.pm:333> INFO - Reading 'build/DoktorArbeit.bcf'
-[166] Biber.pm:635> INFO - Found 0 citekeys in bib section 0
-[167] Utils.pm:144> WARN - The file 'build/DoktorArbeit.bcf' does not contain any citations!
-[202] bbl.pm:517> INFO - Writing 'build/DoktorArbeit.bbl' with encoding 'UTF-8'
-[202] bbl.pm:606> INFO - Output to build/DoktorArbeit.bbl
-[203] Biber.pm:106> INFO - WARNINGS: 1
+[58] biber:277> INFO - === Wed Feb  4, 2015, 15:24:11
+[58] Biber.pm:333> INFO - Reading 'build/DoktorArbeit.bcf'
+[198] Biber.pm:635> INFO - Found 0 citekeys in bib section 0
+[213] Utils.pm:144> WARN - The file 'build/DoktorArbeit.bcf' does not contain any citations!
+[334] bbl.pm:517> INFO - Writing 'build/DoktorArbeit.bbl' with encoding 'UTF-8'
+[334] bbl.pm:606> INFO - Output to build/DoktorArbeit.bbl
+[335] Biber.pm:106> INFO - WARNINGS: 1

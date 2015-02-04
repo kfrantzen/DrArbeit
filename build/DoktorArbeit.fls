@@ -412,6 +412,7 @@ INPUT ./Plots/04_MrkAnalyse/Theta2Example.png
 INPUT ./Plots/04_MrkAnalyse/EnergyEst_EnergyTrue.pdf
 INPUT ./Plots/04_MrkAnalyse/Datenset2/Mrk421_Part2.pdf
 INPUT ./Plots/04_MrkAnalyse/Datenset2/Part2_2_Background_Zenith.pdf
+INPUT ./Plots/04_MrkAnalyse/Datenset2/MPointingPos_1.fZd.pdf
 INPUT ./Plots/04_MrkAnalyse/Datenset2/Theta_Quadrat.pdf
 INPUT /usr/local/texlive/2014/texmf-dist/fonts/tfm/public/cm/cmmi6.tfm
 INPUT /usr/local/texlive/2014/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam7.tfm
@@ -423,9 +424,17 @@ INPUT ./Plots/04_MrkAnalyse/Datenset2/LC_Mrk421.pdf
 INPUT ./Plots/04_MrkAnalyse/Datenset2/SED_Mrk421.pdf
 INPUT ./Plots/04_MrkAnalyse/Datenset2/Crab_mit_Literatur.pdf
 INPUT ./Plots/04_MrkAnalyse/Datenset2/Spektrum_Mrk421.pdf
+INPUT ./Plots/04_MrkAnalyse/Datenset1/Datenset1_LC_Mrk421.pdf
+INPUT ./Plots/04_MrkAnalyse/Datenset1/Datenset1_LC_Crab.pdf
+INPUT ./Plots/04_MrkAnalyse/Datenset1/Spektrum_Mrk421.pdf
+INPUT ./Plots/04_MrkAnalyse/Datenset4/Datenset4_LC_Crab.png
+INPUT ./Plots/04_MrkAnalyse/Datenset4/Datenset4_LC_Mrk421.png
+INPUT ./Plots/04_MrkAnalyse/Datenset4/Datenset4_Spektrum_Mrk421.png
+INPUT ./Plots/04_MrkAnalyse/Datenset3/Datenset3_LC_Mrk421.png
+INPUT ./Plots/04_MrkAnalyse/Datenset3/Datenset3_Spektrum_Mrk421.png
+INPUT ./Plots/04_MrkAnalyse/Alles_LC.png
 INPUT ./Inhalt/eid_versicherung.tex
 INPUT ./Inhalt/eid_versicherung.tex
-INPUT /usr/local/texlive/2014/texmf-dist/fonts/tfm/public/eurosym/feymr10.tfm
 INPUT build/DoktorArbeit.aux
 INPUT build/DoktorArbeit.aux
 INPUT build/DoktorArbeit.toc
