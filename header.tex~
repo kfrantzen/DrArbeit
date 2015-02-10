@@ -118,8 +118,6 @@
 
 \usepackage[]{graphicx}
 
-\usepackage{subfigure}
-
 \usepackage{grffile}
 
 \usepackage{scrhack}

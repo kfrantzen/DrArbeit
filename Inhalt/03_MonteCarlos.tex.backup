@@ -1,25 +1,25 @@
 \chapter{Monte Carlo-Simulation}
-Ein großes Ziel in der Astroteilchenphysik ist es, Aussagen über die Energiespektren von astrophysikalischen Quellen zu machen.
+Ein großes Ziel in der Astroteilchenphysik ist es, Aussagen über die Energiespektren von astrophysikalischen Quellen zu treffen.
 
 In dieser Arbeit werden Daten analysiert, die von den beiden MAGIC-Teleskopen aufgenommen wurden, die in Kapitel \ref{sec:MAGIC} kurz beschrieben werden.
 
-In der Datenanalyse sind Monte Carlo (MC)-Daten von grundlegender Bedeutung:
-Für die Rekonstruktion eines Energiespektrums einer Gamma-Quelle müssen zunächst einmal Signalevents, die aus der Quelle kommen und Background-Events voneinander getrennt werden.
-Dies geschieht heutzutage mit künstlichen Lernalgorithmen, die auf wohl bekannten Beispieldaten, den MC-Daten, trainiert werden müssen.
-Auch für die Methode der Entfaltung des Energiespektrums werden MC-Daten benötigt.
+Aufgrund einer fehlenden Gamma-Kalibrationsquelle sind in der Datenanalyse Monte Carlo (MC)-Simulations-Daten von grundlegender Bedeutung:
+Für die Rekonstruktion eines Energiespektrums einer Gamma-Quelle müssen zunächst einmal Signalereignisse, die aus der Quelle kommen von den zahlenmäßig weit überlegenen Background-Ereignisse getrennt werden.
+Dies geschieht heutzutage mit Klassifikationsalgorithmen, die auf wohlbekannten Beispieldaten, den MC-Daten, trainiert werden müssen.
+Auch für die Methode der Entfaltung des Energiespektrums werden MC-Daten benötig.
 
-Die komplette Produktion der MC-Daten für das MAGIC Experiment wurde im Rahmen dieser Doktorarbeit durchgeführt und wird in diesem Kapitel detailliert beschrieben.
+Die komplette Produktion der Gamma-MC-Daten für das MAGIC Experiment wurde im Rahmen dieser Doktorarbeit durchgeführt und wird in diesem Kapitel detailliert beschrieben.
 
 Es werden zunächst die Programme beschrieben, die in der MAGIC MC - Simulationskette genutzt werden.
-Angefangen mit der Simulation der Luftschauer mit \textit{CORSIKA} (Kapitel \ref{sec:Corsika}) über die Reflektor-Simulation (Kapitel \ref{sec:Reflector}) wird bis hin zur Kamera-Simulation (Kapitel \ref{sec:Camera}) hier alles beschrieben.
-Dabei bauen die Simulationsschritte aufeinander auf, sodass die simulierten Corsika-Events bis zum letzten Schritt weiter prozessiert werden.
+Angefangen mit der Simulation der Luftschauer mit \textit{CORSIKA} (Kapitel \ref{sec:Corsika}) über die Reflektor-Simulation (Kapitel \ref{sec:Reflector}) wird bis hin zur Kamera-Simulation (Kapitel \ref{sec:Camera}) in diesem Kapitel alles beschrieben.
+Dabei bauen die Simulationsschritte aufeinander auf, sodass jedes simulierte \textit{Corsika}-Ereignis alle Simulations- und Kalibrationsschritte durchläuft.
 
-Für die eigentlichen Simulationsprogramme (\textit{CORSIKA}, \textit{Reflector} und \textit{Camera}) wird jeweils eine Übersicht über einige wichtige Inputparameter, die den Programmen als text-Dateien,
+Für die Simulationsprogramme (\textit{CORSIKA}, \textit{Reflector} und \textit{Camera}) wird jeweils eine Übersicht über einige wichtige Inputparameter, die den Programmen als Textdateien,
 sogenannten Inputcards, übergeben werden, gegeben.
 Nach Abschluss der Simulationskette liegen dann die MC Daten in der gleichen Form vor wie die aufgenommenen Daten der Teleskope. 
 
-Die anschließenden Schritte der Kalibrationskette (\textit{Sorcerer}, \textit{Star} und \textit{Superstar}) von der Signalextraktion und Ankunftszeitbestimmung bis zur Berechnung der Stereo-Bildparameter der gecleanten Events werden in den Kapitel \ref{sec:Calibration} - Kapitel \ref{Superstar} ebenfalls beschrieben.
-Diese Kalibration wird im MAGIC Datenzentrum genauso mit den real aufgenommenen Daten durchgeführt, sodass am Ende alle Daten (reale und simulierte) im gleichen Format vorliegen.
+Die anschließenden Schritte der Kalibrationskette (\textit{Sorcerer}, \textit{Star} und \textit{Superstar}) von der Signalextraktion und Ankunftszeitbestimmung bis zur Berechnung der Stereo-Bildparameter der gecleanten Ereignisse werden in den Kapitel \ref{sec:Calibration} - Kapitel \ref{Superstar} ebenfalls beschrieben.
+Diese Kalibration wird im MAGIC Datenzentrum ebenso mit den real aufgenommenen Daten durchgeführt, sodass am Ende alle Daten (reale und simulierte) im gleichen Format vorliegen.
 
 Nachdem alle Programme zur Simulation und Kalibration erklärt worden sind, wird auf die automatische Produktionsstruktur auf dem Rechencluster LiDO an der TU Dortmund eingegangen (Kapitel \ref{sec:Automatische MC-Produktion} ).
 
@@ -58,13 +58,20 @@ Dies geschieht in den sogenannten Calibration Runs oder in den interleaved calib
 Das analoge Signal, welches aus den PMTs kommt, wird über optische Fasern zum Trigger und zum Readout im Countinghouise gebracht.
 
 Vor dem Upgrade hab es verschiedene Readout System für MAGIC I und MAGIC II:
-Das Readout-System von Magic1 basierte auf dem MUX-FADC_Board, welches robust war und eine gute Performance geliefert hat, allerdings teuer und unhandlich war.
+Das Readout-System von Magic1 basierte auf dem MUX-FADC-Board, welches robust war und eine gute Performance geliefert hat, allerdings teuer und unhandlich war.
 Das Readout-System von Magic 2 basierte auf dem DRS2 Chip, welcher unter recht hohem Rauschen litt.
 
 Nach dem Upgrade wurden beide Auslesesysteme mit dem DRS4-Chip ausgestattet, welcher sich durch wenig Noise, wenig Crosstalk und eine sehr kurze Totzeit auszeichnet.
 
 Der Trigger wird in verschiedene Level unterteilt:
-Der Level 0-Trigger ist beinhaltet einen Schwellwert (Discriminator Threshold) für jeden Pixel, die überschritten werden muss
+Der Level 0-Trigger ist beinhaltet einen Schwellwert (Discriminator Threshold) für jeden Pixel, die überschritten werden muss, damit ein Ereignis weiterverarbeitet werden kann.
+Es folgt der Level 1-Trigger. Dieser basiert auf einem Nächste-Nachbarn-Trigger. 
+Für Stereo-Beobachtung müssen 3 nächste Nachbarpixel eines Pixels ebenfalls ein Signal detektiert haben, damit die Level 1-Triggerbedingung erfüllt ist.
+Schließlich folgt noch der Stereo-Trigger, welcher die Ereignisse auswählt, die in beiden Teleskopen einen Trigger ausgelöst haben und ihren zeitlichen Abstand überprüft.
+
+Diss von Daniel Mazin
+Upgrade of the MAGIC Telescopes ICRC
+Upgrade Paper I und II
 
 
 \section{Schauersimulation mit CORSIKA}
@@ -73,8 +80,8 @@ Der Level 0-Trigger ist beinhaltet einen Schwellwert (Discriminator Threshold) f
 CORSIKA wurde am Forschungszentrum Karlsruhe ursprünglich für das KASCADE-Experiment entwickelt und wird heute in vielen Astroteilchenexperimenten eingesetzt.
 Mit \textit{CORSIKA} werden ausgedehnte Luftschauer, ausgelöst von kosmischer Strahlung simuliert.
 
-Es können verschiedene Primärteilchen wie Protonen, Eisenkerne oder Photonen als Primärteilchen eingestellt werden.
-Diese Primärteilchen werden durch die Atmosphäre propagiert, wo sie Wechselwirkungen mit den Kernen der Luft eingehen und Schauer produzieren oder aber zerfallen.
+Es können verschiedene Primärteilchen wie Protonen, schwere Kerne oder Photonen als Primärteilchen simuliert werden.
+Diese Primärteilchen werden durch die Atmosphäre propagiert, wo sie Wechselwirkungen mit den Atomen der Luft eingehen und Schauer produzieren oder aber zerfallen.
 Die entstandenen Schauer werden dann bis zum Teleskop simuliert.
 
 
@@ -88,35 +95,35 @@ Die entstandenen Schauer werden dann bis zum Teleskop simuliert.
 \begin{figure}
  \begin{subfigure}{0.4\textwidth}
   \includegraphics[width=\textwidth]{./Plots/03_MonteCarlos/Photon_1TeV_CORSIKA.png}
-  \caption{Simulation eines Schauers mit 1TeV-Photon als Primärteilchen}
+  \caption{Simulation eines Schauers mit 1TeV-Photon als Primärteilchen.}
  \end{subfigure}
  \hspace{2.0cm}
   \begin{subfigure}{0.4\textwidth}
   \includegraphics[width=\textwidth]{./Plots/03_MonteCarlos/Proton_1TeV_CORSIKA.png}
-  \caption{Simulation eines Schauers mit 1TeV-Proton als Primärteilchen}
+  \caption{Simulation eines Schauers mit 1TeV-Proton als Primärteilchen.}
  \end{subfigure}
-  \caption{ Schauersimulation mit CORSIKA mit 1TeV Primärteilchen}
+  \caption{ Schauersimulation mit CORSIKA von 1TeV Primärteilchen.\cite{CORSIKA}}
   \label{CORSIKA_Schauer}
  \end{figure}
 
 
 
-In Abb.\ref{CORSIKA_Schauer} sieht man die verschiedenen Eigenschaften der Schauer: Hadronische Schauer haben einen größeren Querschnitt und sind weniger kompakt verglichen mit elektromagnetischen.
+In Abb.\ref{CORSIKA_Schauer} sieht man die verschiedenen Eigenschaften von zwei verschiedenen Schauern: Hadronische Schauer haben einen größeren Querschnitt und sind weniger kompakt verglichen mit elektromagnetischen.
 
-Es sind verschiedene Modelle für die hadronische Wechselwirkung bei hohen Energien und bei niedrigen Energien implementiert.
+Es sind verschiedene Modelle für die hadronische Wechselwirkung bei hohen und niedrigen Energien implementiert.
 Für die MAGIC MC-Simulation werden QGSJET II für die hadronische Wechselwirkung bei hohen Energien und FLUKA für die Wechselwirkung bei niedrigen Energien benutzt.
 Elektromagnetische Prozesse werden mit dem EGS4-Modell beschrieben.
-Eine Simulation der Cherenkovphotonen, die von den geladenen Teilchen produziert werden, die durch die Luft propgaieren, erfolgt ebenfalls.
+Eine Simulation der Cherenkovphotonen, die von den geladenen Teilchen produziert werden und durch die Luft propagieren, erfolgt ebenfalls.
 
 \subsection{Mmcs}
 Eine speziell für das MAGIC-Teleskop adaptierte Version von \textit{CORSIKA} wird in der Standardsimulation genutzt.
 In dieser Version wurde der Einfluss des Magnetfeldes vor der ersten Wechselwirkung auf das Primärteilchen vernachlässigt um zu verhindern, dass es zu weit vom Teleskop abgelenkt wird.
-Außerdem wurde die Simulation der Cherenkovwellenlänge eingebaut und es wurde eingebaut, dass alle Informationen über das Primärteilchen gespeichert werden.
+Außerdem wurde die Simulation der Cherenkovwellenlänge eingebaut und alle Informationen über das Primärteilchen werden gespeichert.
 
 \subsection{Inputcards}
-Die Inputcard enthält Informationen über den Teleskopstandort, die simulierten Schauer und über das Magnetfeld.
+Die Inputcard enthält Informationen über den Teleskopstandort, die simulierten Schauer und über das Magnetfeld am Standort.
 
-Zunächst können allgemeine Angaben zur Anzahl der simulierten Events gemacht werden. 
+Zunächst können allgemeine Angaben zur Anzahl der simulierten Ereignisse gemacht werden. 
 So erhält jeder \textit{CORSIKA}-Run eine eigene Runnumer und die Anzahl der Schauer pro Run wird durch den Parameter \texttt{NSHOW} angegeben.
 
 Außerdem erfolgen noch Einstellungen über die Eigenschaften der Schauer.
@@ -125,13 +132,13 @@ Die Steigung des Energiespektrums wird mit dem Parameter \texttt{NSLOPE} eingest
 Zenit- und Azimutbereich, in dem die Schauer simuliert werden, wer den durch \texttt{THETAP} und \texttt{PHIP} angegeben.
 
 Zudem werden in \textit{CORSIKA} noch Standortangaben zur Geographie des Teleskopstandortes gemacht.
-So wird die Höhe über NN im Parameter \texttt{OBSLEV} angegeben und eine Angabe über die horizontale, bzw. vertikale Komponente des Magnetfeldes auf La Palam befindet sich im Parameter \texttt{MAGNET}.
+So wird die Höhe über NN im Parameter \texttt{OBSLEV} angegeben und eine Angabe über die horizontale, bzw. vertikale Komponente des Magnetfeldes auf La Palma befindet sich im Parameter \texttt{MAGNET}.
 Der Parameter \texttt{ATMOSPHERE} gibt an, welche Parametrisierung der Atmosphäre genutzt wird.
 
 Abgesehen von diesen allgemeinen Angaben gibt es in der Inputcard noch einige Parameter, die dediziert für die Simulation der Cherenkovphotonen sind.
 Der Wellenlängenbereich, in welchem Cherenkovphotonen simuliert werden, wird mit \texttt{CWAVLG} angegeben.
-Der Impact-Parameter, der angibt, in welcher Entfernung der Schauer vom Teleskop entfernt auftreffen kann, wird mit \texttt{CSCAT} angegeben.
-Der Parameter \texttt{CERTEL} beinhaltet Standort und Größe der Teleskope, die man simuliert und mit der Option \texttt{CERFIL} wird angegeben, ob der Output über die Cherenkovphotonen in eine extra Datei geschrieben wird.
+Der Impact-Parameter, der angibt, in welcher Entfernung der Schauer vom Teleskop entfernt auftreffen kann, projiziert auf den Boden, wird mit \texttt{CSCAT} angegeben.
+Der Parameter \texttt{CERTEL} beinhaltet Standort und Größe der Teleskope, die man simuliert und mit der Option \texttt{CERFIL} wird angegeben, ob der Output über die Cherenkovphotonen in eine zusätzliche Datei geschrieben wird.
 
 
 % Einige Einstellungen werden im Folgenden beschrieben:
@@ -165,7 +172,7 @@ Der Parameter \texttt{CERTEL} beinhaltet Standort und Größe der Teleskope, die
 
 \section{Simulation des Reflektors mit Reflector}
 \label{sec:Reflector}
-Wie der Name schon sagt, wird im Programm \textit{Reflector} vor allem der Reflektor simuliert, allerdings kommen noch einige Zusatzfunktionen ins Spiel.
+Im Programm \textit{Reflector} wird vor allem der Reflektor simuliert, allerdings sind noch einige Zusatzfunktionen implementiert.
 
 Mit \textit{Reflector} wird zuerst die atmosphärische Absorption der Cherenkovstrahlung in der Luft simuliert. 
 Dabei werden Rayleigh-Streuung, Mie-Streuung und die Absorption an Ozon simuliert.
@@ -177,7 +184,7 @@ Nach der Reflexion am Spiegel wird nacheinander überprüft, ob die Photonen die
 Für diese Simulationsschritte werden bestimmte Inputparameter, bzw. Inputdateien benötigt, die die Eigenschaften des Reflektors beschreiben.
 Die wichtigsten werden im Folgenden kurz erklärt.
 
-Es muss der Pfad zur \textit{CORSIKA}-Inputdatei sowie die Output-Pfade für die beiden Reflektordateien (je eine pro Teleskop) angegeben werden.
+%Es muss der Pfad zur \textit{CORSIKA}-Inputdatei sowie die Output-Pfade für die beiden Reflektordateien (je eine pro Teleskop) angegeben werden.
 
 Teleskopstandort und Wobble Position müssen angegeben werden.
 
@@ -194,15 +201,15 @@ Im \texttt{measuredpsf\_file} ist die gemessene PSF eingetragen.
 
 Letztendlich muss man in Reflector noch das Atmosphärenmodell, welches für die Simulation benutzt werden soll, angegeben werden. 
 Aktuell wird das MagicWinter-Modell benutzt. 
-Eine Parametrisierung des Modells enthält abhängig von der Höhe die Dichte, die Dicke und der Brechungsindex (siehe Arbeit von Mareijke Haffner).
+Eine Parametrisierung des Modells enthält abhängig von der Höhe die Dichte, die Dicke und der Brechungsindex \cite{Haffke}.
 
 
 \section{Simulation von Kamera und Elektronik mit Camera}
 \label{sec:Camera}
-Das Programm \textit{Camera} simuliert das komplette Verhalten der Kamera inklusive der Beiträge des Nachthimmeluntergrundes (NSB).
-Es werden neben den Schauern also auch der diffuse NSB und Sterne im Field of View simuliert. 
-Des Weiteren werden der Trigger und das elektronische Rauschen simuliert, sodass bei einer Änderung der Hardware der Kamera, bzw der Elektronik nicht die komplette MC Kette noch einmal durchlaufen werden muss.
-In Abb.\ref{Kamera-Bild} befindet sich ein generiertes Cherenkovevent in der Kamera mit einer Energie von $\SI{3.0}{TeV}$.
+Das Programm \textit{Camera} simuliert das komplette Verhalten der Kamera inklusive des Rauschens, das durch den Nachthimmeluntergrundes (Nightsky Background [NSB]) entsteht.
+Es werden neben den Schauern also auch der diffuse NSB und Sterne im Gesichtsfeld (Field of View [Field of View]) simuliert. 
+Des Weiteren werden der Trigger und das elektronische Rauschen simuliert, sodass bei einer Änderung der Hardware der Kamera, bzw. der Elektronik nicht die komplette MC Kette noch einmal durchlaufen werden muss.
+In Abb.\ref{Kamera-Bild} befindet sich das Kamerabild eines generierten Cherenkovereignisses mit einer Energie von $\SI{3.0}{TeV}$.
 
 \begin{figure}
     \centering
@@ -219,28 +226,28 @@ Das Programm \textit{StarFieldAdder} berechnet anhand von einem Katalog, welche 
 Der Output wird im \textit{CORSIKA}-Format geschrieben und muss noch durch \textit{Reflector} laufen, bevor er von \textit{Camera} benutzt werden kann.
 Eine Simulation der Sterne im FoV wird in der Standard-MC-Simulation nicht durchgeführt, da die MC-Daten für alle Quellen in einem bestimmten Zenitbereich benutzt werden sollen und nicht für jede Quelle eigene MC-Daten produziert werden.
 
-Um die Simulation zu beschleunigen und damit nicht für jedes Event der diffuse NSB neu berechnen werden muss, wird mit \textit{StarResponse} eine NSB-Datenbank generiert und daraus dann das NSB-Rauschen berechnet, welches dann zusammen mit dem Cherenkovphotonensignal zum Trigger geht.
+Um die Simulation zu beschleunigen und damit nicht für jedes Ereignis der diffuse NSB neu berechnen werden muss, wird mit \textit{StarResponse} eine NSB-Datenbank generiert und daraus dann das NSB-Rauschen berechnet, welches dann zusammen mit dem Cherenkovphotonensignal zum Trigger gelangt.
 
 \subsection{Simulation von Kamera und Elektronik}
-Nachdem alle Parameter aus der Inputcard eingelesen worden sind und die individuelle PixelResponse mit NSB gefüllt wurde, erfolgt die eigentliche Verarbeitung der zuvor simulierten \textit{Reflector}-Daten.
+Nachdem alle Parameter aus der Inputcard eingelesen worden sind und für jeden Pixel indivieduell NSB simuliert wurde, erfolgt die eigentliche Verarbeitung der zuvor simulierten \textit{Reflector}-Daten.
 Die Photonen aus den Schauern werden eingelesen und für jedes Photon werden folgende Werte einzeln bestimmt:
 
 \begin{itemize}
  \item Pixelization: In welchem Pixel kommt das Photon an
- \item PhE-Produktion: Unter Berücksichtigung der wellenlängenabhängigen Quanteneffizienz jedes PMTs und der Winston Cones wird entschieden, ob ein Photoelektron erzeugt wird.
+ \item PhE-Produktion: Unter Berücksichtigung der wellenlängenabhängigen Quanteneffizienz jedes Photomultiplier Tubes (PMT) und der Winston Cones wird entschieden, ob ein Photoelektron erzeugt wird.
  \item Channel Response: Für jedes Photoelektron, was die Photokathode verlässt, wird das Analogsignals des PMTs generiert.
 \end{itemize}
 
-Danach werden die Signale und Ankunftszeiten aller Photonen eines Pixel superponiert und die Response des Triggers und FADC Systems berechnet und elektronisches Rauschen hinzugefügt.
+Danach werden die Signale und Ankunftszeiten aller Photonen eines Pixel superponiert und die Antwort des Triggers und FADC Systems berechnet und elektronisches Rauschen hinzugefügt.
 Das wird für alle Pixel gemacht und man erhält das analoge Signal.
-Dann wird durch eine Baseline-Subtraction die AC Kopplung simuliert, die zwischen dem PMT Output und dem Signal ist, welches in den Discriminator Trigger geht.
-Danach steht noch die Simulation des Triggers aus. 
-Es wird gecheckt, ob das analoge Signal eine bestimmte Schwelle, die Discriminator Schwelle, überschreitet.
-Falls ja, wird ein digitales Output Signal simuliert.
-Dann wird der first Level Trigger simuliert:
-Ob das Event triggert beruht auf seiner Topologie und der Multiplizität.
+Dann wird durch Abziehen der Baseline die AC Kopplung simuliert, die zwischen dem PMT Output und dem Signal ist, welches in den Discriminator Trigger geht.
+Daraufhin erfolgt die Simulation des Triggers. 
+Es wird überprüft, ob das analoge Signal eine bestimmte Schwelle, die Diskriminator-Schwelle, überschreitet.
+Ist dies der Fall, wird ein digitales Output-Signal simuliert.
+Dann wird der ``First Level Trigger'' simuliert:
+Ob das Ereignis triggert, beruht auf seiner Topologie und der Multiplizität.
 Dafür wird eine Nächste-Nachbarn-Bedingung überprüft, d.h. die minimale Anzahl an Pixeln, die einen bestimmten Photoneninhalt haben und ihre Verteilung in der Kamera.
-Falls diese Bedingungen erfüllt sind, wird ein First Level Trigger Signal generiert und der Output des FADC Systems, welches die digitalisierte Form des analogen Signals ist, wird gespeichert.
+Falls diese Bedingungen erfüllt sind, wird ein First Level Trigger Signal generiert und die Ausgabe des FADC Systems, welches die digitalisierte Form des analogen Signals ist, wird gespeichert.
 Dann wird der nächste Schauer prozessiert.
 
 \subsection{Inputcard}
@@ -259,7 +266,7 @@ Zudem werden einige Parameter, die den NSB betreffen hier eingeführt.
 Erst einmal muss definiert werden, ob der NSB simuliert werden soll oder nicht. 
 Dies geschieht mit dem Befehl \texttt{nsb\_on}, bzw. \texttt{nsb\_off}.
 Des Weiteren muss der Pfad zur vorher generierten NSB Datenbank gegeben werden, was mit dem Parameter \texttt{nsb\_directory} geschieht.
-Falls die äußeren (früher größeren) Pixel einen anderen Gain haben, ist dort auch der Einfluss des NSB anders. 
+Falls die äußeren (früher größeren) Pixel einen anderen Verstärkungsfaktor haben, ist dort auch der Einfluss des NSB anders. 
 Dies wird durch \texttt{nsb\_dir\_outer} angegeben.
 Ein weiterer Parameter, der den NSB betrifft, ist \texttt{nsb\_mean}.
 Die erste Zahl gibt die Amplitude des NSB in Anzahl an Photoelektronen pro einem inneren Pixel der Kamera pro ns an.
@@ -302,26 +309,26 @@ Es erfolgt die gleiche Kalibration wie auch bei den echten Daten und die Einstel
 %  \item $end_file$: Ende der Inputcard: Alles, was dahinter noch steht, wird ignoriert
 % \end{itemize}
 
-\section{Calibration}
+\section{Kalibration}
 \label{sec:Calibration}
 Ziel der Kalibration ist es, für jeden Pixel die Ladung in Photoelektronen und die Ankunftszeit der Photonen zu bestimmen.
 Dafür muss der Lichtpuls extrahiert und die Baseline abgezogen werden.
-Die Baseline wird mit Hilfe von pedestal Events bestimmt, also Events mit zufälligem Trigger, welche keine Schauerpulse enthalten sollten und dann in den richtigen Events abgezogen [vgl. Abb.\ref{Kamera-Bild-Pedestal}].
-Ziel der Calibration Runs - Events mit bekanntem Lichtpuls - ist es, die Konversionsfaktoren der einzelnen Pixel zu berechnen.
+Die Baseline wird mit Hilfe von Pedestal-Ereignissen bestimmt, also Ereignissen mit zufälligem Trigger, welche keine Schauerpulse enthalten sollten, und dann in den richtigen Ereignissen abgezogen [vgl. Abb.\ref{Kamera-Bild-Pedestal}].
+Ziel der Kalibrations-Runs - Runs mit bekanntem Lichtpuls - ist es, die Konversionsfaktoren der einzelnen Pixel zu berechnen.
 
 \begin{figure}
     \centering
     \includegraphics[width=0.6\textwidth]{./Plots/03_MonteCarlos/Pedestal_fertig.png}
-    \caption{Darstellung eines simulierten Pedestal Events in der Kamera. Dargestellt ist der Pixelinhalt in [a.u.].}
+    \caption{Darstellung eines simulierten Pedestal Ereignisse in der Kamera. Dargestellt ist der Pixelinhalt in [a.u.].}
     \label{Kamera-Bild-Pedestal}
 \end{figure}
 
-In der Realität sind Pedestal Events, Events mit zufälligem Trigger und ohne Puls und Calibration Runs sind Runs, die genommen werden, wobei die Calibration Box benutzt wird.
-Diese Calibration Box befindet sich im Zentrum der Spiegel und verursacht kurze Lichtpulse mit konstanter Intensität in Richtung Kamera.
+In der Realität sind Pedestal-Ereignisse, Ereignisse, die zufällig getriggert wurden und Calibration Runs sind Runs, die genommen werden, wobei die Calibration Box benutzt wird.
+Diese Calibration Box befindet sich im Zentrum des Hauptspiegels und sendet kurze Lichtpulse mit konstanter Intensität in Richtung Kamera.
 
 
 \subsection{Signalextraktion}
-Ziel der Signalextraktion ist die Integration der Counts in der Pulsregion ohne Baseline.
+Ziel der Signalextraktion ist die Integration der Zählungen in der Pulsregion ohne Baseline.
 Dafür gibt es verschiedene Methoden:
 \begin{itemize}
  \item Fixed window: Mit dieser Methode wird an einer a priori bekannten Position, an der man den Cherenkovpuls erwartet, über eine bestimmte Länge integriert.
@@ -331,16 +338,16 @@ Dafür gibt es verschiedene Methoden:
 
 Aktuell wird in MAGIC die Sliding Window Methode benutzt. Es wird in einem 60 time slice großen Bereich nach dem Pulse gesucht und dann über 6 time slices integriert ($\SI{3}{ns}$).
 
-Nachdem man nun das Signal extrahiert hat, wird es noch von readout counts in Photoelektronen umgerechnet.
+Nachdem man nun das Signal extrahiert hat, wird es noch von ``readout counts'' in Photoelektronen umgerechnet.
 
 \subsection{Ankunftszeitbestimmung}
-Die Ankunftszeit des Pulses wird als mittlere Time slice des integrierten Windows gewichtet mit dem Signal darin berechnet:
+Die Ankunftszeit des Pulses wird als mittlere Time slice des integrierten Fensters gewichtet mit dem enthaltenen Signal berechnet:
 
 \begin{equation}
  t_{arrival}=\frac{\sum i s_i}{\sum s_i},\\
 \end{equation}
 \begin{center}
-\tiny{mit $i$: time slice Nummer, $s_i$: Signal in slice i und der Summierung über 6 slices als Integrationsfenster.}
+\small{[mit $i$: time slice Nummer, $s_i$: Signal in slice i und der Summierung über 6 slices als Integrationsfenster].}
 \end{center}
 
 
@@ -353,47 +360,47 @@ Eine typische Verteilung der Ankunftszeiten für einen Cherenkovschauer in Kamer
     \label{Kamera-Bild-ArrivalTimes}
 \end{figure}
 
-\section{Star - Image Cleaning und Bildparametrisierung}
+\section{Star - Bildbereinigung und Bildparametrisierung}
 \label{sec:Star-ImageCleaning}
 
-\subsection{Image Cleaning}
-Im Programm \textit{Star} geschieht das Image Cleaning und die Parametrisierung des Schauerbildes.
+\subsection{Bildbereinigung}
+Das Programm \textit{Star} übernimmt die Bildbereinigung und die Parametrisierung des Schauerbildes.
 
-Wird ein Event getriggert, werden die Signale der einzelnen Pixel gespeichert.
-Sowohl Night Sky Background (NSB) als auch elektrisches Rauschen sind dann noch in dem Eventbild enthalten (siehe Abb.\ref{Kamera-Bild}).
-Ziel des Image Cleanings ist es, das Bild von allem Background zu bereinigen, sodass nur noch das Signal vom eigentlichen Schauer überbleibt und eine robuste und stabile Parametrisierung dieses Schauerbildes durchgeführt werden kann.
+Wird ein Ereignis getriggert, werden die Signale der einzelnen Pixel gespeichert.
+Sowohl Night Sky Background (NSB) als auch elektrisches Rauschen sind dann noch in dem Ereignisbild enthalten (siehe Abb.\ref{Kamera-Bild}).
+Ziel der Bildbereinigung ist es, das Bild von allem Untergrund zu bereinigen, sodass nur noch das Signal vom eigentlichen Schauer überbleibt und eine robuste und stabile Parametrisierung dieses Schauerbildes durchgeführt werden kann.
 Einerseits können Pixel, die nicht zum eigentlichen Schauer gehören und das Image Cleaning überleben, zu einer falschen Rekonstruktion führen, andererseits ist es zu vermeiden, dass zu viele Pixel im Cleaning wegfallen, da es so zu einem Signalverlust kommt, was ebenfalls zu einer schlechteren Rekonstruktion führen kann.
 Also werden schlaue Algorithmen benötigt! 
 
-Der einfachste und älteste Algorithmus ist das Absolute Image Cleaning.
-Dabei wird nur die Photoncharge in den einzelnen Pixeln benutzt.
-Es werden zwei Schwellwerte definiert für die Core ($Q_{Core}$) und die Boundary Pixel ($Q_{boundary}$).
-Nun werden alle Pixel mit einer Photoncharge die größer als $Q_{Core}$ ist, ausgewählt.
-Ein Pixel ist dann ein Corepixel, wenn er noch einen Nachbarn hat, welcher ebenfalls eine Photoncharge hat, die dieses Limit überschreitet.
-Im zweiten Schritt werden alle Pixel mit direkten Nachbarn, die den vorherigen Schritt überlebt haben und eine Ladung größer als $Q_{boundary}$ haben, als boundary Pixel markiert.
-Alle anderen Pixel fliegen raus.
-Dieser Image Cleaning Algorithmus benutzt keine Zeitinformation und es wird damit keine niedrige Energieschwelle erreicht. 
+Der einfachste und älteste Algorithmus ist das ``Absolute Image Cleaning''.
+Dabei wird nur die Photonenladung in den einzelnen Pixeln benutzt.
+Es werden zwei Schwellwerte definiert für die Kern- ($Q_{Core}$) und die Nachbar-Pixel ($Q_{boundary}$).
+Nun werden alle Pixel mit einer Photonenladung die größer als $Q_{Core}$ ist, ausgewählt.
+Ein Pixel ist dann ein Kernpixel, wenn er noch einen Nachbarn hat, welcher ebenfalls eine Photonenladung hat, die dieses Limit überschreitet.
+Im zweiten Schritt werden alle Pixel mit direkten Nachbarn, die den vorherigen Schritt überlebt haben und eine Ladung größer als $Q_{boundary}$ haben, als Nachbar-Pixel markiert.
+Alle anderen Pixel werden nicht gewertet.
+Dieser Bildbereinigungsalgorithmus benutzt keine Zeitinformation und es wird damit keine niedrige Energieschwelle erreicht. 
 Die verschiedenen Rauschlevel zwischen den Pixeln werden auch nicht berücksichtigt.
 
-Eine Weiterentwicklung dieses Cleaningalgorithmus, welcher auch die Zeitinformationen benutzt, ist das Time Constrained Absolute Image Cleaning. 
-Es funktioniert genauso wie das absolute Image Cleaning, allerdings wird die Ankunftszeit der Photonen zusätzlich berücksichtigt.
+Eine Weiterentwicklung dieses Algorithmus, welcher auch die Zeitinformationen benutzt, ist das ``Time Constrained Absolute Image Cleaning''. 
+Es funktioniert genauso wie das ``Absolute Image Cleaning'', allerdings wird die Ankunftszeit der Photonen zusätzlich berücksichtigt.
 
-Eine weitere Entwicklung ist das Sum Image Cleaning, welches folgendermaßen funktioniert:
+Eine weitere Entwicklung ist das ``Sum Image Cleaning'', welches folgendermaßen funktioniert:
 Es wird eine Zweier-, Dreier- oder Vierer-Kombination von Nachbarpixeln gesucht und deren Signale aufsummiert.
 Ist das aufsummierte Signal über einer bestimmten Schwelle, werden die Ankunftszeiten in der Gruppe untereinander verglichen. 
 Liegen diese nahe genug zusammen, werden die Pixel behalten, ansonsten verworfen.
 Anschließend werden Nachbarpixel gesucht und deren Pixelinhalte und Ankunftszeiten betrachtet.
 
-Beim dynamischen Sum Cleaning wird zusätzlich noch die Size, der Gesamtphotoneninhalt, eines Events mit berücksichtigt.
+Beim ``Dynamic Sum Cleaning'' wird zusätzlich noch die Size, der Gesamtphotoneninhalt, eines Ereignisses mit berücksichtigt.
 
 \subsection{Bildparametrisierung}
-Die Bildparameter basieren auf den Hillas Parametern von 1985 [] und berücksichtigen die Verteilung der Photonen in den Pixeln, die zum gecleanten Event gehören.
-Abb.\ref{Kamera-Bild-gecleant} zeigt ein gecleantes Event in der Kamera.
+Die Bildparameter basieren auf den Hillas Parametern \cite{Hillas} und berücksichtigen die Verteilung der Photonen in den Pixeln, die zum bereinigten Ereignis gehören.
+Abb.\ref{Kamera-Bild-gecleant} zeigt ein bereinigtes MC-Ereignis in der Kamera.
 
 \begin{figure}
     \centering
     \includegraphics[width=0.6\textwidth]{./Plots/03_MonteCarlos/Signal_gecleant_fertig.png}
-    \caption{Darstellung des gecleanten Events in der Kamera.}
+    \caption{Darstellung des bereinigten Ereignisses in der Kamera.}
     \label{Kamera-Bild-gecleant}
 \end{figure}
 
@@ -401,23 +408,23 @@ Abb.\ref{Kamera-Bild-gecleant} zeigt ein gecleantes Event in der Kamera.
 Im Folgenden werden einige wichtige Bildparameter aufgelistet und beschrieben (vgl. Abb.\ref{CleaningBild}):
 
 \begin{itemize}
- \item \texttt{size}: Die Gesamtzahl der Photoelektronen in einem ShowerImage wird als \texttt{size} bezeichnet. Für feste Zenitwinkel und Impactparameter ist diese Größe proportional zur gesuchten Primärteilchenenergie.
- \item \texttt{CoG} (Center of Gravity): Das Center of Gravity des Schauers bezeichnet die Position des gewichteten Mean Signals entlang der X- und Y-Achse in der Kamera. 
+ \item \texttt{size}: Die Gesamtzahl der Photoelektronen in einem Ereignis wird als \texttt{size} bezeichnet. Für feste Zenitwinkel und Impactparameter ist diese Größe proportional zur gesuchten Primärteilchenenergie.
+ \item \texttt{CoG} (Center of Gravity): Das Center of Gravity des Schauers bezeichnet die Position des gewichteten mittleren Signals entlang der X- und Y-Achse in der Kamera. 
  X und Y sind die ersten Momente der Ladungsverteilung und werden \texttt{MeanX}, bzw. \texttt{MeanY} genannt.
- \item \texttt{Width}: Die halbe Breite der kleinen Halbachse der an den Schauer gefitteten Ellipse wird als \texttt{Width} bezeichnet. 
+ \item \texttt{Width}: Die halbe Breite der kleinen Halbachse der Schauerellipse wird als \texttt{Width} bezeichnet. 
  Mit Hilfe dieses Paramters lassen sich Aussagen über die transversale Ausbreitung des Schauers und damit auch über den Ursprung des Schauers (hadronisch oder elektromagnetisch) treffen. 
  Dieser Parameter ist somit ein guter Trennparameter.
  \item \texttt{Length}: Die halbe Länge der großen Halbachse wird mit dem Parameter \texttt{Length} bezeichnet.
- Dieser Parameter trifft eine Aussage über die longitudinale Entwicklung des Schauers und ist im Allgemeinen größer für Hadroninduzierte Schauer als für Gammainduzierte Schauer.
+ Dieser Parameter trifft eine Aussage über die longitudinale Entwicklung des Schauers und ist im Allgemeinen größer für hadroninduzierte Schauer als für gammainduzierte Schauer.
  \item \texttt{Conc-n}: Der Anteil der Photoelektronen, welche in den n hellsten Pixeln enthalten sind, wird als \texttt{Conc-n} bezeichnet.
  Damit ist es möglich, die Kompaktheit des Schauermaximums zu beschreiben. 
  Bei Gamma-Schauern ist die Region sehr kompakt.
- \item \texttt{Leakage}: Dieser Parameter beschreibt den Anteil des Signals im äußeren Kameraring im Vergleich zur totalen Image Size.
- Es ist möglich mit diesem Parameter den Signalverlust zu beschreiben und zu entscheiden, ob der Schauer überhaupt noch vernünftig rekonstruiert werden kann.
+ \item \texttt{Leakage}: Dieser Parameter beschreibt den Anteil des Signals im äußeren Kameraring im Vergleich zur totalen \texttt{size}.
+ Es ist möglich mit diesem Parameter den Signalverlust zu beschreiben und zu entscheiden, ob der Schauer noch rekonstruiert werden kann.
  \item \texttt{M3Long}: Dieser Parameter ist das dritte Moment entlang der großen Halbachse und beschreibt die Asymmetrie des Schauers.
  Es lässt sich damit also auf die Herkunftsrichtung des Schauers schließen. 
  \texttt{M3Long} ist positiv wenn der Schauerschwerpunkt in Richtung des Kamerazentrums liegt, ansonsten negativ.
- \item \texttt{Number\_of\_Islands}: Wie der Name schon sagt wird mit diesem Parameter die Anzahl der Inseln, die nach dem Cleaning übergeblieben sind, bezeichnet. 
+ \item \texttt{Number\_of\_Islands}: Dieser Parameter bezeichnet die Anzahl der Inseln, die nach der Bildbereinigung übergeblieben sind. 
  Je größer dieser Wert ist, umso mehr Inseln sind noch vorhanden und umso wahrscheinlicher ist der Schauer hadronischen Ursprungs.
 \end{itemize}
 
@@ -440,7 +447,7 @@ Abgesehen von diesen Bildparametern gibt es auch noch Parameter, die zu einem be
 Außerdem gibt es noch einige Parameter, die die Ankunftszeit der Cherenkovphotonen zusätzlich berücksichtigen, wie z.B.:
 
 \begin{itemize}
- \item \texttt{TimeGradient}: Der \texttt{TimeGradient} bietet ein Zeitprofil eines Events.
+ \item \texttt{TimeGradient}: Der \texttt{TimeGradient} bietet ein Zeitprofil eines Ereignisses.
  Die Pixel werden auf die Hauptachse projiziert.
  Dann wird ein Graph der Ankunftszeiten der einzelnen Pixel erstellt und mit einer linearen Funktion gefittet.
  Die Steigung dieser gefitteten Geraden wird dann als Time Gradient bezeichnet.
@@ -450,7 +457,7 @@ Außerdem gibt es noch einige Parameter, die die Ankunftszeit der Cherenkovphoto
  Time-RMS=\sqrt{\sum_{i=1}^k (t_i-t_{mean})^2}
 \end{equation}
  \begin{centering}
-  \tiny{mit k:Anzahl der Pixel, $t_i$: Ankunftszeit im i-ten Pixel und $t_mean$:mittlere Ankunftszeit}
+  \small{mit k:Anzahl der Pixel, $t_i$: Ankunftszeit im i-ten Pixel und $t_mean$:mittlere Ankunftszeit}
  \end{centering}
 
 
@@ -470,13 +477,13 @@ Auch die Höhe des Schauermaximums wird in Superstar bestimmt.
 \begin{figure}
     \centering
     \includegraphics[width=0.9\textwidth]{./Plots/03_MonteCarlos/Superstar.png}
-    \caption{Rekonstruierte Richtung und rekonstruierter Core Impact Punkt}
+    \caption{Rekonstruierte Richtung und rekonstruierter Core Impact Punkt \cite{Superstar}}
     \label{Superstar}
 \end{figure}
 
 Des Weiteren werden noch der Cherenkov-Radius und die Cherenkovlichtdichte bestimmt.
 
-Der Cherenkovradius ist der Radius am Boden, der von einem 87MeV Elektron,welches in Schauerrichtung fliegt, in der Höhe des Schauermaximums produziert wird.
+Der Cherenkovradius ist der Radius am Boden, der von einem 86MeV Elektron,welches in Schauerrichtung fliegt, in der Höhe des Schauermaximums produziert wird.
 
 Die Cherenkovlichtdichte ist die Lichtdichte am Boden, die von einem 1m langen Track eines 86MeV Elektrons im Schauermaximum produziert wird, welches ebenfalls in Schauerrichtung fliegt.
 
@@ -498,10 +505,10 @@ Die Cherenkovlichtdichte ist die Lichtdichte am Boden, die von einem 1m langen T
 
 
 
-\section{Automatische MC-Produktion hier in Dortmund geht so}
+\section{Automatische MC-Produktionskette an der TU Dortmund}
 \label{sec:Automatische MC-Produktion}
 
-Die Monte Carlo Produktion an der TU Dortmund geschieht automatisiert mit Hilfe von bash-Skripten und einer mysql-Datenbank siehe \ref{Jobmanager}.
+Die Monte Carlo Produktion an der TU Dortmund geschieht automatisiert mit Hilfe von bash-Skripten und einer mysql-Datenbank (siehe \ref{Jobmanager}).
 
 \begin{figure}
     \centering
@@ -518,7 +525,7 @@ Sobald Corsika beendet ist, wird dies in die Datenbank geschrieben, sodass das n
 Für das nächste Programm in der Kette sind alle benötigten Parameter schon bei der Inauftraggabe des Jobs in der Datenbank gespeichert worden.
 Also wird Reflector mit Hilfe des runreflector-Skripts gestartet und nach Beendigung und Eintragen in die Datenbank auch Camera.
 
-Nach dem erfolgreichen Durchlauf eines kompletten Jobs  bestehend aus 1000-2000 Runs mit je 1000 Events werden die generierten MC Daten nach jedem Programmdurchlauf auf dem Cluster gespeichert.
+Nach dem erfolgreichen Durchlauf eines kompletten Jobs  bestehend aus 1000-2000 Runs mit je 1000 Ereignissen werden die generierten MC Daten nach jedem Programmdurchlauf auf dem Cluster gespeichert.
 Sobald die Simulationskette für einen Job beendet wurde, wird dies wiederum in die Datenbank eingetragen.
 
 Die Kalibrationskette, die aus den Programmen Sorcerer, Star und Superstar besteht wird analog durchgeführt:
@@ -530,7 +537,7 @@ Diese Datenbank beinhaltet die Tabellen in Tab.\ref{MYSQL_Tabellen}:
 
 \begin{table}[!h]
 \centering
-\caption{Auflistung der Tabellen, die in der Datenbank existieren....Hmpf!}
+\caption{Auflistung der Tabellen, die in der Datenbank existieren.}
 \label{MYSQL_Tabellen}
 \begin{tabular}{l}
   \toprule
@@ -565,46 +572,17 @@ Diese Datenbank beinhaltet die Tabellen in Tab.\ref{MYSQL_Tabellen}:
 \end{tabular}
 \end{table}
 
-% +----------------------------+
-% | $Tables_in_magicprod$        |
-% +----------------------------+
-% | AtmosphericModel           |
-% | AzimuthBinning             |
-% | FADCType                   |
-% | M1CalibrationProcessStatus |
-% | M1CameraCopytoGridStatus   |
-% | M1StarCopytoGridStatus     |
-% | M2CalibrationProcessStatus |
-% | M2CameraCopytoGridStatus   |
-% | M2StarCopytoGridStatus     |
-% | MCCalibrationRuns          |
-% | MCCameraRunData            |
-% | MCCorsikaRunData           |
-% | MCJobs                     |
-% | MCPedestalRuns             |
-% | MCReflectorRunData         |
-% | MCRunData                  |
-% | MCRunProcessStatus         |
-% | MCStatistics               |
-% | MCSuperstarProcessStatus   |
-% | MCUserID                   |
-% | MarsVersion                |
-% | ObservationMode            |
-% | ParticleType               |
-% | Source                     |
-% | ZenithBinning              |
-% +----------------------------+
 
 Die Tabelle MCJobs bietet eine Übersicht über alle Jobs. 
-Enthalten sind in dieser Tabelle u.a. die JobID, die jedem Job individuell zugewiesen wird, die erste und letzte Runnummer eines Jobs, wann der Job gestartet wurde, wann Camera und Star beendet wurden und den Pfad zu den Daten.\newline
+Enthalten sind in dieser Tabelle u.a. die JobID, die jedem Job individuell zugewiesen wird, die erste und letzte RunNumber eines Jobs, wann der Job gestartet wurde, wann Camera und Star beendet wurden und den Pfad zu den Daten.\newline
 Die Tabellen M1CalibrationProcessStatus und M2CalibrationProcessStatus enthalten ebenfalls die JobID, und die Zeitpunkte wann Camera, Calibration und Star beendet worden. 
 Des Weiteren kann man den Startzeitpunkt und den Zeitpunkt eines Abbruchs des Jobs, sowie den zugehörigen Fehlercode sehen, der Rückschlüsse über die Ursache des Fehlers bietet.
 
 In den Tabellen MCCorsikaRunData, MCReflectorRunData und MCCameraRunData kann man die wichtigsten Inputparameter für die jeweiligen Programme sehen.
 
-Die Tabelle MCRunData bietet eine Übersicht über die Runnummern, die innerhalb der einzelnen Programme verteilt wurden. 
-So gehört zu jeder Runnumber eine CorsikaRunNumber, eine ReflectorRunNumber und eine CameraRunNumber.
-Also bietet ein Job mit 2000 x 1000 Events Platz für 2000 RunNummern pro Programm.
+Die Tabelle MCRunData bietet eine Übersicht über die RunNumbers, die innerhalb der einzelnen Programme verteilt wurden. 
+So gehört zu jeder RunNumber eine CorsikaRunNumber, eine ReflectorRunNumber und eine CameraRunNumber.
+Also bietet ein Job mit 2000 x 1000 Ereignissen Platz für 2000 RunNummern pro Programm.
 
 Die Tabelle MCRunProcessStatus ist eine Übersichtstabelle über die Zeitpunkte zu denen die jeweiligen Inputcards geschrieben und die Programme Corsika, Reflector und Camera beendet wurden.
 
@@ -630,10 +608,10 @@ Die Struktur des Clusters lässt sich Abb.\ref{LiDo} entnehmen.
 Wie in Abb.\ref{LiDo} zu sehen ist, gibt es verschiedene Knotentypen, die sich in der Zahl der maximalen Jobs pro Queue und Nutzer unterscheiden und über ein Queuingsystem erreichbar sind:
 
 \begin{itemize}
- \item Die ib-Knoten sind für parallele Jobs reserviert, die die Infiniband interconnect nutzen
+ \item Die ib-Knoten sind untereinander stark vernetzt und für parallele Jobs reserviert
  \item eth-Knoten: Auf diesen Knoten werden serielle und parallele Jobs gerechnet, die die GigabitEthernet Connection nutzen
  \item quad-Knoten: Für Anforderungen an viel Speicher oder parallele OpenMP/Shared Memory Jobs werden die quad Knoten genutzt
- \item GPU: Rechnungen auf Graphikkarten finden hier statt.
+ \item GPU: Rechnungen auf Graphikkarten finden hier statt
  \item nehalem: neue Testknoten mit einer maximaler Walltime von 96h und mehr Arbeitsspecher als die eth-Knoten
 \end{itemize}
 
@@ -642,8 +620,8 @@ Es gibt als die short Queues (eth, ib, quad) mit einer maximalen Walltime von 1h
 Falls es doch mal länger dauern sollte, gibt es noch die ultralong Queue (eth) mit einer maximalen Walltime von 2688h.
 Um also einen Job zu starten, gibt man den benötigten Speicher und eine maximale Walltime an und submittet den Job in das Queuingsystem.
 
-Für die MAGIC MC Produktion werden die eth-Knoten benutzt und pro Run 1000 Corsika Events produziert und weiter prozessiert. 
-Ein Standardjob von 2Mio Corsika Events wird also in 2000 Runs mit je 1000 Events darin aufgeteilt und somit 2000 Runs nacheinander an das Queuingsystem submitted.
+Für die MAGIC MC Produktion werden die eth-Knoten benutzt und pro Run 1000 Corsika Ereignissen produziert und weiter prozessiert. 
+Ein Standardjob von 2Mio Corsika Ereignisse wird also in 2000 Runs mit je 1000 Ereignissen darin aufgeteilt und somit 2000 Runs nacheinander an das Queuingsystem submitted.
 
 
 Im Moment wird auf dem LiDO folgendes Speichervolumen für die Daten nach den verschiedenen Programmen genutzt:

@@ -118,7 +118,7 @@ school = {TU Dortmund}
     author = {LiDo Team},
     url = {http://lidong.itmc.tu-dortmund.de/ldw/index.php/System_overview},
     date = {2015},
-}
+
 
 % So sieht der Biblatex Eintag für eine Abschlussarbeit aus:
 @thesis{ma-sebastian,

@@ -1,9 +1,15 @@
-[1] Config.pm:320> INFO - This is Biber 1.9
-[1] Config.pm:323> INFO - Logfile is 'build/DoktorArbeit.blg'
-[58] biber:277> INFO - === Wed Feb  4, 2015, 15:24:11
-[58] Biber.pm:333> INFO - Reading 'build/DoktorArbeit.bcf'
-[198] Biber.pm:635> INFO - Found 0 citekeys in bib section 0
-[213] Utils.pm:144> WARN - The file 'build/DoktorArbeit.bcf' does not contain any citations!
-[334] bbl.pm:517> INFO - Writing 'build/DoktorArbeit.bbl' with encoding 'UTF-8'
-[334] bbl.pm:606> INFO - Output to build/DoktorArbeit.bbl
-[335] Biber.pm:106> INFO - WARNINGS: 1
+[0] Config.pm:320> INFO - This is Biber 1.9
+[0] Config.pm:323> INFO - Logfile is 'build/DoktorArbeit.blg'
+[60] biber:277> INFO - === Tue Feb 10, 2015, 17:33:29
+[60] Biber.pm:333> INFO - Reading 'build/DoktorArbeit.bcf'
+[170] Biber.pm:635> INFO - Found 8 citekeys in bib section 0
+[206] Biber.pm:3051> INFO - Processing section 0
+[234] Biber.pm:3189> INFO - Looking for bibtex format file 'references.bib' for section 0
+[238] bibtex.pm:990> INFO - Decoding LaTeX character macros into UTF-8
+[242] bibtex.pm:864> INFO - Found BibTeX data source 'references.bib'
+[483] UCollate.pm:66> INFO - Overriding locale 'de-DE' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[483] UCollate.pm:66> INFO - Overriding locale 'de-DE' defaults 'variable = shifted' with 'variable = non-ignorable'
+[484] Biber.pm:2928> INFO - Sorting list 'nty' of type 'entry' with scheme 'nty' and locale 'de-DE'
+[484] Biber.pm:2932> INFO - No sort tailoring available for locale 'de-DE'
+[524] bbl.pm:517> INFO - Writing 'build/DoktorArbeit.bbl' with encoding 'UTF-8'
+[529] bbl.pm:606> INFO - Output to build/DoktorArbeit.bbl

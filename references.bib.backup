@@ -82,47 +82,13 @@ archivePrefix = "arXiv",
 }
 
 
-@thesis{Haffke,
-author = {Haffke, Marijke},
-title = {Atmosphere is MAGIC},
-subtitle = {Berechnung und Implementierung neuer Atmosphärenmodelle in die MAGIC-Monte-Carlo-Kette},
-year = {2007},
-type = {Diplomarbeit},
-school = {TU Dortmund}
-}
 
 
-@ARTICLE{Hillas,
-   author = {{Hillas}, A.~M.},
-    title = "{Cerenkov light images of EAS produced by primary gamma}",
-  journal = {International Cosmic Ray Conference},
- keywords = {Cerenkov Radiation, Cosmic Ray Showers, Galactic Nuclei, Gamma Rays, Point Sources, Angular Resolution, Azimuth, Focal Plane Devices, Galactic Radiation, Hadrons, Length, Monte Carlo Method, Pulsars, Simulation, Width, X Ray Binaries},
-     year = 1985,
-    month = aug,
-   volume = 3,
-    pages = {445-448},
-   adsurl = {http://adsabs.harvard.edu/abs/1985ICRC....3..445H},
-  adsnote = {Provided by the SAO/NASA Astrophysics Data System}
-}
 
-
-@MANUAL{Superstar,
-    title   = {Stereo reconstruction (Theory)},
-    author = {MAGIC},
-    url = {http://wiki.magic.pic.es/index.php/Stereo_reconstruction_%28Theory%29},
-    date = {2015},
-}
-
-@MANUAL{LiDO,
-    title   = {System overview},
-    author = {LiDo Team},
-    url = {http://lidong.itmc.tu-dortmund.de/ldw/index.php/System_overview},
-    date = {2015},
-}
 
 % So sieht der Biblatex Eintag für eine Abschlussarbeit aus:
 @thesis{ma-sebastian,
-author = {Haffke, Sebastian},
+author = {Müller, Sebastian},
 title = {Clear Sight in Cherenkov-Astronomy},
 subtitle = {Investigations of Reflector Geometry and Mirror Alignment for the FACT-Telescope},
 year = {2014},

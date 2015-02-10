@@ -8,51 +8,52 @@
 \contentsline {subsection}{\numberline {1.2.2}Inputcards}{5}{subsection.1.2.2}
 \contentsline {section}{\numberline {1.3}Simulation des Reflektors mit Reflector}{6}{section.1.3}
 \contentsline {subsection}{\numberline {1.3.1}Inputcards}{6}{subsection.1.3.1}
-\contentsline {section}{\numberline {1.4}Simulation von Kamera und Elektronik mit Camera}{7}{section.1.4}
+\contentsline {section}{\numberline {1.4}Simulation von Kamera und Elektronik mit Camera}{6}{section.1.4}
 \contentsline {subsection}{\numberline {1.4.1}StarFieldAdder und StarResponse}{7}{subsection.1.4.1}
 \contentsline {subsection}{\numberline {1.4.2}Simulation von Kamera und Elektronik}{8}{subsection.1.4.2}
-\contentsline {subsection}{\numberline {1.4.3}Inputcard}{9}{subsection.1.4.3}
-\contentsline {section}{\numberline {1.5}Calibration}{10}{section.1.5}
-\contentsline {subsection}{\numberline {1.5.1}Signalextraktion}{11}{subsection.1.5.1}
+\contentsline {subsection}{\numberline {1.4.3}Inputcard}{8}{subsection.1.4.3}
+\contentsline {section}{\numberline {1.5}Kalibration}{10}{section.1.5}
+\contentsline {subsection}{\numberline {1.5.1}Signalextraktion}{10}{subsection.1.5.1}
 \contentsline {subsection}{\numberline {1.5.2}Ankunftszeitbestimmung}{11}{subsection.1.5.2}
-\contentsline {section}{\numberline {1.6}Star - Image Cleaning und Bildparametrisierung}{12}{section.1.6}
-\contentsline {subsection}{\numberline {1.6.1}Image Cleaning}{12}{subsection.1.6.1}
+\contentsline {section}{\numberline {1.6}Star - Bildbereinigung und Bildparametrisierung}{12}{section.1.6}
+\contentsline {subsection}{\numberline {1.6.1}Bildbereinigung}{12}{subsection.1.6.1}
 \contentsline {subsection}{\numberline {1.6.2}Bildparametrisierung}{13}{subsection.1.6.2}
-\contentsline {section}{\numberline {1.7}Superstar - Stereoskopische Rekonstruktion der Schauer}{16}{section.1.7}
-\contentsline {section}{\numberline {1.8}Automatische MC-Produktion hier in Dortmund geht so}{17}{section.1.8}
-\contentsline {subsection}{\numberline {1.8.1}Datenbank}{18}{subsection.1.8.1}
+\contentsline {section}{\numberline {1.7}Superstar - Stereoskopische Rekonstruktion der Schauer}{15}{section.1.7}
+\contentsline {section}{\numberline {1.8}Automatische MC-Produktionskette an der TU Dortmund}{16}{section.1.8}
+\contentsline {subsection}{\numberline {1.8.1}Datenbank}{17}{subsection.1.8.1}
 \contentsline {subsection}{\numberline {1.8.2}LiDO}{19}{subsection.1.8.2}
-\contentsline {subsection}{\numberline {1.8.3}Wenn die MC fertig sind...Keine Ahnung, ob das interessant ist...}{21}{subsection.1.8.3}
-\contentsline {chapter}{\numberline {2}Analyse von Mrk 421 mit NAGIC STandardanalyse}{22}{chapter.2}
+\contentsline {subsection}{\numberline {1.8.3}Wenn die MC fertig sind...}{20}{subsection.1.8.3}
+\contentsline {chapter}{\numberline {2}Analyse der AGN Mrk421 mit MARS}{22}{chapter.2}
 \contentsline {section}{\numberline {2.1}Signal-Untergrund-Trennung und Energieschätzung}{22}{section.2.1}
 \contentsline {subsection}{\numberline {2.1.1}GH Separation}{22}{subsection.2.1.1}
-\contentsline {subsection}{\numberline {2.1.2}Energierekonstruktion mit Hilfe von Look up Tables}{23}{subsection.2.1.2}
-\contentsline {subsection}{\numberline {2.1.3}Position Reconstruction}{23}{subsection.2.1.3}
+\contentsline {subsection}{\numberline {2.1.2}Energierekonstruktion mit Hilfe von Look-Up-Tables}{23}{subsection.2.1.2}
+\contentsline {subsection}{\numberline {2.1.3}Rekonstruktion der Quellposition}{23}{subsection.2.1.3}
 \contentsline {section}{\numberline {2.2}Berechnung der Lichtkurve}{24}{section.2.2}
-\contentsline {subsection}{\numberline {2.2.1}Anzahl der exzess gammas}{24}{subsection.2.2.1}
-\contentsline {subsection}{\numberline {2.2.2}Effektive On Zeit}{25}{subsection.2.2.2}
+\contentsline {subsection}{\numberline {2.2.1}Anzahl der Signalgammas}{25}{subsection.2.2.1}
+\contentsline {subsection}{\numberline {2.2.2}Effektive Beobachtungszeit}{26}{subsection.2.2.2}
 \contentsline {subsection}{\numberline {2.2.3}Effektive Fläche}{26}{subsection.2.2.3}
-\contentsline {section}{\numberline {2.3}Entfaltung des Energiespektrumpfs}{26}{section.2.3}
+\contentsline {section}{\numberline {2.3}Entfaltung des Energiespektrums}{26}{section.2.3}
 \contentsline {section}{\numberline {2.4}Mrk 421 Analyse}{28}{section.2.4}
-\contentsline {subsection}{\numberline {2.4.1}Überblick über die Daten}{28}{subsection.2.4.1}
+\contentsline {subsection}{\numberline {2.4.1}Überblick über die Daten}{29}{subsection.2.4.1}
 \contentsline {subsection}{\numberline {2.4.2}Datenset 2}{29}{subsection.2.4.2}
-\contentsline {subsubsection}{\nonumberline Data-/Off-Data-/MC-/Crab-Selection und Qualitätsmerkmale}{29}{section*.18}
-\contentsline {subsubsection}{\nonumberline Coach und Melibea}{30}{section*.20}
-\contentsline {subsubsection}{\nonumberline Lichtkurve von Crab}{32}{section*.23}
-\contentsline {subsubsection}{\nonumberline Lichtkurve von Mrk421}{33}{section*.25}
-\contentsline {subsubsection}{\nonumberline Spektrum von Crab}{33}{section*.28}
-\contentsline {subsubsection}{\nonumberline Spektrum von Mrk421}{35}{section*.30}
-\contentsline {subsection}{\numberline {2.4.3}Datenset 1}{36}{subsection.2.4.3}
-\contentsline {subsubsection}{\nonumberline Datencheck}{36}{section*.32}
-\contentsline {subsubsection}{\nonumberline Lichtkurve}{36}{section*.34}
-\contentsline {subsubsection}{\nonumberline Spektrum}{38}{section*.37}
-\contentsline {subsection}{\numberline {2.4.4}Datenset 4}{38}{subsection.2.4.4}
-\contentsline {subsubsection}{\nonumberline Datencheck}{39}{section*.39}
-\contentsline {subsubsection}{\nonumberline Lichtkurve}{39}{section*.41}
-\contentsline {subsubsection}{\nonumberline Spektrum}{40}{section*.44}
-\contentsline {subsection}{\numberline {2.4.5}Datenset 3}{41}{subsection.2.4.5}
-\contentsline {subsubsection}{\nonumberline Datencheck}{41}{section*.46}
-\contentsline {subsection}{\numberline {2.4.6}Energieschätzung}{42}{subsection.2.4.6}
-\contentsline {subsubsection}{\nonumberline Lichtkurve}{42}{section*.48}
-\contentsline {subsubsection}{\nonumberline Spektrum}{42}{section*.50}
-\contentsline {section}{\numberline {2.5}LC für Alles}{43}{section.2.5}
+\contentsline {subsubsection}{\nonumberline Daten-Auswahl und Qualitätchecks}{30}{section*.19}
+\contentsline {subsubsection}{\nonumberline Coach und Melibea}{31}{section*.22}
+\contentsline {subsubsection}{\nonumberline Lichtkurve von Crab}{33}{section*.25}
+\contentsline {subsubsection}{\nonumberline Lichtkurve von Mrk421}{34}{section*.27}
+\contentsline {subsubsection}{\nonumberline Spektrum von Crab}{35}{section*.30}
+\contentsline {subsubsection}{\nonumberline Spektrum von Mrk421}{35}{section*.32}
+\contentsline {subsection}{\numberline {2.4.3}Datenset 1}{37}{subsection.2.4.3}
+\contentsline {subsubsection}{\nonumberline Datencheck}{37}{section*.34}
+\contentsline {subsubsection}{\nonumberline Lichtkurve}{37}{section*.36}
+\contentsline {subsubsection}{\nonumberline Spektrum}{39}{section*.39}
+\contentsline {subsection}{\numberline {2.4.4}Datenset 4}{39}{subsection.2.4.4}
+\contentsline {subsubsection}{\nonumberline Datencheck}{40}{section*.41}
+\contentsline {subsubsection}{\nonumberline Lichtkurve}{40}{section*.43}
+\contentsline {subsubsection}{\nonumberline Spektrum}{41}{section*.46}
+\contentsline {subsection}{\numberline {2.4.5}Datenset 3}{42}{subsection.2.4.5}
+\contentsline {subsubsection}{\nonumberline Datencheck}{42}{section*.48}
+\contentsline {subsection}{\numberline {2.4.6}Energieschätzung}{43}{subsection.2.4.6}
+\contentsline {subsubsection}{\nonumberline Lichtkurve}{43}{section*.50}
+\contentsline {subsubsection}{\nonumberline Spektrum}{43}{section*.52}
+\contentsline {section}{\numberline {2.5}LC für Alles}{44}{section.2.5}
+\contentsline {chapter}{\nonumberline Literatur}{46}{chapter*.55}
