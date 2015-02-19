@@ -1,4 +1,4 @@
-This is LuaTeX, Version beta-0.79.1 (TeX Live 2014) (rev 4971)  (format=lualatex 2015.1.12)  10 FEB 2015 17:42
+This is LuaTeX, Version beta-0.79.1 (TeX Live 2014) (rev 4971)  (format=lualatex 2015.1.12)  19 FEB 2015 13:44
  restricted \write18 enabled.
 **DoktorArbeit.tex
 (./DoktorArbeit.tex
@@ -382,7 +382,7 @@ luatexbase-attr: luatexbase.attributes["luaotfload@cursbase"] = 6
 luatexbase-attr: luatexbase.attributes["luaotfload@curscurs"] = 7
 luatexbase-attr: luatexbase.attributes["luaotfload@cursdone"] = 8
 luatexbase-attr: luatexbase.attributes["luaotfload@state"] = 9
-luaotfload | main : fontloader loaded in 0.061 seconds
+luaotfload | main : fontloader loaded in 0.138 seconds
 luatexbase-mcb: inserting 'luaotfload.node_processor'
 at position 1 in 'pre_linebreak_filter'
 luatexbase-mcb: inserting 'luaotfload.node_processor'
@@ -2399,7 +2399,7 @@ Kapitel 1.
 [1
 
 ]
-<./Plots/03_MonteCarlos/MAGIC-Telescopes.jpg, id=81, 1284.8pt x 841.1425pt>
+<./Plots/03_MonteCarlos/MAGIC-Telescopes.jpg, id=83, 1284.8pt x 841.1425pt>
 File: ./Plots/03_MonteCarlos/MAGIC-Telescopes.jpg Graphic file (type jpg)
 
 <use ./Plots/03_MonteCarlos/MAGIC-Telescopes.jpg>
@@ -2407,7 +2407,7 @@ Package pdftex.def Info: ./Plots/03_MonteCarlos/MAGIC-Telescopes.jpg used on inp
 ut line 36.
 (pdftex.def)             Requested size: 394.35527pt x 258.17169pt.
  [2<./Plots/03_MonteCarlos/MAGIC-Telescopes.jpg>] [3]
-<./Plots/03_MonteCarlos/Photon_1TeV_CORSIKA.png, id=94, 1027.84pt x 2055.68pt>
+<./Plots/03_MonteCarlos/Photon_1TeV_CORSIKA.png, id=96, 1027.84pt x 2055.68pt>
 File: ./Plots/03_MonteCarlos/Photon_1TeV_CORSIKA.png Graphic file (type png)
 
 <use ./Plots/03_MonteCarlos/Photon_1TeV_CORSIKA.png>
@@ -2421,7 +2421,7 @@ ers mit
  []
 
 
-<./Plots/03_MonteCarlos/Proton_1TeV_CORSIKA.png, id=95, 1027.84pt x 2055.68pt>
+<./Plots/03_MonteCarlos/Proton_1TeV_CORSIKA.png, id=97, 1027.84pt x 2055.68pt>
 File: ./Plots/03_MonteCarlos/Proton_1TeV_CORSIKA.png Graphic file (type png)
 
 <use ./Plots/03_MonteCarlos/Proton_1TeV_CORSIKA.png>
@@ -2458,7 +2458,7 @@ oman6-regular.luc)(load luc: /net/home.e5.physik.tu-dortmund.de/vol/ph_e5v/e5b/h
 omes/kfrantzen/.texlive2014/texmf-var/luatex-cache/generic/fonts/otf/lmroman6-re
 gular.luc) [6]
 <./Plots/03_MonteCarlos/Signal_Job481_RunNr1513276_511_e3.0TeV_Zd32.2_fertig.pn
-g, id=122, 1226.5825pt x 1012.78375pt>
+g, id=124, 1226.5825pt x 1012.78375pt>
 File: ./Plots/03_MonteCarlos/Signal_Job481_RunNr1513276_511_e3.0TeV_Zd32.2_ferti
 g.png Graphic file (type png)
 
@@ -2469,7 +2469,7 @@ Package pdftex.def Info: ./Plots/03_MonteCarlos/Signal_Job481_RunNr1513276_511_e
 (pdftex.def)             Requested size: 236.61555pt x 195.36713pt.
  [7<./Plots/03_MonteCarlos/Signal_Job481_RunNr1513276_511_e3.0TeV_Zd32.2_fertig.
 png>] [8] [9]
-<./Plots/03_MonteCarlos/Pedestal_fertig.png, id=143, 1210.5225pt x 1004.75375pt
+<./Plots/03_MonteCarlos/Pedestal_fertig.png, id=145, 1210.5225pt x 1004.75375pt
 >
 File: ./Plots/03_MonteCarlos/Pedestal_fertig.png Graphic file (type png)
  <use ./Plots/03_MonteCarlos/Pedestal_fertig.png>
@@ -2484,7 +2484,7 @@ luaotfload | load : Lookup/name: "LatinModernMath" -> "latinmodern-math.otf"
 LaTeX Font Info:    Font shape `EU2/LatinModernMath(2)/m/n' will be
 (Font)              scaled to size 6.99986pt on input line 350.
 luaotfload | load : Lookup/name: "LatinModernMath" -> "latinmodern-math.otf"
-<./Plots/03_MonteCarlos/Signal_ArrivalTime_fertig.png, id=153, 1219.55624pt x 1
+<./Plots/03_MonteCarlos/Signal_ArrivalTime_fertig.png, id=155, 1219.55624pt x 1
 013.7875pt>
 File: ./Plots/03_MonteCarlos/Signal_ArrivalTime_fertig.png Graphic file (type pn
 g)
@@ -2496,7 +2496,7 @@ ed on input line 358.
 Underfull \vbox (badness 1609) has occurred while \output is active []
 
  [12]
-<./Plots/03_MonteCarlos/Signal_gecleant_fertig.png, id=173, 1269.74374pt x 1102
+<./Plots/03_MonteCarlos/Signal_gecleant_fertig.png, id=175, 1269.74374pt x 1102
 .1175pt>
 File: ./Plots/03_MonteCarlos/Signal_gecleant_fertig.png Graphic file (type png)
  <use ./Plots/03_MonteCarlos/Signal_gecleant_fertig.png>
@@ -2504,7 +2504,7 @@ Package pdftex.def Info: ./Plots/03_MonteCarlos/Signal_gecleant_fertig.png used
 on input line 402.
 (pdftex.def)             Requested size: 236.61555pt x 205.36844pt.
  [13<./Plots/03_MonteCarlos/Signal_gecleant_fertig.png>]
-<./Plots/03_MonteCarlos/CleaningBild.png, id=184, 914.41624pt x 441.65pt>
+<./Plots/03_MonteCarlos/CleaningBild.png, id=186, 914.41624pt x 441.65pt>
 File: ./Plots/03_MonteCarlos/CleaningBild.png Graphic file (type png)
 
 <use ./Plots/03_MonteCarlos/CleaningBild.png>
@@ -2512,7 +2512,7 @@ Package pdftex.def Info: ./Plots/03_MonteCarlos/CleaningBild.png used on input l
 ine 433.
 (pdftex.def)             Requested size: 354.91733pt x 171.42064pt.
  [14<./Plots/03_MonteCarlos/CleaningBild.png>]
-<./Plots/03_MonteCarlos/Superstar.png, id=190, 1090.0725pt x 584.1825pt>
+<./Plots/03_MonteCarlos/Superstar.png, id=192, 1090.0725pt x 584.1825pt>
 File: ./Plots/03_MonteCarlos/Superstar.png Graphic file (type png)
 
 <use ./Plots/03_MonteCarlos/Superstar.png>
@@ -2520,7 +2520,7 @@ Package pdftex.def Info: ./Plots/03_MonteCarlos/Superstar.png used on input line
  479.
 (pdftex.def)             Requested size: 354.91733pt x 190.2047pt.
  [15]
-<./Plots/03_MonteCarlos/Jobmanager.png, id=200, 1573.88pt x 684.5575pt>
+<./Plots/03_MonteCarlos/Jobmanager.png, id=202, 1573.88pt x 684.5575pt>
 File: ./Plots/03_MonteCarlos/Jobmanager.png Graphic file (type png)
 
 <use ./Plots/03_MonteCarlos/Jobmanager.png>
@@ -2535,7 +2535,7 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 Underfull \vbox (badness 3623) has occurred while \output is active []
 
  [18]
-<./Plots/03_MonteCarlos/LiDO.png, id=222, 722.7pt x 542.025pt>
+<./Plots/03_MonteCarlos/LiDO.png, id=224, 722.7pt x 542.025pt>
 File: ./Plots/03_MonteCarlos/LiDO.png Graphic file (type png)
 
 <use ./Plots/03_MonteCarlos/LiDO.png>
@@ -2584,7 +2584,7 @@ Kapitel 2.
 ]
 Missing character: There is no ä (U+00E4) in font cmmi6!
 Missing character: There is no ä (U+00E4) in font cmmi8!
- <./Plots/04_MrkAnalyse/Disp.png, id=270, 665.48625pt x 651.43375pt>
+ <./Plots/04_MrkAnalyse/Disp.png, id=272, 665.48625pt x 651.43375pt>
 File: ./Plots/04_MrkAnalyse/Disp.png Graphic file (type png)
 
 <use ./Plots/04_MrkAnalyse/Disp.png>
@@ -2598,7 +2598,7 @@ stim-men, wird ein $\EU2/LatinModernMath(0)/m/n/10.95 𝜃[]$\EU2/lmr/m/n/10.95
  []
 
 
-<./Plots/04_MrkAnalyse/Datenset2/Crab_Theta2.pdf, id=292, 569.12625pt x 389.455
+<./Plots/04_MrkAnalyse/Datenset2/Crab_Theta2.pdf, id=294, 569.12625pt x 389.455
 pt>
 File: ./Plots/04_MrkAnalyse/Datenset2/Crab_Theta2.pdf Graphic file (type pdf)
  <use ./Plots/04_MrkAnalyse/Datenset2/Crab_Theta2.pdf>
@@ -2606,7 +2606,7 @@ Package pdftex.def Info: ./Plots/04_MrkAnalyse/Datenset2/Crab_Theta2.pdf used on
  input line 110.
 (pdftex.def)             Requested size: 315.48541pt x 215.89455pt.
  [25<./Plots/04_MrkAnalyse/Datenset2/Crab_Theta2.pdf>] [26]
-<./Plots/04_MrkAnalyse/EnergyEst_EnergyTrue.pdf, id=353, 569.12625pt x 385.44pt
+<./Plots/04_MrkAnalyse/EnergyEst_EnergyTrue.pdf, id=355, 569.12625pt x 385.44pt
 >
 File: ./Plots/04_MrkAnalyse/EnergyEst_EnergyTrue.pdf Graphic file (type pdf)
  <use ./Plots/04_MrkAnalyse/EnergyEst_EnergyTrue.pdf>
@@ -2614,7 +2614,7 @@ Package pdftex.def Info: ./Plots/04_MrkAnalyse/EnergyEst_EnergyTrue.pdf used on
 input line 161.
 (pdftex.def)             Requested size: 315.48541pt x 213.66882pt.
  [27<./Plots/04_MrkAnalyse/EnergyEst_EnergyTrue.pdf>] [28]
-<./Plots/04_MrkAnalyse/Datenset2/Datenset2_Mrk421_MPointingPos_fZd.pdf, id=431,
+<./Plots/04_MrkAnalyse/Datenset2/Datenset2_Mrk421_MPointingPos_fZd.pdf, id=433,
  569.12625pt x 385.44pt>
 File: ./Plots/04_MrkAnalyse/Datenset2/Datenset2_Mrk421_MPointingPos_fZd.pdf Grap
 hic file (type pdf)
@@ -2633,7 +2633,7 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [30<./Plots/04_MrkAnalyse/Datenset2/Datenset2_Mrk421_MPointingPos_fZd.pdf>]
 <./Plots/04_MrkAnalyse/Datenset2/Datenset2_Background_MPointingPos1_fZd.pdf, id
-=498, 569.12625pt x 387.4475pt>
+=500, 569.12625pt x 387.4475pt>
 File: ./Plots/04_MrkAnalyse/Datenset2/Datenset2_Background_MPointingPos1_fZd.pdf
  Graphic file (type pdf)
 
@@ -2643,7 +2643,7 @@ Package pdftex.def Info: ./Plots/04_MrkAnalyse/Datenset2/Datenset2_Background_MP
 ointingPos1_fZd.pdf used on input line 341.
 (pdftex.def)             Requested size: 276.04749pt x 187.93546pt.
 
-<./Plots/04_MrkAnalyse/Datenset2/Datenset2_MC_MPointingPos1_fZd.pdf, id=499, 56
+<./Plots/04_MrkAnalyse/Datenset2/Datenset2_MC_MPointingPos1_fZd.pdf, id=501, 56
 9.12625pt x 387.4475pt>
 File: ./Plots/04_MrkAnalyse/Datenset2/Datenset2_MC_MPointingPos1_fZd.pdf Graphic
  file (type pdf)
@@ -2662,7 +2662,7 @@ Package pdftex.def Info: ./Plots/04_MrkAnalyse/Datenset2/Crab_Theta2.pdf used on
  input line 370.
 (pdftex.def)             Requested size: 177.45866pt x 121.43697pt.
 
-<./Plots/04_MrkAnalyse/Datenset2/Crab_dFdE.pdf, id=609, 569.12625pt x 419.5675p
+<./Plots/04_MrkAnalyse/Datenset2/Crab_dFdE.pdf, id=611, 569.12625pt x 419.5675p
 t>
 File: ./Plots/04_MrkAnalyse/Datenset2/Crab_dFdE.pdf Graphic file (type pdf)
  <use ./Plots/04_MrkAnalyse/Datenset2/Crab_dFdE.pdf>
@@ -2670,7 +2670,7 @@ Package pdftex.def Info: ./Plots/04_MrkAnalyse/Datenset2/Crab_dFdE.pdf used on i
 nput line 377.
 (pdftex.def)             Requested size: 177.45866pt x 130.82642pt.
 
-<./Plots/04_MrkAnalyse/Datenset2/Crab_SED.pdf, id=610, 569.12625pt x 387.4475pt
+<./Plots/04_MrkAnalyse/Datenset2/Crab_SED.pdf, id=612, 569.12625pt x 387.4475pt
 >
 File: ./Plots/04_MrkAnalyse/Datenset2/Crab_SED.pdf Graphic file (type pdf)
  <use ./Plots/04_MrkAnalyse/Datenset2/Crab_SED.pdf>
@@ -2678,7 +2678,7 @@ Package pdftex.def Info: ./Plots/04_MrkAnalyse/Datenset2/Crab_SED.pdf used on in
 put line 384.
 (pdftex.def)             Requested size: 177.45866pt x 120.811pt.
 
-<./Plots/04_MrkAnalyse/Datenset2/Crab_LC.pdf, id=611, 569.12625pt x 387.4475pt>
+<./Plots/04_MrkAnalyse/Datenset2/Crab_LC.pdf, id=613, 569.12625pt x 387.4475pt>
 File: ./Plots/04_MrkAnalyse/Datenset2/Crab_LC.pdf Graphic file (type pdf)
 <use ./Plots/04_MrkAnalyse/Datenset2/Crab_LC.pdf>
 Package pdftex.def Info: ./Plots/04_MrkAnalyse/Datenset2/Crab_LC.pdf used on inp
@@ -2686,14 +2686,14 @@ ut line 391.
 (pdftex.def)             Requested size: 177.45866pt x 120.811pt.
  [33<./Plots/04_MrkAnalyse/Datenset2/Crab_dFdE.pdf><./Plots/04_MrkAnalyse/Datens
 et2/Crab_SED.pdf><./Plots/04_MrkAnalyse/Datenset2/Crab_LC.pdf>]
-<./Plots/04_MrkAnalyse/Datenset2/LC_Mrk421.pdf, id=764, 569.12625pt x 385.44pt>
+<./Plots/04_MrkAnalyse/Datenset2/LC_Mrk421.pdf, id=766, 569.12625pt x 385.44pt>
 File: ./Plots/04_MrkAnalyse/Datenset2/LC_Mrk421.pdf Graphic file (type pdf)
 <use ./Plots/04_MrkAnalyse/Datenset2/LC_Mrk421.pdf>
 Package pdftex.def Info: ./Plots/04_MrkAnalyse/Datenset2/LC_Mrk421.pdf used on i
 nput line 420.
 (pdftex.def)             Requested size: 315.48541pt x 213.66882pt.
 
-<./Plots/04_MrkAnalyse/Datenset2/SED_Mrk421.pdf, id=767, 569.12625pt x 423.5825
+<./Plots/04_MrkAnalyse/Datenset2/SED_Mrk421.pdf, id=769, 569.12625pt x 423.5825
 pt>
 File: ./Plots/04_MrkAnalyse/Datenset2/SED_Mrk421.pdf Graphic file (type pdf)
  <use ./Plots/04_MrkAnalyse/Datenset2/SED_Mrk421.pdf>
@@ -2701,7 +2701,7 @@ Package pdftex.def Info: ./Plots/04_MrkAnalyse/Datenset2/SED_Mrk421.pdf used on
 input line 435.
 (pdftex.def)             Requested size: 315.48541pt x 234.81314pt.
  [34<./Plots/04_MrkAnalyse/Datenset2/LC_Mrk421.pdf>]
-<./Plots/04_MrkAnalyse/Datenset2/Crab_mit_Literatur.pdf, id=825, 569.12625pt x 
+<./Plots/04_MrkAnalyse/Datenset2/Crab_mit_Literatur.pdf, id=827, 569.12625pt x 
 408.52625pt>
 File: ./Plots/04_MrkAnalyse/Datenset2/Crab_mit_Literatur.pdf Graphic file (type 
 pdf)
@@ -2710,7 +2710,7 @@ Package pdftex.def Info: ./Plots/04_MrkAnalyse/Datenset2/Crab_mit_Literatur.pdf
 used on input line 447.
 (pdftex.def)             Requested size: 315.48541pt x 226.4667pt.
 
-<./Plots/04_MrkAnalyse/Datenset2/Spektrum_Mrk421.pdf, id=827, 569.12625pt x 408
+<./Plots/04_MrkAnalyse/Datenset2/Spektrum_Mrk421.pdf, id=829, 569.12625pt x 408
 .52625pt>
 File: ./Plots/04_MrkAnalyse/Datenset2/Spektrum_Mrk421.pdf Graphic file (type pdf
 )
@@ -2721,7 +2721,7 @@ d on input line 461.
  [35<./Plots/04_MrkAnalyse/Datenset2/SED_Mrk421.pdf>] [36<./Plots/04_MrkAnalyse/
 Datenset2/Crab_mit_Literatur.pdf><./Plots/04_MrkAnalyse/Datenset2/Spektrum_Mrk42
 1.pdf>]
-<./Plots/04_MrkAnalyse/Datenset1/Datenset1_LC_Mrk421.pdf, id=983, 569.12625pt x
+<./Plots/04_MrkAnalyse/Datenset1/Datenset1_LC_Mrk421.pdf, id=985, 569.12625pt x
  387.4475pt>
 File: ./Plots/04_MrkAnalyse/Datenset1/Datenset1_LC_Mrk421.pdf Graphic file (type
  pdf)
@@ -2730,7 +2730,7 @@ Package pdftex.def Info: ./Plots/04_MrkAnalyse/Datenset1/Datenset1_LC_Mrk421.pdf
  used on input line 521.
 (pdftex.def)             Requested size: 315.48541pt x 214.7817pt.
 
-<./Plots/04_MrkAnalyse/Datenset1/Datenset1_LC_Crab.pdf, id=985, 569.12625pt x 3
+<./Plots/04_MrkAnalyse/Datenset1/Datenset1_LC_Crab.pdf, id=987, 569.12625pt x 3
 87.4475pt>
 File: ./Plots/04_MrkAnalyse/Datenset1/Datenset1_LC_Crab.pdf Graphic file (type p
 df)
@@ -2741,7 +2741,7 @@ sed on input line 533.
  [37]
 [38<./Plots/04_MrkAnalyse/Datenset1/Datenset1_LC_Mrk421.pdf><./Plots/04_MrkAnaly
 se/Datenset1/Datenset1_LC_Crab.pdf>]
-<./Plots/04_MrkAnalyse/Datenset1/Spektrum_Mrk421.pdf, id=1096, 569.12625pt x 40
+<./Plots/04_MrkAnalyse/Datenset1/Spektrum_Mrk421.pdf, id=1098, 569.12625pt x 40
 8.52625pt>
 File: ./Plots/04_MrkAnalyse/Datenset1/Spektrum_Mrk421.pdf Graphic file (type pdf
 )
@@ -2750,7 +2750,7 @@ Package pdftex.def Info: ./Plots/04_MrkAnalyse/Datenset1/Spektrum_Mrk421.pdf use
 d on input line 546.
 (pdftex.def)             Requested size: 315.48541pt x 226.4667pt.
  [39<./Plots/04_MrkAnalyse/Datenset1/Spektrum_Mrk421.pdf>]
-<./Plots/04_MrkAnalyse/Datenset4/Datenset4_LC_Crab.pdf, id=1154, 569.12625pt x 
+<./Plots/04_MrkAnalyse/Datenset4/Datenset4_LC_Crab.pdf, id=1156, 569.12625pt x 
 387.4475pt>
 File: ./Plots/04_MrkAnalyse/Datenset4/Datenset4_LC_Crab.pdf Graphic file (type p
 df)
@@ -2759,7 +2759,7 @@ Package pdftex.def Info: ./Plots/04_MrkAnalyse/Datenset4/Datenset4_LC_Crab.pdf u
 sed on input line 602.
 (pdftex.def)             Requested size: 315.48541pt x 214.7817pt.
 
-<./Plots/04_MrkAnalyse/Datenset4/Datenset4_LC_Mrk421.pdf, id=1155, 569.12625pt 
+<./Plots/04_MrkAnalyse/Datenset4/Datenset4_LC_Mrk421.pdf, id=1157, 569.12625pt 
 x 385.44pt>
 File: ./Plots/04_MrkAnalyse/Datenset4/Datenset4_LC_Mrk421.pdf Graphic file (type
  pdf)
@@ -2768,7 +2768,7 @@ Package pdftex.def Info: ./Plots/04_MrkAnalyse/Datenset4/Datenset4_LC_Mrk421.pdf
  used on input line 609.
 (pdftex.def)             Requested size: 315.48541pt x 213.66882pt.
 
-<./Plots/04_MrkAnalyse/Datenset4/Datenset4_Spektrum_Mrk421.pdf, id=1157, 569.12
+<./Plots/04_MrkAnalyse/Datenset4/Datenset4_Spektrum_Mrk421.pdf, id=1159, 569.12
 625pt x 408.52625pt>
 File: ./Plots/04_MrkAnalyse/Datenset4/Datenset4_Spektrum_Mrk421.pdf Graphic file
  (type pdf)
@@ -2782,7 +2782,7 @@ nalyse/Datenset4/Datenset4_LC_Mrk421.pdf>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [42<./Plots/04_MrkAnalyse/Datenset4/Datenset4_Spektrum_Mrk421.pdf>]
-<./Plots/04_MrkAnalyse/Datenset3/Datenset3_Mrk421_LC.pdf, id=1324, 569.12625pt 
+<./Plots/04_MrkAnalyse/Datenset3/Datenset3_Mrk421_LC.pdf, id=1326, 569.12625pt 
 x 387.4475pt>
 File: ./Plots/04_MrkAnalyse/Datenset3/Datenset3_Mrk421_LC.pdf Graphic file (type
  pdf)
@@ -2791,7 +2791,7 @@ Package pdftex.def Info: ./Plots/04_MrkAnalyse/Datenset3/Datenset3_Mrk421_LC.pdf
  used on input line 676.
 (pdftex.def)             Requested size: 315.48541pt x 214.7817pt.
 
-<./Plots/04_MrkAnalyse/Datenset3/Datenset3_Mrk421_Spektrum.pdf, id=1326, 569.12
+<./Plots/04_MrkAnalyse/Datenset3/Datenset3_Mrk421_Spektrum.pdf, id=1328, 569.12
 625pt x 408.52625pt>
 File: ./Plots/04_MrkAnalyse/Datenset3/Datenset3_Mrk421_Spektrum.pdf Graphic file
  (type pdf)
@@ -2801,18 +2801,25 @@ Package pdftex.def Info: ./Plots/04_MrkAnalyse/Datenset3/Datenset3_Mrk421_Spektr
 um.pdf used on input line 690.
 (pdftex.def)             Requested size: 315.48541pt x 226.4667pt.
  [43<./Plots/04_MrkAnalyse/Datenset3/Datenset3_Mrk421_LC.pdf>]
-<./Plots/04_MrkAnalyse/Alles_LC.png, id=1384, 925.4575pt x 644.4075pt>
+<./Plots/04_MrkAnalyse/Alles_LC.png, id=1386, 925.4575pt x 644.4075pt>
 File: ./Plots/04_MrkAnalyse/Alles_LC.png Graphic file (type png)
 
 <use ./Plots/04_MrkAnalyse/Alles_LC.png>
 Package pdftex.def Info: ./Plots/04_MrkAnalyse/Alles_LC.png used on input line 7
 12.
 (pdftex.def)             Requested size: 315.48541pt x 219.67578pt.
-) [44<./Plots/04_MrkAnalyse/Datenset3/Datenset3_Mrk421_Spektrum.pdf>] [45<./Plot
-s/04_MrkAnalyse/Alles_LC.png>](compiling luc: /usr/local/texlive/2014/texmf-var/
-luatex-cache/generic/fonts/otf/lmromancaps10-regular.luc)(load luc: /net/home.e5
-.physik.tu-dortmund.de/vol/ph_e5v/e5b/homes/kfrantzen/.texlive2014/texmf-var/lua
-tex-cache/generic/fonts/otf/lmromancaps10-regular.luc) [46
+) (./Inhalt/05_MWL.tex [44<./Plots/04_MrkAnalyse/Datenset3/Datenset3_Mrk421_Spek
+trum.pdf>] [45<./Plots/04_MrkAnalyse/Alles_LC.png>]
+Kapitel 3.
+) [46
+
+](compiling luc: /usr/local/texlive/2014/texmf-var/luatex-cache/generic/fonts/ot
+f/lmromancaps10-regular.luc)(load luc: /net/home.e5.physik.tu-dortmund.de/vol/ph
+_e5v/e5b/homes/kfrantzen/.texlive2014/texmf-var/luatex-cache/generic/fonts/otf/l
+mromancaps10-regular.luc) [47
+
+
+] [48
 
 
 ] (./Inhalt/eid_versicherung.tex
@@ -2825,19 +2832,16 @@ Underfull \hbox (badness 10000) in paragraph at lines 27--29
 
  []
 
-) [47
-
-
-]
+) [49]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 86.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 86.
  (./build/DoktorArbeit.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 86.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 86.
 Package rerunfilecheck Info: File `DoktorArbeit.aux' has not changed.
-(rerunfilecheck)             Checksum: C02912C789F1FC6F2F130A4940D6946C;28563.
+(rerunfilecheck)             Checksum: 17F8761CAB4839EE60B9880A51DD2505;28867.
 Package rerunfilecheck Info: File `DoktorArbeit.toc' has not changed.
-(rerunfilecheck)             Checksum: A1E70B341565F6FC7951E4D4FFA6A44E;4941.
+(rerunfilecheck)             Checksum: A8426B7E5F0BF3CB715503D5794858BC;5000.
 
 
 LaTeX Warning: There were multiply-defined labels.
@@ -2847,15 +2851,15 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 86.
 )
 
 Here is how much of LuaTeX's memory you used:
- 53960 strings out of 494693
+ 53976 strings out of 494693
  100000,1648299 words of node,token memory allocated
- 944 words of node memory still in use:
+ 945 words of node memory still in use:
    6 hlist, 4 vlist, 2 rule, 3 glue, 22 kern, 27 attribute, 59 glue_spec, 27 att
 ribute_list, 6 action, 1 write nodes
-   avail lists: 1:47,2:10021,3:441,4:919,5:215,6:3313,7:298,8:23,9:511,10:985,11
+   avail lists: 1:47,2:10021,3:449,4:918,5:215,6:3313,7:298,8:23,9:511,10:985,11
 :519,12:230
- 55928 multiletter control sequences out of 65536+600000
- 97 fonts using 28229855 bytes
+ 55932 multiletter control sequences out of 65536+600000
+ 97 fonts using 28229599 bytes
  82i,21n,104p,964b,2062s stack positions out of 5000i,500n,10000p,200000b,100000s
 </usr/local/texlive/2014/texmf-dist/fonts/opentype/public/lm/lmroman8-regular.ot
 f></usr/local/texlive/2014/texmf-dist/fonts/opentype/public/lm/lmromancaps10-reg
@@ -2871,10 +2875,10 @@ nts/opentype/public/lm/lmroman10-regular.otf></usr/local/texlive/2014/texmf-dist
 /fonts/opentype/public/lm/lmroman12-regular.otf></usr/local/texlive/2014/texmf-d
 ist/fonts/opentype/public/lm/lmsans10-bold.otf></usr/local/texlive/2014/texmf-di
 st/fonts/opentype/public/lm/lmroman12-bold.otf>
-Output written on DoktorArbeit.pdf (51 pages, 4149243 bytes).
+Output written on DoktorArbeit.pdf (53 pages, 4150138 bytes).
 
-PDF statistics: 1608 PDF objects out of 1728 (max. 8388607)
- 967 compressed objects within 10 object streams
- 177 named destinations out of 1000 (max. 131072)
- 144 words of extra memory for PDF output out of 10000 (max. 10000000)
+PDF statistics: 1621 PDF objects out of 1728 (max. 8388607)
+ 978 compressed objects within 10 object streams
+ 180 named destinations out of 1000 (max. 131072)
+ 152 words of extra memory for PDF output out of 10000 (max. 10000000)
 

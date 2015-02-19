@@ -523,6 +523,8 @@ INPUT ./Plots/04_MrkAnalyse/Datenset4/Datenset4_Spektrum_Mrk421.pdf
 INPUT ./Plots/04_MrkAnalyse/Datenset3/Datenset3_Mrk421_LC.pdf
 INPUT ./Plots/04_MrkAnalyse/Datenset3/Datenset3_Mrk421_Spektrum.pdf
 INPUT ./Plots/04_MrkAnalyse/Alles_LC.png
+INPUT ./Inhalt/05_MWL.tex
+INPUT ./Inhalt/05_MWL.tex
 INPUT /net/home.e5.physik.tu-dortmund.de/vol/ph_e5v/e5b/homes/kfrantzen/.texlive2014/texmf-var/luatex-cache/generic/fonts/otf/lmromancaps10-regular.luc
 INPUT ./Inhalt/eid_versicherung.tex
 INPUT ./Inhalt/eid_versicherung.tex

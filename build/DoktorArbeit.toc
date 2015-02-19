@@ -56,4 +56,5 @@
 \contentsline {subsubsection}{\nonumberline Lichtkurve}{43}{section*.50}
 \contentsline {subsubsection}{\nonumberline Spektrum}{43}{section*.52}
 \contentsline {section}{\numberline {2.5}LC für Alles}{44}{section.2.5}
-\contentsline {chapter}{\nonumberline Literatur}{46}{chapter*.55}
+\contentsline {chapter}{\numberline {3}MWL}{46}{chapter.3}
+\contentsline {chapter}{\nonumberline Literatur}{47}{chapter*.55}
