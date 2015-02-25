@@ -1968,18 +1968,14 @@
     <bcf:datasource type="file" datatype="bibtex">references.bib</bcf:datasource>
   </bcf:bibdata>
   <bcf:section number="0">
-    <bcf:citekey order="1">CORSIKA</bcf:citekey>
-    <bcf:citekey order="2">CORSIKA</bcf:citekey>
-    <bcf:citekey order="3">Haffke</bcf:citekey>
-    <bcf:citekey order="4">Hillas</bcf:citekey>
-    <bcf:citekey order="5">Superstar</bcf:citekey>
-    <bcf:citekey order="6">Superstar</bcf:citekey>
-    <bcf:citekey order="7">LiDO</bcf:citekey>
-    <bcf:citekey order="8">LiDO</bcf:citekey>
-    <bcf:citekey order="9">MARS</bcf:citekey>
-    <bcf:citekey order="10">RandomForestForMAGIC</bcf:citekey>
-    <bcf:citekey order="11">DispRekonstruktion</bcf:citekey>
-    <bcf:citekey order="12">DispRekonstruktion</bcf:citekey>
+    <bcf:citekey order="1">Swift</bcf:citekey>
+    <bcf:citekey order="2">OVRO</bcf:citekey>
+    <bcf:citekey order="3">Metsahovi</bcf:citekey>
+    <bcf:citekey order="4">Crimean</bcf:citekey>
+    <bcf:citekey order="5">KVA</bcf:citekey>
+    <bcf:citekey order="6">Perkins</bcf:citekey>
+    <bcf:citekey order="7">ROVOR</bcf:citekey>
+    <bcf:citekey order="8">StPetersburg</bcf:citekey>
   </bcf:section>
   <bcf:sortlist section="0" name="nty" type="entry" sortscheme="nty">
   <bcf:sorting>

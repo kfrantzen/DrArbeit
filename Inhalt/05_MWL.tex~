@@ -1,2 +1,64 @@
 \chapter{MWL}
-Hier kommt noch was
+In diesem Kapitel werden neben der MAGIC Lichtkurve noch Lichtkurven anderer Experimente in anderen Wellenlängen dargestellt, die im Rahmen einer Multiwellenlängen-(MWL-)Kampagne  genommen wurden und mit den MAGIC Daten verglichen.
+Es stehen dazu Daten im Energiebereich zwischen Radiowellen und Very High Energy Gamma Rays zur Verfügung.
+Die MWL-Kampagne fand zwischen dem 23.12.2011 und dem 01.06.2012 statt und war die Fortsetzung einer früheren MWL-Kampagne von 2009.
+Das Ziel dieser Kampagne ist den Fluss und die spektrale Entwicklung der Breitband-Emission über eine lange Zeitspanne zu untersuchen, wobei jeweils tageweise die Daten genommen wurden.
+
+
+\section{Teilnehmer an der MWL-Kampagne}
+Von den folgenden Experimente, die sich an dieser Kampagne beteiligt haben, stehen mir Daten zur Verfügung:
+
+\begin{itemize}
+ \item MAGIC
+ \item Swift/XRT: Swift ist ein Satellitenexperiment mit dem Ziel GRBs zu detektieren und zu untersuchen.
+  Dabei liegt die Priorität darauf, den Ursprung von GRBs zu finden, die Entwicklung der GRBs und die Wechselwirkung mit der Umgebung zu untersuchen und die GRBs zu klassifizieren.
+  Dazu sind drei Instrumente an Board, die in verschiedenen Wellenlängen sensitiv sind.
+  Swift kann Gamma-Rays, Röntgenstrahlen, UV-Strahlung und optisches Licht detektieren.
+  Mit Hilfe des Burst Alert Telescope (BAT) werden Teilchen mit Energien zwischen 15keV und 150keV untersucht.
+  Das UV/Optical Telescope (UVOT) detektiert im sichtbaren und im UV-Bereich (170-600nm).
+  Die für diese Analyse vorliegenden Daten sind Daten des Xray Telescop (XRT), womit Röntgenstrahlung mit einer Energie zwischen 0,3keV und 10keV detektiert wird.\cite{Swift}
+ \item OVRO: Das Owens Valley Radio Observatpry (OVRO) befindet sich in der Nähe von Bishop in Kalifornien im Osten der Sierre Nevada.
+  Es ist ein Radioteleskop mit einem Spiegeldurchmesser von 40m, welches bei 15GHz operiert.
+  Ziel dieses Experimentes ist das Monitoring von cxa 1200 Blazaren alle 2 Tage.
+  Diese Daten werden dann mit den Daten, die mit Fermi von den gleichen Quellen aufgenommen wurden, verglichen und Korrelationen in der Variabilität gesucht.
+  Letztendlich ist ein genaueres Verständnis von Emissionsprozessen in AGNs das Ziel.\cite{OVRO}
+ \item Metsahovi: Metsahovi ist ein Radioteleskop mit einem Spiegeldurchmesser von 14m. 
+  Es befindet sich in Finnland, in Kirkkonummi und beobachtet Frequenzen zwischen 2 und 150GHz.
+  Mit dem Teleskop werden hauptsächlich extragalaktische Quellen beobachtet, aber auch die Sonne und es nimmt an VLBI (Very Large Baseline Interferometry)-Beobachtungen teil.\cite{Metsahovi}
+ \item Optische Teleskope: Für diese Analyse stehen die Daten einiger optische Teleskope zur Verfügung, deren Datennahme unter Einsatz des R-Filters geschah.
+  Im Folgenden werden diese Teleskope aufgelistet:
+ \begin{itemize}
+  \item Crimean: Das Crimean Astrophysical Observatory befindet sich in Nauchny auf der Krim, Ukraine und beherbergt verschiedene optische Teleskope.\cite{Crimean}
+  \item KVA: Das Kungliga Vetenskaplika Academy (KVA)-Teleskop befindet sich genauso wie die MAGIC Teleskope auf dem Roque de los Muchachos auf La Palma.
+    Es handelt sich um ein Teleskop einem Spiegeldurchmesser von 35cm.
+    Die Daten sind alle im Johnson R-Band genommen und weiterverarbeitet.\cite{KVA}
+  \item Perkins: Das Perkins Telescope gehört ist ein 72inch (1,83m)-Teleskop, das zum Lowell Observatory gehört.
+    Mit diesem Teleskop werden vor allem wide-field-Bilder aufgenommen und es dient der Multi-Objekt-Spektroskopie.
+    Unter anderem soll mit diesem Teleskop auch die variable Natur von Blazaren untersucht werden.\cite{Perkins}
+  \item ROVOR: Das Remote Observatory for Variable Object Research (ROVOR) gehört zur Brigham Young University.
+    Es handelt sich um ein optisches Teleskop mit einem Spiegeldurchmesser von 16inch (0,41m) und es befindet sich 12m nordwestlich von Delta (Utah).
+    Es wurde gebaut um variable Objekte wie AGNs dauerhaft zu monitoren, um die existierenden Modelle für AGNs zu verbessern.
+    ROVOR nimmt am Gamma Ray Burst Coordinate Network (GCN) teil und beobachtet die Afterglows im optischen.\cite{ROVOR}
+  \item St. Petersburg: Das Pulkovo Astronomical Observatory befindet sich südlich von St. Petersburg auf einer Höhe von 75m über NN.\cite{StPetersburg}
+  \item TeB: Das Bradford Robotic Telescope ist Teil des Observatorio del Teide auf Teneriffa, Kanaren und befindet sich auf einer Höhe von 2400m und wird robotisch betrieben.
+  \item NMSkies: New Mexico Skies bietet einen Standort und Support für dort aufgestellte Remote Teleskope. 
+    Das Teleskop NMSkies GRAS-001 befindet sich in Mayhill, New Mexico, USA.
+ \end{itemize}
+
+ \item Fermi:
+\end{itemize}
+
+\section{Lichtkurven}
+In Abb.\ref{LC_MWL} befinden sich die Lichtkurven der verschiedenen Experimente.
+
+\newpage
+
+\begin{sidewaysfigure}
+%\begin{sidewaysfigure}
+\begin{figure}
+    \centering
+    \includegraphics{./Plots/05_MWL/LC_final.pdf}
+    \caption{Alle Lichtkurven, die während der MWL-Kampagne aufgenommen wurden}
+    \label{LC_MWL}
+%\end{figure}
+\end{sidewaysfigure}

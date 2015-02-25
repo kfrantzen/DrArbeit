@@ -3,9 +3,6 @@ In diesem Kapitel werden neben der MAGIC Lichtkurve noch Lichtkurven anderer Exp
 Es stehen dazu Daten im Energiebereich zwischen Radiowellen und Very High Energy Gamma Rays zur Verfügung.
 Die MWL-Kampagne fand zwischen dem 23.12.2011 und dem 01.06.2012 statt und war die Fortsetzung einer früheren MWL-Kampagne von 2009.
 Das Ziel dieser Kampagne ist den Fluss und die spektrale Entwicklung der Breitband-Emission über eine lange Zeitspanne zu untersuchen, wobei jeweils tageweise die Daten genommen wurden.
-
-
-\section{Teilnehmer an der MWL-Kampagne}
 Von den folgenden Experimente, die sich an dieser Kampagne beteiligt haben, stehen mir Daten zur Verfügung:
 
 \begin{itemize}
@@ -48,17 +45,3 @@ Von den folgenden Experimente, die sich an dieser Kampagne beteiligt haben, steh
  \item Fermi:
 \end{itemize}
 
-\section{Lichtkurven}
-In Abb.\ref{LC_MWL} befinden sich die Lichtkurven der verschiedenen Experimente.
-
-\newpage
-
-\begin{sidewaysfigure}
-%\begin{sidewaysfigure}
-%\begin{figure}
-    \centering
-    \includegraphics{./Plots/05_MWL/LC_final.pdf}
-    \caption{Alle Lichtkurven, die während der MWL-Kampagne aufgenommen wurden}
-    \label{LC_MWL}
-%\end{figure}
-\end{sidewaysfigure}
