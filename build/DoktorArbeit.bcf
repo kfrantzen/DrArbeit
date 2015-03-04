@@ -1968,14 +1968,51 @@
     <bcf:datasource type="file" datatype="bibtex">references.bib</bcf:datasource>
   </bcf:bibdata>
   <bcf:section number="0">
-    <bcf:citekey order="1">Swift</bcf:citekey>
-    <bcf:citekey order="2">OVRO</bcf:citekey>
-    <bcf:citekey order="3">Metsahovi</bcf:citekey>
-    <bcf:citekey order="4">Crimean</bcf:citekey>
-    <bcf:citekey order="5">KVA</bcf:citekey>
-    <bcf:citekey order="6">Perkins</bcf:citekey>
-    <bcf:citekey order="7">ROVOR</bcf:citekey>
-    <bcf:citekey order="8">StPetersburg</bcf:citekey>
+    <bcf:citekey order="1">MAGIC_Telescopes</bcf:citekey>
+    <bcf:citekey order="2">CORSIKA</bcf:citekey>
+    <bcf:citekey order="3">Reflector</bcf:citekey>
+    <bcf:citekey order="4">Camera</bcf:citekey>
+    <bcf:citekey order="5">MARS</bcf:citekey>
+    <bcf:citekey order="6">MAGIC-Homepage</bcf:citekey>
+    <bcf:citekey order="7">MAGIC-Homepage</bcf:citekey>
+    <bcf:citekey order="8">MAGIC_Telescopes</bcf:citekey>
+    <bcf:citekey order="9">MAGIC-Upgrade</bcf:citekey>
+    <bcf:citekey order="10">MAGIC-Upgrade</bcf:citekey>
+    <bcf:citekey order="11">DissMazin</bcf:citekey>
+    <bcf:citekey order="12">CORSIKA</bcf:citekey>
+    <bcf:citekey order="13">CORSIKA-Bilder</bcf:citekey>
+    <bcf:citekey order="14">CORSIKA-Bilder</bcf:citekey>
+    <bcf:citekey order="15">CORSIKA-Handbook</bcf:citekey>
+    <bcf:citekey order="16">Reflector</bcf:citekey>
+    <bcf:citekey order="17">Haffke</bcf:citekey>
+    <bcf:citekey order="18">Camera</bcf:citekey>
+    <bcf:citekey order="19">Hillas</bcf:citekey>
+    <bcf:citekey order="20">Superstar</bcf:citekey>
+    <bcf:citekey order="21">Superstar</bcf:citekey>
+    <bcf:citekey order="22">LiDO</bcf:citekey>
+    <bcf:citekey order="23">LiDO</bcf:citekey>
+    <bcf:citekey order="24">MARS</bcf:citekey>
+    <bcf:citekey order="25">RandomForestForMAGIC</bcf:citekey>
+    <bcf:citekey order="26">DispRekonstruktion</bcf:citekey>
+    <bcf:citekey order="27">DispRekonstruktion</bcf:citekey>
+    <bcf:citekey order="28">DissBackes</bcf:citekey>
+    <bcf:citekey order="29">DissBackes</bcf:citekey>
+    <bcf:citekey order="30">DissDiego</bcf:citekey>
+    <bcf:citekey order="31">Mrk421Flare</bcf:citekey>
+    <bcf:citekey order="32">MWL2009</bcf:citekey>
+    <bcf:citekey order="33">Swift</bcf:citekey>
+    <bcf:citekey order="34">OVRO</bcf:citekey>
+    <bcf:citekey order="35">Metsahovi</bcf:citekey>
+    <bcf:citekey order="36">Crimean</bcf:citekey>
+    <bcf:citekey order="37">KVA</bcf:citekey>
+    <bcf:citekey order="38">Perkins</bcf:citekey>
+    <bcf:citekey order="39">ROVOR</bcf:citekey>
+    <bcf:citekey order="40">StPetersburg</bcf:citekey>
+    <bcf:citekey order="41">Fermi</bcf:citekey>
+    <bcf:citekey order="42">Vaughan</bcf:citekey>
+    <bcf:citekey order="43">FehlerVariability</bcf:citekey>
+    <bcf:citekey order="44">Vaughan</bcf:citekey>
+    <bcf:citekey order="45">MWL2009</bcf:citekey>
   </bcf:section>
   <bcf:sortlist section="0" name="nty" type="entry" sortscheme="nty">
   <bcf:sorting>

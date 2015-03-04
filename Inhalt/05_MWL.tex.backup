@@ -2,7 +2,17 @@
 In diesem Kapitel werden neben der MAGIC Lichtkurve noch Lichtkurven anderer Experimente in anderen Wellenlängen dargestellt, die im Rahmen einer Multiwellenlängen-(MWL-)Kampagne  genommen wurden und mit den MAGIC Daten verglichen.
 Es stehen dazu Daten im Energiebereich zwischen Radiowellen und Very High Energy Gamma Rays zur Verfügung.
 Die MWL-Kampagne fand zwischen dem 23.12.2011 und dem 01.06.2012 statt und war die Fortsetzung einer früheren MWL-Kampagne von 2009.
-Das Ziel dieser Kampagne ist den Fluss und die spektrale Entwicklung der Breitband-Emission über eine lange Zeitspanne zu untersuchen, wobei jeweils tageweise die Daten genommen wurden.
+Genauso wie die während der Vorgängerkampagne befindet sich innerhalbe der Beobachtungszeit kein Flare.
+Das Ziel dieser Kampagne ist, den Fluss und die spektrale Entwicklung der Breitband-Emission über eine lange Zeitspanne zu untersuchen, wobei jeweils tageweise die Daten genommen wurden.
+Während es viele Untersuchungen zu den Emissionsszenarien bei Flares gibt [siehe z.B. \cite{Mrk421Flare}], wurde der ruhige Zustand von Mrk 421 abgesehen von \cite{MWL2009} nicht sehr ausführlich untersucht.
+Mit Hilfe von diesen Daten, können grundlegende Emissionsprozesse untersucht werden.
+Blazare wie Mrk 421 sind in allen Wellenlängen sehr variabel.
+Die Spektrale Energieverteilung (SED) wird von der Jet-Emission dominiert und besitzt eine zweihöckrige Struktur.
+Der erste Höcker findet sich bei niedrigen Energien [Radio, optisch, Röntgenstrahlen], 
+
+
+
+\section{Teilnehmer an der MWL-Kampagne}
 Von den folgenden Experimente, die sich an dieser Kampagne beteiligt haben, stehen mir Daten zur Verfügung:
 
 \begin{itemize}
@@ -42,6 +52,99 @@ Von den folgenden Experimente, die sich an dieser Kampagne beteiligt haben, steh
     Das Teleskop NMSkies GRAS-001 befindet sich in Mayhill, New Mexico, USA.
  \end{itemize}
 
- \item Fermi:
+ \item Fermi: Das Large Area Telescope (LAT) befindet sich an Board des Fermi Gamma-Ray Space Telescope und detektiert sowohl Gamma-Strahlen als auch geladene kosmische Strahlen.
+  Das Teleskop beinhaltet einen Antikoinzidenzdetektor, durch den das Photon im Gegensatz zur geladenen kosmischen Strahlung wechselwirkungsfrei fliegt. 
+  Danach wechselwirkt es mit Atomen in einer der Schichten aus Wolfram-Folie und produziert ein Elektron-Positron-Paar, welches getrackt wird.
+  Die finale Energie dieses Elektron-Positron-Paars wird dann in einem Kalorimeter gemessen.
+  Das Entdecken und Überwachen von variablen Quellen und GRBs sowie die Erstellung von aktuellen Katalogen von hochenergetischen Quellen gehören zu den Hauptzielen von Fermi.\cite{Fermi} 
 \end{itemize}
 
+\section{Lichtkurven}
+In Abb.\ref{LC_MWL} befinden sich die Lichtkurven der verschiedenen Experimente, die im Zeitraum zwischen dem 23.12.11 (MJD: 55918) und dem 01.06.12 (MJD: 56079) gemessen wurden.
+
+\begin{sidewaysfigure}
+%\begin{sidewaysfigure}
+%\begin{figure}
+    \centering
+    \includegraphics[width=1\textwidth]{./Plots/05_MWL/LC_final.pdf}
+    \caption{Alle Lichtkurven, die während der MWL-Kampagne aufgenommen wurden}
+    \label{LC_MWL}
+%\end{figure}
+\end{sidewaysfigure}
+
+Leider hat MAGIC an nur 16 Tagen davon Daten genommen, weswegen die Lichtkurve im Vergleich zu den anderen Experimenten recht kurz ist, bzw. große Lücken aufweist.
+Auf den ersten Blick weist die Lichtkurve eine variable Struktur auf, was in Kapitel BLABLA noch getestet wird.
+
+Die optischen Lichtkurven der verschiedenen Teleskope liegen insgesamt auf einem ähnlichen Niveaus, wobei KVA immer etwas niedriger ist.
+Die meisten Daten stammen von KVA (Beobachtung an 48 Tagen), dem St. Petersburger Teleskop (Beobachtung an 46 Tagen) und dem Crimean Astrophysical Observatory (Beobachtung an 35 Tagen).
+Die Variabilität im Fluss zwischen den verschiedenen Teleskopen ist ähnlich. 
+Einige Schwankungen sind zu erkennen und zum Ende der Lichtkurve nimmt das Niveau etwas zu.
+
+Im Radiobereich sind vorbei den OVRO-Daten kaum Variabilitäten zu erkennen. 
+Die Daten von Metsahovi unterliegen größeren Schwankungen, sind aber auch mit einem größeren Fehler behaftet.
+Quantativ wird dieses Verhalten in Kapitel BLABLA gezeigt.
+
+Die Daten des Röntgenteleskop Swift, welches eine sehr konstante Datennahme aufweist, zeigen einen eher variablen Fluss, was im Folgenden noch überprüft wird.
+
+Die Daten von Fermi-LAT sind gemittelte Resultate von einer Woche, zeigen also keine täglichen Schwankungen.
+Aufgrund des Mittelns und der dadurch Nicht-Vergleichbarkeit mit den anderen Experimenten wird im Folgenden keine Variabilität berechnet.
+
+Insgesamt kann man erkennen, dass die Variabilität in der VHE-Lichtkurve auf Zeitskalen von ca. einem Tage auftritt, während der Fluss im optischen oder Röntgenbereich eher innerhalb einer Woche ansteigt und wieder abnimmt. 
+Die Radiolichtkurven weisen keine sichtbaren Variabilitäten auf.
+
+\section{Variabilitätsuntersuchung}
+Obwohl es in der Zeit der MWL-Kampagne zu keinem Flare kam, sind die Daten von Mrk421 variabel.
+Um quantifizieren zu können, wie variabel die Daten sind, wird für jeden Energiebereich dei Fractional Variability nach REFERENZ ausgerechnet.
+Der Wert für die Fractional Variability $F_{var}$ berechnet sich mit $S$: der Standardabweichung der N Flussmessungen, $\langle \sigma_{err} \rangle$: dem mittleren quadrierten Fehler, $\langle x \rangle^2$: dem Quadrat des mittleren Photonflusses folgendermaßen:
+
+\begin{equation}
+ F_{var}=\sqrt{\frac{S^2-\langle \sigma_{err} \rangle^2}{\langle x \rangle^2}}.
+\end{equation}
+
+Der Fehler davon ist BLABLA entnommen: 
+
+\begin{equation}
+ \Delta F_{var}=\sqrt{F_{var}^2+err(\sigma_{NXS}^2)}-F_{var}
+\end{equation}
+
+mit
+
+\begin{equation}
+ err(\sigma_{NXS}^2)=\sqrt{\left(\sqrt{\frac{2}{N} \frac{\langle \sigma_{err}^2 \rangle}{\langle x \rangle^2}} \right)^2 + \left( \sqrt{\frac{\langle\sigma_{err}^2 \rangle}{N} \frac{2F_{var}}{\langle x \rangle}} \right)^2}
+\end{equation}
+
+Damit die Berechnung von $F_{var}$ stabil ist, wird eine Mindestanzahl von 20 gemessenen Datenpunkten empfohlen.
+Obwohl die MAGIC-Daten nur aus 16 gemessenen Punkten besteht, wird trotzdem zum Vergleich einmal die Variabilität ausgerechnet.
+Die berechneten Werte für den mittleren Fluss und Variabilität befindet sich in Tabelle \ref{tab:Variabilitäten}, bzw in Abb.\ref{LC_Variabilities}.
+
+
+\begin{table}[!h]
+\centering
+\caption{Diese Tabelle zeigt die berechneten Variabilitäten für die verschiedenen Lichtkurven.}
+\label{tab:Variabilitäten}
+\begin{tabular}{llccc}
+  \toprule
+  Wellenlänge & Experiment & N & $F_{var}$ & $\Delta F_{var}$\\
+  \midrule
+  \midrule
+  Radio & Metsahovi & 55 & 0,1390 & 0,0319 \\
+  &OVRO & 27 & 0,0381 & 0,0036 \\
+  optisch &KVA & 48 & 0,2227 & 0,0031 \\
+  &St. Petersburg & 46 & 0,0768 & 0,0067 \\
+  &Crimean & 35 & 0,0586 & 0,0075 \\
+  Röntgen & Swift & 70 & 0,4428 & 0,0015\\
+  Gamma & MAGIC & 16 & 0,4913 & 0,0380 \\
+  \bottomrule
+\end{tabular}
+\end{table}
+
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.8\textwidth]{./Plots/05_MWL/PlotVariabilities.pdf}
+    \caption{Variabilitäten für verschiedene Wellenlängen}
+    \label{LC_Variabilities}
+\end{figure}
+
+Abb.\ref{LC_Variabilities} zeigt, dass die Variabilität im Radio- und im optischen Bereich sehr niedrig ist, während im Röntgen und im Gamma-Bereich Mrk421 Variabilität aufweist, wobei beachtet werden muss, dass der Wert für MAGIC mit Vorsicht betrachtet werden muss, da die Anzahl der Datenpunkte zu niedrig ist.
+Die hier berechneten Variabilitäten sind ähnlich zu den berechneten Werten für Mrk421 von 2009 \cite{MWL2009}.

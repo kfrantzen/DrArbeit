@@ -35,6 +35,7 @@
 % Deutsche Spracheinstellungen
 \usepackage{polyglossia}
 \setdefaultlanguage{german}
+%\usepackage[ngerman]{babel}	%deutsch!
 
 % stellt den \enquote{} Befehl
 \usepackage[autostyle]{csquotes}
@@ -119,6 +120,8 @@
 \usepackage[]{graphicx}
 
 \usepackage{grffile}
+
+\usepackage{rotating}
 
 \usepackage{scrhack}
 \usepackage{float}
