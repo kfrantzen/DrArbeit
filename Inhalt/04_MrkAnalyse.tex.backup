@@ -1,16 +1,20 @@
 \chapter{Analyse der AGN Mrk 421 mit \textit{MARS}}
-Sowohl die Programme zur Kalibration, als auch die Standard-Analyseprogramme sind im \textit{MARS} (MAGIC Analysis and Reconstruction Software)-Paket enthalten.
-Dieses Softwarepaket ist eine Sammlung an ROOT-Skripten und Macros.\cite{MARS}
+Sowohl die Programme zur Kalibration und Bildparameterbestimmung als auch die Standard-Analyseprogramme sind im \textit{MARS} (MAGIC Analysis and Reconstruction Software)-Paket enthalten.
+Dieses Softwarepaket ist eine Sammlung von ROOT-Skripten und Macros.\cite{MARS}
 
-In den folgenden Kapiteln werden die wichtigsten Programme zur Gamma-Hadron-Separation (\autoref{sec:GH-Separation}), Lichtkurven-Berechnung (\autoref{sec:Lichtkurve}) und Spektrumsrekonstruktion (\autoref{sec:Unfolding}) kurz erklärt.
-Danach wird die Analyse der AGN Mrk 421 durchgeführt (siehe \autoref{Mrk421_Analyse}).
+In den folgenden Kapiteln werden die wichtigsten Programme zur Gamma-Hadron-Separation (\autoref{sec:GH-Separation}), Lichtkurven-Berechnung (\autoref{sec:Lichtkurve}) und Spektrums-Rekonstruktion (\autoref{sec:Unfolding}) kurz erklärt.
+Danach wird die Analyse der AGN Mrk~421 durchgeführt (siehe \autoref{Mrk421_Analyse}).
 Der Datensatz des gesamten Jahres 2012 wird auf Grund von Änderungen der PSF und Hardwareänderungen in vier Teile geteilt und einzeln analysiert. 
 In \autoref{LC_Alles} werden dann alle Ergebnisse zu einer gesamten Lichtkurve zusammengefasst.
 
 
 \section{Signal-Untergrund-Trennung und Energieschätzung}
 \label{sec:GH-Separation}
-\subsection{GH Separation}
+Im Folgenden wird auf die Methode der Signal-Untergrund-Trennung, die Energieschätzung sowie die Rekonstruktion der Quellposition eingegangen.  
+Dabei wird die Methode des Random-Forests, welcher zur Gamma-Hadron-Separation und zur Rekonstruktion der Quellposition genutzt wird, erklärt, sowie die Benutzung von Look-Up-Tabellen, mit denen die Energie eines Ereignisses rekonstruiert wird.
+
+
+\subsection{Gamma-Hadron-Separation}
 Da das Signal-Untergrund-Verhältnis zwischen Gamma-Schauern aus der Quelle und hadronischen Schauern kleiner als 1:1000 ist (sogar für helle Quellen), werden gute Verfahren benötigt, um das Signal vom Untergrund zu trennen.
 In der Standard-MAGIC-Analysekette übernehmen die Programme \textit{Coach} und \textit{Melibea} diese Aufgabe. 
 Es wird zu diesem Zweck ein Random Forest (RF) genutzt. \cite{RandomForestForMAGIC}
@@ -22,7 +26,7 @@ Im Ausgangsknoten eines jeden Entscheidungsbaumes befindet sich das komplette Sa
 Dieser Knoten wird dann in zwei Nachfolgeknoten geteilt, indem in einem Bildparameter geschnitten wird.
 Bei diesem Splittingprozess werden die  Parameter für den Schnitt zufällig aus einer vorher begrenzten Menge gezogen und der Parameter mit dem minimalen Gini-Index zum Schneiden benutzt.
 
-Mit Hilfe des Gini-Index kann die Ungleichheit der beiden Verteilungen als Funktion des Schnittes angegeben werden, der gerade angewendet wurde.
+Mit Hilfe des Gini-Index' kann die Ungleichheit der beiden Verteilungen als Funktion des Schnittes angegeben werden, der gerade angewendet wurde.
 Ist der Gini-Index von einem Knoten null, so ist in diesem Knoten nur noch eine Klasse vorhanden.
 % So bedeutet ein kleiner Gini-Koeffizient, dass die Verteilungen ähnlich sind und ein großer, dass sie ungleich sind. 
 
@@ -30,24 +34,24 @@ Dieses Schneiden geschieht so lange bis die Anzahl der Ereignisse in einem Knote
 In diesen Endknoten (Terminal Nodes) werden dann die Ereignisse mit einem Label (Gamma oder Hadron) versehen. 
 Befindet sich in einem Endknoten noch eine Mischung beider Klassen, wird ein Mittelwert vergeben.
 So folgt jedes Ereignis einem Pfad durch die i verschiedenen Bäume und wird von allen klassifiziert.
-Danach wird ihm ein finales Label, die hadroness, zugewiesen:
+Danach wird ihm ein finales Label, die Hadroness $h$, zugewiesen:
 
 \begin{equation}
- h(Ereignis)=\frac{ \sum_{i=1} ^{n_{Baeume}} l_i(Ereignis)}{n_{Bäume}}
+ h(Ereignis)=\frac{ \sum_{i=1} ^{n_{B\ddot{a}ume}} l_i(Ereignis)}{n_{B\ddot{a}ume}}
 \end{equation}
 
-Es ist möglich, in \textit{Coach} alle Variablen auszuwählen, die zum Training der RFs für die GH-Separation, aber auch für die Disp-Bestimmung sowie zum Bauen der Look-Up-Tables zur Energierekonstruktion benötigt werden.
-Bei der GH-Separation sind dies elf verschiedene Variablen wie zum Beispiel \texttt{width} oder \texttt{length}.
+Es ist möglich in \textit{Coach} alle Variablen auszuwählen, die zum Training der RFs für die GH-Separation, aber auch für die \texttt{Disp}-Bestimmung sowie zum Bauen der Look-Up-Tables zur Energierekonstruktion benötigt werden.
+Bei der GH-Separation sind dies elf verschiedene Variablen wie zum Beispiel \texttt{Width} oder \texttt{Length}.
 Des Weiteren ist es möglich, die Anzahl der Bäume auszuwählen, sowie den Zenitbereich, in dem diese trainiert werden sollen.
 
 \subsection{Energierekonstruktion mit Hilfe von Look-Up-Tables}
-Die Energie der Primärteilchen ist proportional zur Anzahl der Cherenkovphotonen im Schauer und so zum Parameter \texttt{size}.
-Allerdings ist \texttt{size} abhängig vom Zenitwinkel, der Lage des Schauers in der Kamera, dem Impakt-Parameter und der Höhe des Schauermaximums.
+Die Energie der Primärteilchen ist proportional zur Anzahl der Cherenkovphotonen im Schauer und somit auch zum Parameter \texttt{size}.
+Allerdings ist \texttt{size} abhängig vom Zenitwinkel, der Lage des Schauers in der Kamera, dem Impact-Parameter und der Höhe des Schauermaximums.
 
 Beruhend auf dieser Tatsache wird nun eine Tabelle erstellt.
 Das MC Trainingsset wird in Bins für jeden Parameter, der für die Energierekonstruktion benutzt werden soll, aufgeteilt.
 So wird eine mehrdimensionale Tabelle mit der gemittelten Energie der MC-Ereignisse, die zu jedem Bin gehört, erstellt.
-Den realen Daten wird dann anhand ihrer Parameter das passende Energiebin in der Tabelle zugeteilt und so eine geschätzte Energie (Estimated Energy) zugeordnet.
+Den realen Daten wird dann anhand ihrer Parameter das passende Energiebin in der Tabelle zugeteilt und so eine geschätzte Energie (\texttt{Estimated Energy}) zugeordnet.
 
 Für Mono-Daten geschieht die Energierekonstruktion im Gegensatz dazu auch mit Hilfe eines RFs.
 
@@ -55,18 +59,19 @@ Für Mono-Daten geschieht die Energierekonstruktion im Gegensatz dazu auch mit H
 \subsection{Rekonstruktion der Quellposition}
 Ziel ist es, die Herkunft des Primärteilchens zu rekonstruieren. 
 Der Abstand zwischen dem Schauerschwerpunkt und der Quellposition auf der Hauptachse in der Kamera wird mit dem Parameter \texttt{Disp} bezeichnet.
-Es gibt zwei Möglichkeiten, diesen Parameter zu rekonstruieren: Zum Einen sind dies Ghostbusting-Methoden, die die Asymmetrie des Schauers charakterisieren oder aber ein RF.
+Es gibt zwei Möglichkeiten, diesen Parameter zu rekonstruieren: Zum Einen sind dies Ghost Busting-Methoden, die die Asymmetrie des Schauers charakterisieren oder aber ein RF.
 
 Bei den Ghost-Busting-Methoden wird die Asymmetrie zwischen Schaueranfang und Schauerende in der Kamera berücksichtigt.
 Mit Hilfe des zeitlichen Verlaufs oder des dritten Moments entlang der Hauptachse wird entschieden, aus welcher Richtung der Schauer kommt.
 
-Wird mit zwei Teleskopen observiert, ist die Disp-Rekonstruktion einfacher.
+Wird mit zwei Teleskopen observiert, ist die \texttt{Disp}-Rekonstruktion einfacher.
 Wie in Abb.\ref{Disp} zu sehen ist, ist perfektes Ghost-Busting möglich.
 
 \begin{figure}
     \centering
     \includegraphics[width=0.5\textwidth]{./Plots/04_MrkAnalyse/Disp.png}
-    \caption{Rekonstruktion des Parameters \texttt{Disp}. Dank der stereoskopischen Beobachtung, kann entschieden werden, welche Herkunftsrichtung für den Schauer am wahrscheinlichsten ist.\cite{DispRekonstruktion}}
+    \caption{Rekonstruktion des Parameters \texttt{Disp}. 
+    Wegen der stereoskopischen Beobachtung kann entschieden werden, welche Herkunftsrichtung für den Schauer am wahrscheinlichsten ist.\cite{DispRekonstruktion}}
     \label{Disp}
 \end{figure}
 
@@ -79,7 +84,7 @@ Ereignisse mit einer zu großen Differenz der beiden rekonstruierten Quellpositi
 
 \section{Berechnung der Lichtkurve}
 \label{sec:Lichtkurve}
-Der Gammafluss, d.h. die Rate der Gammateilchen $\frac{dN}{dt}$ pro Einheitsfläche ist Ausgangsgröße für die Lichtkurve:
+Der Gammafluss, d.h. die Rate der Gammateilchen $\frac{dN}{dt}$ pro Einheitsfläche, ist Ausgangsgröße für die Lichtkurve:
 
 \begin{equation}
  \Phi=\frac{d^2 N}{dS dt} 
@@ -97,24 +102,28 @@ Nach der Energie differenziert ist diese Größe der differentielle Fluss pro En
 
 bzw. der integrale Fluss:
 \begin{equation}
- \Phi_{E>500GeV}=\int_{\SI{500}{GeV}}^{\infty}\frac{d\Phi}{dE}dE.
+ \Phi_{E>500GeV}=\int\limits_{\SI{500}{GeV}}^{\infty}\frac{d\Phi}{dE}dE.
 \end{equation}
 
 
-Die zeitliche Entwicklung des integralen Flusses wird nun Lichtkurve genannt.
+Die zeitliche Entwicklung des integralen Flusses wird als Lichtkurve bezeichnet.
 % Das Binning muss dabei so gewählt werden, dass die Statistik in jedem Bin groß genug ist.
 % , tageweise oder minutenweise... Je nachdem, ob gerade irgendwas spannendes passiert (Flares oder so).
 
-\subsection{Anzahl der Signalgammas}
+\paragraph{Anzahl der Signalgammas}
 Um die Anzahl der Gammateilchen aus der Quelle zu bestimmen, wird ein $\theta^2$-Histogramm benutzt.
 Dies ist ein Histogramm der quadrierten Entfernungen zwischen der rekonstruierten Quellposition und der nominalen Quellposition.
-Gammas aus der Quelle haben ein kleineres $\theta$ während der Background eine annähernd isotrope Verteilung liefert. 
+Gammas aus der Quelle haben ein kleineres $\theta$, während der Background eine annähernd isotrope Verteilung liefert. 
+Dies ist beispielhaft in \autoref{Crab_Theta2} gezeigt: schwarz ist die Verteilung der Signal-Ereignisse rot ist die Verteilung der Background-Ereignisse und blau die Differenz aus Signal und Background-Ereignissen. 
 
 \begin{figure}
     \centering
     \includegraphics[width=0.8\textwidth]{./Plots/04_MrkAnalyse/Datenset2/Crab_Theta2.pdf}
-    \caption{$\theta^2$-Verteilung von Crab-Datendes aus dem Datenset 2. Es ist zu sehen, dass die On- (Signal-) und die Off-(Background-) Daten für $\theta^2 > 0,1$ sehr gut aufeinander liegen.}
-    \label{Disp}
+    \caption{$\theta^2$-Verteilung von Crab-Daten aus dem Datenset 2. 
+    Es ist zu sehen, dass die On- (Signal-) und die Background-Daten für $\theta^2 > 0,1$ miteinander übereinstimmen.
+    Ereignisse aus der Quelle befinden sich wie erwartet bei $\theta^2 \approx 0$.
+    }
+    \label{Crab_Theta2}
 \end{figure}
 % BILDBILDBILD (abelardos talk in zeuthen, der auf der flute seite verlinkt ist)
 
@@ -127,12 +136,12 @@ Es muss gewährleistet werden, dass die Off-Positionen symmetrisch verteilt sind
 Allerdings tauchen bei dieser Methode die Quellgammas auch in der Off-$\theta^2$-Verteilung auf, haben aber ein großes $\theta^2$.
 Eine Off-Position, die zu nahe an der Quelle ist, ist nicht zu empfehlen.
 
-\subsection{Effektive Beobachtungszeit}
+\paragraph{Effektive Beobachtungszeit}
 Die effektive Beobachtungszeit berücksichtigt die Totzeit in der Datennahme.
 Nach dem Aufnehmen eines Ereignisses ist die Elektronik mit der Verarbeitung der Daten beschäftigt und neue Ereignisse können nicht detektiert werden.
-Die Totzeit ist abhängig vom Chip und beträgt bei den aktuellen DRS4-Chips $\approx 26\mu$s.\todo{Quelle}
+Die Totzeit ist abhängig vom Chip und beträgt bei den aktuellen DRS4-Chips $\approx 26\mu$s.
 
-\subsection{Effektive Fläche}
+\paragraph{Effektive Fläche}
 Als effektive Fläche wird die Fläche am Boden bezeichnet, die orthogonal zur Herkunftsrichtung der Schauerteilchen ist.
 Die Größe dieser effektiven Fläche ist abhängig von der Energie und dem Zenitwinkel des Schauers.
 In \textit{MARS} wird diese Größe mit Hilfe von MCs folgendermaßen berechnet:
@@ -172,10 +181,10 @@ Durch die Methode der Entfaltung können diese Probleme berücksichtigt werden.
 Das Problem lässt sich mit einer Fredholmschen Integralgleichung darstellen:
 
 \begin{equation}
- g(y)= \int_c^d M(x,y) f(x) dx + b(y)
+ g(y)= \int\limits_c^d M(x,y) f(x) dx + b(y)
 \end{equation}
 \begin{centering}
-  \tiny{mit g(y): gemessene Verteilung, f(x): gesuchte Verteilung, M(x,y): Migrationsmatrix bestimmt auf MCs, b(y): Background-Verteilung}
+  \small{mit g(y): gemessene Verteilung, f(x): gesuchte Verteilung, M(x,y): Migrationsmatrix bestimmt auf MCs, b(y): Background-Verteilung}
  \end{centering}
 
 Diese Gleichung lässt sich auch diskretisiert darstellen:
@@ -184,22 +193,22 @@ Diese Gleichung lässt sich auch diskretisiert darstellen:
  g_i=\sum_j M_{ij}f_j+b_i,
 \end{equation}
 
-wobei $M_{ij}$ die Migrationsmatrix ist und damit die Wahrscheinlichkeit beschreibt, dass ein Ereignis in bin j in bin i gezählt wird.
+wobei $M_{ij}$ die Migrationsmatrix ist und damit die Wahrscheinlichkeit beschreibt, dass ein Ereignis in bin $j$ in bin $i$ gezählt wird.
 
 Das Ziel der Entfaltung ist die wahre Verteilung $f$ zu finden.
 Die Kovarianzmatrix der gesuchten Verteilung ergibt sich dann mit der Kovarianzmatrix der gemessenen Verteilung zu:
 
 \begin{equation}
- \mathbf{V[\vec{f}]}=\mathbf{M}^{-1}\mathbf{V}[\vec{g}]\mathbf{(M}^{-1})^T
+ \mathbf{V[\vec{f}]}=\mathbf{M}^{-1}\mathbf{V}[\vec{g}]\mathbf{(M}^{-1})^T.
 \end{equation}
 
-Da die Invertierung der Migrationsmatrix oft zu oszillierenden Lösungen führt, versucht man die Methode der kleinsten Quadrate.
+Da die Invertierung der Migrationsmatrix oft zu oszillierenden Lösungen führt, wird die Methode der kleinsten Quadrate angewandt.
 
 \begin{equation}
  \chi_0^2=(\vec{g}-\mathbf{M}\vec{f})^T \mathbf{V}^{-1}[\vec{g}](\vec{g}-\mathbf{M}\vec{f}).
 \end{equation}
 
-Dies gilt nur für Gaußverteilte Daten, also nicht für Bins mit kleinen Ereigniszahlen.
+Dies gilt nur für Gauß-verteilte Daten, also nicht für Bins mit kleinen Ereigniszahlen.
 Für diese muss nun die Poisson-Statistik benutzt werden und der Log-Likelihood-Ausdruck minimiert werden:
 
 \begin{equation}
@@ -221,14 +230,14 @@ Zum Testen ist dies eine gute Alternative, allerdings keine richtige Entfaltung,
 
 \section{Mrk 421-Analyse}
 \label{Mrk421_Analyse}
-In diesem Abschnitt wird die Analyse der Daten beschrieben, wobei für jede der vier Datenepochen sowohl Lichtkurve als auch Spektrum gezeigt werden.
-Dabei wird die Analyse des Datensatz 2 der Daten exemplarisch für die Stereo-Analyse erklärt (\autoref{subsec:Datenset_2}), während die anderen Zeitabschnitte des Jahres mit stereoskopischer Beobachtung (\autoref{subsec:Datenset_1} und \autoref{subsec:Datenset_4}) analog ausgewertet werden.
+In diesem Abschnitt wird die Analyse der Daten beschrieben, wobei für jede der vier Datenepochen sowohl die Lichtkurve als auch das Spektrum gezeigt werden.
+Dabei wird die Analyse des Datensets 2 der Daten exemplarisch für die Stereo-Analyse erklärt (\autoref{subsec:Datenset_2}), während die anderen Zeitabschnitte des Jahres mit stereoskopischer Beobachtung (\autoref{subsec:Datenset_1} und \autoref{subsec:Datenset_4}) analog ausgewertet werden.
 Auf die Mono-Datenanalyse wird in \autoref{subsec:Datenset_3} eingegangen.
 Zusammenfassend wird noch eine Lichtkurve aller Daten gezeigt.
 
 
 \subsection{Überblick über die Daten}
-Die Daten, die für diese Analyse zur Verfügung standen, sind Daten der Quelle Mrk 421, die 2012 genommen wurden.
+Die Daten, die für diese Analyse zur Verfügung standen, sind Daten der Quelle Mrk~421, die 2012 aufgenommen wurden.
 Die Daten gliedern sich folgendermaßen:
 
 \begin{itemize}
@@ -241,7 +250,7 @@ Die Daten gliedern sich folgendermaßen:
 Datenset 1 und Datenset 2 sind beides Stereobeobachtungen.
 Die beiden Datensets unterscheiden sich in ihrer PSF (Point Spread Function), weswegen zwei verschiedene MC-Sets in der Analyse verwendet werden.
 Die PSF beschreibt die Abbildungsqualität der Spiegel, bzw. wie gut sie ausgerichtet sind.
-Je größer die PSF ist, umso schlechter sind die Abbildungseigenschaften und um so verschmierter ist die Reflexion einer Punktquelle.
+Je größer die PSF ist, umso schlechter sind die Abbildungseigenschaften und umso verschmierter ist die Reflexion einer Punktquelle.
 
 Beim 3. Datenset handelt es sich um Mono-Daten. 
 Aufgrund der defekten MAGIC-I-Kamera und der geplanten Upgrade-Pause, wurde nur MAGIC-II betrieben.
@@ -249,8 +258,8 @@ Aufgrund der defekten MAGIC-I-Kamera und der geplanten Upgrade-Pause, wurde nur 
 Im 4. Datenset war das Upgrade abgeschlossen, die alte MAGIC-I-Kamera durch eine neue Kamera ersetzt und es wurden wieder Stereo-Beobachtungen durchgeführt.
 Aufgrund der Hardware-Veränderungen und einer anderen PSF wurden wieder neue MCs produziert.
 
-Die Analyse des ersten Datensets befindet sich in \autoref{subsec:Datenset_1} und die des zweiten Datensets in \autoref{subsec:Datenset_2}.
-Danach erfolgt die dritte Analyseperiode mit Stereobeobachtungen in \autoref{subsec:Datenset_4}.
+Die Analyse des zweiten Datensets befindet sich in \autoref{subsec:Datenset_2} und die des ersten Datensets in \autoref{subsec:Datenset_1}.
+Danach erfolgt die dritte Analyseperiode mit Stereobeobachtungen (Datenset 4) in \autoref{subsec:Datenset_4}.
 Die Mono-Analyse wird zuletzt in \autoref{subsec:Datenset_3} beschrieben.
 
 
@@ -270,28 +279,28 @@ Diese Daten wurden in einem Zenitwinkelbereich zwischen 12° und 30° genommen (
 
 Da dieser Datensatz die meisten Daten beinhaltet, wird die Analyse exemplarisch hiermit durchgeführt.
 
-Als Off-Daten dienen Daten anderer Quellen, welche in der gleichen Zeitspanne wie die zu analysierende liegen.
+Als Background-Daten dienen Daten anderer Quellen, welche in der gleichen Zeitspanne wie die zu analysierenden Daten liegen.
 Dadurch wird gewährleistet, dass das Teleskop die gleichen Eigenschaften, wie z.B. PSF, hat wie bei der Datennahme der zu analysierenden Quelle. 
 
-Mit Hilfe von Crab-Daten werden die Einstellungen für die Lichtkurvenbestimmung gesucht, da Crab als Standardkerze dient und einen bekannten stabilen Fluss hat. 
+Mit Hilfe von Crab-Daten werden die Einstellungen für die Lichtkurvenbestimmung bestimmt, da Crab als Standardkerze dient und einen bekannten stabilen Fluss hat. 
 
 
 \subsubsection{Daten-Auswahl und Qualitätchecks}
 Zunächst werden die auf \textit{Superstar}-Level prozessierten Daten einem Datencheck unterzogen, um die Daten herauszufiltern, die bei guten Bedingungen genommen wurden.
-Gute Bedingungen sind durch dunkle Nächte, wenig Störlicht durch z.B. Autoscheinwerfer und keine Hardware- oder Softwareprobleme gekennzeichnet.
+Gute Bedingungen sind durch dunkle Nächte, gutes Wetter, wenig Störlicht durch z.B. Autoscheinwerfer und keine Hardware- oder Softwareprobleme gekennzeichnet.
 
-Um dunkle Bedingungen zu gewährleisten wurde zunächst ein Cut im Direct Current (DC) (MI < 500nA, M II < 800nA) durchgeführt.
-Danach wurden mit Hilfe des \textit{MARS} Macros \textit{Quate} alle Daten mit einem Zenitwinkel < 35° ausgewählt, Runs mit einer Länge unter 10s und Runs mit einer Abweichung des Pointings von 15arcmin verworfen.
+Um dunkle Bedingungen zu gewährleisten wurde zunächst ein Cut im Direct Current (DC) (MAGIC-I < $\SI{500}{nA}$, MAGIC-II < $\SI{800}{nA}$) durchgeführt.
+Danach wurden mit Hilfe des \textit{MARS} Macros \textit{Quate} alle Daten mit einem Zenitwinkel < 35° ausgewählt, Runs mit einer Länge unter $\SI{10}{s}$ und Runs mit einer Abweichung des Pointings von 15arcmin verworfen.
 Außerdem wurden die Mittelwerte der Rate, der Parameter \texttt{Number of Islands}, \texttt{Concentration}, \texttt{Width} und \texttt{Length} gebildet und ebenfalls Ausreißer aussortiert um eine gute Qualität der Daten zu gewährleisten.
 
-Diese Kriterien für den Datencheck wurden für die Mrk 421-Daten, die Crab-Daten und die Off-Daten angewendet.
+Diese Kriterien für den Datencheck wurden für die Mrk 421-Daten, die Crab-Daten und die Background-Daten angewendet.
 
 In der Tabelle \ref{tab:Datenset2-Mrk421} ist aufgelistet, an welchen Tagen Mrk 421-Daten nach dem Datencheck für die Analyse zur Verfügung stehen.
 
 
 \begin{table}[!h]
 \centering
-\caption{Diese Tabelle zeigt, für welche Tage Mrk 421-Daten nach dem Datencheck zur Analyse zur Verfügung stehen.}
+\caption{Übersicht über alle nach dem Datencheck zur Verfügung stehenden Daten von Mrk~421.}
 \label{tab:Datenset2-Mrk421}
 \begin{tabular}{ll}
   \toprule
@@ -309,43 +318,43 @@ Auf eine tageweise Auflistung der Background- und Crab-Daten wird verzichtet.
 
 \begin{table}[!h]
 \centering
-\caption{Diese Tabelle zeigt eine Übersicht über die Menge an Mrk 421-, Crab- und Background-Daten nach dem Datencheck.}
+\caption{Übersicht über alle an nach dem Datencheck zur Verfügung stehenden Daten von Mrk~421-, Crab- und Background aus Datenset 2.}
 \label{tab:Datenset2}
 \begin{tabular}{lc}
   \toprule
-  Quelle & Observationszeit\\
+  Quelle & Observationszeit [min]\\
   \midrule
   \midrule
-  Mrk 421 & 272min\\
+  Mrk 421 & 272\\
   \midrule
-  Crab & 161min\\
+  Crab & 161\\
   \midrule
-  0FGLJ0631 & 77min \\
-  1ES1011 & 492min \\
-  1ES1426 & 424min \\
-  PG1553 & 971min \\
-  PKS1222 & 247min \\
-  SegueJ & 3252min \\
+  0FGLJ0631 & 77 \\
+  1ES1011 & 492 \\
+  1ES1426 & 424 \\
+  PG1553 & 971 \\
+  PKS1222 & 247 \\
+  SegueJ & 3252 \\
   \bottomrule
 \end{tabular}
 \end{table}
 
 Für diesen Teil der Analyse werden die in Dortmund produzierten Standard-MC-Daten im Zenitbereich 5°-35° genommen, in denen die alte MAGIC-I Kamera simuliert wurde.
-Die PSF für MAGIC-I beträgt hierbei 10.5mm und die Mirror Fraction 0.58, während diese Werte für MAGIC-II 10.2mm für die PSF und 0.70 für die Mirror Fraction sind.
+Die PSF für MAGIC-I beträgt hierbei $\SI{10,5}{mm}$ und die Mirror Fraction 0.58, während diese Werte für MAGIC-II $\SI{10,2}{mm}$ für die PSF und 0.70 für die Mirror Fraction sind.
 
-Es ist zu beachten, dass für alle Daten (Mrk 421/Crab/Off) und die MCs das gleiche Cleaning benutzt wird, da zu dieser Zeit zwei verschiedene Cleaning-Schwellen im Next-Neighbor-Cleaning gebräuchlich waren.
-Die Core und Neighbor-Schwelle beträgt in diesen Daten 6, bzw. 3.
+Es ist zu beachten, dass für alle Daten (Mrk 421/Crab/Background) und die MCs das gleiche Cleaning benutzt wird, da zu dieser Zeit zwei verschiedene Cleaning-Schwellen im Next-Neighbor-Cleaning gebräuchlich waren.
+Die Schwellwerte für die Kern und Nachbarpixel betragen in diesen Daten 6, bzw. 3.
 
 
 \subsubsection{\textit{Coach} und \textit{Melibea}}
-Für das Training des RF für die GH-Separation und die \texttt{Disp}-Bestimmung sowie das Erstellen der Look-Up-Tables zur Energierekonstruktik ist es wichtig, dass in jedem Zenitbin genug Background- und MC-Daten vorhanden sind.
+Für das Training des RF für die GH-Separation und die \texttt{Disp}-Bestimmung sowie das Erstellen der Look-Up-Tables zur Energierekonstruktion ist es wichtig, dass in jedem Zenitbin ausreichend Background- und MC-Daten vorhanden sind.
 Es wird ein Zenitbereich von 10-35° ausgewählt.
 Wie in Abb.\ref{Datenset2_Zenitverteilung_Off} und Abb.\ref{Datenset2_Zenitverteilung_MC} zu sehen ist, ist diese Voraussetzung erfüllt.
 
 \begin{figure}
     \centering
     \includegraphics[width=0.7\textwidth]{./Plots/04_MrkAnalyse/Datenset2/Datenset2_Background_MPointingPos1_fZd.pdf}
-    \caption{Zenitverteilung der Off-Daten zwischen dem 18.3.2012 und dem 27.4.2012. Leere Bins sind nicht enthalten.}
+    \caption{Zenitverteilung der Background-Daten zwischen dem 18.3.2012 und dem 27.4.2012.}
     \label{Datenset2_Zenitverteilung_Off}
 \end{figure}
 
@@ -357,18 +366,18 @@ Wie in Abb.\ref{Datenset2_Zenitverteilung_Off} und Abb.\ref{Datenset2_Zenitverte
 \end{figure}
 
 Der MC-Datensatz wurde in zwei Teile geteilt.
-Der eine Teil, das Trainings-Set, wird zusammen mit den Off-Daten zum Trainieren des RF für die GH-Separtion und für Disp benutzt, sowie zum Aufstellen der Look-Up-Tables für die Energie.
-Der andere Teil wird später zur Entfaltung benutzt.
+Der eine Teil, das Trainings-Set, wird zusammen mit den Background-Daten zum Trainieren des RF für die GH-Separation und für die \texttt{Disp}-Abschätzung benutzt, sowie zum Aufstellen der Look-Up-Tables für die Energie.
+Der andere Teil wird später zur Bestimmung der effektiven Fläche zur Entfaltung benutzt.
 
 Sobald das Training der RFs und das Erstellen der Look-Up-Tables in \textit{Coach} beendet ist, werden in \textit{Melibea} die Daten nach Gamma- und Hadron-Ereignis klassifiziert und jedem Ereignis eine geschätzte Energie und ein \texttt{Disp}-Wert zugeordnet.
 Das gleiche geschieht auch mit den Crab-Daten und dem anderen Teil der MCs, dem Test-Set.
 
 
 \subsubsection{Lichtkurve von Crab}
-Wie in \autoref{sec:Lichtkurve} beschrieben, wird nun sowohl für die Crab-Daten als auch für die Mrk 421 Daten eine Lichtkurve erstellt.
-Da der Fluss von Crab stabil und bekannt ist, werden mit Hilfe der Crab-Daten die passenden Parameter (Hadroneffizienz und $\theta$-Quadrat-Effizienz) für die Lichtkurven-Bestimmung in diesem Zeitraum für Mrk 421 ausgewählt.
+Wie in \autoref{sec:Lichtkurve} beschrieben, wird nun sowohl für die Crab-Daten als auch für die Mrk 421-Daten eine Lichtkurve erstellt.
+Da der Fluss von Crab stabil und bekannt ist, werden mit Hilfe der Crab-Daten die passenden Parameter (Hadroneffizienz und $\theta$-Quadrat-Effizienz) für die Lichtkurven-Bestimmung in diesem Zeitraum für Mrk~421 ausgewählt.
 
-Wie in Abb.\ref{Datenset2_Flute_Plots_Crab} zu sehen, ist es möglich mit Flute neben der Lichtkurve (vgl. Abb.\ref{Datenset2_LC_Crab}) auch noch einen $\theta$ Quadrat Plot (vgl. Abb.\ref{Datenset2_theta^2_Crab}), sowie die spektrale Energie-Verteilung (vgl. Abb.\ref{Datenset2_SED_Crab}) zu berechnen.
+Wie in \autoref{Datenset2_Flute_Plots_Crab} zu sehen ist, ist es möglich mit \textit{Flute} neben der Lichtkurve (vgl. Abb.\ref{Datenset2_LC_Crab}) auch noch einen $\theta^2$-Plot (vgl. Abb.\ref{Datenset2_theta^2_Crab}), sowie die spektrale Energieverteilung (vgl. Abb.\ref{Datenset2_SED_Crab}) zu berechnen.
 
 \begin{figure}
   %-----------------------------Figure 1--------------------------------------------------------%
@@ -405,14 +414,21 @@ Wie in Abb.\ref{Datenset2_Flute_Plots_Crab} zu sehen, ist es möglich mit Flute 
 \label{Datenset2_Flute_Plots_Crab}
 \end{figure}
 
-In Abb.\ref{Datenset2_theta^2_Crab} ist der $\theta^2$-Plot für Crab zu sehen, für kleine $\theta$ ist die Anzahl der Signal-Ereignisse wie zu erwarten sehr hoch.
-In Abb.\ref{Datenset2_SpectralShape_Crab} ist das differentielle Energiespektrum zu sehen.
-Abb.\ref{Datenset2_SED_Crab} zeigt die spektrale Energieverteilung.
+In \autoref{Datenset2_theta^2_Crab} ist der $\theta^2$-Plot für Crab zu sehen. Für kleine $\theta$ ist die Anzahl der Signal-Ereignisse wie zu erwarten sehr hoch.
+
+In \autoref{Datenset2_SpectralShape_Crab} ist das differentielle Energiespektrum zu sehen.
+In blau ist das von HESS gemessene Spektrum von Crab eingezeichnet.
+
+\autoref{Datenset2_SED_Crab} zeigt die spektrale Energieverteilung, d.h. das mit $E^2$ gewichtete Spektrum aus \autoref{Datenset2_SpectralShape_Crab}.
+Das in der Literatur angegebene Spektrum ist durch eine rot gestrichelte Linie gekennzeichnet, die unter dem angenommenen Spektrum, dargestellt als grüne Linie, liegt.
+Zum Vergleich ist ebenfalls wieder ein von HESS gemessenes Spektrum eingezeichnet.
+
 Wie in Abb.\ref{Datenset2_SpectralShape_Crab} und in Abb.\ref{Datenset2_SED_Crab} zu sehen ist, passt das angenommene Spektrum gut zu den Daten, bzw. zum bekannten Crab-Spektrum.
-Angenommen wurde folgendes Spektrum:
+Dieses angeonommene Spektrum ist in den beiden Abbildungen durch die grüne Linie gekennzeichnet.
+Angenommen wurde:
 
 \begin{equation}
-\frac{dN}{dE}=\left(\frac{x}{\SI{300}{GeV}}\right)^{-2.31-0.26\cdot \text{log10}(x/300.)}\si{TeV\,cm^{-2}\,s^{-1}}
+\frac{dN}{dE}=\left(\frac{x}{\SI{300}{GeV}}\right)^{-2.31-0.26\cdot log_{10}(x/\SI{300}{GeV})}\si{TeV\,cm^{-2}\,s^{-1}}.
  %pow(x/300.,-2.31-0.26*log10(x/300.))
 \end{equation}
 
@@ -425,7 +441,7 @@ Es wird nun mit den gleichen Effizienz-Einstellungen wie für Crab eine Lichtkur
 \begin{figure}
     \centering
     \includegraphics[width=0.8\textwidth]{./Plots/04_MrkAnalyse/Datenset2/LC_Mrk421.pdf}
-    \caption{Lichtkurve von Mrk 421.}
+    \caption{Lichtkurve von Mrk 421 im Zeitraum vom 18.3.2012 bis zum 25.4.2012.}
     \label{Datenset2_LC_Mrk421}
 \end{figure}
 
@@ -434,7 +450,7 @@ Er schwankt etwa um den halben Crab-Fluss.
 Auch die spektrale Energieverteilung sieht anders aus (vgl. Abb.\ref{Datenset2_SED_Mrk421}), da ein anderes Spektrum angenommen wurde:
 
 \begin{equation}
-\frac{dN}{dE}=\left(\frac{x}{\SI{300}{GeV}}\right)^{-2.75}\si{TeV\,cm^{-2}\,s^{-1}}
+\frac{dN}{dE}=\left(\frac{x}{\SI{300}{GeV}}\right)^{-2.75-0.26 \cdot log_{10}(x/\SI{300}{GeV})}\si{TeV\,cm^{-2}\,s^{-1}}
 \end{equation}
 
 
@@ -447,8 +463,8 @@ Auch die spektrale Energieverteilung sieht anders aus (vgl. Abb.\ref{Datenset2_S
 
 
 \subsubsection{Spektrum von Crab}
-Mit Hilfe von CombUnfold wird nun das Spektrum von Crab entfaltet.
-Abb.\ref{Datenset2_CombunFold_Crab} zeigt das entfaltete Spektrum von Crab mit Literaturwert.
+Mit Hilfe von \textit{CombUnfold} wird nun das Spektrum von Crab entfaltet.
+\autoref{Datenset2_CombunFold_Crab} zeigt das entfaltete Spektrum von Crab mit Literaturwert \todo{REFERENZ}.
 
 \begin{figure}
     \centering
@@ -460,18 +476,18 @@ Abb.\ref{Datenset2_CombunFold_Crab} zeigt das entfaltete Spektrum von Crab mit L
 Es zeigt sich, dass die entfalteten Datenpunkte mit Tikhonov-Regularisierung sehr gut zum Literaturwert passen.
 
 \subsubsection{Spektrum von Mrk 421}
-Abb.\ref{Datenset2_CombunFold_Mrk421} zeigt das entfaltet Spektrum von Mrk 421 mit fünf verschiedenen Regularisierungsmethoden.
+\autoref{Datenset2_CombunFold_Mrk421} zeigt das entfaltete Spektrum von Mrk 421 mit fünf verschiedenen Regularisierungsmethoden.
 Wie man sieht, zeigen die entfalteten Datenpunkte keine großen Abweichung voneinander. 
 Lediglich bei kleinen Energien unterscheiden sich die Ergebnisse etwas.
 
 \begin{figure}
     \centering
     \includegraphics[width=0.8\textwidth]{./Plots/04_MrkAnalyse/Datenset2/Spektrum_Mrk421.pdf}
-    \caption{Entfaltetes Mrk 421-Spektrum mit allen möglichen Regularisierungssorten}
+    \caption{Entfaltetes Mrk 421-Spektrum mit allen möglichen Regularisierungsmethoden.}
     \label{Datenset2_CombunFold_Mrk421}
 \end{figure}
 
-Es wurde der Fit, der in der Entfaltung mit Tikhonov-Regularisierung erstellt wurde zusätzlich dargestellt, da diese Regularisierungsmethode in den meisten Fällen die besten Ergebnisse lieferte.
+Es wurde der Fit, der in der Entfaltung mit Tikhonov-Regularisierung erstellt wurde, zusätzlich dargestellt, da diese Regularisierungsmethode in den meisten Fällen die besten Ergebnisse lieferte.
 Folgende Funktion wurde angenommen:
 
 \begin{equation}
@@ -499,7 +515,7 @@ Tabelle \ref{tab:Datenset1-Mrk421} zeigt an welchen Tagen Mrk 421-Daten den Date
 
 \begin{table}[!h]
 \centering
-\caption{Diese Tabelle zeigt, für welche Tage Mrk 421-Daten nach dem Datencheck zur Analyse zur Verfügung stehen.}
+\caption{Übersicht über alle an nach dem Datencheck zur Verfügung stehenden Daten von Mrk~421-, Crab- und Background.}
 \label{tab:Datenset1-Mrk421}
 \begin{tabular}{ll}
   \toprule
@@ -512,7 +528,7 @@ Februar & 25., 29.\\
 \end{table}
 
 
-Tabelle \ref{tab:Datenset1} zeigt wieviel Mrk 421-/Crab- und Off-Daten den Datencheck überstanden haben.
+Tabelle \ref{tab:Datenset1} zeigt wieviel Mrk 421-/Crab- und Background-Daten den Datencheck überstanden haben.
 
 
 \begin{table}[!h]
@@ -546,7 +562,7 @@ Die Lichtkurve von Crab beinhaltet nur 20min an Daten an einem Tag (vgl. Abb.\re
 \begin{figure}
     \centering
     \includegraphics[width=0.8\textwidth]{./Plots/04_MrkAnalyse/Datenset1/Datenset1_LC_Crab.pdf}
-    \caption{LC von Crab.}
+    \caption{LC von Crab im Zeitraum vom 25.2.2012 bis zum 29.2.2012.}
     \label{Datenset1_LC_Crab}
 \end{figure}
 
@@ -555,7 +571,7 @@ Die Lichtkurve von Mrk 421 befindet sich in Abb.\ref{Datenset1_LC_Mrk421}.
 \begin{figure}
     \centering
     \includegraphics[width=0.8\textwidth]{./Plots/04_MrkAnalyse/Datenset1/Datenset1_LC_Mrk421.pdf}
-    \caption{Lichtkurve von Mrk 421.}
+    \caption{Lichtkurve von Mrk 421 im Zeitraum vom 25.2.2012 bis zum 29.2.2012.}
     \label{Datenset1_LC_Mrk421}
 \end{figure}
 
@@ -597,11 +613,11 @@ An drei Tagen wurde Mrk 421 im Stereo-Modus observiert.
 
 \subsubsection{Datencheck}
 Der Datencheck für diese Daten geschieht analog zum Datencheck des Datensets 2. 
-Tabelle \ref{tab:Datenset4} zeigt, welche Mrk 421-/Crab- und Off-Daten nach dem Datencheck übrig sind und Tabelle \ref{tab:Datenset4-Mrk421} an welchen Tage die Mrk 421-Daten genommen wurden.
+Tabelle \ref{tab:Datenset4} zeigt, welche Mrk 421-/Crab- und Background-Daten nach dem Datencheck übrig sind und Tabelle \ref{tab:Datenset4-Mrk421} an welchen Tage die Mrk 421-Daten genommen wurden.
 
 \begin{table}[!h]
 \centering
-\caption{Diese Tabelle zeigt, für welche Tage Mrk 421-Daten nach dem Datencheck zur Analyse zur Verfügung stehen.}
+\caption{Übersicht über alle an nach dem Datencheck zur Verfügung stehenden Daten von Mrk~421-, Crab- und Background.}
 \label{tab:Datenset4-Mrk421}
 \begin{tabular}{ll}
   \toprule
@@ -643,14 +659,14 @@ Wie zu sehen ist, liegen auch hier die Flüsse niedrig.
 \begin{figure}
     \centering
     \includegraphics[width=0.8\textwidth]{./Plots/04_MrkAnalyse/Datenset4/Datenset4_LC_Crab.pdf}
-    \caption{Lichtkurve Crab.}
+    \caption{Lichtkurve Crab im Zeitraum vom 15.12.2012 bis zum 23.12.2012.}
     \label{Datenset4_LC_Crab}
 \end{figure}
 
 \begin{figure}
     \centering
     \includegraphics[width=0.8\textwidth]{./Plots/04_MrkAnalyse/Datenset4/Datenset4_LC_Mrk421.pdf}
-    \caption{Lichtkurve Mrk 421.}
+    \caption{Lichtkurve Mrk 421 im Zeitraum vom 15.12.2012 bis zum 23.12.2012.}
     \label{Datenset4_LC_Mrk421}
 \end{figure}
 
@@ -680,12 +696,12 @@ Der Fit des entfalteten Spektrums mit Tikhonov-Regularisierung liefert folgendes
 \subsubsection{Datencheck}
 Der Datencheck für die Mono-Daten geschieht analog zum Datencheck der anderen Datensets.
 Die Analyse beruht auf Daten auf Star-Level und nicht Superstar-Level wie vorher.
-Tabelle \ref{tab:Datenset3-Mrk421} und Tabelle \ref{tab:Datenset3} zeigen, welche Mrk 421-und Off-Daten nach dem Datencheck übrig sind.
+Tabelle \ref{tab:Datenset3-Mrk421} und Tabelle \ref{tab:Datenset3} zeigen, welche Mrk 421-und Background-Daten nach dem Datencheck übrig sind.
 Ein Beobachtung von Crab gab es zu diesem Zeitraum nicht.
 
 \begin{table}[!h]
 \centering
-\caption{Diese Tabelle zeigt, für welche Tage Mrk 421-Daten nach dem Datencheck zur Analyse zur Verfügung stehen.}
+\caption{Übersicht über alle an nach dem Datencheck zur Verfügung stehenden Daten von Mrk~421-, Crab- und Background.}
 \label{tab:Datenset3-Mrk421}
 \begin{tabular}{ll}
   \toprule
@@ -721,11 +737,11 @@ Juni & 15,. 19. \\
 
 \subsubsection{Energieschätzung}
 Im Vergleich zu der Stereo-Analyse müssen für die Mono-Analyse ältere Programme benutzt werden.
-Die RFs für die Disp-Bestimmung und Gamma-Hadron-Separation werden mit Hilfe von \textit{Osteria} erstellt.
+Die RFs für die \texttt{Disp}-Bestimmung und Gamma-Hadron-Separation werden mit Hilfe von \textit{Osteria} erstellt.
 Im Gegensatz zur Standardanalyse werden keine Look-Up-Tables zur Energieschätzung benutzt, sondern ebenfalls ein RF.
 
 \subsubsection{Lichtkurve}
-Nachdem die Ereignisse klassifiziert worden sind und ihnen ein Disp-Wert sowie eine geschätzte Energie zugeordnet worden sind, wird wieder eine Lichtkurve erstellt.
+Nachdem die Ereignisse klassifiziert worden sind und ihnen ein \texttt{Disp}-Wert sowie eine geschätzte Energie zugeordnet worden sind, wird wieder eine Lichtkurve erstellt.
 Dies geschieht mit Hilfe des Programms \textit{Fluxlc}.
 Obwohl keine Crab-Daten zur Verfügung standen, um die Einstellungen für die Lichtkurve mit einem bekannten Fluss zu überprüfen, wird eine Lichtkurve für Mrk 421 erstellt.
 Abb.\ref{Datenset3_LC_Mrk421} zeigt die Lichtkurve für Mrk 421.
@@ -733,7 +749,7 @@ Abb.\ref{Datenset3_LC_Mrk421} zeigt die Lichtkurve für Mrk 421.
 \begin{figure}
     \centering
     \includegraphics[width=0.8\textwidth]{./Plots/04_MrkAnalyse/Datenset3/Datenset3_Mrk421_LC.pdf}
-    \caption{LC Mrk 421.}
+    \caption{Lichtkurve von Mrk 421 im Zeitraum vom 23.05.2012 bis zum 19.05.2012.}
     \label{Datenset3_LC_Mrk421}
 \end{figure}
 
@@ -764,7 +780,7 @@ Der Fit an die Datenpunkte liefert folgendes Ergebnis:
 \label{LC_Alles}
 
 Nachdem für jedes Datenset einzelne Lichtkurven erstellt worden sind, sieht man in Abb.\ref{Alles_LC_Mrk421} nun alle Daten in einer Lichtkurve dargestellt.
-Da zwischen dem 20.06.2012 und dem 10.12.2012 gar keine Daten von Mrk 421 genommen wurden, weil die MAGIC-I-Kamera außer Betrieb war und das große Upgrade durchgeführt wurde, befindet sich eine große Lücke in der Lichtkurve.
+Da zwischen dem 20.06.2012 und dem 10.12.2012 keine Daten von Mrk 421 genommen wurden, weil die MAGIC-I-Kamera außer Betrieb war und das Upgrade durchgeführt wurde, befindet sich eine große Lücke in der Lichtkurve.
 
 \begin{figure}
     \centering
@@ -780,9 +796,13 @@ Physikalisch interessante Phänomene wie Flares sind auch nicht zu sehen.
 Verglichen mit dem gesamten Fluss von MAGIC zwischen Dezember 2004 und Dezember 2009 in \cite{DissBackes} ist der Fluss 2012 auf einem niedrigen Niveau.
 Im Dezember 2006 war er an vielen Tagen genauso niedrig.
 
-Im Gegensatz zu den Flares 2007 und 2008, wo der Fluss bis zu 20 mal so hoch war wie zu ruhigen Zeiten \cite{Backes}, ist der Fluss 2012 konstant niedrig. 
+Im Gegensatz zu den Flares 2007 und 2008, bei denen der Fluss bis zu 20 mal so hoch war wie zu ruhigen Zeiten \cite{DissBackes}, ist der Fluss 2012 konstant niedrig.
+
+Ein Vergleich mit dem Fluss zwischen Januar und Mai 2009 \cite{DissDiego} liefert ebenfalls das Ergebnis, dass sich sich Mrk 421 in einem ruhigen Zustand befindet.
 
 In Tabelle \ref{tab:SpektraleIndizes} befinden sich die spektralen Indizes der Entfaltung der einzelnen Datensets.
+Es ist zu sehen, dass die Indizes nahe beisammen liegen, abgesehen vom zweiten Datenset.
+Da der spektrale Index eher hoch ist, ist der Fluss an hochenergetischen Teilchen gering
 
 \begin{table}[!h]
 \centering

@@ -1,4 +1,4 @@
-This is LuaTeX, Version beta-0.79.1 (TeX Live 2014) (rev 4971)  (format=lualatex 2015.1.12)  4 MAR 2015 12:18
+This is LuaTeX, Version beta-0.79.1 (TeX Live 2014) (rev 4971)  (format=lualatex 2015.1.12)  2 APR 2015 15:13
  restricted \write18 enabled.
 **DoktorArbeit.tex
 (./DoktorArbeit.tex
@@ -382,7 +382,7 @@ luatexbase-attr: luatexbase.attributes["luaotfload@cursbase"] = 6
 luatexbase-attr: luatexbase.attributes["luaotfload@curscurs"] = 7
 luatexbase-attr: luatexbase.attributes["luaotfload@cursdone"] = 8
 luatexbase-attr: luatexbase.attributes["luaotfload@state"] = 9
-luaotfload | main : fontloader loaded in 0.083 seconds
+luaotfload | main : fontloader loaded in 0.062 seconds
 luatexbase-mcb: inserting 'luaotfload.node_processor'
 at position 1 in 'pre_linebreak_filter'
 luatexbase-mcb: inserting 'luaotfload.node_processor'
@@ -737,7 +737,7 @@ Package scrlayer-scrpage Info: deactivating warning for font element
 Package scrlayer-scrpage Info: auto-selection of `pagestyleset=KOMA-Script'.
 Package scrkbase Info: You've told me to extend the font selection of the
 (scrkbase)             element `sectioning' that is an alias of element
-(scrkbase)             `disposition' on input line 65.
+(scrkbase)             `disposition' on input line 67.
 
 
 Package scrlayer-scrpage Warning: Command deprecated!
@@ -751,7 +751,7 @@ Package scrlayer-scrpage Warning: Command deprecated!
 (scrlayer-scrpage)                `<line thickness>:<line length>' to setup
 (scrlayer-scrpage)                the line length and thickness, and
 (scrlayer-scrpage)                `\setkomafont' or `\addtokomafont' to
-(scrlayer-scrpage)                setup the colour on input line 68.
+(scrlayer-scrpage)                setup the colour on input line 70.
 
 
 (/net/home.e5.physik.tu-dortmund.de/vol/ph_e5v/e5b/homes/kfrantzen/texmf/tex/la
@@ -1047,15 +1047,15 @@ tinModernMath:mode=base;script=math;language=DFLT;+tlig;+trep;+ssty=1;"
 luaotfload | load : Lookup/name: "LatinModernMath" -> "latinmodern-math.otf"
 luaotfload | load : Lookup/name: "LatinModernMath" -> "latinmodern-math.otf"
 LaTeX Font Info:    Encoding `OT1' has changed to `EU2' for symbol font
-(Font)              `operators' in the math version `normal' on input line 87.
+(Font)              `operators' in the math version `normal' on input line 89.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
 (Font)                  OT1/cmr/m/n --> EU2/LatinModernMath(0)/m/n on input line
- 87.
+ 89.
 LaTeX Font Info:    Encoding `OT1' has changed to `EU2' for symbol font
-(Font)              `operators' in the math version `bold' on input line 87.
+(Font)              `operators' in the math version `bold' on input line 89.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
 (Font)                  OT1/cmr/bx/n --> EU2/LatinModernMath(0)/bx/n on input li
-ne 87.
+ne 89.
 luaotfload | load : Lookup/name: "LatinModernMath" -> "latinmodern-math.otf"
 luaotfload | load : Lookup/name: "LatinModernMath" -> "latinmodern-math.otf"
 luaotfload | load : Lookup/name: "LatinModernMath" -> "latinmodern-math.otf"
@@ -1112,15 +1112,15 @@ LT;+tlig;+trep;+ssty=1;"
 . 22\font =163840sp\relax 
 .................................................
 LaTeX Font Info:    Encoding `OMS' has changed to `EU2' for symbol font
-(Font)              `symbols' in the math version `normal' on input line 87.
+(Font)              `symbols' in the math version `normal' on input line 89.
 LaTeX Font Info:    Overwriting symbol font `symbols' in version `normal'
 (Font)                  OMS/cmsy/m/n --> EU2/LatinModernMath(1)/m/n on input lin
-e 87.
+e 89.
 LaTeX Font Info:    Encoding `OMS' has changed to `EU2' for symbol font
-(Font)              `symbols' in the math version `bold' on input line 87.
+(Font)              `symbols' in the math version `bold' on input line 89.
 LaTeX Font Info:    Overwriting symbol font `symbols' in version `bold'
 (Font)                  OMS/cmsy/b/n --> EU2/LatinModernMath(1)/bx/n on input li
-ne 87.
+ne 89.
 luaotfload | load : Lookup/name: "LatinModernMath" -> "latinmodern-math.otf"
 luaotfload | load : Lookup/name: "LatinModernMath" -> "latinmodern-math.otf"
 luaotfload | load : Lookup/name: "LatinModernMath" -> "latinmodern-math.otf"
@@ -1167,16 +1167,16 @@ LT;+tlig;+trep;+ssty=1;"
 . \fontdimen 12\font =393216sp\relax \fontdimen 13\font =0pt\relax 
 .................................................
 LaTeX Font Info:    Encoding `OMX' has changed to `EU2' for symbol font
-(Font)              `largesymbols' in the math version `normal' on input line 87
+(Font)              `largesymbols' in the math version `normal' on input line 89
 .
 LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `normal'
 (Font)                  OMX/cmex/m/n --> EU2/LatinModernMath(2)/m/n on input lin
-e 87.
+e 89.
 LaTeX Font Info:    Encoding `OMX' has changed to `EU2' for symbol font
-(Font)              `largesymbols' in the math version `bold' on input line 87.
+(Font)              `largesymbols' in the math version `bold' on input line 89.
 LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
 (Font)                  OMX/cmex/m/n --> EU2/LatinModernMath(2)/bx/n on input li
-ne 87.
+ne 89.
 
 (/usr/local/texlive/2014/texmf-dist/tex/latex/l3packages/xfrac/xfrac.sty
 (/usr/local/texlive/2014/texmf-dist/tex/latex/base/textcomp.sty
@@ -1523,7 +1523,7 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \@float@everytoks=\toks30
 \@floatcapt=\box270
 )
-Package scrhack Info: loading float hack on input line 128.
+Package scrhack Info: loading float hack on input line 130.
 
 (/usr/local/texlive/2014/texmf-dist/tex/latex/koma-script/float.hak
 File: float.hak 2014/10/28 v3.14 KOMA-Script package (hacking package float)
@@ -1849,7 +1849,7 @@ LaTeX Info: Redefining \pageref on input line 6369.
 )
 Package scrhack Info: hyperref hack deactivated because of
 (scrhack)             detection of hyperref version, that doesn't
-(scrhack)             need that hack, on input line 160.
+(scrhack)             need that hack, on input line 162.
 
 
 Package hyperref Message: Driver (autodetected): hpdftex.
@@ -2168,11 +2168,7 @@ File: german.lbx 2014/06/25 v2.9a biblatex localization (PK/JW/AB)
 )
 (./build/DoktorArbeit.aux
 luatex-hyphen: loading patterns and exceptions for: ngerman (\language31)
-luatex-hyphen: info: no hyphenation exceptions for this language
-
-LaTeX Warning: Label `Disp' multiply defined.
-
-)
+luatex-hyphen: info: no hyphenation exceptions for this language)
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 50.
 LaTeX Font Info:    ... okay on input line 50.
 LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 50.
@@ -2189,7 +2185,8 @@ LaTeX Font Info:    Checking defaults for EU2/lmr/m/n on input line 50.
 LaTeX Font Info:    ... okay on input line 50.
 LaTeX Font Info:    Checking defaults for T3/cmr/m/n on input line 50.
 LaTeX Font Info:    Try loading font information for T3+cmr on input line 50.
- (/usr/local/texlive/2014/texmf-dist/tex/latex/tipa/t3cmr.fd
+
+(/usr/local/texlive/2014/texmf-dist/tex/latex/tipa/t3cmr.fd
 File: t3cmr.fd 2001/12/31 TIPA font definitions
 )
 LaTeX Font Info:    ... okay on input line 50.
@@ -2398,7 +2395,7 @@ Package tocbasic Info: character protrusion at toc deactivated on input line 65.
 
  (./build/DoktorArbeit.toc
 LaTeX Font Info:    Font shape `EU2/lmss/bx/it' in size <10.95> not available
-(Font)              Font shape `EU2/lmss/bx/sl' tried instead on input line 26.
+(Font)              Font shape `EU2/lmss/bx/sl' tried instead on input line 57.
 (compiling luc: /usr/local/texlive/2014/texmf-var/luatex-cache/generic/fonts/otf
 /lmsans10-boldoblique.luc)(load luc: /net/home.e5.physik.tu-dortmund.de/vol/ph_e
 5v/e5b/homes/kfrantzen/.texlive2014/texmf-var/luatex-cache/generic/fonts/otf/lms
@@ -2409,40 +2406,125 @@ ans10-boldoblique.luc))
 ] [4
 
 
-] (./Inhalt/03_MonteCarlos.tex
+] (./Inhalt/02_Astroteilchenphysik.tex
 Kapitel 1.
-[1
+
+<./Plots/02_Astroteilchenphysik/Astroteilchen.png, id=96, 917.4275pt x 805.0075
+pt>
+File: ./Plots/02_Astroteilchenphysik/Astroteilchen.png Graphic file (type png)
+ <use ./Plots/02_Astroteilchenphysik/Astroteilchen.png>
+Package pdftex.def Info: ./Plots/02_Astroteilchenphysik/Astroteilchen.png used o
+n input line 18.
+(pdftex.def)             Requested size: 315.48541pt x 276.8312pt.
+ [1
+
+] [2<./Plots/02_Astroteilchenphysik/Astroteilchen.png>]
+<./Plots/02_Astroteilchenphysik/CosmicRaySpectrum.png, id=117, 1269.74374pt x 9
+58.58125pt>
+File: ./Plots/02_Astroteilchenphysik/CosmicRaySpectrum.png Graphic file (type pn
+g)
+ <use ./Plots/02_Astroteilchenphysik/CosmicRaySpectrum.png>
+Package pdftex.def Info: ./Plots/02_Astroteilchenphysik/CosmicRaySpectrum.png us
+ed on input line 47.
+(pdftex.def)             Requested size: 315.48541pt x 238.16742pt.
+(compiling luc: /usr/local/texlive/2014/texmf-var/luatex-cache/generic/fonts/otf
+/lmroman8-regular.luc)(load luc: /net/home.e5.physik.tu-dortmund.de/vol/ph_e5v/e
+5b/homes/kfrantzen/.texlive2014/texmf-var/luatex-cache/generic/fonts/otf/lmroman
+8-regular.luc)
+luaotfload | load : Lookup/name: "LatinModernMath" -> "latinmodern-math.otf"
+luaotfload | load : Lookup/name: "LatinModernMath" -> "latinmodern-math.otf"
+luaotfload | load : Lookup/name: "LatinModernMath" -> "latinmodern-math.otf"(com
+piling luc: /usr/local/texlive/2014/texmf-var/luatex-cache/generic/fonts/otf/lmr
+oman6-regular.luc)(load luc: /net/home.e5.physik.tu-dortmund.de/vol/ph_e5v/e5b/h
+omes/kfrantzen/.texlive2014/texmf-var/luatex-cache/generic/fonts/otf/lmroman6-re
+gular.luc) [3<./Plots/02_Astroteilchenphysik/CosmicRaySpectrum.png>]
+[4] [5] [6] [7] [8] [9](compiling luc: /usr/local/texlive/2014/texmf-var/luatex-
+cache/generic/fonts/otf/lmroman5-regular.luc)(load luc: /net/home.e5.physik.tu-d
+ortmund.de/vol/ph_e5v/e5b/homes/kfrantzen/.texlive2014/texmf-var/luatex-cache/ge
+neric/fonts/otf/lmroman5-regular.luc) [10]
+<./Plots/02_Astroteilchenphysik/Atmospheric_electromagnetic_opacity.png, id=241
+, 1284.8pt x 607.26875pt>
+File: ./Plots/02_Astroteilchenphysik/Atmospheric_electromagnetic_opacity.png Gra
+phic file (type png)
+
+<use ./Plots/02_Astroteilchenphysik/Atmospheric_electromagnetic_opacity.png>
+Package pdftex.def Info: ./Plots/02_Astroteilchenphysik/Atmospheric_electromagne
+tic_opacity.png used on input line 345.
+(pdftex.def)             Requested size: 390.41388pt x 184.52637pt.
+Package hyperref Info: bookmark level for unknown todo defaults to 0 on input li
+ne 366.
+
+[11] [12<./Plots/02_Astroteilchenphysik/Atmospheric_electromagnetic_opacity.png>
+]
+<./Plots/02_Astroteilchenphysik/AGN_Schema.png, id=272, 1101.11375pt x 930.4762
+6pt>
+File: ./Plots/02_Astroteilchenphysik/AGN_Schema.png Graphic file (type png)
+ <use ./Plots/02_Astroteilchenphysik/AGN_Schema.png>
+Package pdftex.def Info: ./Plots/02_Astroteilchenphysik/AGN_Schema.png used on i
+nput line 385.
+(pdftex.def)             Requested size: 315.48541pt x 266.59407pt.
+ [13<./Plots/02_Astroteilchenphysik/AGN_Schema.png>] [14] [15]
+<./Plots/02_Astroteilchenphysik/SED_Mrk421.png, id=318, 1440.38126pt x 918.4312
+4pt>
+File: ./Plots/02_Astroteilchenphysik/SED_Mrk421.png Graphic file (type png)
+ <use ./Plots/02_Astroteilchenphysik/SED_Mrk421.png>
+Package pdftex.def Info: ./Plots/02_Astroteilchenphysik/SED_Mrk421.png used on i
+nput line 469.
+(pdftex.def)             Requested size: 315.48541pt x 201.15858pt.
+)
+(./Inhalt/03_MonteCarlos.tex [16<./Plots/02_Astroteilchenphysik/SED_Mrk421.png>]
+[17]
+Kapitel 2.
+
+Overfull \hbox (11.39484pt too wide) in paragraph at lines 12--13
+[][]\EU2/lmr/m/n/10.95 Die ge-sam-te Pro-duk-ti-on der Gamma-MC-Simulationsdate
+n für das MAGIC-Experiment
+ []
+
+[18
 
 ]
-<./Plots/03_MonteCarlos/MAGIC-Telescopes.jpg, id=101, 1284.8pt x 841.1425pt>
+<./Plots/03_MonteCarlos/MAGIC-Telescopes.jpg, id=363, 1284.8pt x 841.1425pt>
 File: ./Plots/03_MonteCarlos/MAGIC-Telescopes.jpg Graphic file (type jpg)
 
 <use ./Plots/03_MonteCarlos/MAGIC-Telescopes.jpg>
 Package pdftex.def Info: ./Plots/03_MonteCarlos/MAGIC-Telescopes.jpg used on inp
-ut line 38.
+ut line 39.
 (pdftex.def)             Requested size: 394.35527pt x 258.17169pt.
- [2<./Plots/03_MonteCarlos/MAGIC-Telescopes.jpg>] [3]
-<./Plots/03_MonteCarlos/Photon_1TeV_CORSIKA.png, id=125, 1027.84pt x 2055.68pt>
+ [19<./Plots/03_MonteCarlos/MAGIC-Telescopes.jpg>]
+Underfull \vbox (badness 3919) has occurred while \output is active []
+
+ [20]
+<./Plots/03_MonteCarlos/Photon_1TeV_CORSIKA.png, id=385, 1027.84pt x 2055.68pt>
 File: ./Plots/03_MonteCarlos/Photon_1TeV_CORSIKA.png Graphic file (type png)
 <use ./Plots/03_MonteCarlos/Photon_1TeV_CORSIKA.png>
 Package pdftex.def Info: ./Plots/03_MonteCarlos/Photon_1TeV_CORSIKA.png used on 
-input line 97.
+input line 101.
 (pdftex.def)             Requested size: 157.7397pt x 315.45903pt.
-
-Underfull \hbox (badness 1062) in paragraph at lines 98--98
-\EU2/lmr/m/n/10 nem 1TeV-Photon als Pri-mär-teil-
- []
-
-
-<./Plots/03_MonteCarlos/Proton_1TeV_CORSIKA.png, id=126, 1027.84pt x 2055.68pt>
+luaotfload | load : Lookup/name: "LatinModernMath" -> "latinmodern-math.otf"
+LaTeX Font Info:    Font shape `EU2/LatinModernMath(1)/m/n' will be
+(Font)              scaled to size 7.00006pt on input line 102.
+luaotfload | load : Lookup/name: "LatinModernMath" -> "latinmodern-math.otf"
+LaTeX Font Info:    Font shape `EU2/LatinModernMath(2)/m/n' will be
+(Font)              scaled to size 6.99986pt on input line 102.
+luaotfload | load : Lookup/name: "LatinModernMath" -> "latinmodern-math.otf"(com
+piling luc: /usr/local/texlive/2014/texmf-var/luatex-cache/generic/fonts/otf/lmr
+oman7-regular.luc)(load luc: /net/home.e5.physik.tu-dortmund.de/vol/ph_e5v/e5b/h
+omes/kfrantzen/.texlive2014/texmf-var/luatex-cache/generic/fonts/otf/lmroman7-re
+gular.luc)
+luaotfload | load : Lookup/name: "LatinModernMath" -> "latinmodern-math.otf"
+luaotfload | load : Lookup/name: "LatinModernMath" -> "latinmodern-math.otf"
+luaotfload | load : Lookup/name: "LatinModernMath" -> "latinmodern-math.otf"
+luaotfload | load : Lookup/name: "LatinModernMath" -> "latinmodern-math.otf"
+luaotfload | load : Lookup/name: "LatinModernMath" -> "latinmodern-math.otf"
+luaotfload | load : Lookup/name: "LatinModernMath" -> "latinmodern-math.otf"
+<./Plots/03_MonteCarlos/Proton_1TeV_CORSIKA.png, id=386, 1027.84pt x 2055.68pt>
 File: ./Plots/03_MonteCarlos/Proton_1TeV_CORSIKA.png Graphic file (type png)
 <use ./Plots/03_MonteCarlos/Proton_1TeV_CORSIKA.png>
 Package pdftex.def Info: ./Plots/03_MonteCarlos/Proton_1TeV_CORSIKA.png used on 
-input line 102.
+input line 106.
 (pdftex.def)             Requested size: 157.7397pt x 315.45903pt.
- [4<./Plots/03_MonteCarlos/Photon_1TeV_CORSIKA.png><./Plots/03_MonteCarlos/Proto
-n_1TeV_CORSIKA.png>]
-LaTeX Font Info:    Try loading font information for EU2+lmtt on input line 128.
+LaTeX Font Info:    Try loading font information for EU2+lmtt on input line 136.
 
 
 (/usr/local/texlive/2014/texmf-dist/tex/latex/euenc/eu2lmtt.fd
@@ -2456,393 +2538,365 @@ Package microtype Info: Loading generic settings for font family
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 
-[5](compiling luc: /usr/local/texlive/2014/texmf-var/luatex-cache/generic/fonts/
-otf/lmroman8-regular.luc)(load luc: /net/home.e5.physik.tu-dortmund.de/vol/ph_e5
-v/e5b/homes/kfrantzen/.texlive2014/texmf-var/luatex-cache/generic/fonts/otf/lmro
-man8-regular.luc)
-luaotfload | load : Lookup/name: "LatinModernMath" -> "latinmodern-math.otf"
-luaotfload | load : Lookup/name: "LatinModernMath" -> "latinmodern-math.otf"
-luaotfload | load : Lookup/name: "LatinModernMath" -> "latinmodern-math.otf"(com
-piling luc: /usr/local/texlive/2014/texmf-var/luatex-cache/generic/fonts/otf/lmr
-oman6-regular.luc)(load luc: /net/home.e5.physik.tu-dortmund.de/vol/ph_e5v/e5b/h
-omes/kfrantzen/.texlive2014/texmf-var/luatex-cache/generic/fonts/otf/lmroman6-re
-gular.luc)
-Underfull \vbox (badness 1635) has occurred while \output is active []
+[21] [22<./Plots/03_MonteCarlos/Photon_1TeV_CORSIKA.png><./Plots/03_MonteCarlos/
+Proton_1TeV_CORSIKA.png>]
+LaTeX Font Info:    Font shape `EU2/lmss/bx/it' in size <14.4> not available
+(Font)              Font shape `EU2/lmss/bx/sl' tried instead on input line 183.
 
- [6]
+ [23]
 <./Plots/03_MonteCarlos/Signal_Job481_RunNr1513276_511_e3.0TeV_Zd32.2_fertig.pn
-g, id=158, 1226.5825pt x 1012.78375pt>
+g, id=417, 1226.5825pt x 1012.78375pt>
 File: ./Plots/03_MonteCarlos/Signal_Job481_RunNr1513276_511_e3.0TeV_Zd32.2_ferti
 g.png Graphic file (type png)
 
 <use ./Plots/03_MonteCarlos/Signal_Job481_RunNr1513276_511_e3.0TeV_Zd32.2_ferti
 g.png>
 Package pdftex.def Info: ./Plots/03_MonteCarlos/Signal_Job481_RunNr1513276_511_e
-3.0TeV_Zd32.2_fertig.png used on input line 215.
+3.0TeV_Zd32.2_fertig.png used on input line 224.
 (pdftex.def)             Requested size: 236.61555pt x 195.36713pt.
- [7<./Plots/03_MonteCarlos/Signal_Job481_RunNr1513276_511_e3.0TeV_Zd32.2_fertig.
-png>] [8] [9]
-<./Plots/03_MonteCarlos/Pedestal_fertig.png, id=180, 1210.5225pt x 1004.75375pt
+ [24] [25<./Plots/03_MonteCarlos/Signal_Job481_RunNr1513276_511_e3.0TeV_Zd32.2_f
+ertig.png>] [26]
+<./Plots/03_MonteCarlos/Pedestal_fertig.png, id=439, 1210.5225pt x 1004.75375pt
 >
 File: ./Plots/03_MonteCarlos/Pedestal_fertig.png Graphic file (type png)
  <use ./Plots/03_MonteCarlos/Pedestal_fertig.png>
 Package pdftex.def Info: ./Plots/03_MonteCarlos/Pedestal_fertig.png used on inpu
-t line 324.
+t line 337.
 (pdftex.def)             Requested size: 236.61555pt x 196.3938pt.
- [10<./Plots/03_MonteCarlos/Pedestal_fertig.png>]
-luaotfload | load : Lookup/name: "LatinModernMath" -> "latinmodern-math.otf"
-LaTeX Font Info:    Font shape `EU2/LatinModernMath(1)/m/n' will be
-(Font)              scaled to size 7.00006pt on input line 351.
-luaotfload | load : Lookup/name: "LatinModernMath" -> "latinmodern-math.otf"
-LaTeX Font Info:    Font shape `EU2/LatinModernMath(2)/m/n' will be
-(Font)              scaled to size 6.99986pt on input line 351.
-luaotfload | load : Lookup/name: "LatinModernMath" -> "latinmodern-math.otf"
-<./Plots/03_MonteCarlos/Signal_ArrivalTime_fertig.png, id=189, 1219.55624pt x 1
+ [27] [28<./Plots/03_MonteCarlos/Pedestal_fertig.png>]
+<./Plots/03_MonteCarlos/Signal_ArrivalTime_fertig.png, id=456, 1219.55624pt x 1
 013.7875pt>
 File: ./Plots/03_MonteCarlos/Signal_ArrivalTime_fertig.png Graphic file (type pn
 g)
  <use ./Plots/03_MonteCarlos/Signal_ArrivalTime_fertig.png>
 Package pdftex.def Info: ./Plots/03_MonteCarlos/Signal_ArrivalTime_fertig.png us
-ed on input line 359.
+ed on input line 374.
 (pdftex.def)             Requested size: 236.61555pt x 196.69pt.
- [11]
-[12<./Plots/03_MonteCarlos/Signal_ArrivalTime_fertig.png>]
-<./Plots/03_MonteCarlos/Signal_gecleant_fertig.png, id=209, 1269.74374pt x 1102
+ [29<./Plots/03_MonteCarlos/Signal_ArrivalTime_fertig.png>]
+<./Plots/03_MonteCarlos/Signal_gecleant_fertig.png, id=468, 1269.74374pt x 1102
 .1175pt>
 File: ./Plots/03_MonteCarlos/Signal_gecleant_fertig.png Graphic file (type png)
  <use ./Plots/03_MonteCarlos/Signal_gecleant_fertig.png>
 Package pdftex.def Info: ./Plots/03_MonteCarlos/Signal_gecleant_fertig.png used 
-on input line 409.
+on input line 428.
 (pdftex.def)             Requested size: 236.61555pt x 205.36844pt.
- [13] [14<./Plots/03_MonteCarlos/Signal_gecleant_fertig.png>]
-<./Plots/03_MonteCarlos/CleaningBild.png, id=224, 914.41624pt x 441.65pt>
+ [30] [31<./Plots/03_MonteCarlos/Signal_gecleant_fertig.png>]
+<./Plots/03_MonteCarlos/CleaningBild.png, id=484, 914.41624pt x 441.65pt>
 File: ./Plots/03_MonteCarlos/CleaningBild.png Graphic file (type png)
 
 <use ./Plots/03_MonteCarlos/CleaningBild.png>
 Package pdftex.def Info: ./Plots/03_MonteCarlos/CleaningBild.png used on input l
-ine 440.
+ine 459.
 (pdftex.def)             Requested size: 354.91733pt x 171.42064pt.
- [15<./Plots/03_MonteCarlos/CleaningBild.png>]
-<./Plots/03_MonteCarlos/Superstar.png, id=230, 1090.0725pt x 584.1825pt>
+ [32<./Plots/03_MonteCarlos/CleaningBild.png>]
+<./Plots/03_MonteCarlos/Superstar.png, id=495, 1090.0725pt x 584.1825pt>
 File: ./Plots/03_MonteCarlos/Superstar.png Graphic file (type png)
 
 <use ./Plots/03_MonteCarlos/Superstar.png>
 Package pdftex.def Info: ./Plots/03_MonteCarlos/Superstar.png used on input line
- 486.
+ 508.
 (pdftex.def)             Requested size: 354.91733pt x 190.2047pt.
- [16]
-<./Plots/03_MonteCarlos/Jobmanager.png, id=240, 1573.88pt x 684.5575pt>
+ [33]
+<./Plots/03_MonteCarlos/Jobmanager.png, id=509, 1573.88pt x 684.5575pt>
 File: ./Plots/03_MonteCarlos/Jobmanager.png Graphic file (type png)
 
 <use ./Plots/03_MonteCarlos/Jobmanager.png>
 Package pdftex.def Info: ./Plots/03_MonteCarlos/Jobmanager.png used on input lin
-e 522.
+e 547.
 (pdftex.def)             Requested size: 354.91733pt x 154.36348pt.
- [17<./Plots/03_MonteCarlos/Superstar.png>]
+ [34<./Plots/03_MonteCarlos/Superstar.png>]
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[18<./Plots/03_MonteCarlos/Jobmanager.png>]
-<./Plots/03_MonteCarlos/LiDO.png, id=258, 722.7pt x 542.025pt>
+[35<./Plots/03_MonteCarlos/Jobmanager.png>]
+Underfull \vbox (badness 1859) has occurred while \output is active []
+
+ [36]
+<./Plots/03_MonteCarlos/LiDO.png, id=529, 722.7pt x 542.025pt>
 File: ./Plots/03_MonteCarlos/LiDO.png Graphic file (type png)
 
 <use ./Plots/03_MonteCarlos/LiDO.png>
-Package pdftex.def Info: ./Plots/03_MonteCarlos/LiDO.png used on input line 608.
+Package pdftex.def Info: ./Plots/03_MonteCarlos/LiDO.png used on input line 633.
 
 (pdftex.def)             Requested size: 354.91733pt x 266.19005pt.
- [19] [20<./Plots/03_MonteCarlos/LiDO.png>]
-Overfull \hbox (16.76509pt too wide) in paragraph at lines 640--647
+ [37<./Plots/03_MonteCarlos/LiDO.png>]
+Overfull \hbox (34.18645pt too wide) in paragraph at lines 665--672
  [][][] 
  []
 
-Package hyperref Info: bookmark level for unknown todo defaults to 0 on input li
-ne 650.
 
-Underfull \hbox (badness 10000) in paragraph at lines 656--659
+Underfull \hbox (badness 10000) in paragraph at lines 681--684
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 660--661
+Underfull \hbox (badness 10000) in paragraph at lines 685--686
 
  []
 
-
-Overfull \hbox (11.72804pt too wide) in paragraph at lines 664--665
+[38]
+Overfull \hbox (1.72804pt too wide) in paragraph at lines 689--690
 [][][]$\EU2/lmtt/m/n/10.95 http : / / data . magic . pic . es / Data / MonteCar
 lo _ Stereo / M1 _ DRS4 _ 1039 _ M2 _ DRS4 _
  []
 
 
-Overfull \hbox (58.36143pt too wide) in paragraph at lines 664--665
+Overfull \hbox (58.36143pt too wide) in paragraph at lines 689--690
 \EU2/lmtt/m/n/10.95 1039 / M1 _ PSF10 . 1 _ MF0 . 60 _ M2 _ PSF8 . 6 _ MF0 . 66
  / gammas / za05to35 / ringwobble / std20140317 /
  []
 
-[21]
-Overfull \hbox (7.40761pt too wide) in paragraph at lines 668--669
-[][][]$\EU2/lmtt/m/n/10.95 http : / / wiki . magic . pic . es / index . php / R
-ecommended _ Stereo _ MC _ productions$[]\EU2/lmr/m/n/10.95 . 
- []
-
-) (./Inhalt/04_MrkAnalyse.tex [22]
-Kapitel 2.
+) (./Inhalt/04_MrkAnalyse.tex [39]
+Kapitel 3.
 LaTeX Font Info:    Font shape `EU2/lmss/bx/it' in size <20.74> not available
 (Font)              Font shape `EU2/lmss/bx/sl' tried instead on input line 1.
-[23
+[40
 
-]
-Missing character: There is no ä (U+00E4) in font cmmi8!
- [24] <./Plots/04_MrkAnalyse/Disp.png, id=317, 665.48625pt x 651.43375pt>
+] [41] <./Plots/04_MrkAnalyse/Disp.png, id=583, 665.48625pt x 651.43375pt>
 File: ./Plots/04_MrkAnalyse/Disp.png Graphic file (type png)
 
 <use ./Plots/04_MrkAnalyse/Disp.png>
-Package pdftex.def Info: ./Plots/04_MrkAnalyse/Disp.png used on input line 68.
+Package pdftex.def Info: ./Plots/04_MrkAnalyse/Disp.png used on input line 72.
 (pdftex.def)             Requested size: 197.17763pt x 193.00624pt.
- [25<./Plots/04_MrkAnalyse/Disp.png>]
-Overfull \hbox (17.9584pt too wide) in paragraph at lines 109--112
-[]\EU2/lmr/m/n/10.95 Um die An-zahl der Gam-ma-teil-chen aus der Quel-le zu be-
-stim-men, wird ein $\EU2/LatinModernMath(0)/m/n/10.95 𝜃[]$\EU2/lmr/m/n/10.95
- -Histogramm
- []
 
+Underfull \vbox (badness 2865) has occurred while \output is active []
 
-<./Plots/04_MrkAnalyse/Datenset2/Crab_Theta2.pdf, id=329, 569.12625pt x 389.455
+ [42<./Plots/04_MrkAnalyse/Disp.png>]
+<./Plots/04_MrkAnalyse/Datenset2/Crab_Theta2.pdf, id=595, 569.12625pt x 389.455
 pt>
 File: ./Plots/04_MrkAnalyse/Datenset2/Crab_Theta2.pdf Graphic file (type pdf)
  <use ./Plots/04_MrkAnalyse/Datenset2/Crab_Theta2.pdf>
 Package pdftex.def Info: ./Plots/04_MrkAnalyse/Datenset2/Crab_Theta2.pdf used on
- input line 115.
+ input line 121.
 (pdftex.def)             Requested size: 315.48541pt x 215.89455pt.
- [26<./Plots/04_MrkAnalyse/Datenset2/Crab_Theta2.pdf>] [27]
-<./Plots/04_MrkAnalyse/EnergyEst_EnergyTrue.pdf, id=393, 569.12625pt x 385.44pt
+ [43] [44<./Plots/04_MrkAnalyse/Datenset2/Crab_Theta2.pdf>]
+<./Plots/04_MrkAnalyse/EnergyEst_EnergyTrue.pdf, id=657, 569.12625pt x 385.44pt
 >
 File: ./Plots/04_MrkAnalyse/EnergyEst_EnergyTrue.pdf Graphic file (type pdf)
  <use ./Plots/04_MrkAnalyse/EnergyEst_EnergyTrue.pdf>
 Package pdftex.def Info: ./Plots/04_MrkAnalyse/EnergyEst_EnergyTrue.pdf used on 
-input line 166.
+input line 175.
 (pdftex.def)             Requested size: 315.48541pt x 213.66882pt.
- [28<./Plots/04_MrkAnalyse/EnergyEst_EnergyTrue.pdf>] [29]
-<./Plots/04_MrkAnalyse/Datenset2/Datenset2_Mrk421_MPointingPos_fZd.pdf, id=467,
+ [45] [46<./Plots/04_MrkAnalyse/EnergyEst_EnergyTrue.pdf>] [47]
+<./Plots/04_MrkAnalyse/Datenset2/Datenset2_Mrk421_MPointingPos_fZd.pdf, id=744,
  569.12625pt x 385.44pt>
 File: ./Plots/04_MrkAnalyse/Datenset2/Datenset2_Mrk421_MPointingPos_fZd.pdf Grap
 hic file (type pdf)
 
 <use ./Plots/04_MrkAnalyse/Datenset2/Datenset2_Mrk421_MPointingPos_fZd.pdf>
 Package pdftex.def Info: ./Plots/04_MrkAnalyse/Datenset2/Datenset2_Mrk421_MPoint
-ingPos_fZd.pdf used on input line 265.
+ingPos_fZd.pdf used on input line 274.
 (pdftex.def)             Requested size: 276.04749pt x 186.9617pt.
 
-[30] [31<./Plots/04_MrkAnalyse/Datenset2/Datenset2_Mrk421_MPointingPos_fZd.pdf>]
-[32]
+[48]
+Underfull \vbox (badness 1460) has occurred while \output is active []
+
+ [49<./Plots/04_MrkAnalyse/Datenset2/Datenset2_Mrk421_MPointingPos_fZd.pdf>]
 <./Plots/04_MrkAnalyse/Datenset2/Datenset2_Background_MPointingPos1_fZd.pdf, id
-=543, 569.12625pt x 387.4475pt>
+=808, 569.12625pt x 387.4475pt>
 File: ./Plots/04_MrkAnalyse/Datenset2/Datenset2_Background_MPointingPos1_fZd.pdf
  Graphic file (type pdf)
 
 <use ./Plots/04_MrkAnalyse/Datenset2/Datenset2_Background_MPointingPos1_fZd.pdf
 >
 Package pdftex.def Info: ./Plots/04_MrkAnalyse/Datenset2/Datenset2_Background_MP
-ointingPos1_fZd.pdf used on input line 347.
+ointingPos1_fZd.pdf used on input line 356.
 (pdftex.def)             Requested size: 276.04749pt x 187.93546pt.
 
-<./Plots/04_MrkAnalyse/Datenset2/Datenset2_MC_MPointingPos1_fZd.pdf, id=544, 56
+<./Plots/04_MrkAnalyse/Datenset2/Datenset2_MC_MPointingPos1_fZd.pdf, id=809, 56
 9.12625pt x 387.4475pt>
 File: ./Plots/04_MrkAnalyse/Datenset2/Datenset2_MC_MPointingPos1_fZd.pdf Graphic
  file (type pdf)
 
 <use ./Plots/04_MrkAnalyse/Datenset2/Datenset2_MC_MPointingPos1_fZd.pdf>
 Package pdftex.def Info: ./Plots/04_MrkAnalyse/Datenset2/Datenset2_MC_MPointingP
-os1_fZd.pdf used on input line 354.
+os1_fZd.pdf used on input line 363.
 (pdftex.def)             Requested size: 276.04749pt x 187.93546pt.
+
+[50] [51<./Plots/04_MrkAnalyse/Datenset2/Datenset2_Background_MPointingPos1_fZd.
+pdf><./Plots/04_MrkAnalyse/Datenset2/Datenset2_MC_MPointingPos1_fZd.pdf>]
 File: ./Plots/04_MrkAnalyse/Datenset2/Crab_Theta2.pdf Graphic file (type pdf)
 
 <use ./Plots/04_MrkAnalyse/Datenset2/Crab_Theta2.pdf>
 Package pdftex.def Info: ./Plots/04_MrkAnalyse/Datenset2/Crab_Theta2.pdf used on
- input line 376.
+ input line 385.
 (pdftex.def)             Requested size: 177.45866pt x 121.43697pt.
 
-<./Plots/04_MrkAnalyse/Datenset2/Crab_dFdE.pdf, id=550, 569.12625pt x 419.5675p
+<./Plots/04_MrkAnalyse/Datenset2/Crab_dFdE.pdf, id=921, 569.12625pt x 419.5675p
 t>
 File: ./Plots/04_MrkAnalyse/Datenset2/Crab_dFdE.pdf Graphic file (type pdf)
  <use ./Plots/04_MrkAnalyse/Datenset2/Crab_dFdE.pdf>
 Package pdftex.def Info: ./Plots/04_MrkAnalyse/Datenset2/Crab_dFdE.pdf used on i
-nput line 384.
+nput line 393.
 (pdftex.def)             Requested size: 177.45866pt x 130.82642pt.
 
-<./Plots/04_MrkAnalyse/Datenset2/Crab_SED.pdf, id=551, 569.12625pt x 387.4475pt
+<./Plots/04_MrkAnalyse/Datenset2/Crab_SED.pdf, id=922, 569.12625pt x 387.4475pt
 >
 File: ./Plots/04_MrkAnalyse/Datenset2/Crab_SED.pdf Graphic file (type pdf)
  <use ./Plots/04_MrkAnalyse/Datenset2/Crab_SED.pdf>
 Package pdftex.def Info: ./Plots/04_MrkAnalyse/Datenset2/Crab_SED.pdf used on in
-put line 391.
+put line 400.
 (pdftex.def)             Requested size: 177.45866pt x 120.811pt.
 
-<./Plots/04_MrkAnalyse/Datenset2/Crab_LC.pdf, id=552, 569.12625pt x 387.4475pt>
+<./Plots/04_MrkAnalyse/Datenset2/Crab_LC.pdf, id=923, 569.12625pt x 387.4475pt>
 File: ./Plots/04_MrkAnalyse/Datenset2/Crab_LC.pdf Graphic file (type pdf)
 <use ./Plots/04_MrkAnalyse/Datenset2/Crab_LC.pdf>
 Package pdftex.def Info: ./Plots/04_MrkAnalyse/Datenset2/Crab_LC.pdf used on inp
-ut line 398.
+ut line 407.
 (pdftex.def)             Requested size: 177.45866pt x 120.811pt.
- [33<./Plots/04_MrkAnalyse/Datenset2/Datenset2_Background_MPointingPos1_fZd.pdf>
-] [34<./Plots/04_MrkAnalyse/Datenset2/Datenset2_MC_MPointingPos1_fZd.pdf><./Plot
-s/04_MrkAnalyse/Datenset2/Crab_dFdE.pdf><./Plots/04_MrkAnalyse/Datenset2/Crab_SE
-D.pdf><./Plots/04_MrkAnalyse/Datenset2/Crab_LC.pdf>](compiling luc: /usr/local/t
-exlive/2014/texmf-var/luatex-cache/generic/fonts/otf/lmroman5-regular.luc)(load 
-luc: /net/home.e5.physik.tu-dortmund.de/vol/ph_e5v/e5b/homes/kfrantzen/.texlive2
-014/texmf-var/luatex-cache/generic/fonts/otf/lmroman5-regular.luc)
-<./Plots/04_MrkAnalyse/Datenset2/LC_Mrk421.pdf, id=803, 569.12625pt x 385.44pt>
+ [52<./Plots/04_MrkAnalyse/Datenset2/Crab_dFdE.pdf><./Plots/04_MrkAnalyse/Datens
+et2/Crab_SED.pdf><./Plots/04_MrkAnalyse/Datenset2/Crab_LC.pdf>]
+<./Plots/04_MrkAnalyse/Datenset2/LC_Mrk421.pdf, id=1076, 569.12625pt x 385.44pt
+>
 File: ./Plots/04_MrkAnalyse/Datenset2/LC_Mrk421.pdf Graphic file (type pdf)
-<use ./Plots/04_MrkAnalyse/Datenset2/LC_Mrk421.pdf>
+ <use ./Plots/04_MrkAnalyse/Datenset2/LC_Mrk421.pdf>
 Package pdftex.def Info: ./Plots/04_MrkAnalyse/Datenset2/LC_Mrk421.pdf used on i
-nput line 427.
+nput line 443.
 (pdftex.def)             Requested size: 315.48541pt x 213.66882pt.
- [35<./Plots/04_MrkAnalyse/Datenset2/LC_Mrk421.pdf>]
-<./Plots/04_MrkAnalyse/Datenset2/SED_Mrk421.pdf, id=863, 569.12625pt x 423.5825
-pt>
+
+<./Plots/04_MrkAnalyse/Datenset2/SED_Mrk421.pdf, id=1079, 569.12625pt x 423.582
+5pt>
 File: ./Plots/04_MrkAnalyse/Datenset2/SED_Mrk421.pdf Graphic file (type pdf)
  <use ./Plots/04_MrkAnalyse/Datenset2/SED_Mrk421.pdf>
 Package pdftex.def Info: ./Plots/04_MrkAnalyse/Datenset2/SED_Mrk421.pdf used on 
-input line 443.
+input line 459.
 (pdftex.def)             Requested size: 315.48541pt x 234.81314pt.
 
-<./Plots/04_MrkAnalyse/Datenset2/Crab_mit_Literatur.pdf, id=865, 569.12625pt x 
-408.52625pt>
+<./Plots/04_MrkAnalyse/Datenset2/Crab_mit_Literatur.pdf, id=1081, 569.12625pt x
+ 408.52625pt>
 File: ./Plots/04_MrkAnalyse/Datenset2/Crab_mit_Literatur.pdf Graphic file (type 
 pdf)
  <use ./Plots/04_MrkAnalyse/Datenset2/Crab_mit_Literatur.pdf>
 Package pdftex.def Info: ./Plots/04_MrkAnalyse/Datenset2/Crab_mit_Literatur.pdf 
-used on input line 455.
+used on input line 471.
 (pdftex.def)             Requested size: 315.48541pt x 226.4667pt.
 
-<./Plots/04_MrkAnalyse/Datenset2/Spektrum_Mrk421.pdf, id=867, 569.12625pt x 408
-.52625pt>
+[53] [54<./Plots/04_MrkAnalyse/Datenset2/LC_Mrk421.pdf><./Plots/04_MrkAnalyse/Da
+tenset2/SED_Mrk421.pdf>]
+<./Plots/04_MrkAnalyse/Datenset2/Spektrum_Mrk421.pdf, id=1193, 569.12625pt x 40
+8.52625pt>
 File: ./Plots/04_MrkAnalyse/Datenset2/Spektrum_Mrk421.pdf Graphic file (type pdf
 )
  <use ./Plots/04_MrkAnalyse/Datenset2/Spektrum_Mrk421.pdf>
 Package pdftex.def Info: ./Plots/04_MrkAnalyse/Datenset2/Spektrum_Mrk421.pdf use
-d on input line 469.
+d on input line 485.
 (pdftex.def)             Requested size: 315.48541pt x 226.4667pt.
- [36<./Plots/04_MrkAnalyse/Datenset2/SED_Mrk421.pdf>] [37<./Plots/04_MrkAnalyse/
-Datenset2/Crab_mit_Literatur.pdf><./Plots/04_MrkAnalyse/Datenset2/Spektrum_Mrk42
-1.pdf>]
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-<./Plots/04_MrkAnalyse/Datenset1/Datenset1_LC_Crab.pdf, id=1024, 569.12625pt x 
+ [55<./Plots/04_MrkAnalyse/Datenset2/Crab_mit_Literatur.pdf>] [56<./Plots/04_Mrk
+Analyse/Datenset2/Spektrum_Mrk421.pdf>]
+<./Plots/04_MrkAnalyse/Datenset1/Datenset1_LC_Crab.pdf, id=1307, 569.12625pt x 
 387.4475pt>
 File: ./Plots/04_MrkAnalyse/Datenset1/Datenset1_LC_Crab.pdf Graphic file (type p
 df)
  <use ./Plots/04_MrkAnalyse/Datenset1/Datenset1_LC_Crab.pdf>
 Package pdftex.def Info: ./Plots/04_MrkAnalyse/Datenset1/Datenset1_LC_Crab.pdf u
-sed on input line 548.
+sed on input line 565.
 (pdftex.def)             Requested size: 315.48541pt x 214.7817pt.
 
-<./Plots/04_MrkAnalyse/Datenset1/Datenset1_LC_Mrk421.pdf, id=1026, 569.12625pt 
+<./Plots/04_MrkAnalyse/Datenset1/Datenset1_LC_Mrk421.pdf, id=1309, 569.12625pt 
 x 387.4475pt>
 File: ./Plots/04_MrkAnalyse/Datenset1/Datenset1_LC_Mrk421.pdf Graphic file (type
  pdf)
  <use ./Plots/04_MrkAnalyse/Datenset1/Datenset1_LC_Mrk421.pdf>
 Package pdftex.def Info: ./Plots/04_MrkAnalyse/Datenset1/Datenset1_LC_Mrk421.pdf
- used on input line 557.
+ used on input line 574.
 (pdftex.def)             Requested size: 315.48541pt x 214.7817pt.
 
-[38] [39<./Plots/04_MrkAnalyse/Datenset1/Datenset1_LC_Crab.pdf><./Plots/04_MrkAn
+[57] [58<./Plots/04_MrkAnalyse/Datenset1/Datenset1_LC_Crab.pdf><./Plots/04_MrkAn
 alyse/Datenset1/Datenset1_LC_Mrk421.pdf>]
-<./Plots/04_MrkAnalyse/Datenset1/Spektrum_Mrk421.pdf, id=1138, 569.12625pt x 40
+<./Plots/04_MrkAnalyse/Datenset1/Spektrum_Mrk421.pdf, id=1416, 569.12625pt x 40
 8.52625pt>
 File: ./Plots/04_MrkAnalyse/Datenset1/Spektrum_Mrk421.pdf Graphic file (type pdf
 )
  <use ./Plots/04_MrkAnalyse/Datenset1/Spektrum_Mrk421.pdf>
 Package pdftex.def Info: ./Plots/04_MrkAnalyse/Datenset1/Spektrum_Mrk421.pdf use
-d on input line 574.
+d on input line 591.
 (pdftex.def)             Requested size: 315.48541pt x 226.4667pt.
- [40]
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-<./Plots/04_MrkAnalyse/Datenset4/Datenset4_LC_Crab.pdf, id=1151, 569.12625pt x 
+ [59<./Plots/04_MrkAnalyse/Datenset1/Spektrum_Mrk421.pdf>]
+<./Plots/04_MrkAnalyse/Datenset4/Datenset4_LC_Crab.pdf, id=1476, 569.12625pt x 
 387.4475pt>
 File: ./Plots/04_MrkAnalyse/Datenset4/Datenset4_LC_Crab.pdf Graphic file (type p
 df)
  <use ./Plots/04_MrkAnalyse/Datenset4/Datenset4_LC_Crab.pdf>
 Package pdftex.def Info: ./Plots/04_MrkAnalyse/Datenset4/Datenset4_LC_Crab.pdf u
-sed on input line 645.
+sed on input line 663.
 (pdftex.def)             Requested size: 315.48541pt x 214.7817pt.
 
-Underfull \vbox (badness 2903) has occurred while \output is active []
-
- [41<./Plots/04_MrkAnalyse/Datenset1/Spektrum_Mrk421.pdf>]
-<./Plots/04_MrkAnalyse/Datenset4/Datenset4_LC_Mrk421.pdf, id=1206, 569.12625pt 
+<./Plots/04_MrkAnalyse/Datenset4/Datenset4_LC_Mrk421.pdf, id=1477, 569.12625pt 
 x 385.44pt>
 File: ./Plots/04_MrkAnalyse/Datenset4/Datenset4_LC_Mrk421.pdf Graphic file (type
  pdf)
  <use ./Plots/04_MrkAnalyse/Datenset4/Datenset4_LC_Mrk421.pdf>
 Package pdftex.def Info: ./Plots/04_MrkAnalyse/Datenset4/Datenset4_LC_Mrk421.pdf
- used on input line 652.
+ used on input line 670.
 (pdftex.def)             Requested size: 315.48541pt x 213.66882pt.
 
-<./Plots/04_MrkAnalyse/Datenset4/Datenset4_Spektrum_Mrk421.pdf, id=1208, 569.12
+<./Plots/04_MrkAnalyse/Datenset4/Datenset4_Spektrum_Mrk421.pdf, id=1479, 569.12
 625pt x 408.52625pt>
 File: ./Plots/04_MrkAnalyse/Datenset4/Datenset4_Spektrum_Mrk421.pdf Graphic file
  (type pdf)
 
 <use ./Plots/04_MrkAnalyse/Datenset4/Datenset4_Spektrum_Mrk421.pdf>
 Package pdftex.def Info: ./Plots/04_MrkAnalyse/Datenset4/Datenset4_Spektrum_Mrk4
-21.pdf used on input line 663.
+21.pdf used on input line 681.
 (pdftex.def)             Requested size: 315.48541pt x 226.4667pt.
- [42<./Plots/04_MrkAnalyse/Datenset4/Datenset4_LC_Crab.pdf>] [43<./Plots/04_MrkA
-nalyse/Datenset4/Datenset4_LC_Mrk421.pdf><./Plots/04_MrkAnalyse/Datenset4/Datens
-et4_Spektrum_Mrk421.pdf>] [44]
-<./Plots/04_MrkAnalyse/Datenset3/Datenset3_Mrk421_LC.pdf, id=1375, 569.12625pt 
+ [60]
+[61<./Plots/04_MrkAnalyse/Datenset4/Datenset4_LC_Crab.pdf><./Plots/04_MrkAnalyse
+/Datenset4/Datenset4_LC_Mrk421.pdf>]
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [62<./Plots/04_MrkAnalyse/Datenset4/Datenset4_Spektrum_Mrk421.pdf>]
+<./Plots/04_MrkAnalyse/Datenset3/Datenset3_Mrk421_LC.pdf, id=1647, 569.12625pt 
 x 387.4475pt>
 File: ./Plots/04_MrkAnalyse/Datenset3/Datenset3_Mrk421_LC.pdf Graphic file (type
  pdf)
  <use ./Plots/04_MrkAnalyse/Datenset3/Datenset3_Mrk421_LC.pdf>
 Package pdftex.def Info: ./Plots/04_MrkAnalyse/Datenset3/Datenset3_Mrk421_LC.pdf
- used on input line 735.
+ used on input line 753.
 (pdftex.def)             Requested size: 315.48541pt x 214.7817pt.
 
-<./Plots/04_MrkAnalyse/Datenset3/Datenset3_Mrk421_Spektrum.pdf, id=1377, 569.12
+<./Plots/04_MrkAnalyse/Datenset3/Datenset3_Mrk421_Spektrum.pdf, id=1649, 569.12
 625pt x 408.52625pt>
 File: ./Plots/04_MrkAnalyse/Datenset3/Datenset3_Mrk421_Spektrum.pdf Graphic file
  (type pdf)
 
 <use ./Plots/04_MrkAnalyse/Datenset3/Datenset3_Mrk421_Spektrum.pdf>
 Package pdftex.def Info: ./Plots/04_MrkAnalyse/Datenset3/Datenset3_Mrk421_Spektr
-um.pdf used on input line 749.
+um.pdf used on input line 767.
 (pdftex.def)             Requested size: 315.48541pt x 226.4667pt.
- [45<./Plots/04_MrkAnalyse/Datenset3/Datenset3_Mrk421_LC.pdf>]
-<./Plots/04_MrkAnalyse/Alles_LC.png, id=1436, 925.4575pt x 644.4075pt>
+ [63]
+[64<./Plots/04_MrkAnalyse/Datenset3/Datenset3_Mrk421_LC.pdf><./Plots/04_MrkAnaly
+se/Datenset3/Datenset3_Mrk421_Spektrum.pdf>]
+<./Plots/04_MrkAnalyse/Alles_LC.png, id=1759, 925.4575pt x 644.4075pt>
 File: ./Plots/04_MrkAnalyse/Alles_LC.png Graphic file (type png)
 
 <use ./Plots/04_MrkAnalyse/Alles_LC.png>
 Package pdftex.def Info: ./Plots/04_MrkAnalyse/Alles_LC.png used on input line 7
-71.
+89.
 (pdftex.def)             Requested size: 315.48541pt x 219.67578pt.
- [46<./Plots/04_MrkAnalyse/Datenset3/Datenset3_Mrk421_Spektrum.pdf>]) (./Inhalt
-/05_MWL.tex [47<./Plots/04_MrkAnalyse/Alles_LC.png>]
-Kapitel 3.
-[48
+ [65<./Plots/04_MrkAnalyse/Alles_LC.png>]) (./Inhalt/05_MWL.tex [66]
+Kapitel 4.
+[67
 
-] [49] <./Plots/05_MWL/LC_final.pdf, id=1531, 569.12625pt x 345.29pt>
+] [68] <./Plots/05_MWL/LC_final.pdf, id=1808, 569.12625pt x 345.29pt>
 File: ./Plots/05_MWL/LC_final.pdf Graphic file (type pdf)
 
 <use ./Plots/05_MWL/LC_final.pdf>
-Package pdftex.def Info: ./Plots/05_MWL/LC_final.pdf used on input line 71.
+Package pdftex.def Info: ./Plots/05_MWL/LC_final.pdf used on input line 74.
 (pdftex.def)             Requested size: 555.00024pt x 336.75385pt.
- [50] [51<./Plots/05_MWL/LC_final.pdf>]
-[52]
-<./Plots/05_MWL/PlotVariabilities.pdf, id=1609, 569.12625pt x 398.48875pt>
+ [69] [70<./Plots/05_MWL/LC_final.pdf>]
+[71]
+<./Plots/05_MWL/PlotVariabilities.pdf, id=1889, 569.12625pt x 398.48875pt>
 File: ./Plots/05_MWL/PlotVariabilities.pdf Graphic file (type pdf)
 
 <use ./Plots/05_MWL/PlotVariabilities.pdf>
 Package pdftex.def Info: ./Plots/05_MWL/PlotVariabilities.pdf used on input line
- 147.
+ 150.
 (pdftex.def)             Requested size: 315.48541pt x 220.9024pt.
-) [53<./Plots/05_MWL/PlotVariabilities.pdf>] [54](compiling luc: /usr/local/texl
+) [72<./Plots/05_MWL/PlotVariabilities.pdf>] [73](compiling luc: /usr/local/texl
 ive/2014/texmf-var/luatex-cache/generic/fonts/otf/lmromancaps10-regular.luc)(loa
 d luc: /net/home.e5.physik.tu-dortmund.de/vol/ph_e5v/e5b/homes/kfrantzen/.texliv
 e2014/texmf-var/luatex-cache/generic/fonts/otf/lmromancaps10-regular.luc)
@@ -2851,10 +2905,16 @@ Overfull \hbox (2.45798pt too wide) in paragraph at lines 82--82
 ram v.0.6“. In: \EU2/lmr/m/it/10.95 MAGIC-TDAS 02-11
  []
 
-[55
+[74
 
 
-] [56] [57] [58
+]
+Overfull \hbox (18.21877pt too wide) in paragraph at lines 82--82
+[]$\EU2/lmtt/m/n/10.95 http : / / commons . wikimedia . org / wiki / File : Atm
+ospheric _ electromagnetic _
+ []
+
+[75] [76] [77] [78
 
 
 ] (./Inhalt/eid_versicherung.tex
@@ -2867,55 +2927,51 @@ Underfull \hbox (badness 10000) in paragraph at lines 27--29
 
  []
 
-) [59]
+) [79]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 86.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 86.
  (./build/DoktorArbeit.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 86.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 86.
 Package rerunfilecheck Info: File `DoktorArbeit.aux' has not changed.
-(rerunfilecheck)             Checksum: A1325F12C1E9C8C742E794F9985B3CA2;34963.
+(rerunfilecheck)             Checksum: 4E8D91AA3FF62543B6C6E2341474A8DB;49153.
 Package rerunfilecheck Info: File `DoktorArbeit.toc' has not changed.
-(rerunfilecheck)             Checksum: D2694EF6BCF15E15F91353D41A4AEDB2;5391.
-
-
-LaTeX Warning: There were multiply-defined labels.
-
+(rerunfilecheck)             Checksum: A2FE561E5D585A99F327205861139560;8217.
 Package logreq Info: Writing requests to 'DoktorArbeit.run.xml'.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 86.
 )
 
 Here is how much of LuaTeX's memory you used:
- 54184 strings out of 494693
- 100000,1648299 words of node,token memory allocated
- 1043 words of node memory still in use:
-   6 hlist, 4 vlist, 2 rule, 3 glue, 25 kern, 30 attribute, 62 glue_spec, 30 att
-ribute_list, 12 action, 1 write nodes
-   avail lists: 1:47,2:9827,3:647,4:1565,5:261,6:3237,7:308,8:43,9:511,10:985,11
-:519,12:230
- 56081 multiletter control sequences out of 65536+600000
- 100 fonts using 28605975 bytes
- 82i,22n,104p,964b,2654s stack positions out of 5000i,500n,10000p,200000b,100000s
-</usr/local/texlive/2014/texmf-dist/fonts/opentype/public/lm/lmromancaps10-regul
-ar.otf></usr/local/texlive/2014/texmf-dist/fonts/opentype/public/lm/lmroman8-reg
-ular.otf></usr/local/texlive/2014/texmf-dist/fonts/opentype/public/lm/lmroman6-r
-egular.otf></usr/local/texlive/2014/texmf-dist/fonts/opentype/public/lm-math/lat
-inmodern-math.otf></usr/local/texlive/2014/texmf-dist/fonts/opentype/public/lm-m
-ath/latinmodern-math.otf></usr/local/texlive/2014/texmf-dist/fonts/opentype/publ
-ic/lm-math/latinmodern-math.otf></usr/local/texlive/2014/texmf-dist/fonts/openty
-pe/public/lm/lmmono10-regular.otf></usr/local/texlive/2014/texmf-dist/fonts/open
+ 54419 strings out of 494693
+ 100000,1977958 words of node,token memory allocated
+ 1304 words of node memory still in use:
+   6 hlist, 4 vlist, 2 rule, 3 glue, 34 kern, 39 attribute, 70 glue_spec, 39 att
+ribute_list, 24 action, 1 write nodes
+   avail lists: 1:47,2:13317,3:714,4:1463,5:314,6:4230,7:321,8:39,9:512,10:985,1
+1:519,12:230
+ 56200 multiletter control sequences out of 65536+600000
+ 114 fonts using 33589055 bytes
+ 82i,22n,104p,964b,2658s stack positions out of 5000i,500n,10000p,200000b,100000s
+</usr/local/texlive/2014/texmf-dist/fonts/opentype/public/lm/lmroman8-regular.ot
+f></usr/local/texlive/2014/texmf-dist/fonts/opentype/public/lm/lmromancaps10-reg
+ular.otf></usr/local/texlive/2014/texmf-dist/fonts/opentype/public/lm/lmmono10-r
+egular.otf></usr/local/texlive/2014/texmf-dist/fonts/opentype/public/lm/lmroman6
+-regular.otf></usr/local/texlive/2014/texmf-dist/fonts/opentype/public/lm-math/l
+atinmodern-math.otf></usr/local/texlive/2014/texmf-dist/fonts/opentype/public/lm
+-math/latinmodern-math.otf></usr/local/texlive/2014/texmf-dist/fonts/opentype/pu
+blic/lm-math/latinmodern-math.otf></usr/local/texlive/2014/texmf-dist/fonts/open
 type/public/lm/lmroman10-bold.otf></usr/local/texlive/2014/texmf-dist/fonts/open
 type/public/lm/lmromanslant10-regular.otf></usr/local/texlive/2014/texmf-dist/fo
-nts/opentype/public/lm/lmroman10-italic.otf></usr/local/texlive/2014/texmf-dist/
-fonts/opentype/public/lm/lmsans10-boldoblique.otf></usr/local/texlive/2014/texmf
+nts/opentype/public/lm/lmsans10-boldoblique.otf></usr/local/texlive/2014/texmf-d
+ist/fonts/opentype/public/lm/lmroman10-italic.otf></usr/local/texlive/2014/texmf
 -dist/fonts/opentype/public/lm/lmroman10-regular.otf></usr/local/texlive/2014/te
 xmf-dist/fonts/opentype/public/lm/lmroman12-regular.otf></usr/local/texlive/2014
 /texmf-dist/fonts/opentype/public/lm/lmsans10-bold.otf></usr/local/texlive/2014/
 texmf-dist/fonts/opentype/public/lm/lmroman12-bold.otf>
-Output written on DoktorArbeit.pdf (63 pages, 4246310 bytes).
+Output written on DoktorArbeit.pdf (83 pages, 4964368 bytes).
 
-PDF statistics: 1902 PDF objects out of 2073 (max. 8388607)
- 1188 compressed objects within 12 object streams
- 227 named destinations out of 1000 (max. 131072)
- 176 words of extra memory for PDF output out of 10000 (max. 10000000)
+PDF statistics: 2251 PDF objects out of 2487 (max. 8388607)
+ 1501 compressed objects within 16 object streams
+ 319 named destinations out of 1000 (max. 131072)
+ 232 words of extra memory for PDF output out of 10000 (max. 10000000)
 

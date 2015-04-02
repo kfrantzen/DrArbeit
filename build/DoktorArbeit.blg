@@ -1,15 +1,17 @@
-[1] Config.pm:320> INFO - This is Biber 1.9
+[0] Config.pm:320> INFO - This is Biber 1.9
 [1] Config.pm:323> INFO - Logfile is 'build/DoktorArbeit.blg'
-[59] biber:277> INFO - === Wed Mar  4, 2015, 12:16:33
-[59] Biber.pm:333> INFO - Reading 'build/DoktorArbeit.bcf'
-[169] Biber.pm:635> INFO - Found 31 citekeys in bib section 0
-[205] Biber.pm:3051> INFO - Processing section 0
-[234] Biber.pm:3189> INFO - Looking for bibtex format file 'references.bib' for section 0
-[242] bibtex.pm:990> INFO - Decoding LaTeX character macros into UTF-8
-[250] bibtex.pm:864> INFO - Found BibTeX data source 'references.bib'
-[1111] UCollate.pm:66> INFO - Overriding locale 'de-DE' defaults 'variable = shifted' with 'variable = non-ignorable'
-[1111] UCollate.pm:66> INFO - Overriding locale 'de-DE' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[1111] Biber.pm:2928> INFO - Sorting list 'nty' of type 'entry' with scheme 'nty' and locale 'de-DE'
-[1111] Biber.pm:2932> INFO - No sort tailoring available for locale 'de-DE'
-[1320] bbl.pm:517> INFO - Writing 'build/DoktorArbeit.bbl' with encoding 'UTF-8'
-[1341] bbl.pm:606> INFO - Output to build/DoktorArbeit.bbl
+[56] biber:277> INFO - === Thu Apr  2, 2015, 15:12:34
+[57] Biber.pm:333> INFO - Reading 'build/DoktorArbeit.bcf'
+[173] Biber.pm:635> INFO - Found 58 citekeys in bib section 0
+[240] Biber.pm:3051> INFO - Processing section 0
+[268] Biber.pm:3189> INFO - Looking for bibtex format file 'references.bib' for section 0
+[278] bibtex.pm:990> INFO - Decoding LaTeX character macros into UTF-8
+[289] bibtex.pm:864> INFO - Found BibTeX data source 'references.bib'
+[292] Utils.pm:144> WARN - Possible typo (case mismatch) between datasource keys: 'HESS' and 'Hess' in file 'references.bib'
+[1608] UCollate.pm:66> INFO - Overriding locale 'de-DE' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[1608] UCollate.pm:66> INFO - Overriding locale 'de-DE' defaults 'variable = shifted' with 'variable = non-ignorable'
+[1608] Biber.pm:2928> INFO - Sorting list 'nty' of type 'entry' with scheme 'nty' and locale 'de-DE'
+[1608] Biber.pm:2932> INFO - No sort tailoring available for locale 'de-DE'
+[1981] bbl.pm:517> INFO - Writing 'build/DoktorArbeit.bbl' with encoding 'UTF-8'
+[2010] bbl.pm:606> INFO - Output to build/DoktorArbeit.bbl
+[2066] Biber.pm:106> INFO - WARNINGS: 1

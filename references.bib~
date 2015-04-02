@@ -1,3 +1,346 @@
+%------------------------------------------------------------------------------AstroTeilchen-------------------------------------------------------------------%
+@ARTICLE{GaisserSpektrum,
+   author = {{Gaisser}, T. and {Stanev}, T. and {Tilav}, S.},
+    title = "{Cosmic Ray Energy Spectrum from Measurements of Air Showers}",
+  journal = {ArXiv e-prints},
+archivePrefix = "arXiv",
+   eprint = {1303.3565},
+ primaryClass = "astro-ph.HE",
+ keywords = {Astrophysics - High Energy Astrophysical Phenomena},
+     year = 2013,
+    month = mar
+}
+
+@ARTICLE{Hess,
+   author = {{Hess}, V.~F.},
+    title = "{Über Beobachtungen der durchdringenden Strahlung bei sieben Freiballonfahrten}",
+  journal = {Physikalische Zeitschrift 13},
+     year = 1912,
+    pages = {1084-1091},
+}
+
+@article{Kohlhoerster,
+  year	= {1929},
+  issn	= {0044-3328},
+  journal={Zeitschrift für Physik},
+  volume={56},
+  number={11-12},
+  doi={10.1007/BF01340137},
+  title={Das Wesen der Höhenstrahlung},
+  url={http://dx.doi.org/10.1007/BF01340137},
+  publisher={Springer-Verlag},
+  author={Bothe, W. and Kolhörster, W.},
+  pages={751-777},
+  language={German}
+}
+
+@ARTICLE{ZatsepinKuzmin,
+   author = {{Zatsepin}, G.~T. and {Kuz'min}, V.~A.},
+    title = "{Upper Limit of the Spectrum of Cosmic Rays}",
+  journal = {Soviet Journal of Experimental and Theoretical Physics Letters},
+     year = 1966,
+    month = aug,
+   volume = 4,
+    pages = {78},
+   adsurl = {http://adsabs.harvard.edu/abs/1966JETPL...4...78Z},
+  adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+
+@article{Greisen,
+  title = {End to the Cosmic-Ray Spectrum?},
+  author = {Greisen, Kenneth},
+  journal = {Phys. Rev. Lett.},
+  volume = {16},
+  issue = {17},
+  pages = {748--750},
+  numpages = {0},
+  year = {1966},
+  month = {Apr},
+  publisher = {American Physical Society},
+  doi = {10.1103/PhysRevLett.16.748},
+  url = {http://link.aps.org/doi/10.1103/PhysRevLett.16.748}
+}
+
+
+@book{RelativisticJets,
+    author = {{Boettcher}, M. and {Harris}, D.~E. and {Krawczynski}, H.},
+    title = {Relativistic Jets from Active Galactic Nuclei},
+    year = {2012},
+    publisher = {Wiley-VCH}
+}
+
+@book{Weekes,
+    author = {{Weekes}, T.~C},
+    title = "{Very High Energy Gamma-Ray Astronomy}",
+    year = {2003},
+    publisher = {Institute of Physics Publishing}
+}
+
+@book{Longair,
+    author = {{Longair}, M.~S},
+    title = "{High Energy Astrophysics - Volume 2: Stars, the Galaxy and the interstellar medium}",
+    year = {2002},
+    publisher = {Cambridge University Press},
+    edition = {2nd edition},
+}
+
+@book{Aharonian,
+    author = {{Aharonian}, F.~A},
+    title = "{Very High Energy Cosmic Radiation - A Crucial Window on the Extreme Universe}",
+    year = {2004},
+    publisher = {World Scientific Publishing Co. Pte. Ltd.},
+}
+
+@book{Grupen,
+    author = {{Grupen}, C.},
+    title = "{Astroparticle Physics}",
+    year = {2005},
+    publisher = {Springer Verlag},
+}
+
+@thesis{DissBecker,
+author = {Becker, Julia},
+title = {Neutrinos On The Rocks - On the phenomenology of potential astrophysical neutrino sources},
+year = {2007},
+type = {Dissertation},
+school = {TU Dortmund}
+}
+
+@thesis{DissMarlene,
+author = {Doert, Marlene},
+title = "{The talkative AGN next door Broad-band spectral variability of the TeV blazar Markarian 501}",
+year = {2013},
+type = {Dissertation},
+school = {TU Dortmund}
+}
+
+@ELECTRONIC{Opazitaet,
+    title   = {Durchlässigkeit der Atmosphäre für elektromagnetische Wellen},
+    url = {http://commons.wikimedia.org/wiki/File:Atmospheric_electromagnetic_opacity-de.svg},
+    date = {2012},
+}
+
+@ARTICLE{Mrk421_SED,
+   author = {{Abdo}, A.~A. and {Ackermann}, M. and {Ajello}, M. and {Baldini}, L. and 
+	{Ballet}, J. and {Barbiellini}, G. and {Bastieri}, D. and {Bechtol}, K. and 
+	{Bellazzini}, R. and {Berenji}, B. and et al.},
+    title = "{Fermi Large Area Telescope Observations of Markarian 421: The Missing Piece of its Spectral Energy Distribution}",
+  journal = {Astrophysical Journal},
+archivePrefix = "arXiv",
+   eprint = {1106.1348},
+ primaryClass = "astro-ph.HE",
+ keywords = {acceleration of particles, BL Lacertae objects: general, BL Lacertae objects: individual: Mrk 421, galaxies: active, gamma rays: general, radiation mechanisms: non-thermal},
+     year = 2011,
+    month = aug,
+   volume = 736,
+      eid = {131},
+    pages = {131},
+      doi = {10.1088/0004-637X/736/2/131},
+   adsurl = {http://adsabs.harvard.edu/abs/2011ApJ...736..131A},
+  adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+
+@ARTICLE{AGNSchema,
+   author = {{Beckmann}, V. and {Shrader}, C.~R.},
+    title = "{The AGN phenomenon: open issues}",
+  journal = {ArXiv e-prints},
+archivePrefix = "arXiv",
+   eprint = {1302.1397},
+ primaryClass = "astro-ph.HE",
+ keywords = {Astrophysics - High Energy Astrophysical Phenomena},
+     year = 2013,
+    month = feb,
+}
+
+@ARTICLE{Icecube,
+   author = {{Aartsen}, M.~G. and {Ackermann}, M. and {Adams}, J. and {Aguilar}, J.~A. and 
+	{Ahlers}, M. and {Ahrens}, M. and {Altmann}, D. and {Anderson}, T. and 
+	{Arguelles}, C. and {Arlen}, T.~C. and et al.},
+    title = "{Observation of High-Energy Astrophysical Neutrinos in Three Years of IceCube Data}",
+  journal = {Physical Review Letters},
+archivePrefix = "arXiv",
+   eprint = {1405.5303},
+ primaryClass = "astro-ph.HE",
+ keywords = {Neutrino muon pion and other elementary particles, cosmic rays, Neutrino muon pion and other elementary particle detectors, cosmic ray detectors},
+     year = 2014,
+    month = sep,
+   volume = 113,
+   number = 10,
+      eid = {101101},
+    pages = {101101},
+      doi = {10.1103/PhysRevLett.113.101101},
+   adsurl = {http://adsabs.harvard.edu/abs/2014PhRvL.113j1101A},
+  adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+
+@ARTICLE{ANTARES,
+   author = {{Ageron}, M. and {Aguilar}, J.~A. and {Al Samarai}, I. and {Albert}, A. and 
+	{Ameli}, F. and {Andr{\'e}}, M. and {Anghinolfi}, M. and {Anton}, G. and 
+	{Anvar}, S. and {Ardid}, M. and et al.},
+    title = "{ANTARES: The first undersea neutrino telescope}",
+  journal = {Nuclear Instruments and Methods in Physics Research A},
+archivePrefix = "arXiv",
+   eprint = {1104.1607},
+ primaryClass = "astro-ph.IM",
+     year = 2011,
+    month = nov,
+   volume = 656,
+    pages = {11-38},
+      doi = {10.1016/j.nima.2011.06.103},
+   adsurl = {http://adsabs.harvard.edu/abs/2011NIMPA.656...11A},
+  adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+
+@ARTICLE{GalacticPlane,
+   author = {{Kraushaar}, W.~L. and {Clark}, G.~W. and {Garmire}, G.~P. and 
+	{Borken}, R. and {Higbie}, P. and {Leong}, V. and {Thorsos}, T.
+	},
+    title = "{High-Energy Cosmic Gamma-Ray Observations from the OSO-3 Satellite}",
+  journal = {Astrophysical Journal},
+     year = 1972,
+    month = nov,
+   volume = 177,
+    pages = {341},
+      doi = {10.1086/151713},
+   adsurl = {http://adsabs.harvard.edu/abs/1972ApJ...177..341K},
+  adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+
+@ARTICLE{GalacticCenter,
+   author = {{Albert}, J. and {Aliu}, E. and {Anderhub}, H. and {Antoranz}, P. and 
+	{Armada}, A. and {Asensio}, M. and {Baixeras}, C. and {Barrio}, J.~A. and 
+	{Bartelt}, M. and {Bartko}, H. and {Bastieri}, D. and {Bavikadi}, R. and 
+	{Bednarek}, W. and {Berger}, K. and {Bigongiari}, C. and {Biland}, A. and 
+	{Bisesi}, E. and et al.},
+    title = "{Observation of Gamma Rays from the Galactic Center with the MAGIC Telescope}",
+  journal = {Astrophysical Journal, Letters},
+   eprint = {astro-ph/0512469},
+ keywords = {Acceleration of Particles, Galaxy: Center, Gamma Rays: Observations},
+     year = 2006,
+    month = feb,
+   volume = 638,
+    pages = {L101-L104},
+      doi = {10.1086/501164},
+   adsurl = {http://adsabs.harvard.edu/abs/2006ApJ...638L.101A},
+  adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+
+@book{RhodeFalke,
+    author = {{Rhode}, W. and {Falkenburg}, B.},
+    title = "{From Ultra Rays to Astroparticles: A Historical Introduction to Astroparticle Physics}",
+    year = {2012},
+    publisher = {Springer Verlag},
+}
+
+@ARTICLE{Whipple,
+   author = {{Kildea}, J. and {Atkins}, R.~W. and {Badran}, H.~M. and {Blaylock}, G. and 
+	{Bond}, I.~H. and {Bradbury}, S.~M. and {Buckley}, J.~H. and 
+	{Carter-Lewis}, D.~A. and {Celik}, O. and {Chow}, Y.~C.~K. and 
+	{Cui}, W. and {Cogan}, P. and {Daniel}, M.~K. and {de la Calle Perez}, I. and 
+	{Dowdall}, C. and {Duke}, C. and {Falcone}, A.~D. and {Fegan}, D.~J. and 
+	{Fegan}, S.~J. and {Finley}, J.~P. and {Fortson}, L.~F. and 
+	{Gall}, D. and {Gillanders}, G.~H. and {Grube}, J. and {Gutierrez}, K.~J. and 
+	{Hall}, J. and {Hall}, T.~A. and {Holder}, J. and {Horan}, D. and 
+	{Hughes}, S.~B. and {Jordan}, M. and {Jung}, I. and {Kenny}, G.~E. and 
+	{Kertzman}, M. and {Knapp}, J. and {Konopelko}, A. and {Kosack}, K. and 
+	{Krawczynski}, H. and {Krennrich}, F. and {Lang}, M.~J. and 
+	{LeBohec}, S. and {Lloyd-Evans}, J. and {Millis}, J. and {Moriarty}, P. and 
+	{Nagai}, T. and {Ogden}, P.~A. and {Ong}, R.~A. and {Perkins}, J.~S. and 
+	{Petry}, D. and {Pizlo}, F. and {Pohl}, M. and {Quinn}, J. and 
+	{Quinn}, M. and {Rebillot}, P.~F. and {Rose}, H.~J. and {Schroedter}, M. and 
+	{Sembroski}, G.~H. and {Smith}, A.~W. and {Syson}, A. and {Toner}, J.~A. and 
+	{Valcarcel}, L. and {Vassiliev}, V.~V. and {Wakely}, S.~P. and 
+	{Weekes}, T.~C. and {White}, R.~J.},
+    title = "{The Whipple Observatory 10 m gamma-ray telescope, 1997 2006}",
+  journal = {Astroparticle Physics},
+     year = 2007,
+    month = oct,
+   volume = 28,
+    pages = {182-195},
+      doi = {10.1016/j.astropartphys.2007.05.004},
+   adsurl = {http://adsabs.harvard.edu/abs/2007APh....28..182K},
+  adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+
+@ARTICLE{VERITAS,
+   author = {{Weekes}, T.~C. and {Badran}, H. and {Biller}, S.~D. and {Bond}, I. and 
+	{Bradbury}, S. and {Buckley}, J. and {Carter-Lewis}, D. and 
+	{Catanese}, M. and {Criswell}, S. and {Cui}, W. and {Dowkontt}, P. and 
+	{Duke}, C. and {Fegan}, D.~J. and {Finley}, J. and {Fortson}, L. and 
+	{Gaidos}, J. and {Gillanders}, G.~H. and {Grindlay}, J. and 
+	{Hall}, T.~A. and {Harris}, K. and {Hillas}, A.~M. and {Kaaret}, P. and 
+	{Kertzman}, M. and {Kieda}, D. and {Krennrich}, F. and {Lang}, M.~J. and 
+	{LeBohec}, S. and {Lessard}, R. and {Lloyd-Evans}, J. and {Knapp}, J. and 
+	{McKernan}, B. and {McEnery}, J. and {Moriarty}, P. and {Muller}, D. and 
+	{Ogden}, P. and {Ong}, R. and {Petry}, D. and {Quinn}, J. and 
+	{Reay}, N.~W. and {Reynolds}, P.~T. and {Rose}, J. and {Salamon}, M. and 
+	{Sembroski}, G. and {Sidwell}, R. and {Slane}, P. and {Stanton}, N. and 
+	{Swordy}, S.~P. and {Vassiliev}, V.~V. and {Wakely}, S.~P.},
+    title = "{VERITAS: the Very Energetic Radiation Imaging Telescope Array System}",
+  journal = {Astroparticle Physics},
+   eprint = {astro-ph/0108478},
+     year = 2002,
+    month = may,
+   volume = 17,
+    pages = {221-243},
+      doi = {10.1016/S0927-6505(01)00152-9},
+   adsurl = {http://adsabs.harvard.edu/abs/2002APh....17..221W},
+  adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+
+@ARTICLE{HESS,
+   author = {{Funk}, S. and {Hermann}, G. and {Hinton}, J. and {Berge}, D. and 
+	{Bernl{\"o}hr}, K. and {Hofmann}, W. and {Nayman}, P. and {Toussenel}, F. and 
+	{Vincent}, P.},
+    title = "{The trigger system of the H.E.S.S. telescope array}",
+  journal = {Astroparticle Physics},
+   eprint = {astro-ph/0408375},
+     year = 2004,
+    month = nov,
+   volume = 22,
+    pages = {285-296},
+      doi = {10.1016/j.astropartphys.2004.08.001},
+   adsurl = {http://adsabs.harvard.edu/abs/2004APh....22..285F},
+  adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+
+
+@ARTICLE{Urry_Padovani,
+   author = {{Urry}, C.~M. and {Padovani}, P.},
+    title = "{Unified Schemes for Radio-Loud Active Galactic Nuclei}",
+  journal = {Publications of the ASP},
+   eprint = {astro-ph/9506063},
+ keywords = {GALAXIES: ACTIVE, GALAXIES: FUNDAMENTAL PARAMETERS},
+     year = 1995,
+    month = sep,
+   volume = 107,
+    pages = {803},
+      doi = {10.1086/133630},
+   adsurl = {http://adsabs.harvard.edu/abs/1995PASP..107..803U},
+  adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+
+@ARTICLE{Mrk421_Outburst,
+   author = {{Gaidos}, J.~A. and {Akerlof}, C.~W. and {Biller}, S. and {Boyle}, P.~J. and 
+	{Breslin}, A.~C. and {Buckley}, J.~H. and {Carter-Lewis}, D.~A. and 
+	{Catanese}, M. and {Cawley}, M.~F. and {Fegan}, D.~J. and {Finley}, J.~P. and 
+	{Gordo}, J.~B. and {Hillas}, A.~M. and {Krennrich}, F. and {Lamb}, R.~C. and 
+	{Lessard}, R.~W. and {McEnery}, J.~E. and {Masterson}, C. and 
+	{Mohanty}, G. and {Moriarty}, P. and {Quinn}, J. and {Rodgers}, A.~J. and 
+	{Rose}, H.~J. and {Samuelson}, F. and {Schubnell}, M.~S. and 
+	{Sembroski}, G.~H. and {Srinivasan}, R. and {Weekes}, T.~C. and 
+	{Wilson}, C.~L. and {Zweerink}, J.},
+    title = "{Extremely rapid bursts of TeV photons from the active galaxy Markarian 421}",
+  journal = {Nature},
+     year = 1996,
+    month = sep,
+   volume = 383,
+    pages = {319-320},
+      doi = {10.1038/383319a0},
+   adsurl = {http://adsabs.harvard.edu/abs/1996Natur.383..319G},
+  adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+
 %------------------------------------------------------------------------------MC-------------------------------------------------------------------%
 
 @ARTICLE{MAGIC_Telescopes,
@@ -256,6 +599,12 @@ archivePrefix = "arXiv",
     date = {2015},
 }
 
+@MANUAL{ImageCleaning,
+    title   = {Image cleaning (Theory)},
+    author = {MAGIC},
+    url = {http://wiki.magic.pic.es/index.php/Image_cleaning_%28Theory%29},
+    date = {2015},
+}
 
 @thesis{Haffke,
 author = {Haffke, Marijke},
@@ -456,6 +805,14 @@ archivePrefix = "arXiv",
     url = {http://www.gao.spb.ru/russian/index.html},
     date = {2015},
 }
+
+@MANUAL{NMSkies,
+    title   = {Pulkovo Astronomical Observatory},
+    author = {Official Site of the Pulkovo Astronomical Observatory},
+    url = {http://www.gao.spb.ru/russian/index.html},
+    date = {2015},
+}
+
 
 @ARTICLE{Fermi,
    author = {{Atwood}, W.~B. and {Abdo}, A.~A. and {Ackermann}, M. and {Althouse}, W. and 

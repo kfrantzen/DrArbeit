@@ -5,7 +5,7 @@
 \documentclass[
         paper=a4,               % Papierformat DIN A4
         BCOR=12mm,              % 12mm Binderandkorrektur
-        %parskip=false,           % Absätze als halbe Leerzeile
+        parskip=false,           % Absätze als halbe Leerzeile
         headsepline,            % Linie zwischen Kopfzeile und Dokument
         cleardoublepage=plain,  % Keine Kopf/Fußzeile auf Leerseiten
         bibliography=totoc,     % Bibliographie als nicht-nummeriertes 
@@ -19,10 +19,12 @@
     ]
     {scrbook}
 
+\setlength\parindent{0pt}	% Keine Einrückungen mehr im gesamten Dokument
+
 
 % Patch für LaTeX laden:
 
-% Warnung, falls erneut kompilirt werden muss:
+% Warnung, falls erneut kompiliert werden muss:
 \usepackage[aux]{rerunfilecheck}
 
 % Beschränkung auf chapter und section im Inhaltsverzeichnis:            
@@ -48,7 +50,7 @@
 
 
 \hyphenation{Si-mu-la-tions-ket-te}
-
+\hyphenation{MCCamera-Run-Data}
 
 %------------------------------------------------------------------------------
 %-------------------------   Kopf/Fußzeile/Farben------------------------------
@@ -154,11 +156,12 @@
 %------------------------------ Sonstiges: ------------------------------------
 %------------------------------------------------------------------------------
 
-
 \usepackage{eurosym}
-\usepackage[pdfusetitle,unicode, linkbordercolor=tugreen]{hyperref}
+\usepackage[hyphens]{url}
+\usepackage[pdfusetitle,unicode, linkbordercolor=tugreen, german]{hyperref}
 \usepackage{bookmark}
 \usepackage[shortcuts]{extdash}
 \usepackage{todonotes}
+
 
 

@@ -1,3 +1,158 @@
+%------------------------------------------------------------------------------AstroTeilchen-------------------------------------------------------------------%
+@ARTICLE{GaisserSpektrum,
+   author = {{Gaisser}, T. and {Stanev}, T. and {Tilav}, S.},
+    title = "{Cosmic Ray Energy Spectrum from Measurements of Air Showers}",
+  journal = {ArXiv e-prints},
+archivePrefix = "arXiv",
+   eprint = {1303.3565},
+ primaryClass = "astro-ph.HE",
+ keywords = {Astrophysics - High Energy Astrophysical Phenomena},
+     year = 2013,
+    month = mar
+}
+
+@ARTICLE{Hess,
+   author = {{Hess}, V.~F.},
+    title = "{Über Beobachtungen der durchdringenden Strahlung bei sieben Freiballonfahrten}",
+  journal = {Physikalische Zeitschrift 13},
+     year = 1912,
+    pages = {1084-1091},
+}
+
+@article{Kohlhoerster,
+  year	= {1929},
+  issn	= {0044-3328},
+  journal={Zeitschrift für Physik},
+  volume={56},
+  number={11-12},
+  doi={10.1007/BF01340137},
+  title={Das Wesen der Höhenstrahlung},
+  url={http://dx.doi.org/10.1007/BF01340137},
+  publisher={Springer-Verlag},
+  author={Bothe, W. and Kolhörster, W.},
+  pages={751-777},
+  language={German}
+}
+
+@ARTICLE{ZatsepinKuzmin,
+   author = {{Zatsepin}, G.~T. and {Kuz'min}, V.~A.},
+    title = "{Upper Limit of the Spectrum of Cosmic Rays}",
+  journal = {Soviet Journal of Experimental and Theoretical Physics Letters},
+     year = 1966,
+    month = aug,
+   volume = 4,
+    pages = {78},
+   adsurl = {http://adsabs.harvard.edu/abs/1966JETPL...4...78Z},
+  adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+
+@article{Greisen,
+  title = {End to the Cosmic-Ray Spectrum?},
+  author = {Greisen, Kenneth},
+  journal = {Phys. Rev. Lett.},
+  volume = {16},
+  issue = {17},
+  pages = {748--750},
+  numpages = {0},
+  year = {1966},
+  month = {Apr},
+  publisher = {American Physical Society},
+  doi = {10.1103/PhysRevLett.16.748},
+  url = {http://link.aps.org/doi/10.1103/PhysRevLett.16.748}
+}
+
+
+@book{RelativisticJets,
+    author = {{Boettcher}, M. and {Harris}, D.~E. and {Krawczynski}, H.},
+    title = {Relativistic Jets from Active Galactic Nuclei},
+    year = {2012},
+    publisher = {Wiley-VCH}
+}
+
+@book{Weekes,
+    author = {{Weekes}, T.~C},
+    title = "{Very High Energy Gamma-Ray Astronomy}",
+    year = {2003},
+    publisher = {Institute of Physics Publishing}
+}
+
+@book{Longair,
+    author = {{Longair}, M.~S},
+    title = "{High Energy Astrophysics - Volume 2: Stars, the Galaxy and the interstellar medium}",
+    year = {2002},
+    publisher = {Cambridge University Press},
+    edition = {2nd edition},
+}
+
+@book{Aharonian,
+    author = {{Aharonian}, F.~A},
+    title = "{Very High Energy Cosmic Radiation - A Crucial Window on the Extreme Universe}",
+    year = {2004},
+    publisher = {World Scientific Publishing Co. Pte. Ltd.},
+}
+
+@book{Grupen,
+    author = {{Grupen}, C.},
+    title = "{Astroparticle Physics}",
+    year = {2005},
+    publisher = {Springer Verlag},
+}
+
+@thesis{DissBecker,
+author = {Becker, Julia},
+title = {Neutrinos On The Rocks - On the phenomenology of potential astrophysical neutrino sources},
+year = {2007},
+type = {Dissertation},
+school = {TU Dortmund}
+}
+
+@thesis{DissMarlene,
+author = {Doert, Marlene},
+title = "{The talkative AGN next door Broad-band spectral variability of the TeV blazar Markarian 501}",
+year = {2013},
+type = {Dissertation},
+school = {TU Dortmund}
+}
+
+@ELECTRONIC{Opazitaet,
+    title   = {Durchlässigkeit der Atmosphäre für elektromagnetische Wellen},
+    url = {http://commons.wikimedia.org/wiki/File:Atmospheric_electromagnetic_opacity-de.svg},
+    date = {2012},
+}
+
+@ARTICLE{Mrk421_SED,
+   author = {{Abdo}, A.~A. and {Ackermann}, M. and {Ajello}, M. and {Baldini}, L. and 
+	{Ballet}, J. and {Barbiellini}, G. and {Bastieri}, D. and {Bechtol}, K. and 
+	{Bellazzini}, R. and {Berenji}, B. and et al.},
+    title = "{Fermi Large Area Telescope Observations of Markarian 421: The Missing Piece of its Spectral Energy Distribution}",
+  journal = {Astrophysical Journal},
+archivePrefix = "arXiv",
+   eprint = {1106.1348},
+ primaryClass = "astro-ph.HE",
+ keywords = {acceleration of particles, BL Lacertae objects: general, BL Lacertae objects: individual: Mrk 421, galaxies: active, gamma rays: general, radiation mechanisms: non-thermal},
+     year = 2011,
+    month = aug,
+   volume = 736,
+      eid = {131},
+    pages = {131},
+      doi = {10.1088/0004-637X/736/2/131},
+   adsurl = {http://adsabs.harvard.edu/abs/2011ApJ...736..131A},
+  adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+
+@ARTICLE{AGNSchema,
+   author = {{Beckmann}, V. and {Shrader}, C.~R.},
+    title = "{The AGN phenomenon: open issues}",
+  journal = {ArXiv e-prints},
+archivePrefix = "arXiv",
+   eprint = {1302.1397},
+ primaryClass = "astro-ph.HE",
+ keywords = {Astrophysics - High Energy Astrophysical Phenomena},
+     year = 2013,
+    month = feb,
+}
+
+
 %------------------------------------------------------------------------------MC-------------------------------------------------------------------%
 
 @ARTICLE{MAGIC_Telescopes,
@@ -304,6 +459,15 @@ year = {2011},
 type = {Dissertation},
 school = {TU Dortmund}
 }
+
+@thesis{DissDiego,
+author = {Tescaro, Diego},
+title = {TeV-ray observations of nearby Active Galactic Nuclei with the MAGIC telescope: exploring the high energy region of the multiwavelength picture},
+year = {2010},
+type = {Dissertation},
+school = {IFAE/Universitat Autonoma de Barcelona}
+}
+
 
 %------------------------------------------------------------------------------------------------------------MWL---------------------------------------------------------------------------------------------
 
