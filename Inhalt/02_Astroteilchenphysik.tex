@@ -1,15 +1,16 @@
 \chapter{Astroteilchenphysik}
 \label{chapter:Astroteilchenphysik}
-Das Gebiet der Astroteilchenphysik ist noch ein recht junges Gebiet der Physik und beschäftigt sich mit einer Kombination aus Astrophysik und Teilchenphysik.
-Verschiedene Botenteilchen, deren Vor- und Nachteile in \autoref{sec:KosmischeStrahlung} beschrieben werden, geben Auskünfte über Quellen (siehe \autoref{sec:Quellen}).
-Die Energie dieser in den Quellen beschleunigten Teilchen übersteigt zum Teil die höchste Energie, die auf der Erde mit Beschleunigern erreicht werden kann.
-Die Modelle für die grundlegenden Beschleunigungsmechanismen (siehe \autoref{sec:Beschleunigungsmechanismen}) müssen noch überprüft, bzw. weiterentwickelt werden.
-Im Verlauf der Jahre haben sich verschiedene Detektionsarten entwickelt und sind speziell angepasst an die Teilchen, die detektiert werden.
-Dabei ist die Forschung in der Detektorentwicklung noch nicht am Ende und die Kollaborationen, sowie die konzipierten Detektoren werden größer.
-Beispiele dafür ist der Icecube-Neutrino-Detektor oder das geplante Cherenkov-Teleskop-Array CTA.
+Die Astroteilchenphysik ist ein noch recht junger Teilbereich der Physik und beinhaltet Fragen der Astrophysik und der Teilchenphysik.
+Verschiedene Botenteilchen, deren Eigenschaften in \autoref{sec:KosmischeStrahlung} beschrieben werden, geben Auskünfte über astrophysikalische Quellen, welche in \autoref{sec:Quellen} erklärt werden.
+Diese Quellen emittieren geladene, bzw.  ungeladene Strahlung, die mit Hilfe von Satelliten im All oder auf der Erde detektiert wird.
+%Die Energie dieser in den Quellen beschleunigten Teilchen übersteigt zum Teil die höchste Energie, die auf der Erde mit Beschleunigern erreicht werden kann.
+Die Modelle für die grundlegenden Beschleunigungsmechanismen der Teilchen, die in \autoref{sec:Beschleunigungsmechanismen} beschrieben werden, müssen noch überprüft bzw. weiterentwickelt werden.
+Im Laufe der Jahre haben sich verschiedene Detektionsmethoden entwickelt, die speziell an die Teilchen, die detektiert werden sollen, angepasst sind.
+Gleichwohl ist die Forschung in der Detektorentwicklung noch nicht abgeschlossen und die Kollaborationen, sowie die konzipierten Detektoren werden fortschrittlicher und damit verbunden auch oft größer.
+Beispiele dafür sind der IceCube-Neutrino-Detektor oder das geplante Cherenkov-Teleskop-Array CTA.
 \autoref{sec:Gammaastronomie} bietet eine Übersicht über die Gammaastronomie und beschreibt die Wechselwirkung der Photonen auf dem Weg von der Quelle zum Detektor. 
-Im \autoref{sec:AGN} wird noch einmal der spezielle Quelltyp des Aktiven Galaktischen Kerns [Active Galctic Nuclei (AGN)] näher beschrieben.
-Der letzte Abschnitt - \autoref{sec:Mrk421} - bietet eine Übersicht über die AGN Mrk 421, die im Verlauf der Arbeit analysiert wird.
+Im \autoref{sec:AGN} wird noch einmal der spezielle Quelltyp des Aktiven Galaktischen Kerns (AGN: Active Galctic Nuclei) näher beschrieben.
+\autoref{sec:Mrk421} bietet eine Übersicht über die AGN Mrk 421, die im Verlauf der Arbeit näher untersucht wird.
 
 \section{Kosmische Strahlung}
 \label{sec:KosmischeStrahlung}
@@ -17,207 +18,252 @@ Der letzte Abschnitt - \autoref{sec:Mrk421} - bietet eine Übersicht über die A
 \begin{figure}
     \centering
     \includegraphics[width=0.8\textwidth]{./Plots/02_Astroteilchenphysik/Astroteilchen.png}
-    \caption{Auf dem Weg von der Quelle zum Beobachter unterliegen die unterschiedlichen Botenteilchen unterschiedlichen Wechselwirkungen. 
+    \caption{Schematische Darstellung der Wechselwirkungen, sowie der Detektion der Botenteilchen auf dem Weg von der Quelle zum Beobachter.
+    Auf ihrem Weg unterliegen die unterschiedlichen Botenteilchen unterschiedlichen Wechselwirkungen. 
     Geladene Teilchen wechselwirken mit Staubwolken und werden von Magnetfeldern abgelenkt, Neutrinos und hochenergetische Photonen behalten ihre Richtungsinformation bei.
-    Photonen wechselwirken ebenfalls mit Staubwolken oder mit niederenergetischen Hintergrundphotonen und werden dann abhängig von ihrer Energie mit unterschiedlichen Detektoren detektiert. 
+    Photonen wechselwirken ebenfalls mit Staubwolken oder mit niederenergetischen Hintergrundphotonen und werden dann abhängig von ihrer Energie mit unterschiedlichen Detektoren gemessen. 
     Das Bild entstammt \cite{DissMarlene}.}
     \label{Astroteilchen}
 \end{figure}
 
 
-\autoref{Astroteilchen} zeigt eine schematische Darstellung der verschiedenen Botenteilchen, die von einer astrophysikalischen Quelle emittiert werden können.
+\autoref{Astroteilchen} zeigt eine schematische Darstellung verschiedener Botenteilchen, die von einer astrophysikalischen Quelle emittiert werden können.
 
-Geladene Teilchen wie z.B. Protonen oder Elektronen werden aufgrund ihrer Ladung auf ihrem Weg von der Quelle zum Beobachter von Magnetfeldern abgelenkt und verlieren damit ihre Richtungsinformationen.
+In \autoref{Astroteilchen} werden schematisch die Eigenschaften der Botenteilchen auf ihrem Weg von der Quelle zum Beobachter dargestellt.
+Geladene Teilchen wie Protonen oder Elektronen wechselwirken im Allgemeinen mit intergalaktischen oder interstellaren Magnetfeldern.
+Dadurch stellt die Rekonstruktion ihrer Ursprungsrichtung eine Herausforderung dar.
+Im Gegensatz zu den geladenen Teilchen, können Neutrinos aufgrund ihrer geringen Wechselwirkungswahrscheinlichkeit diese Strecke nahezu ungehindert zurücklegen. 
+Allerdings ist ihre Detektion schwierig, sodass nur Detektoren mit sehr großem Volumen sie indirekt z.B. über Myonen detektieren können.
+Diese Detektion geschieht z.B. mit IceCube, einem Detektor, der in das Eis am Südpol eingeschmolzen, folgendermaßen:
+Ein Neutrinos wechselwirkt z.B. mit der Erde und erzeugt ein geladenes Lepton. 
+Beim Durchgang durch den Detektor erzeugt dieses geladenen Lepton Cherenkov-Strahlung, die mit Hilfe von Photosensoren detektiert wird.
+Photonen besitzen den gleichen Vorteil wie Neutrinos und werden auf dem Weg zum Detektor nicht abgelenkt.
+Allerdings können sie direkt mit Staubwolken oder der niederenergetischen Hintergrundstrahlung (EBL: External Background Light), welche aus Sternenlicht oder Wärmestrahlung aus interstallarem Staub besteht, wechselwirken.
+Hochenergetische Photonen werden von Satellitenexperimenten oder mit Hilfe von Luftschauerteleskopen detektiert.
+Die Detektion mit Satellitenexperimenten geschieht direkt, während Luftschauerteleskope die Teilchen indirekt detektieren.
+Wie in \autoref{sec:Gammaastronomie} beschrieben wird, werden die Luftschauer gemessen und daraus auf die Eigenschaften des Primärteilchens geschlossen.
 
-Neutrinos hingegen können wegen ihrer geringen Wechselwirkungswahrscheinlichkeit diese Strecke ungehindert zurücklegen. 
-Allerdings ist ihre Detektion schwierig.
-Detektoren mit großem Volumen können sie indirekt z.B. über Myonen detektieren.
 
-Hochenergetische Photonen besitzen den gleichen Vorteil wie Neutrinos und werden auf dem Weg zum Detektor nicht abgelenkt.
-Allerdings wechselwirken sie mit Staubwolken oder Hintergrundphotonen, sodass sie abhängig von ihrer Energie mit Satellitenexperimenten direkt oder über Luftschauerteleskope indirekt detektiert werden können.
-
-\subsection{Geladene kosmische Strahlung}
+\subsection{Die geladene kosmische Strahlung}
 Die geladene kosmische Strahlung wurde Anfang des 20. Jahrhunderts mit Hilfe von Ballonexperimenten entdeckt \cite{Hess}.
-Aufgrund der Tatsache, dass mit steigender Höhe die Ionisation zunahm, schlossen Hess und Kohlhörster, dass die von ihnen detektierte Strahlung aus dem Weltraum kommen müsse. \cite{Kohlhoerster}
-Diese Strahlung besteht zu 85\% aus Protonen, zu 12\% aus $\alpha$-Teilchen und 3\% aus Elementen mit größerer Kernladung.\cite{Grupen}
-Das Energiespektrum dieser kosmischen Strahlung ist auf einem sehr großen Energiebereich bekannt und wurde sowohl mit erdgebundenen als auch mit Satellitenexperimenten bestimmt.
+Aufgrund des Ergebnisses, dass mit steigender Höhe die Ionisation zunahm, schlossen Hess und Kohlhörster\cite{Kohlhoerster}, dass die von ihnen detektierte Strahlung aus dem Weltraum kommen müsse.
+Diese Strahlung besteht zu 85\%\cite{Grupen} aus Protonen, zu 12\%\cite{Grupen} aus $\alpha$-Teilchen und 3\%\cite{Grupen} aus Elementen mit größerer Kernladung.
+Das Energiespektrum dieser kosmischen Strahlung ist auf einem sehr großen Energiebereich vermessen und wurde sowohl mit erdgebundenen Experimenten als auch mit Satellitenexperimenten bestimmt.
 
 
 \begin{figure}
     \centering
     \includegraphics[width=0.8\textwidth]{./Plots/02_Astroteilchenphysik/CosmicRaySpectrum.png}
-    \caption{Spektrum der kosmischen Strahlung: Bei der Energie $E=10^{6.4}\,\si{GeV}$ befindet sich das sogenannte "Knie" und bei der Energie $E=10^{9.5}\,\si{GeV}$ die "Ferse" des Spektrums. \cite{GaisserSpektrum}}
+    \caption{Spektrum der kosmischen Strahlung. 
+      Aufgetragen ist der Fluss der Teilchen gegen die Primärteilchenenergie. 
+      Bei der Energie $E=10^{6,4}\,\si{GeV}$ befindet sich das sogenannte "Knie" und bei der Energie $E=10^{9,5}\,\si{GeV}$ die "Ferse" des Spektrums. \cite{GaisserSpektrum}}
     \label{CR-Spektrum}
 \end{figure}
 
 
 
-Wie in \autoref{CR-Spektrum} zu erkennen ist, kann das Spektrum mit einem gebrochenen Potenzgesetz mit zwei Steigungsänderungen, die als "Knie" und "Ferse" bezeichnet werden, beschrieben werden \cite{DissBecker}:
+Wie in \autoref{CR-Spektrum} zu erkennen ist, kann das Spektrum mit einem gebrochenen Potenzgesetz mit zwei Steigungsänderungen, die als "Knie" und "Ferse" bezeichnet werden, parametrisiert werden \cite{Knie}.
+Hierbei ist $N$ die Anzahl, $E$: die Energie, $E_p$ die Primärteilchenenergie und $\alpha_{CR}$ der spektrale Index der kosmischen Strahlung:
 
 \begin{equation}
- \frac{dN}{dE_{CR}} \propto E_p^{-\alpha_{CR}}
+ \frac{\mathrm{d}N}{\mathrm{d}E} \propto E_p^{-\alpha_{CR}}
 \end{equation}
 
-mit 
+mit\cite{Knie} 
 
 \begin{equation*}
 \alpha_{CR}=	
 \left\{
 \begin{aligned}
-2,67 \qquad \log\left( \frac{E_{CR}}{eV} \right) &< 15,4 \\
-3,10 \qquad \log\left( \frac{E_{CR}}{eV} \right) &< 18,5 \\ 
-2,75 \qquad \log\left( \frac{E_{CR}}{eV} \right) &> 18,5.
+2,7 \qquad E  &< 4,5\cdot10^6\,\si{GeV} \\
+3,10 \qquad E  &< 4\cdot10^9\,\si{GeV} \\ 
+2,7 \qquad E &> 4\cdot10^9\,\si{GeV}.
 \end{aligned}
 \right.
 \end{equation*}
 
-Größere Energien als $5 \cdot 10^{19} \si{eV}$ können aufgrund des GZK-Cutoffs \cite{Greisen}\cite{ZatsepinKuzmin} nicht gemessen werden. 
-Dieser Cutoff tritt auf, wenn Protonen mit dem kosmischen Mikrowellenhintergrund (CMB) wechselwirken \cite{DissBecker}: 
+Die Existenz eines zweiten Knies bei $E=4\cdot 10^8\,\si{GeV}$\cite{Knie} wird noch untersucht.
+
+Größere Energien als $5\cdot10^{19} \si{eV}$ können aufgrund des GZK-Cutoffs \cite{Greisen}\cite{ZatsepinKuzmin} theoretisch nicht gemessen werden. 
+Dieser Cutoff tritt auf, wenn Protonen mit dem kosmischen Mikrowellenhintergrund (CMB) wechselwirken \cite{Greisen}\cite{ZatsepinKuzmin}: 
 
 \begin{equation*}
 p\gamma_{CMB}=	
 \left\{
 \begin{aligned}
 & \Delta^+ \\
-& p e^+ e^- .
+& p\, e^+ \, e^- .
 \end{aligned}
 \right.
 \end{equation*}
 
-Knie und Ferse beinhalten Informationen über die Beschleunigungsmechanismen der Teilchen, bzw. über die Quellen.
-Die Teilchen mit den höchsten Energien, jenseits der Ferse können nicht galaktischen Ursprungs sein, da die galaktischen Magnetfelder für die Beschleunigung zu schwach sind. 
+Knie und Ferse beinhalten Informationen über die Beschleunigungsmechanismen der Teilchen bzw. über die Quellen.
+Die Teilchen mit den höchsten Energien jenseits der Ferse können nicht galaktischen Ursprungs sein, da die galaktischen Magnetfelder für die Beschleunigung zu schwach sind. 
 Deswegen wird vermutet, dass diese Teilchen extragalaktischen Ursprungs sind, wobei die Beschleunigungsmechanismen (vgl. \autoref{sec:Beschleunigungsmechanismen}) noch nicht genau bekannt sind.
 
-\subsection{Neutrinos}
-Neutrinos sind leichte Teilchen, die eine sehr geringe Wechselwirkungsqahrscheinlichkeit haben und so in großen Experimenten wie IceCube\cite{Icecube} oder ANTARES\cite{ANTARES} indirekt über Myonen nachgewiesen werden.
-Das größte Problem bei der Suche nach hochenergetischen Neutrinos ist der Untergrund, der in Wechselwirkungen von geladener kosmischer Strahlung in der Atmosphäre entsteht.
-Neutrinos werden in hadronischen Reaktionen erzeugt und können auf dem Weg von der Quelle zum Detektor oszillieren.
-Die Produktion von Neutrinos geschieht über die Produktion von geladenen Pionen und folgende Reaktionen sind möglich:
-Entweder wechselwirkt ein Photon mit einem Proton folgendermaßen mit der angegebenen Wahrscheinlichkeit\cite{DissBecker}:
+\subsection{Neutrinos als Botenteilchen}
+Neutrinos sind leichte Teilchen, die eine sehr geringe Wechselwirkungswahrscheinlichkeit aufweisen und daher nur in großen Experimenten wie IceCube\cite{Icecube} oder ANTARES\cite{ANTARES} indirekt über Myonen nachgewiesen werden können.
+Es gibt verschiedene Quellen, in denen Neutrinos entstehen können.
+Kosmogene Neutrinos werden in Wechselwirkungen von hochenergetischen Protonen mit dem kosmischen Mikrowellenhintergrund (CMB: Cosmic Miocrowave Background) und dem darauffolgenden Zerfall von geladenen Pionen erzeugt.
+Galaktische Neutrinos können in hadronischen Beschleunigungsprozessen erzeugt werden.
+Es wird auch vermutet, dass in Gammastrahlenausbrüchen oder in hadronischen Beschleunigungsprozessen in AGNs Neutrinos entstehen können
+
+Die größte Herausforderung bei der Suche nach hochenergetischen Neutrinos ist der Untergrund, der durch Wechselwirkungen von geladener kosmischer Strahlung mit der Atmosphäre entsteht.
+% Neutrinos werden in hadronischen Reaktionen erzeugt und können auf dem Weg von der Quelle zum Detektor oszillieren.
+Die Produktion von Neutrinos geschieht über die Produktion von geladenen Pionen.
+Nachfolgend werden die möglichen Reaktionen beschrieben.
+Entweder wechselwirkt ein Photon mit einem Proton (mit der in Klammern angegebenen Wahrscheinlichkeit)\cite{DissBecker}:
 
 \begin{equation*}
-p\gamma \rightarrow \Delta^+ \rightarrow	
+p\, \gamma \rightarrow \Delta^+ \, \rightarrow	
 \left\{
 \begin{aligned}
-& p \pi^0 \qquad [2/3] \\
-& n \pi^+ \qquad [1/3]
+& p \, \pi^0 \qquad (2/3) \\
+& n \, \pi^+ \qquad (1/3)
+\end{aligned}
+\right.
+\end{equation*}.
+
+Oder ein Proton wechselwirkt mit einem anderen Proton\cite{DissBecker}:
+
+\begin{equation*}
+p \, p \rightarrow
+\left\{
+\begin{aligned}
+& p \, p \, \pi^0 \qquad (2/3) \\
+& p \, n \, \pi^+ \qquad (1/3).
 \end{aligned}
 \right.
 \end{equation*}
 
-oder ein Proton wechselwirkt mit einem anderen Proton\cite{DissBecker}:
-
-\begin{equation*}
-p p \rightarrow
-\left\{
-\begin{aligned}
-& p p \pi^0 \qquad [2/3] \\
-& p n \pi^+ \qquad [1/3].
-\end{aligned}
-\right.
-\end{equation*}
-
-Die gleichen Prozesse treten auch für Neutronen oder bei höheren Energien Kaonen als Primärteilchen auf, wodurch negativ geladene Pionen entstehen.
-Die Pionen zerfallen dann und erzeugen weitere Neutrinos \cite{DissBecker}:
+Bei höheren Energien tragen auch Kaonen und Neutronen zur Neutrinoproduktion bei.
+In diesen Prozessen entstehen negativ geladene Pionen, die zerfallen und dabei Neutrinos produzieren \cite{NeutrinoOszillation}.
+% Die gleichen Prozesse treten auch für Neutronen oder bei höheren Energien Kaonen als Primärteilchen auf, wodurch negativ geladene Pionen entstehen.
+% Die Pionen zerfallen dann und erzeugen weitere Neutrinos \cite{DissBecker}:
 
 \begin{equation*}
  \begin{aligned}
- \pi^+ \rightarrow \mu^+ \nu_{\mu} \rightarrow e^+ \nu_e \overline{\nu}_{\mu} \nu_{\mu} \\ 
- \pi^- \rightarrow \mu^- \overline{\nu}_{\mu} \rightarrow e^- \overline{\nu}_e \nu_{\mu} \overline{\nu}_{\mu}
+ \pi^+ \rightarrow \mu^+ \, \nu_{\mu} \rightarrow e^+ \, \nu_e \, \overline{\nu}_{\mu} \, \nu_{\mu} \\ 
+ \pi^- \rightarrow \mu^- \, \overline{\nu}_{\mu} \rightarrow e^- \, \overline{\nu}_e \, \nu_{\mu} \, \overline{\nu}_{\mu}
  \end{aligned}
 \end{equation*}
 
-Aufgrund der beschriebenen Prozesse erwartet man in der Quelle eine Verteilung der Neutrinos von $(\nu_e:\nu_{\mu}:\nu_{\tau})=(\overline{\nu}_e:\overline{\nu}_{\mu}:\overline{\nu}_{\tau})=(1:2:0)$.
-Propagieren die Neutrinos Strecken von der Größenordnung des Sonnensystems, oszillieren sie, sodass auf der Erde ein Verhältnis von $(\nu_e:\nu_{\mu}:\nu_{\tau})=(1:1:1)$ beobachtet wird.
 
-Es gibt verschiedene Neutrinoquellen:
-\begin{itemize}
- \item Kosmogene Neutrinos werden in Wechselwirkungen von hochenergetischen Protonen mit dem CMB und den darauffolgenden Zerfall von geladenen Pionen erzeugt.
- \item Galaktische Neutrinos können in hadronischen Beschleunigungsprozessen erzeugt werden.
- \item Es wird erwartet, dass in Gamma Ray Bursts Neutrinos erzeugt werden.
- \item In den hadronischen Modellen von AGNs werden Neutrinos produziert. 
-\end{itemize}
+In der Quelle erwartet man eine Verteilung der Neutrinos von $(\nu_e:\nu_{\mu}:\nu_{\tau})=(\overline{\nu}_e:\overline{\nu}_{\mu}:\overline{\nu}_{\tau})=(1:2:0)$\cite{NeutrinoOszillation}.
+Aufgrund von Neutrinooszillationen, d.h. z.B. ein Elektronneutrino kann zu einem Myonneutrino oszillieren, und der zurückgelegten Strecke der Neutrinos, wird auf der Erde ein Verhältnis von $(\nu_e:\nu_{\mu}:\nu_{\tau})=(1:1:1)$\cite{NeutrinoOszillation} beobachtet.
 
-\subsection{Photonen}
-Genau wie die Neutrinos haben Photonen den Vorteil, dass sie nicht von Magnetfeldern abgelenkt werden.
-Allerdings könenn aufgrund der Absorption in der Atmosphäre auf der Erde nur Photonen im optischen und im Radiobereich detektiert werden.
-Deswegen wurden diese Wellenlängen in der Astronomie auch als erstes benutzt. 
-Nach und nach kamen dann die anderen Wellenlängen wie z.B. Röntgenstrahlung oder Gammastrahlung hinzu.
+%Aufgrund der beschriebenen Prozesse erwartet man in der Quelle eine Verteilung der Neutrinos von $(\nu_e:\nu_{\mu}:\nu_{\tau})=(\overline{\nu}_e:\overline{\nu}_{\mu}:\overline{\nu}_{\tau})=(1:2:0)$.
+%Propagieren die Neutrinos Strecken von der Größenordnung des Sonnensystems, oszillieren sie, sodass auf der Erde ein Verhältnis von $(\nu_e:\nu_{\mu}:\nu_{\tau})=(1:1:1)$ beobachtet wird.
+
+
+\subsection{Photonen als Botenteilchen}
+Genau wie die Neutrinos besitzen Photonen den Vorteil, dass sie nicht von Magnetfeldern abgelenkt werden.
+Allerdings können aufgrund der Absorption in der Atmosphäre auf der Erde nur Photonen im optischen und im Radiobereich direkt detektiert werden.
+Deswegen hat sich die optische Astronomie und die Radioastronomie zuerst entwickelt. 
+%Deswegen wurden diese Wellenlängen in der Astronomie auch als erstes benutzt. 
+Danach kamen dann Astronomie mit anderen Wellenlängen wie z.B. Röntgenstrahlung oder Gammastrahlung hinzu.
 Gammastrahlung lässt sich anhand der Energie in nieder- bis mittelenergetische Gammastrahlung ($\SI{0,1}{MeV}$ - $\SI{30}{MeV}$), hochenergetische Gammastrahlung ($\SI{30}{MeV}$ -$\SI{100}{GeV}$), sehr hochenergetische Gammastrahlung ($\SI{100}{GeV}$-$\SI{100}{TeV}$) und ultrahochenergetische Gammastrahlung ($E>\SI{100}{TeV}$) einteilen.
-Der Energiebereich bis ca. 100GeV lässt sich nur mit Satellitenexperimente nachweisen.
-Die sehr hochenergetische und die ultrahochenergetische Strahlung lässt sich wiederum mit Hilfe von Luftschauerteleskopen auf der Erde detektieren.\cite{Weekes}
 
-Das Problem der hochenergetischen Photonen ist, dass sie mit den niederenergetischen Photonen der Hintergrundstrahlung (EBL) wechselwirken.
-Mit Hilfe von Modellen kann die Absorption von hochenergetischen Photonen aus extragalaktischen Quellen durch diese Hintergrundstrahlung berechnet werden.\cite{Weekes}
+% Der Energiebereich bis ca. 100GeV lässt sich nur mit Satellitenexperimente nachweisen.
+% Die sehr hochenergetische und die ultrahochenergetische Strahlung lässt sich wiederum mit Hilfe von Luftschauerteleskopen auf der Erde detektieren.\cite{Weekes}
 
-In \autoref{sec:Gammaastronomie} wird dann noch näher auf die Gammaastronomie eingegangen und es werden die Wechselwirkungen erklärt, die die Photonen auf ihrem Weg zur Erde, erfahren.
+Der Nachteil der hochenergetischen Photonen ist, dass sie mit den niederenergetischen Photonen der Hintergrundstrahlung (EBL) wechselwirken.
+Mit Hilfe von Messungen können dann Modelle erstellt werden, die die Hintergrundstrahlung parametrisieren und mit Hilfe derer dann diese Absorption in Beobachtungen berücksichtigt werden kann.
+
+%Mit Hilfe von Modellen kann die Absorption von hochenergetischen Photonen aus extragalaktischen Quellen durch diese Hintergrundstrahlung berechnet werden.\cite{Weekes}
+
+\autoref{sec:Gammaastronomie} geht näher auf die Gammaastronomie ein und es werden die Wechselwirkungen erklärt, die die Photonen auf ihrem Weg zur Erde, erfahren.
 
 
 \section{Quellen kosmischer Strahlung}
 \label{sec:Quellen}
-In diesem Kapitel wird eine Übersicht über die Quellen der kosmischen Strahlung gegeben.
+In diesem Kapitel wird eine Übersicht über einige Quellen der kosmischen Strahlung gegeben.
+Es werden vor allem die wichtigsten Quellen hochenergetischer Gammastrahlung vorgestellt.
 
 \subsection{Die Galaktische Scheibe und das Galaktische Zentrum}
-Die galaktische Scheibe ist die stärkste und erste detektierte Gammaquelle und wurde 1968\cite{GalacticPlane} detektiert.
-Im Folgenden werden die Prozesse beschrieben, die die galaktische Gammastrahlung erzeugen:
-
-\begin{itemize}
- \item Kosmische Elektronen erzeugen niederenergetische Photonen durch Bremsstrahlung mit dem Interstellaren Gas.
- \item Hadronen der kosmischen Strahlung produzieren neutrale Pionen, die dann in zwei Photonen mit mittlerer Energie zerfallen.
- \item Kosmische Elektronen überleben eine inverse Comptonstreuung an niederenergetischen Gammaphotonen und erzeugen Photonen mit hohen Energien.
-\end{itemize}
-
-Das Galaktische Zentrum enthält mehrere Objekte, wie z.B. junge Supernova-Remnants wie Sgr $A$ East, die hochenergetische Gammastrahlen emittieren.
-Das dynamische Zentrum wurde mit der kompakten Radioquelle Sgr $A^*$ assoziiert, welche vermutlich ein supermassives schwarzes Loch ist.
-In einem Radius von 10pc um das Galaktische Zentrum befindet sich eine Masse von $3\cdot 10^7$ Sonnenmassen.
-Das Satellitenexperiment EGRET hat die Quelle 3EG J1745-2852 detektiert, welche hochenergetische Gammastrahlung emittiert. 
-Die Natur dieser Quelle ist noch unbekannt.\cite{GalacticCenter}\cite{Weekes}
+1968 wurde das erst Mal Gammastrahlung von der Galaktischen Scheibe detektiert \cite{GalacticPlane}.
+Diese galaktische Gammastrahlung kann in verschiedenen Prozessen entstehen, die Photonen unterschiedlicher Energie erzeugen.
+Niederenergetische Photonen können durch Bremsstrahlung von Elektronen im interstellaren Gas erzeugt werden.
+Elektronen können auch in einem inversen Comptonprozess an niederenergetischen Photonen gestreut werden, wodurch die Photonen auf hohe Energien beschleunigt werden.
+Im Zerfall von neutralen Pionen zu Photonen werden Photonen mittlerer Energie erzeugt.
 
 
-\subsection{Supernovae und Supernovaremnants}
+
+%Die galaktische Scheibe ist die stärkste und erste detektierte Gammaquelle und wurde 1968\cite{GalacticPlane} detektiert.
+%Im Folgenden werden die Prozesse beschrieben, die die galaktische Gammastrahlung erzeugen:
+
+% \begin{itemize}
+%  \item Kosmische Elektronen erzeugen niederenergetische Photonen durch Bremsstrahlung mit dem Interstellaren Gas.
+%  \item Hadronen der kosmischen Strahlung produzieren neutrale Pionen, die dann in zwei Photonen mit mittlerer Energie zerfallen.
+%  \item Kosmische Elektronen überleben eine inverse Comptonstreuung an niederenergetischen Gammaphotonen und erzeugen Photonen mit hohen Energien.
+% \end{itemize}
+
+Das Galaktische Zentrum enthält mehrere massive Objekte, wie z.B. junge Supernova-Überreste, die hochenergetische Gammastrahlen emittieren.
+So befindet sich in einem Radius von $\SI{10}{pc}$ um das Galaktische Zentrum eine Masse von $3\cdot 10^7$ Sonnenmassen. 
+%Das dynamische Zentrum wurde mit der kompakten Radioquelle Sgr $A^*$ assoziiert, welche vermutlich ein supermassives schwarzes Loch ist.
+Dem Satellitenexperiment EGRET gelang die Detektion einer Quelle - 3EG J1745-2852 - von hochenergetischer Gammastrahlung.
+Allerdings ist die Natur dieser Quelle noch unbekannt.\cite{GalacticCenter}\cite{Weekes}
+
+
+
+% In einem Radius von $\SI{10}{pc}$ um das Galaktische Zentrum befindet sich eine Masse von $3\cdot 10^7$ Sonnenmassen.
+% Das Satellitenexperiment EGRET hat die Quelle 3EG J1745-2852 detektiert, welche hochenergetische Gammastrahlung emittiert. 
+% Die Natur dieser Quelle ist noch unbekannt.\cite{GalacticCenter}\cite{Weekes}
+
+
+\subsection{Supernovae und Supernovaüberreste}
 Die Explosion eines Sterns wird als Supernova (SN) bezeichnet.
-Gammastrahlung, die aus SN kommt, wird entweder in den ersten Sekunden der Explosion als Gammastrahlenausbruch [Gamma Ray Burst (GRB)] detektiert oder als stete periodische Emission des entstandenen Pulsars.
-Es ist auch möglich, dass sie der sich ausbreitenden Hülle des ehemaligen Sterns [Supernova Remnant (SNR)] entstammen. 
-Diese galktischen Quellen liefern kosmische Strahlung bis zu Energien von $\SI{100}{TeV}$.
-SN und SNR vermögen es nicht, Teilchen auf Energien von $10^20\,\si{eV}$ zu beschleunigen.
-Somit entstammen Teilchen mit so hohen Energien extragalaktischen Quellen.\cite{Weekes}
+Gammastrahlung, die aus einer SN kommt, wird entweder in den ersten Sekunden der Explosion als Gammastrahlungsausbruch (GRB: Gamma Ray Burst) emittiert.
+Falls nach dem GRB ein Pulsar entsteht, kann sie aber auch auch als stete periodische Emission dieses Pulsars emittiert werden.
+Es ist auch möglich, dass die Photonen aus der sich ausbreitenden Hülle des ehemaligen Sterns (SNR: Supernova Remnant) stammen. 
+Diese galaktischen Quellen liefern kosmische Strahlung bis zu Energien von $\SI{100}{TeV}$\cite{Weekes}.
+Eine Beschleunigung von Teilchen auf Energien von $10^{20}\,\si{eV}$ durch SN und SNR ist nicht möglich.
+Teilchen mit so hohen Energien stammen somit aus extragalaktischen Quellen.\cite{Weekes}
 
-Die Beschleunigung der Teilchen erfolgt in Schockwellen.
-Das Modell dieser diffusen Schockbeschleunigung liefert ein Potenzgesetz für das Spektrum der beschleunigten Strahlung von $\frac{dN}{dE} \propto E^{-2,0}$.
-Dieses Potenzgesetz wird um Effekte während der Propagation durch die Galaxie korrigiert und resultiert in einem Spektrum der kosmischen Strahlung von $\frac{dN}{dE} \propto E^{-2,7}$
-Im Allgemeinen sind die Spektra von Supernovae hart und haben einen Cutoff bei ca. $\SI{20}{TeV}$, was auf eine Primärteilchenenergie von einigen TeV schließen lässt.\cite{Weekes}\cite{RhodeFalke}
+% Die Beschleunigung der Teilchen erfolgt in Schockwellen.
+% Das Modell dieser diffusen Schockbeschleunigung liefert ein Potenzgesetz für das Spektrum der beschleunigten Strahlung von $\frac{dN}{dE} \propto E^{-2,0}$.
+% Dieses Potenzgesetz wird um Effekte während der Propagation durch die Galaxie korrigiert und resultiert in einem Spektrum der kosmischen Strahlung von $\frac{dN}{dE} \propto E^{-2,7}$
+% Im Allgemeinen sind die Spektra von Supernovae hart und haben einen Cutoff bei ca. $\SI{20}{TeV}$, was auf eine Primärteilchenenergie von einigen TeV schließen lässt.\cite{Weekes}\cite{RhodeFalke}
 
 
-\subsection{Gamma Ray Pulsars und Binaries}
-Pulsare sind rotierende Neutronensterne. 
-Das bekannteste Beispiel ist der Crab Pulsar im Zentrum des Krebsnebels.
+\subsection{Pulsare und Binaries}
+Pulsare sind rotierende Neutronensterne mit einer Rotationsperioden zwischen einigen Millisekunden und einigen Sekunden.
+Das bekannteste Beispiel ist der Crab-Pulsar im Zentrum des Krebsnebels.
+
 Dieser Quelltyp wurde vor mehr als 30 Jahren entdeckt und er lässt sich in zwei Kategorien einteilen.
-Der erste Typ gewinnt seine Energie durch Rotation und ist im Radiobereich detektierbar und der andere Quelltyp gewinnt seine Energie durch Akkretion von Materie und ist im Röntgenbereich detektierbar.
-Pulsare haben Rotationsperioden zwischen einigen Millisekunden und einigen Sekunden.
-Vor allem im Gammabereich ist ihre Luminosität hoch und genau wie bei den SN und SNRs können ihre Energiespektren durch ein Potenzgesetz beschrieben werden.
-Verschiedene Pulsare lassen sich anhand ihrer Spektren voneinander unterschieden; auch unterscheiden sich ihre Lichtkurven in der Position der Peaks bei verschiedenen Wellenlängen.
-Die Theorie von Pulsaren ist noch nicht komplett verstanden, weswegen Modelle getestet werden.\cite{Weekes}
+Pulsare der ersten Kategorie gewinnen ihre Energie durch Rotation und sind im Allgemeinen im Radiobereich gut detektierbar.
+Pulsare der zweiten Kategorie gewinnen ihre Energie durch Akkretion von Materie und sind vor allem im Röntgenbereich gut detektierbar.
+Die Emissionsprozesse der Pulsare der zweiten Kategorie sind rein thermisch und von weniger Interesse für die hochenergetische Gammaastronomie.
+
+Bisher wurden einige Pulsare entdeckt, die im Gammabereich ebenfalls eine hohe Luminosität haben.
+Genau wie bei von SN und SNRs, können ihre Energiespektren durch ein Potenzgesetz beschrieben werden.
+Verschiedene Pulsare lassen sich anhand ihrer Spektren voneinander unterschieden.
+Ihre Lichtkurven unterscheiden sich in der Position der Peaks bei verschiedenen Wellenlängen.
+Die Emissionsmechanismen von Pulsaren sind noch nicht komplett verstanden und zwei Modelle konkurrieren miteinander.
+Eine detaillierte Beschreibung dieser Modelle kann z.B. \cite{Weekes} entnommen werden.
 
 Die Hälfte aller Sterne taucht in einer Assoziation mit einem anderen Objekt auf und wird Binaries genannt.
-Dieses andere Objekt ist oft ein kompaktes Objekt wie ein Weißer Zwerg, ein Neutronenstern oder ein Schwarzes Loch.
+Dieses andere Objekt ist oft ein kompaktes Objekt wie z.B. ein Weißer Zwerg, ein Neutronenstern oder ein Schwarzes Loch.
 Hohe Röntgenemission sowie ein zeitlich variables Verhalten sind charakteristisch für diesen Quelltyp.
-Dabei kann die Variabilität im Bereich von Millisekunden bis zu Jahren liegen und periodisch auftauchen oder in einzelnen Ausbrüchen, Flares genannt.\cite{Weekes}
+Die Variabilität kann im Bereich von Millisekunden bis zu Jahren liegen und periodisch auftauchen oder in einzelnen Ausbrüchen wird viel Strahlung emittiert.\cite{Weekes}
 
 
-\subsection{Gamma Ray Bursts}
-Gammastrahlenausbrüche (GRBs) wurden während des kalten Kriegs von den amerikanischen Vela-Satelliten, die Atombombenexplosionen aufspüren sollten, entdeckt.
-16 GRBs mit Zeitspannen von $\SI{0,1}{s}$-$\SI{30}{s}$ mit Flüssen zwischen $(10^{-5}-10^{-4}\,\frac{\si{erg}}{\si{s}}$ wurden detektiert.
-Allgemein dauern GRBs zwischen Millisekunden und einigen tausend Sekunden und sind isotrop verteilt.
-Sie werden in kurzzeitige Bursts ($t<\SI{2}{s}$) und den Rest unterteilt.
+\subsection{Gammastrahlenausbrüche}
+Gammastrahlenausbrüche (GRB: Gamma Ray Burst) wurden während des kalten Kriegs von den amerikanischen \textit{Vela}-Satelliten, die Atombombenexplosionen aufspüren sollten, entdeckt.
+16 GRBs mit Zeitspannen von $\SI{0,1}{s}$ - $\SI{30}{s}$ und Teilchenflüssen zwischen $(10^{-5}-10^{-4}\,\frac{\si{erg}}{\si{s}}$ wurden detektiert.
+
+Im Allgemeinen dauern GRBs zwischen Millisekunden und einigen tausend Sekunden und sind isotrop verteilt.
+Sie werden in kurzzeitige Ausbrüche ($t<\SI{2}{s}$) und den Rest unterteilt.
 Fast die gesamte emittierte Energie ist größer als $\SI{50}{keV}$.
-Mit Satellitenexperimenten wurden GRBs auch im Gammabereich (bis ca. $\SI{30}{GeV}$) detektiert, der Fluss ist aber sehr niedrig.
-Bodengebundene Teleskope, wie z.B. MAGIC haben GRB-Programme, allerdings kam es bisher noch zu keiner richtigen Detektion.\cite{Weekes}
+Mit Satellitenexperimenten wurden GRBs auch bei Energien von Gammastrahlung (bis ca. $\SI{30}{GeV}$) detektiert, der Fluss, d.h. die Anzahl der Teilchen pro Fläche und Zeit, ist aber sehr niedrig.
+Bodengebundene Teleskope, wie z.B. MAGIC betreiben GRB-Programme, allerdings kam es bisher noch zu keiner richtigen Detektion.\cite{Weekes}
 
 
 \subsection{Aktive Galaktische Kerne}
-Die Klasse der Aktiven Galaktische Kerne (AGN) wird durch ein supermassives schwarzes Loch, welches sich in ihrem Zentrum befindet und Materie akkretiert, gekennzeichnet. 
+Die Klasse der Aktiven Galaktischen Kerne (AGN) wird durch ein Supermassives Schwarzes Loch, welches sich in ihrem Zentrum befindet und Materie akkretiert, gekennzeichnet.
+Abhängig vom AGN-Typ werden noch zwei Jets in entgegengesetzte Richtungen emittiert.  
 Anhand ihrer Ausrichtung zum Beobachter und ihrer Emission in den verschiedenen Wellenlängen werden AGNs klassifiziert. 
-Eine genauere Darstellung dieses Quelltyps, zu dem auch die in dieser Arbeit analysierte Quelle gehört, wird in \autoref{sec:AGN} gegeben.
+Eine genauere Darstellung dieses Quelltyps, zu dem auch die in dieser Arbeit analysierte Quelle Mrk~421 gehört, wird in \autoref{sec:AGN} gegeben.
 
 \section{Beschleunigungsmechanismen} 
 \label{sec:Beschleunigungsmechanismen}

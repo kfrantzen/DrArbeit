@@ -1,17 +1,17 @@
-[0] Config.pm:320> INFO - This is Biber 1.9
-[0] Config.pm:323> INFO - Logfile is 'build/DoktorArbeit.blg'
-[96] biber:277> INFO - === Wed Apr  8, 2015, 16:13:06
-[96] Biber.pm:333> INFO - Reading 'build/DoktorArbeit.bcf'
-[211] Biber.pm:635> INFO - Found 58 citekeys in bib section 0
-[246] Biber.pm:3051> INFO - Processing section 0
-[277] Biber.pm:3189> INFO - Looking for bibtex format file 'references.bib' for section 0
-[288] bibtex.pm:990> INFO - Decoding LaTeX character macros into UTF-8
-[299] bibtex.pm:864> INFO - Found BibTeX data source 'references.bib'
-[302] Utils.pm:144> WARN - Possible typo (case mismatch) between datasource keys: 'HESS' and 'Hess' in file 'references.bib'
-[1666] UCollate.pm:66> INFO - Overriding locale 'de-DE' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[1666] UCollate.pm:66> INFO - Overriding locale 'de-DE' defaults 'variable = shifted' with 'variable = non-ignorable'
-[1667] Biber.pm:2928> INFO - Sorting list 'nty' of type 'entry' with scheme 'nty' and locale 'de-DE'
-[1667] Biber.pm:2932> INFO - No sort tailoring available for locale 'de-DE'
-[2040] bbl.pm:517> INFO - Writing 'build/DoktorArbeit.bbl' with encoding 'UTF-8'
-[2070] bbl.pm:606> INFO - Output to build/DoktorArbeit.bbl
-[2159] Biber.pm:106> INFO - WARNINGS: 1
+[1] Config.pm:320> INFO - This is Biber 1.9
+[1] Config.pm:323> INFO - Logfile is 'build/DoktorArbeit.blg'
+[60] biber:277> INFO - === Fri Apr 10, 2015, 13:50:56
+[61] Biber.pm:333> INFO - Reading 'build/DoktorArbeit.bcf'
+[215] Biber.pm:635> INFO - Found 27 citekeys in bib section 0
+[255] Biber.pm:3051> INFO - Processing section 0
+[287] Biber.pm:3189> INFO - Looking for bibtex format file 'references.bib' for section 0
+[298] bibtex.pm:990> INFO - Decoding LaTeX character macros into UTF-8
+[311] bibtex.pm:864> INFO - Found BibTeX data source 'references.bib'
+[316] Utils.pm:144> WARN - Possible typo (case mismatch) between datasource keys: 'HESS' and 'Hess' in file 'references.bib'
+[976] UCollate.pm:66> INFO - Overriding locale 'de-DE' defaults 'variable = shifted' with 'variable = non-ignorable'
+[976] UCollate.pm:66> INFO - Overriding locale 'de-DE' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[976] Biber.pm:2928> INFO - Sorting list 'nty' of type 'entry' with scheme 'nty' and locale 'de-DE'
+[976] Biber.pm:2932> INFO - No sort tailoring available for locale 'de-DE'
+[1151] bbl.pm:517> INFO - Writing 'build/DoktorArbeit.bbl' with encoding 'UTF-8'
+[1165] bbl.pm:606> INFO - Output to build/DoktorArbeit.bbl
+[1176] Biber.pm:106> INFO - WARNINGS: 1

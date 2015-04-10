@@ -157,11 +157,13 @@
 %------------------------------------------------------------------------------
 
 \usepackage{eurosym}
-\usepackage[hyphens]{url}
+%\usepackage[hyphens]{url}
 \usepackage[pdfusetitle,unicode, linkbordercolor=tugreen, german]{hyperref}
 \usepackage{bookmark}
 \usepackage[shortcuts]{extdash}
 \usepackage{todonotes}
+
+\usepackage{icomma}
 
 
 
