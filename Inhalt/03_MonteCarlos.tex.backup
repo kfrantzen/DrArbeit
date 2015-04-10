@@ -1,4 +1,5 @@
 \chapter{Monte-Carlo-Simulation}
+\label{chapter:MC-Simulation}
 Eines der Ziele in der Astroteilchenphysik ist es, Aussagen über die Energiespektren von astrophysikalischen Quellen zu treffen.
 
 In dieser Arbeit werden Daten analysiert, die von den beiden MAGIC-Teleskopen\cite{MAGIC_Telescopes} aufgenommen wurden, die in \autoref{sec:MAGIC} kurz beschrieben werden.
@@ -324,6 +325,8 @@ Es erfolgt die gleiche Kalibration wie auch bei den echten Daten und die Einstel
 
 \section{Kalibration}
 \label{sec:Calibration}
+Für die Kalibration ist das Programm \textit{Sorcerer} zuständig. 
+Dieses Programm ist Teil des \textit{MARS}-Pakets.
 Ziel der Kalibration ist es, für jeden Pixel die Ladung in Photoelektronen und die Ankunftszeit der Photonen zu bestimmen.
 Dafür muss der Lichtpuls extrahiert und die Baseline subtrahiert werden.
 Die Baseline wird mit Hilfe von Pedestal-Ereignissen bestimmt. 
@@ -377,6 +380,9 @@ Die übrigen Pixel haben zufällig verteilte Ankunftszeiten.
 
 \section{\textit{Star} - Bildbereinigung und Bildparametrisierung}
 \label{sec:Star-ImageCleaning}
+Das Programm \textit{Star} ist genauso wie \textit{Sorcerer} Teil des \textit{MARS}-Pakets und übernimmt Bildbereinigung und Bildparametrisierung.
+Im Folgenden werden diese beiden Schritte näher erläutert.
+
 
 \subsection{Bildbereinigung}
 
@@ -501,7 +507,8 @@ Auch die Höhe des Schauermaximums wird in \textit{Superstar} bestimmt.
 \begin{figure}
     \centering
     \includegraphics[width=0.9\textwidth]{./Plots/03_MonteCarlos/Superstar.png}
-    \caption{Rekonstruierte Richtung und rekonstruierter Core Impact Punkt \cite{Superstar}}
+    \caption{Rekonstruierte Richtung und rekonstruierter Core Impact-Punkt.
+    Mit Hilfe der beiden Schauerbilder können sowohl die Herkunftsrichtung des Schauers, als auch der Punkt, in dem die Schauerachse den Boden trifft rekonstruiert werden.\cite{Superstar}}
     \label{Superstar}
 \end{figure}
 
@@ -558,8 +565,8 @@ Die Kalibrationskette, die aus den Programmen \textit{Sorcerer}, \textit{Star} u
 Mit Hilfe der run-Skripte werden die Programme gestartet und nach erfolgreichem Durchlauf die Daten gespeichert.
 
 \subsection{Überblick über die Datenbank}
-Wie oben beschrieben, werden die wichtigsten Inputparameter und die Pfade zu den MCs in einer \texttt{mysql}-Datenbank gespeichert.
-Diese Datenbank beinhaltet die Tabellen in \autoref{MYSQL_Tabellen}.
+Wie zuvor beschrieben, werden die wichtigsten Inputparameter und die Pfade zu den MCs in einer \texttt{mysql}-Datenbank gespeichert.
+Diese Datenbank beinhaltet die Tabellen, welche in \autoref{MYSQL_Tabellen} aufgelistet sind.
 
 \begin{table}[!h]
 \centering
@@ -610,7 +617,7 @@ Die Tabelle MCRunData bietet eine Übersicht über die RunNumbers, die innerhalb
 So gehört zu jeder RunNumber eine CorsikaRunNumber, eine ReflectorRunNumber und eine CameraRunNumber.
 Also bietet ein Job mit 2000 x 1000 Ereignissen Platz für 2000 RunNumbers pro Programm.
 
-Die Tabelle MCRunProcessStatus ist eine Übersichtstabelle über die Zeitpunkte zu denen die jeweiligen Inputcards geschrieben und die Programme \textit{CORSIKA}, \textit{Reflector} und \textit{Camera} beendet wurden.
+Die Tabelle MCRunProcessStatus ist eine Übersichtstabelle über die Zeitpunkte, zu denen die jeweiligen Inputcards geschrieben und die Programme \textit{CORSIKA}, \textit{Reflector} und \textit{Camera} beendet wurden.
 
 Die gleiche Tabelle gibt es auch noch für \textit{Superstar}. 
 
@@ -634,27 +641,27 @@ Die Struktur des Clusters lässt sich \autoref{LiDo} entnehmen.
 Wie in \autoref{LiDo} zu sehen ist, gibt es verschiedene Knotentypen, die sich in der Zahl der maximalen Jobs pro Queue und Nutzer unterscheiden und über ein Queuingsystem erreichbar sind:
 
 \begin{itemize}
- \item Die ib-Knoten sind untereinander stark vernetzt und für parallele Jobs reserviert
- \item eth-Knoten: Auf diesen Knoten werden serielle und parallele Jobs gerechnet, die die GigabitEthernet Connection nutzen
- \item quad-Knoten: Für Anforderungen an viel Speicher oder parallele OpenMP/Shared Memory Jobs werden die quad Knoten genutzt
- \item GPU: Rechnungen auf Graphikkarten finden hier statt
- \item nehalem: neue Testknoten mit mehr Arbeitsspeicher als die eth-Knoten.
+ \item Die ib-Knoten sind untereinander stark vernetzt und für parallele Jobs reserviert.
+ \item eth-Knoten: Auf diesen Knoten werden serielle und parallele Jobs gerechnet, die die GigabitEthernet Connection nutzen.
+ \item quad-Knoten: Für Anforderungen an viel Speicher oder parallele OpenMP/Shared Memory Jobs werden die quad Knoten genutzt.
+ \item GPU: Rechnungen auf Graphikkarten finden hier statt.
+ \item nehalem: Diese Knoten sind neue Testknoten, die mehr Arbeitsspeicher als die eth-Knoten besitzen.
 \end{itemize}
 
 Die meisten Knoten haben drei verschiedene Queues, die sich in ihrer maximal zur Verfügung stehenden Walltime, das heißt der Zeit, die einem Job zur Verfügung steht, unterscheiden.
-Es gibt als die short Queues (eth, ib, quad) mit einer maximalen Walltime von 1h, die medium Queues (eth, eth\_nhm, ib, quad) mit einer Walltime von 8h und die long Queues mit einer maximalen Walltime von 48h. 
-Falls es doch mal länger dauern sollte, gibt es noch die ultralong Queue (eth) mit einer maximalen Walltime von 2688h.
+Es gibt die short Queues (eth, ib, quad) mit einer maximalen Walltime von $\SI{1}{h}$, die medium Queues (eth, eth\_nhm, ib, quad) mit einer Walltime von $\SI{8}{h}$ und die long Queues mit einer maximalen Walltime von $\SI{48}{h}$. 
+Falls es ein Job eine noch längere Bearbeitungszeit benötigt, kann er die ultralong Queue (eth) mit einer maximalen Walltime von $\SI{2688}{h}$ nutzen.
 Um also einen Job zu starten, gibt man den benötigten Speicher und eine maximale Walltime an und verschickt den Job an das Queuingsystem.
 
-Für die MAGIC MC Produktion werden die eth-Knoten benutzt und pro Run 1000 \textit{CORSIKA}-Ereignissen produziert und weiter prozessiert. 
+Für die MAGIC MC Produktion werden die eth-Knoten benutzt und pro Run 1000 \textit{CORSIKA}-Ereignisse produziert und weiter prozessiert. 
 Ein Standardjob von 2Mio \textit{CORSIKA}-Ereignisse wird also in 2000 Runs mit je 1000 Ereignissen darin aufgeteilt und somit 2000 Runs nacheinander an das Queuingsystem verschickt.
 
 
-Tabelle \autoref{tab:LiDO} zeigt das Speichervolumen, welches im Moment auf dem LiDO für die Daten nach den verschiedenen Programmen genutzt wird.
+Tabelle \autoref{tab:LiDO} zeigt das Speichervolumen, welches zur Zeit auf dem LiDO für die Daten nach den verschiedenen Programmen genutzt wird.
 
 \begin{table}[h!]
     \centering
-    \caption{Belegtes Speichervolumen auf dem LiDo für MC-Daten}
+    \caption{Belegtes Speichervolumen auf dem LiDo für MC-Daten.}
     \label{tab:LiDO}
     \begin{tabular}{ccccccc}
         \toprule
@@ -666,23 +673,24 @@ Tabelle \autoref{tab:LiDO} zeigt das Speichervolumen, welches im Moment auf dem 
 \end{table}
 
 Alternativ kann auch noch der PhiDo Cluster für Testproduktionen, bzw. früher für dezidierte Protonsimulationen benutzt werden. 
-Dieser Cluster stellt 1200 CPUs und 200TB(ZAHLEN NACHGUCKEN)\todo{Zahlen} Speicher zur Verfügung, hat allerdings auch eine größere Auslastung, was dazu führt, dass eine komplette Produktion wesentlich länger dauert.
+Dieser Cluster stellt ca. 1200 CPUs und ca. $\SI{200}{TB}$ Speicher zur Verfügung, hat allerdings auch eine größere Auslastung, was dazu führt, dass eine komplette Produktion wesentlich länger dauert.
 
 
 
 \subsection{Verfügbarkeit der produzierten MC-Daten}
 \label{sec:Wenn die MCs fertig sind}
 Sobald eine Produktion von MCs fertig simuliert ist, werden die Daten ins Grid kopiert.
-Das heißt im Moment werden sie zum PIC, auf Computer im Rechenzentrum in Spanien, kopiert, welche zum Grid gehören und dort gespeichert, sodass sie immer über eine Internetseite erreichbar sind.
+Das heißt im Moment werden sie zum PIC, auf Computer im Rechenzentrum in Spanien, kopiert, welche zum Grid gehören, und dort gespeichert, sodass sie immer über eine Internetseite erreichbar sind.
 Die Struktur, in der die MCs gespeichert sind, ist so aufgebaut:\newline 
 
-MonteCarlo / Chipsatz der beiden Teloskope / PSF und Mirror fraction / Teilchentyp / Zenitbereich / Observationsart / Standart der Software / Level der Prozessierung / Versionsnummer \newline
+MonteCarlo / Chipsatz der beiden Teleskope / PSF und Mirror fraction / Teilchentyp / Zenitbereich / Observationsart / Version der Software / Level der Prozessierung / Versionsnummer \newline
 
 Über die folgende URL sind die Daten jederzeit für alle Kollaborationsmitglieder verfügbar:
 
 \url{http://data.magic.pic.es/Data/MonteCarlo_Stereo/M1_DRS4_1039_M2_DRS4_1039/M1_PSF10.1_MF0.60_M2_PSF8.6_MF0.66/gammas/za05to35/ringwobble/std20140317/superstar/mc_v07/}.
 
-Eine genaue Auflistung über die verschiedenen Produktionen befindet sich hier und wird ebenfalls nach Fertigstellung einer Produktion upgedated:
+Eine genaue Auflistung über die verschiedenen Produktionen kann unter der folgenden URL aufgerufen werden.
+Diese wird ebenfalls nach Fertigstellung einer Produktion auf den aktuellen Stand gebracht:
 
 \url{http://wiki.magic.pic.es/index.php/Recommended_Stereo_MC_productions}.
 

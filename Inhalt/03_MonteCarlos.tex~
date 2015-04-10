@@ -1,4 +1,5 @@
 \chapter{Monte-Carlo-Simulation}
+\label{chapter:MC-Simulation}
 Eines der Ziele in der Astroteilchenphysik ist es, Aussagen über die Energiespektren von astrophysikalischen Quellen zu treffen.
 
 In dieser Arbeit werden Daten analysiert, die von den beiden MAGIC-Teleskopen\cite{MAGIC_Telescopes} aufgenommen wurden, die in \autoref{sec:MAGIC} kurz beschrieben werden.

@@ -809,7 +809,7 @@ Datenset 2 hat einen kleineren spektralen Index, d.h. das Spektrum ist härter, 
 
 \begin{table}[!h]
 \centering
-\caption{Spektrale Indizes und Flusskonstanten der einzelnen Datensets.}
+\caption{Vergleich der spektralen Indizes und Flusskonstanten der einzelnen Datensets.}
 \label{tab:SpektraleIndizes}
 \begin{tabular}{lll}
   \toprule

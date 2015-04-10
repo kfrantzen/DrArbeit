@@ -35,14 +35,3 @@ Verschiedene Quellen kosmischer Strahlung und Beschleunigungsmechanismen werden 
 Des weiteren wird auf die Gammaastronomie als eigenes Forschungsgebiet in der Astroteilchenphysik eingegangen. 
 Danach wird der Quelltyp des Aktiven Galaktischen Kerns (AGNs) näher beschrieben und die in dieser Arbeit analysierte AGN Markarian~421 eingeführt.
 
-\autoref{chapter:MC-Simulation} beinhaltet eine Beschreibung der MAGIC-Teleskope und bietet einen Überblick über die Monte Carlo-Produktion.
-Jedes Simulationsprogramm wird beschrieben und die anschließende Kalibration ebenfalls.
-Abschließend beinhaltet dieses Kapitel noch eine Übersicht über die automatische Produktionsstruktur auf dem Rechencluster LiDO an der TU Dortmund.
-
-In \autoref{chapter:Analyse} befindet sich eine kurze Einführung in die Analyseprogramme, mit denen dann später die Analyse der AGN Mrk~421 durchgeführt wurde.
-Eine Lichtkurve, die die gesamten Daten enthält, ist am Ende des Kapitels zu finden.
-
-Eine Multiwellenlängenanalyse der Quelle ist in \autoref{chapter:MWL} zu finden.
-Nach einer Vorstellung der beteiligten Experimente werden die Lichtkurven dargestellt sowie die Ergebnisse einer Variabilitätsuntersuchung.
-
-Die Zusammenfassung der Ergebnisse ist in \autoref{chapter:Ergebnisse}.
