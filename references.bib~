@@ -81,7 +81,7 @@ archivePrefix = "arXiv",
 
 @ARTICLE{NeutrinoOszillation,
    author = {{Dutta}, S.~I. and {Reno}, M.~H. and {Sarcevic}, I.},
-    title = "{Tau neutrinos underground: Signals of $\nu_{\mu}$-- $\rightarrow$ $\nu_{\tau}$ oscillations with extragalactic neutrinos}",
+    title = "{Tau neutrinos underground: Signals of $\nu_{\mu}$ $\rightarrow$ $\nu_{\tau}$ oscillations with extragalactic neutrinos}",
   journal = {Physical Review D},
    eprint = {hep-ph/0005310},
  keywords = {Neutrino interactions, Neutrino mass and mixing, gamma-ray sources, gamma-ray bursts},
@@ -266,6 +266,37 @@ archivePrefix = "arXiv",
     publisher = {Springer Verlag},
 }
 
+@ARTICLE{CosB,
+   author = {{Bignami}, G.~F. and {Boella}, G. and {Burger}, J.~J. and {Taylor}, B.~G. and 
+	{Keirle}, P. and {Paul}, J.~A. and {Mayer-Hasselwander}, H.~A. and 
+	{Pfeffermann}, E. and {Scarsi}, L. and {Swanenburg}, B.~N.},
+    title = "{The COS-B experiment for gamma-ray astronomy}",
+  journal = {Space Science Instrumentation},
+ keywords = {Cos-B Satellite, Extraterrestrial Radiation, Gamma Rays, Spaceborne Astronomy, X Ray Astronomy, Energy Spectra, Galactic Radiation, Proportional Counters, Radiation Measurement, Satellite Observation, X Ray Spectra},
+     year = 1975,
+    month = aug,
+   volume = 1,
+    pages = {245-268},
+   adsurl = {http://adsabs.harvard.edu/abs/1975SSI.....1..245B},
+  adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+
+
+@ARTICLE{EGRET,
+   author = {{Kanbach}, G. and {Bertsch}, D.~L. and {Fichtel}, C.~E. and 
+	{Hartman}, R.~C. and {Hunter}, S.~D. and {Kniffen}, D.~A. and 
+	{Hughlock}, B.~W. and {Favale}, A. and {Hofstadter}, R. and 
+	{Hughes}, E.~B.},
+    title = "{The project EGRET (Energetic Gamma-Ray Experiment Telescope) on NASA's Gamma-Ray Observatory (GRO)}",
+  journal = {Space Science Reviews},
+ keywords = {Energetic Particles, Gamma Ray Observatory, Hubble Space Telescope, Spaceborne Astronomy, Calibrating, Diffuse Radiation, Galactic Radiation, Nasa Space Programs, Point Sources, Pulsars, Solar Flares, Space Shuttle Payloads},
+     year = 1988,
+   volume = 49,
+    pages = {69-84},
+   adsurl = {http://adsabs.harvard.edu/abs/1988SSRv...49...69K},
+  adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+
 @ARTICLE{Whipple,
    author = {{Kildea}, J. and {Atkins}, R.~W. and {Badran}, H.~M. and {Blaylock}, G. and 
 	{Bond}, I.~H. and {Bradbury}, S.~M. and {Buckley}, J.~H. and 
@@ -337,6 +368,45 @@ archivePrefix = "arXiv",
    adsurl = {http://adsabs.harvard.edu/abs/2004APh....22..285F},
   adsnote = {Provided by the SAO/NASA Astrophysics Data System}
 }
+
+@ARTICLE{MILAGRO,
+   author = {{Abdo}, A.~A. and {Allen}, B. and {Berley}, D. and {Casanova}, S. and 
+	{Chen}, C. and {Coyne}, D.~G. and {Dingus}, B.~L. and {Ellsworth}, R.~W. and 
+	{Fleysher}, L. and {Fleysher}, R. and {Gonzalez}, M.~M. and 
+	{Goodman}, J.~A. and {Hays}, E. and {Hoffman}, C.~M. and {Hopper}, B. and 
+	{H{\"u}ntemeyer}, P.~H. and {Kolterman}, B.~E. and {Lansdell}, C.~P. and 
+	{Linnemann}, J.~T. and {McEnery}, J.~E. and {Mincer}, A.~I. and 
+	{Nemethy}, P. and {Noyes}, D. and {Ryan}, J.~M. and {Saz Parkinson}, P.~M. and 
+	{Shoup}, A. and {Sinnis}, G. and {Smith}, A.~J. and {Sullivan}, G.~W. and 
+	{Vasileiou}, V. and {Walker}, G.~P. and {Williams}, D.~A. and 
+	{Xu}, X.~W. and {Yodh}, G.~B.},
+    title = "{TeV Gamma-Ray Sources from a Survey of the Galactic Plane with Milagro}",
+  journal = {Astrophysical Journal, Letters},
+archivePrefix = "arXiv",
+   eprint = {0705.0707},
+ keywords = {Gamma Rays: Observations},
+     year = 2007,
+    month = aug,
+   volume = 664,
+    pages = {L91-L94},
+      doi = {10.1086/520717},
+   adsurl = {http://adsabs.harvard.edu/abs/2007ApJ...664L..91A},
+  adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+
+@ARTICLE{HAWC,
+   author = {{DeYoung}, T. and {HAWC Collaboration}},
+    title = "{The HAWC observatory}",
+  journal = {Nuclear Instruments and Methods in Physics Research A},
+     year = 2012,
+    month = nov,
+   volume = 692,
+    pages = {72-76},
+      doi = {10.1016/j.nima.2012.01.026},
+   adsurl = {http://adsabs.harvard.edu/abs/2012NIMPA.692...72D},
+  adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+
 
 
 @ARTICLE{Urry_Padovani,

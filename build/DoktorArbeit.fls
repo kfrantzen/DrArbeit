@@ -488,8 +488,10 @@ INPUT /usr/local/texlive/2014/texmf-dist/fonts/tfm/public/cm/cmmi5.tfm
 INPUT /usr/local/texlive/2014/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam5.tfm
 INPUT /usr/local/texlive/2014/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm5.tfm
 INPUT /net/home.e5.physik.tu-dortmund.de/vol/ph_e5v/e5b/homes/kfrantzen/.texlive2014/texmf-var/luatex-cache/generic/fonts/otf/lmroman6-regular.luc
+INPUT /usr/local/texlive/2014/texmf-dist/fonts/tfm/public/cm/cmmi6.tfm
+INPUT /usr/local/texlive/2014/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam7.tfm
+INPUT /usr/local/texlive/2014/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm7.tfm
 INPUT /net/home.e5.physik.tu-dortmund.de/vol/ph_e5v/e5b/homes/kfrantzen/.texlive2014/texmf-var/luatex-cache/generic/fonts/otf/lmroman5-regular.luc
-INPUT ./Plots/02_Astroteilchenphysik/Atmospheric_electromagnetic_opacity.png
 INPUT ./Plots/02_Astroteilchenphysik/AGN_Schema.png
 INPUT ./Plots/02_Astroteilchenphysik/SED_Mrk421.png
 INPUT /net/home.e5.physik.tu-dortmund.de/vol/ph_e5v/e5b/homes/kfrantzen/.texlive2014/texmf-var/luatex-cache/generic/fonts/otf/lmromancaps10-regular.luc

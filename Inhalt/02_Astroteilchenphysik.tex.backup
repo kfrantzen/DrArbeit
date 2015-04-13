@@ -157,6 +157,7 @@ Aufgrund von Neutrinooszillationen, d.h. z.B. ein Elektronneutrino kann zu einem
 
 
 \subsection{Photonen als Botenteilchen}
+\label{subsec:Photonen}
 Genau wie die Neutrinos besitzen Photonen den Vorteil, dass sie nicht von Magnetfeldern abgelenkt werden.
 Allerdings können aufgrund der Absorption in der Atmosphäre auf der Erde nur Photonen im optischen und im Radiobereich direkt detektiert werden.
 Deswegen hat sich die optische Astronomie und die Radioastronomie zuerst entwickelt. 
@@ -227,48 +228,57 @@ Teilchen mit so hohen Energien stammen somit aus extragalaktischen Quellen.\cite
 
 
 \subsection{Pulsare und Binaries}
-Pulsare sind rotierende Neutronensterne. 
+Pulsare sind rotierende Neutronensterne mit einer Rotationsperioden zwischen einigen Millisekunden und einigen Sekunden.
 Das bekannteste Beispiel ist der Crab-Pulsar im Zentrum des Krebsnebels.
+
 Dieser Quelltyp wurde vor mehr als 30 Jahren entdeckt und er lässt sich in zwei Kategorien einteilen.
-Pulsare der ersten Kategorie gewinnen ihre Energie durch Rotation und ist im Radiobereich detektierbar und der andere Quelltyp gewinnt seine Energie durch Akkretion von Materie und ist im Röntgenbereich detektierbar.
-Pulsare haben Rotationsperioden zwischen einigen Millisekunden und einigen Sekunden.
-Vor allem im Gammabereich ist ihre Luminosität hoch und genau wie bei den SN und SNRs können ihre Energiespektren durch ein Potenzgesetz beschrieben werden.
-Verschiedene Pulsare lassen sich anhand ihrer Spektren voneinander unterschieden; auch unterscheiden sich ihre Lichtkurven in der Position der Peaks bei verschiedenen Wellenlängen.
-Die Theorie von Pulsaren ist noch nicht komplett verstanden, weswegen Modelle getestet werden.\cite{Weekes}
+Pulsare der ersten Kategorie gewinnen ihre Energie durch Rotation und sind im Allgemeinen im Radiobereich gut detektierbar.
+Pulsare der zweiten Kategorie gewinnen ihre Energie durch Akkretion von Materie und sind vor allem im Röntgenbereich gut detektierbar.
+Die Emissionsprozesse der Pulsare der zweiten Kategorie sind rein thermisch und von weniger Interesse für die hochenergetische Gammaastronomie.
+
+Bisher wurden einige Pulsare entdeckt, die im Gammabereich ebenfalls eine hohe Luminosität haben.
+Genau wie bei von SN und SNRs, können ihre Energiespektren durch ein Potenzgesetz beschrieben werden.
+Verschiedene Pulsare lassen sich anhand ihrer Spektren voneinander unterschieden.
+Ihre Lichtkurven unterscheiden sich in der Position der Peaks bei verschiedenen Wellenlängen.
+Die Emissionsmechanismen von Pulsaren sind noch nicht komplett verstanden und zwei Modelle konkurrieren miteinander.
+Eine detaillierte Beschreibung dieser Modelle kann z.B. \cite{Weekes} entnommen werden.
 
 Die Hälfte aller Sterne taucht in einer Assoziation mit einem anderen Objekt auf und wird Binaries genannt.
-Dieses andere Objekt ist oft ein kompaktes Objekt wie ein Weißer Zwerg, ein Neutronenstern oder ein Schwarzes Loch.
+Dieses andere Objekt ist oft ein kompaktes Objekt wie z.B. ein Weißer Zwerg, ein Neutronenstern oder ein Schwarzes Loch.
 Hohe Röntgenemission sowie ein zeitlich variables Verhalten sind charakteristisch für diesen Quelltyp.
-Dabei kann die Variabilität im Bereich von Millisekunden bis zu Jahren liegen und periodisch auftauchen oder in einzelnen Ausbrüchen, Flares genannt.\cite{Weekes}
+Die Variabilität kann im Bereich von Millisekunden bis zu Jahren liegen und periodisch auftauchen oder in einzelnen Ausbrüchen wird viel Strahlung emittiert.\cite{Weekes}
 
 
-\subsection{Gamma Ray Bursts}
-Gammastrahlenausbrüche (GRBs) wurden während des kalten Kriegs von den amerikanischen Vela-Satelliten, die Atombombenexplosionen aufspüren sollten, entdeckt.
-16 GRBs mit Zeitspannen von $\SI{0,1}{s}$-$\SI{30}{s}$ mit Flüssen zwischen $(10^{-5}-10^{-4}\,\frac{\si{erg}}{\si{s}}$ wurden detektiert.
-Allgemein dauern GRBs zwischen Millisekunden und einigen tausend Sekunden und sind isotrop verteilt.
-Sie werden in kurzzeitige Bursts ($t<\SI{2}{s}$) und den Rest unterteilt.
+\subsection{Gammastrahlenausbrüche}
+Gammastrahlenausbrüche (GRB: Gamma Ray Burst) wurden während des kalten Kriegs von den amerikanischen \textit{Vela}-Satelliten, die Atombombenexplosionen aufspüren sollten, entdeckt.
+16 GRBs mit Zeitspannen von $\SI{0,1}{s}$ - $\SI{30}{s}$ und Teilchenflüssen zwischen $(10^{-5}-10^{-4}\,\frac{\si{erg}}{\si{s}}$ wurden detektiert.
+
+Im Allgemeinen dauern GRBs zwischen Millisekunden und einigen tausend Sekunden und sind isotrop verteilt.
+Sie werden in kurzzeitige Ausbrüche ($t<\SI{2}{s}$) und den Rest unterteilt.
 Fast die gesamte emittierte Energie ist größer als $\SI{50}{keV}$.
-Mit Satellitenexperimenten wurden GRBs auch im Gammabereich (bis ca. $\SI{30}{GeV}$) detektiert, der Fluss ist aber sehr niedrig.
-Bodengebundene Teleskope, wie z.B. MAGIC haben GRB-Programme, allerdings kam es bisher noch zu keiner richtigen Detektion.\cite{Weekes}
+Mit Satellitenexperimenten wurden GRBs auch bei Energien von Gammastrahlung (bis ca. $\SI{30}{GeV}$) detektiert, der Fluss, d.h. die Anzahl der Teilchen pro Fläche und Zeit, ist aber sehr niedrig.
+Bodengebundene Teleskope, wie z.B. MAGIC betreiben GRB-Programme, allerdings kam es bisher noch zu keiner richtigen Detektion.\cite{Weekes}
 
 
 \subsection{Aktive Galaktische Kerne}
-Die Klasse der Aktiven Galaktische Kerne (AGN) wird durch ein supermassives schwarzes Loch, welches sich in ihrem Zentrum befindet und Materie akkretiert, gekennzeichnet. 
+Die Klasse der Aktiven Galaktischen Kerne (AGN) wird durch ein Supermassives Schwarzes Loch, welches sich in ihrem Zentrum befindet und Materie akkretiert, gekennzeichnet.
+Abhängig vom AGN-Typ werden aus dem Zentrum noch zwei Jets in entgegengesetzte Richtungen emittiert.  
 Anhand ihrer Ausrichtung zum Beobachter und ihrer Emission in den verschiedenen Wellenlängen werden AGNs klassifiziert. 
-Eine genauere Darstellung dieses Quelltyps, zu dem auch die in dieser Arbeit analysierte Quelle gehört, wird in \autoref{sec:AGN} gegeben.
+Eine genauere Darstellung dieses Quelltyps, zu dem auch die in dieser Arbeit analysierte Quelle Mrk~421 gehört, wird in \autoref{sec:AGN} gegeben.
 
 \section{Beschleunigungsmechanismen} 
 \label{sec:Beschleunigungsmechanismen}
-Im Folgenden werden die Beschleunigungsmechanismen vorgestellt, die in den relativsitischen Jets von AGNs oder GRBs relevant sind.
-Dafür wird zunächst der Fermi-Mechanismus vorgestellt, mit Hilfe dessen geladenen Teilchen beschleunigt wird.
+Im Folgenden werden die Beschleunigungsmechanismen vorgestellt, die in den relatiivstischen Jets von AGNs oder GRBs relevant sind.
+Dafür wird zunächst der Fermi-Mechanismus vorgestellt, mit dessen Hilfe geladene Teilchen beschleunigt werden.
 Danach werden die Prozesse zur Erzeugung, bzw. Abschwächung von hochenergetischer Gammastrahlung beschrieben.
-Wegen der geringen Teilchendichte in Jets ($n\leq 10^{-3}\,\frac{1}{cm^3}$) werden Prozesse wie Coulombstreuung oder Bremsstrahlung nicht beschrieben.
+Auf Grund der geringen Teilchendichte in Jets ($n\leq 10^{-3}\,\frac{1}{cm^3}$) sind Prozesse wie Coulombstreuung oder Bremsstrahlung in AGNS nicht relevant und werden nicht beschrieben.
 
 \subsection{Fermi-Mechanismus 1. und 2. Art}
 Die Fermi-Beschleunigung 1.Art beschreibt die Schockbeschleunigung.
-Die in einer SN abgestoßene Hülle repräsentiert eine Schockfront, die sich mit einer Geschwindigkeit $u_1$ durch das Interstellare Medium (ISM) fortbewegt. 
-Dahinter strömt das Gas mit einer Geschwindigkeit $u_2$ weg.
-Kollidiert nun ein Teilchen, welches sich mit der Geschwindigkeit $c$ bewegt, mit dieser Schockfront und wird dabei reflektiert, so gewinnt es die Energie
+Die in einer SN abgestoßene Hülle repräsentiert eine Schockfront, die sich mit einer Geschwindigkeit $u_1$ durch das interstellare Medium (ISM) fortbewegt. 
+Hinter der Schockfront strömt Gas mit der Geschwindigkeit $u_2$ in die entgegengesetzte Richtung.
+%Dahinter strömt das Gas mit einer Geschwindigkeit $u_2$ weg.
+Kollidiert nun ein Teilchen, welches sich mit der Geschwindigkeit $c$ bewegt, mit dieser Schockfront und wird dabei reflektiert, so gewinnt es die relative Energie
 
 \begin{equation}
  \frac{\Delta E}{E}\propto \frac{u_1-u_2}{c}.
@@ -276,55 +286,63 @@ Kollidiert nun ein Teilchen, welches sich mit der Geschwindigkeit $c$ bewegt, mi
 
 Diese Art der Beschleunigung ist somit linear in der Geschwindigkeit und es können maximale Energien von $\approx 100\si{TeV}$ erreicht werden.\cite{Grupen}\cite{Longair}
 
-Die Fermi-Beschleunigung 2.Art beschreibt die Wechselwirkung eines Teilchens mit Geschwindigkeit c mit magnetischen Gaswolken, die sich mit der Geschwindigkeit u bewegen:
+Die Fermi-Beschleunigung 2.Art beschreibt die Wechselwirkung eines Teilchens mit Geschwindigkeit c mit magnetischen Gaswolken, die sich mit der Geschwindigkeit u bewegen.
+Der relative Energiegewinn bei diesem Beschleunigungsmechanismus beträgt:
 
 \begin{equation}
  \frac{\Delta E}{E}\propto \frac{u^2}{c^2}.
 \end{equation}
 
-Die Fermi-Beschleunigung 2.Art ist somit quadratisch in der Wolkengeschwindigkeit.
-Da die Teilchen der kosmischen Strahlung einen Teil ihrer Energie in Wechselwirkungen mit dem interstellaren oder dem intergalaktischen Gas zwischen zwei Kollisioinen wieder verlieren, benötigt dieser Beschleunigungsmechanismus eine minimale Injektionsenergie, oberhalb der Teilchen effektiv beschleunigt werden können.\cite{Grupen}\cite{Longair}
+Die Fermi-Beschleunigung 2.Art ist somit quadratisch in der Teilchen- und Wolkengeschwindigkeit.
+Da die Teilchen der kosmischen Strahlung einen Teil ihrer Energie in Wechselwirkungen mit dem interstellaren oder dem intergalaktischen Gas zwischen zwei Kollisioinen wieder verlieren, benötigt dieser Beschleunigungsmechanismus eine minimale Injektionsenergie, oberhalb der die Teilchen effektiv beschleunigt werden können.\cite{Grupen}\cite{Longair}
 
 
 \subsection{Synchrotronstrahlung}
-Fliegt ein geladenes relativistisches Teilchen durch ein Magnetfeld, emittiert es ein breites Spektrum an Synchrotronstrahlung.
-Der Energieverlust dieses Teilchens mit Masse m, Ladung q, Lorentzfaktor $\gamma$ und der Geschwindigkeit $\beta c$, welches sich mit einem Winkel $\Psi$ zum B-Feld mit der Energiedichte $u_B=\frac{B^2}{8\pi}$ bewegt beträgt:
+Propagiert ein geladenes relativistisches Teilchen durch ein Magnetfeld, emittiert es ein breites Spektrum an Synchrotronstrahlung.
+Der Energieverlust dieses Teilchens mit Masse $m$, Ladung $q$, Lorentzfaktor $\gamma$ und der Geschwindigkeit $\beta c$, welches sich mit einem Winkel $\Psi$ zum B-Feld mit der Energiedichte $u_B=\frac{B^2}{8\pi}$ bewegt, beträgt:
 
 \begin{equation}
  \left( \frac{dE}{dt} \right)_{Sy} = - \frac{16 \pi c}{3} \left(\frac{q}{mc^2} \right)^2 u_B \beta^2 \gamma^2 sin^2(\Psi).
 \end{equation}
 
-Unter der Annahme, dass in relativistischen Jets die abstrahlenden Teilchen sofort in zufällige Richtungen gestreut werden, d.h. dass sie zufällig im Verhältnis zum B-Feld verteilt sind und unter der Annahme, dass die Streuung auf kleineren Zeitskalen als die Synchrotronstrahlung passiert, wird über den Winkel $\psi$ gemittelt.
+Unter der Annahme, dass in relativistischen Jets die abstrahlenden Teilchen sofort in zufällige Richtungen gestreut werden, d.h. dass sie zufällig im Verhältnis zum B-Feld verteilt sind und unter der Annahme, dass die Streuung auf kleineren Zeitskalen abläuft als der Synchrotronstrahlungsprozess, wird über den Winkel $\psi$ gemittelt.
 Das führt dazu, dass der Energieverlust umso größer wird, je größer die Masse ist:
 
 \begin{equation}
- \frac{dE}{dt}\propto m^{-2}, \qquad \text{bzw.} \qquad \frac{d\gamma}{dt}\propto m^{-3}.
+ \frac{dE}{dt}\propto m^{-2} \qquad \text{bzw.} \qquad \frac{d\gamma}{dt}\propto m^{-3},
 \end{equation}
 
-Daraus folgt, dass Elektronen ihre Energie effizienter durch Synchrotronstrahlung verlieren können als Protonen.
-Für den gleichen Energieverlust müsste ein Proton $6,2 \cdot 10^9$ mal mehr Energie haben.
-Das Problem von Elektronen ist, dass sie nachdem sie zu ultrarelativistischen Energien beschleunigt worden sind, ihre Energie sehr schnell wieder verlieren.
+wobei 
+
+\begin{equation}
+ \frac{dE}{dt} = mc^2 \frac{d\gamma}{dt}.
+\end{equation}
+
+Daraus folgt, dass Elektronen größere Energieverluste durch Synchrotronstrahlung erfahren als Protonen.
+Für den gleichen Energieverlust müsste ein Proton $6,2\cdot10^9$ mal mehr Energie haben als ein Elektron.
+Ein Nachteil von Elektronen ist, dass sie, nachdem sie zu ultrarelativistischen Energien beschleunigt worden sind, ihre Energie sehr schnell wieder verlieren.
 Protonen und schwerere Teilchen können einfacher beschleunigt werden,  müssen aber auf extrem hohe Energien beschleunigt werden, um Photonen mit nennenswerter Energie abstrahlen zu können.
 
 Zudem tritt noch das Problem der Synchrotron-Selbst-Absorption auf, d.h. Photonen werden von relativistischen Elektronen im B-Feld absorbiert.\cite{RelativisticJets}
 
 \subsection{Compton-Streuung}
-Die Streuung von relativistischen Elektronen an einem Strahlungsfeldes in extragalaktischen Jets wird Compton-Streuung genannt.
-Die Photonenergie wird in Abhängigkeit von der Elektron Ruhe-Masse $m_e c^2$ angegeben: $\epsilon= \frac{h\nu}{m_e c^2}$.\cite{RelativisticJets}
+Die Streuung von relativistischen Elektronen an einem Strahlungsfeld wird Compton-Streuung genannt.
+Dieser Prozess tritt auch in Strahlungsfeldern von extragalktischen Jets auf.
+Die Photonenergie $\epsilon$ wird in Abhängigkeit von der Elektron-Ruhemasse $m_e c^2$ angegeben: $\epsilon= \frac{h\nu}{m_e c^2}$. \cite{RelativisticJets}
  
-In niedrigster Ordnung ist der Energieverlust im Thomson Limit, d.h. $\gamma \epsilon <<1$ gegeben durch:
+In niedrigster Ordnung ist der Energieverlust im Thomson-Limit, d.h. $\gamma \epsilon \ll 1$ gegeben durch:
 
 \begin{equation}
--\left(\frac{d\gamma}{dt} \right) \approx \frac{4}{3} c \sigma_T \frac{u_{ph}}{m_e c^2} \gamma^2
+-\left(\frac{d\gamma}{dt} \right) \approx \frac{4}{3} c \sigma_T \frac{u_{Ph}}{m_e c^2} \gamma^2
 \end{equation}
 
 \begin{center}
- \begin{tiny}
-  $\sigma_T$: Thompson-Wirkungsquerschnitt, $u_{Ph}$: Energiedichte des Photonfeldes.
- \end{tiny}
+ \begin{small}
+  $\sigma_T$: Thomson-Wirkungsquerschnitt, $u_{Ph}$: Energiedichte des Photonfeldes.
+ \end{small}
 \end{center}
 
-Im Thompson-Limit kommt es zu Photonenergien von $\epsilon_S ~\gamma^2 \epsilon_0 << \frac{1}{\epsilon_0} $, wobei $\epsilon_0$ die Energie des isotropen monoenergetischen Photonfeldes ist.\cite{RelativisticJets}
+Im Thomson-Limit kommt es zu Photonenergien von $\epsilon_S \sim \gamma^2 \epsilon_0 \ll \frac{1}{\epsilon_0} $, wobei $\epsilon_0$ die Energie des isotropen monoenergetischen Photonfeldes ist.\cite{RelativisticJets}
 
 Für große Elektron- und Photonenergien $\gamma \epsilon > 1$ ist Compton-Streuung unterdrückt.\cite{RelativisticJets}
 
@@ -336,42 +354,43 @@ Ein Photon mit der Energie $\epsilon_1$ wechselwirkt mit einem Photon mit der En
  \epsilon_1 \geq \frac{2}{\epsilon_2 (1-\mu)}.
 \end{equation}
 
-VHE-Gammastrahlung aus einer Quelle in kosmologischer Entfernungen wird vom Infrarot- und optischen Hintergrundlicht absorbiert. 
+Sehr hochenergetische Gammastrahlung aus einer Quelle in kosmologischer Entfernung wird vom Infrarot- und optischen Hintergrundlicht absorbiert. 
 Dieser Prozess wird EBL (Extragalactic Background Light)-Absorption genannt. 
 Dieses extragalaktische Hintergrundlicht besteht vorwiegend aus der Infrarot-Emission von Staub aus jungen, sternbildenden Galaxien als auch aus der Infrarot- und der optischen Emission von Sternen.
 Das Spektrum und die Intensität des EBL hängen von der kosmologischen Zeit bzw. der Rotverschiebung ab und dadurch wird auch die Opazität für VHE-Gammastrahlung bestimmt.
-Wegen der großen Emission innerhalb des Sonnensystems und der Milchstraße ist der EBL schwierig zu vermessen.\cite{RelativisticJets}
+Aufgrund der großen Emission innerhalb des Sonnensystems und der Milchstraße ist das EBL schwierig zu vermessen.
+Daraus folgt, dass für Quellen mit großer Rotverschiebung, die Absorption durch EBL berücksichtigt werden muss, was mit Hilfe von EBL-Modellen geschieht.\cite{RelativisticJets}
 
 
 \subsection{$\gamma$-Hadron-Wechselwirkungen}
-Aufgrund der oft dichten Strahlungsfelder in Jets sind die Wechselwirkungen zwischen relativistischen Hadronen und Photonen wichtig.
-Zum einen kann es zu Bethe-Heitler-Paarproduktion und zum anderen zu Photomesonproduktion kommen.\cite{RelativisticJets}
+Aufgrund der oft dichten Strahlungsfelder in Jets sind die Wechselwirkungen zwischen relativistischen Hadronen und Photonen bedeutend.
+Zum einen kann es zur Bethe-Heitler-Paarproduktion und zum anderen zu Photomesonproduktion kommen.\cite{RelativisticJets}
 
 Die Bethe-Heitler-Paarproduktion beschreibt die Reaktion eines Kernteilchens an einem Hintergrund-Photon, wobei ein $e^+/e^-$-Paar entsteht:
 \begin{equation}
- p \gamma \rightarrow p' e^+ e^-.
+ p \, \gamma \rightarrow p' \, e^+ \, e^-.
 \end{equation}
 
 Diese Reaktion tritt auf, sobald die Schwerpunktsenergie groß genug ist:
 \begin{equation}
- s \geq (m_p c^2 +2 m_e c^2)^2 \approx 0,882\si{GeV^2}.
+ s \geq (m_p c^2 +2 m_e c^2)^2 \approx 0,882\, \si{GeV^2}.
 \end{equation}
 
-Die Photomesonproduktion von z.B. Pionen tritt auf, sobald die Schwerpunktsenergie $s \geq (m_p c^2 +2 m_{\pi^0} c^2)^2 \approx \SI{1,16}{GeV^2}$ überschreitet.
+Die Photo-Mesonproduktion von z.B. Pionen tritt auf, sobald die Schwerpunktsenergie $s \geq (m_p c^2 +2 m_{\pi^0} c^2)^2 \approx \SI{1,16}{GeV^2}$ überschreitet.
 Dominant ist die Pion-Produktion in photohadronischen Interaktionen, wobei die $\pi^0$ mit einer Halbwertszeit von $t_{1/2}\approx 8,4\cdot 10^{-17}\,\si{s}$ in zwei Photonen zerfallen und die geladenen Pionen nach einer Halbwertszeit von $t_{1/2}\approx 2,6\cdot 10^{-8}\,\si{s}$ in Myonen und Neutrinos.
 Die Produktion und der Zerfall von Kaonen und $\eta$-Mesonen trägt (10-20)\% zur gesamten Photonen-, Leptonen- und Neutrinoproduktion bei.\cite{RelativisticJets}
 
-\subsection{Photodisintegration}
-Für Protonen ist der Verlust durch Photomesonproduktion dominierend gegenüber der Bethe-Heitler-Paarproduktion. 
-Photodisintegration ist vernachlässigbar.
-Photodisintegration beschreibt die Anregung eines Kerns durch ein Photon.
-Bei der Abregung wird ein ein oder mehrere Protonen oder Neutronen oder Alpha-Teilchen sowie ein oder mehrere Photonen.
-Der Wirkungsquerschnitt hat eine Resonanz ("giant dipole resonance") der Höhe $\sigma_{A\gamma}\approx A \si{mb}$.\cite{RelativisticJets}
+% \subsection{Photodisintegration}
+% Für Protonen ist der Verlust durch Photomesonproduktion dominierend gegenüber der Bethe-Heitler-Paarproduktion. 
+% Photodisintegration ist vernachlässigbar.
+% Photodisintegration beschreibt die Anregung eines Kerns durch ein Photon.
+% Bei der Abregung wird ein ein oder mehrere Protonen oder Neutronen oder Alpha-Teilchen sowie ein oder mehrere Photonen.
+% Der Wirkungsquerschnitt hat eine Resonanz ("giant dipole resonance") der Höhe $\sigma_{A\gamma}\approx A \si{mb}$.\cite{RelativisticJets}
 
 \subsection{Elektromagnetische Kaskaden}
-In einer photohadronischen Quelle ist die Lichtundurchlässigkeit für primäre Gammastrahlung aus $\pi^0$-Zerfällen oder Compton-Streuung groß, weil sonst keine photohadronischen Wechselwirkungen stattfinden würden.
-Solche primären Photonen verursachen eine elektromagnetische Kaskade aus Paarproduktion, Synchrotronstrahlung, Comptonstreuung und Bremsstrahlung.
-Dieser Prozess kann innerhalb Jets auftreten, sobald die Photonen genug Energie für die Paarproduktion besitzen und die Dichte an Umgebungsphotonen hoch genug ist.
+In einer photohadronischen Quelle ist die Lichtundurchlässigkeit für primäre Gammastrahlung aus $\pi^0$-Zerfällen oder Compton-Streuung groß, weil sonst keine photohadronischen Wechselwirkungen stattfinden könnten.
+Solche primären Photonen verursachen eine elektromagnetische Kaskade, in der Paarproduktion, Synchrotronstrahlung, Comptonstreuung und Bremsstrahlung, die wichtigen Prozesse sind.
+Solche eine Kaskade kann innerhalb von Jets auftreten, sobald die Photonen genug Energie für die Paarproduktion besitzen und die Dichte an Umgebungsphotonen hoch genug ist.
 Sobald die Energie der Photonen nicht mehr ausreichend für die Paarproduktion ist, verschwindet die Kaskade.\cite{RelativisticJets}
 
 
@@ -379,41 +398,118 @@ Sobald die Energie der Photonen nicht mehr ausreichend für die Paarproduktion i
 \label{sec:Gammaastronomie}
 
 
-\begin{figure}
-    \centering
-    \includegraphics[width=0.99\textwidth]{./Plots/02_Astroteilchenphysik/Atmospheric_electromagnetic_opacity.png}
-    \caption{Zu sehen ist die Durchlässigkeit der Atmosphäre für elektromagnetische Strahlung in Abhängigkeit von der Wellenlänge.\cite{Opazitaet}}
-    \label{EM-Opazitaet}
-\end{figure}
+% \begin{figure}
+%     \centering
+%     \includegraphics[width=0.99\textwidth]{./Plots/02_Astroteilchenphysik/Atmospheric_electromagnetic_opacity.png}
+%     \caption{Zu sehen ist die Durchlässigkeit der Atmosphäre für elektromagnetische Strahlung in Abhängigkeit von der Wellenlänge.\cite{Opazitaet}}
+%     \label{EM-Opazitaet}
+% \end{figure}
+% 
+% 
+% Wie in \autoref{EM-Opazitaet} zeigt, ist die Atmosphäre transparent für optische Beobachtungen und Radiowellen. 
+% Alle anderen Wellenlängen werden von der Atmosphäre geblockt, sodass bis 1960 nur in diesen Wellenlängen beobachtet wurde.
+% Mit der Entwicklung der Raumfahrt konnten dann auch Satellitenexperimente konzipiert werden, mit denen Gammaastronomie betrieben wurde.
+% Aber auch mit bodengebundenen Experimenten wird Gammaastronomie betrieben mit Hilfe von Sekundärprodukten, die mit der Atmosphäre wechselwirken.
+% Die minimale Energie, bei der Gammastrahlung auf der Erde detektiert werden kann ist zufällig genau über der maximalen Energie, die von Satellitenexperimenten beobachtet wird.
+% Die bodenegebundenen Experimente beruhen auf der Detektion des Cherenkovlichts von elektromagnetischen Schauern in der Atmosphäre.\cite{Weekes}
+% 
+% Die bevorzugte Wechselwirkung eines Gammateilchen, das mit einer Energie $E>\SI{10}{MeV}$ in die Atmosphäre eintritt, ist die Paaarproduktion, die meist nach einer durchlaufenen Strecke von ca. $\SI{20}{km}$ auftritt.
+% Das produzierte $e^+/e^-$-Paar fliegt in die gleiche Richtung wie das primäre Photon und wechselwirkt mit den Molekülen der Atmosphäre.
+% Dabei werden Bremsstrahlungsphotonen emittiert, die dann eine weitere Paarproduktion auslösen können.
+% Die resultierende Kaskade ist relativ schmal und bewegt sich in die gleiche Richtung wie das Ursprungsteilchen.
+% Sie wächst so lange bis die Energie der geladenen Teilchen so gering ist, dass Ionisationsverluste und Strahlungsverluste gleich groß sind und erreicht da ihr Schauermaximum.
+% Danach nimmt die Anzahl der Teilchen der Kaskade ab und der Schauer stirbt aus, was meistens über dem Erdboden passiert.
+% Die sekundären geladenen Teilchen im Schauer emittieren Cherenkovlicht in Vorwärtsrichtung unter einem Winkel von ca. 1,3°, welches dann von den Teleskopen detektiert wird.
+% Nicht nur primäre Photonen können solch einen Schauer induzieren, sondern auch Hadronen, wobei der Schauer kein rein elektromagnetischer ist. 
+% Ein hadronischer Schauer unterscheidet sich in seiner Form von einem elektromagnetischen (siehe \todo{CORSIKA-Referenz}).\cite{Weekes}
+% 
+% Für die Detektion wird ein Detektor mit schneller Elektronik benötigt, mit dem Ziel den Ursprung des Schauers, die Energie und die Ankunftszeit zu bestimmen.
+% Die Photonenanzahl im Schauer ist ein gutes Maß für die Energie des ursprünglichen Photons.
+% Für eine große Sensitivität muss die Lichtsammelfläche eines Telskops möglichst groß sein. 
+% Die Entwicklung von Teleskopen mit segmentierten Spiegeln begann mit dem Whipple-Teleskop\cite{Whipple}.
+% Heute nutzen sowohl MAGIC\cite{MAGIC_Telescopes}, als auch HESS\cite{HESS} und VERITAS\cite{VERITAS} diese Technologie.
+% Mit Hilfe von Photomultipliern (PMTs) wird eine hohe Sensitivität für blaue Wellenlängen bereitgestellt. 
+% Problematisch ist, dass diese PMTs bei zu hellen Bedingungen nicht betrieben werden können und so eine Observation bei Vollmond nicht möglich ist.\cite{Weekes}
+% 
+% Für einen guten Standort muss auch das Störlicht minimiert werden. 
+% Dies kann durch eine geschickte Standortwahl z.B. auf hohen Bergen fernab von Städten gewährleistet werden.
 
+Wie in \ref{subsec:Photonen} beschrieben wurde, lässt sich die Gammaastronomie in verschiedene Energiebereiche einteilen.
+Abhängig vom Energiebereich gibt es verschiedene Detektoren.
+Gammastrahlung mit Energien, die kleiner sind als $\SI{10}{GeV}$ werden mit Satellitenexperimenten detektiert.
 
-Wie in \autoref{EM-Opazitaet} zeigt, ist die Atmosphäre transparent für optische Beobachtungen und Radiowellen. 
-Alle anderen Wellenlängen werden von der Atmosphäre geblockt, sodass bis 1960 nur in diesen Wellenlängen beobachtet wurde.
-Mit der Entwicklung der Raumfahrt konnten dann auch Satellitenexperimente konzipiert werden, mit denen Gammaastronomie betrieben wurde.
-Aber auch mit bodengebundenen Experimenten wird Gammaastronomie betrieben mit Hilfe von Sekundärprodukten, die mit der Atmosphäre wechselwirken.
-Die minimale Energie, bei der Gammastrahlung auf der Erde detektiert werden kann ist zufällig genau über der maximalen Energie, die von Satellitenexperimenten beobachtet wird.
-Die bodenegebundenen Experimente beruhen auf der Detektion des Cherenkovlichts von elektromagnetischen Schauern in der Atmosphäre.\cite{Weekes}
+Der Transport ins All stellt limitierende Bedingungen an diese Experimente.
+Die Detektionsfläche ist relativ klein und aufgrund des kleinen Teilchenflusses werden lange Beobachtungszeiten benötigt.
+Im Allgemeinen lassen sich abhängig vom dominanten Wechselwirkungsprozess in dem zu beobachtenden Energiebereich zwei Detektionstechniken unterscheiden.
+Hochenergetische Gammastrahlung wird über den Prozess der Paarproduktion detektiert und die mittelenergetische Gammastrahlung über den Prozess der Comptonstreuung.
 
-Die bevorzugte Wechselwirkung eines Gammateilchen, das mit einer Energie $E>\SI{10}{MeV}$ in die Atmosphäre eintritt, ist die Paaarproduktion, die meist nach einer durchlaufenen Strecke von ca. $\SI{20}{km}$ auftritt.
-Das produzierte $e^+/e^-$-Paar fliegt in die gleiche Richtung wie das primäre Photon und wechselwirkt mit den Molekülen der Atmosphäre.
-Dabei werden Bremsstrahlungsphotonen emittiert, die dann eine weitere Paarproduktion auslösen können.
-Die resultierende Kaskade ist relativ schmal und bewegt sich in die gleiche Richtung wie das Ursprungsteilchen.
-Sie wächst so lange bis die Energie der geladenen Teilchen so gering ist, dass Ionisationsverluste und Strahlungsverluste gleich groß sind und erreicht da ihr Schauermaximum.
-Danach nimmt die Anzahl der Teilchen der Kaskade ab und der Schauer stirbt aus, was meistens über dem Erdboden passiert.
-Die sekundären geladenen Teilchen im Schauer emittieren Cherenkovlicht in Vorwärtsrichtung unter einem Winkel von ca. 1,3°, welches dann von den Teleskopen detektiert wird.
-Nicht nur primäre Photonen können solch einen Schauer induzieren, sondern auch Hadronen, wobei der Schauer kein rein elektromagnetischer ist. 
-Ein hadronischer Schauer unterscheidet sich in seiner Form von einem elektromagnetischen (siehe \todo{CORSIKA-Referenz}).\cite{Weekes}
+Die Paarproduktionsteleskope arbeiten typischerweise im Energiebereich von ca. $\SI{30}{MeV}$-$\SI{10}{GeV}$.
+Die Experimente COS-B \todo{ref} und CGRO sind zwei Beispiele für diesen Typ.
+Sie nutzen die Funkenkammer zur Detektion und bestehen aus verschiedenen Bauteilen.
+EGRET an Bord des CGRO \todo{REF} besteht aus einem Tracker, der eine Funkenkammer beinhaltet.
+Ein Gammaphoton erzeugt innerhalb dieses Trackers ein Elektron-Positron-Paar, welches in der Funkenkammer detektiert wird.
+Der Pfad dieses Paars wird in der Kammer aufgezeichnet.
+Jedes Elektron-Positron-Paar, welches die Funkenkammer verlässt wird dann vom sogenannten Trigger gezählt.
+Mit Hilfe des dritten Bauteils, dem Kalorimeter, wird die Energie des Paars bestimmt.
+Als Veto dient eine Umhüllung des Detektors, die geladene Teilchen detektiert, die nicht innerhalb des Detektors erzeuigt wird.
 
-Für die Detektion wird ein Detektor mit schneller Elektronik benötigt, mit dem Ziel den Ursprung des Schauers, die Energie und die Ankunftszeit zu bestimmen.
-Die Photonenanzahl im Schauer ist ein gutes Maß für die Energie des ursprünglichen Photons.
-Für eine große Sensitivität muss die Lichtsammelfläche eines Telskops möglichst groß sein. 
-Die Entwicklung von Teleskopen mit segmentierten Spiegeln begann mit dem Whipple-Teleskop\cite{Whipple}.
-Heute nutzen sowohl MAGIC\cite{MAGIC_Telescopes}, als auch HESS\cite{HESS} und VERITAS\cite{VERITAS} diese Technologie.
-Mit Hilfe von Photomultipliern (PMTs) wird eine hohe Sensitivität für blaue Wellenlängen bereitgestellt. 
-Problematisch ist, dass diese PMTs bei zu hellen Bedingungen nicht betrieben werden können und so eine Observation bei Vollmond nicht möglich ist.\cite{Weekes}
+Comptonteleskope dienen der Detektion von Gammastrahlung im Energiebereich $\SI{100}{keV}$-$\SI{10}{MeV}$.
+Sie bestehen aus einem Szintillationsdetektor aus festem oder flüssigen Material, in dem Licht von geladenen Sekundärteilchen detektiert wird.
+Diese Sekundärteilchen sind in einer Comptonstreuung mit Gammastrahlung entstanden.
+Mit Hilfe von Photomultipliern (PMTs) wird das Licht detektiert.
+Auch dieses Teleskop ist von einer Veto-Umhüllung umgeben.
 
-Für einen guten Standort muss auch das Störlicht minimiert werden. 
-Dies kann durch eine geschickte Standortwahl z.B. auf hohen Bergen fernab von Städten gewährleistet werden.
+Die erdgebundenen Experimente beruhen auf der Entwicklung einer elektromagnetischen Kaskade in der Atmosphäre.
+Trifft ein Photon mit einer Energie, die größer ist als $\SI{10}{MeV}$ auf die Atmosphäre, dann produziert es typischerweise in einer Höhe von ca. $\SI{20}{km}$ ein Elektron-Positron-Paar.
+Diese Paarproduktion erfolgt in Vorwärtsrichtung.
+In dem typischen Energiebereich $E>\SI{10}{GeV}$ wechselwirkt dieses Paar mit den Molekülen der Luft.
+Dabei entstehen in Bremsstrahlungsprozessen Photonen, die dann wiederum weitere Paare produzieren.
+So entsteht eine elektromagnetische Kaskade in der Atmosphäre.
+Diese Kaskade vergrößert sich so lange bis Ionisations- und Strahlungsverluste gleich groß sind und das Schauermaximum erreicht ist.
+Danach stirbt der Schauer aus.
+Begleitet wird der Schauer von Cherenkovphotonen.
+Diese entstehen sobald die Energie der Sekundärelektronen oberhalb der Schwelle für Cherenkovemission liegt.
+Dann werden Photonen in Vorwärtsrichtung unter dem sogenannten Cherenkovwinkel emittiert. 
+Dieser Winkel beträgt auf Meereshöhe ca. $1.3°$.
+
+Nur ein kleiner Teil Primärteilchenenergie ($<10^{-6}$) geht in die Emission des sichtbaren Cherenkovlichts.
+Allerdings ist dieses Licht mit Hilfe eines Spiegels und PMTs einfach zu detektieren.
+Weiterhin ist es möglich aus dem Cherenkovlicht Rückschlüsse auf den Ursprung, die Energie, sowie die Ankunftszeit des Primärteilchens zu schließen.
+Bei den für Cherenkovteleskopen interessanten Energien ($E\gtrsim \SI{100}{GeV}$) verhält sich die Atmosphäre wie ein großes Kalorimeter und so bietet die Helligkeit des Cherenkovlichtkegels am Boden ein gutes Maß für die Primärteilchenenergie.
+Das Cherenkovlicht kommt innerhalb einiger Nanosekunden am Detektor an.
+Bei einem Schauer, der von einem Primörteilchen mit der Energie $E=\SI{1}{TeV}$ ausgelöst wurde, kommen 25\% des Lichts von Schauerteilchen in Höhe der ersten Wechselwirkung.
+Der Hauptanteil (ca. 50\%) wird von einem Zylinder der Länge $\SI{4}{km}$ im Schauermaximum emittiert.
+Dieses Licht stellt ein gutes Maß für die totale Energie des Schauers dar.
+Die letzten 25\% werden von Schauerteilchen unterhalb von $\SI{6}{km}$ emittiert.
+
+Die Grundidee der atmosphärischen Cherenkovtechnik ist einfach.
+Es wird ein Lichtdetektor benötigt, der sich in der Fokalebene eines Spiegels befindet, sowie schnelle Ausleseelektronik.
+Schon mit solch einem einfachen Detektor mit einer Lichtsammelfläche von $\SI{2}{km^2}$ und einer Integrationszeit von $\SI{10}{ns}$ ist es möglich, ein Lichtsignal eines Schauers mit Primärteilchenergie $\SI{1}{TeV}$ zu detektieren.
+Allerdings ist die Unterscheidung zwischen einem elektromagnetischen Schauer, ausgelöst von Gammastrahlung, und einem Schauer ausgelöst von kosmischer Strahlung schwierig.
+
+Die Ionen und Protonen der kosmischen Strahlung wechselwirken ebenfalls in der Atmosphöre und lösen hadronische Kaskaden aus, die den elektromagnetischen Kaskaden sehr ähnlich sind.
+Auch Teilchen dieser Schauer emittieren Cherenkovlicht, sodass Teleskope der ersten Generation diese Schauer nicht voneinander unterscheiden konnten.
+Außerdem ist zu beachten, dass der hadronische Untergrund ca. einen von Faktor $10^3$ so groß ist.
+Zum Glück unterscheiden sich hadronische Schauer von elektromagnetischen in einigen Eigenschaften leicht.
+So besitzen diese beiden Arten von Schaueren unterschiedliche laterale Verteilungen, zeitliche Verteilungen, eine anderes Lichtspektrum, sowie eine andere Winkelverteilung.
+
+Um solch einen Schauer detektieren zu können, sind einige Eigenschaften des Detektors bzw. der Umgebung von großer Bedeutung.
+Die Atmosphäre spielt eine grundlegende Rolle, stellt den Beobachter aber vor Herausforderungen. 
+Aufgrund von Wolken ist die Transmission variabel, sodass die Bewölkung, sowie das Wetter überwacht werden muss.
+Der Mond und Sterne, sowie Menschen-gemachte Lichtquellen sollten ebenfalls minimiert werden, um gute Beobachtungsbedingungen zu erreichen. 
+Das geschieht durch eine gute Standortwahl.
+Detektor-spezifische Eigenschaften wie eine möglichst große Lichtsammelfläche werden durch segmentierte Spiegel erreicht und Lichtdetektoren, die im sensitiv für Cherenkovlicht sind, werden durch PMTs bereitgestellt.
+
+Wird eine größere Anzahl an PMTs in der fokalen Ebene eines großen Reflektors angeordnet, stellen diese eine Kamera dar.
+Die Cherenkovphotonen des Schauers, die am Spiegel reflektiert werden, erzeugen dann in der Kamera ein Bild, welches parametrisiert und analysiert werden kann.
+Anhand der Bildparameter und anhand der Orientierung zum Kamerazentrum ist es mit dieser Technik möglich, elektromagnetische Schauer von hadronischen zu unterscheiden.
+Diese Technik wird Imaging Air Cherenkov (IACT)-Technik genannt und von vielen großen Teleskopen bzw. Teleskoparrays wie MAGIC, HESS, VERITAS benutzt.
+
+Im Gegensatz zur IACT-Technik existieren noch andere bodengebundene Teleskope, die Gammaastronomie betreiben.
+Erreicht ein Primärteilchen Energien, die größer sind als $\SI{10}{TeV}$, erreichen genug Teilchen des Schauers den Boden, sodass der Schauer direkt detektiert werden kann und Energie sowie Ankunftszeit rekonstruiert werden können.
+Für diese Technik werden viele Teilchendetektoren auf einer großen Fläche verteilt.
+Außerdem bietet diese Art der Detektion den Vorteil, dass eine durchgängige Observation möglich ist.
+
 
 
 \section{Aktive galaktische Kerne}
