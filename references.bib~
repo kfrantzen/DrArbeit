@@ -11,6 +11,23 @@ archivePrefix = "arXiv",
     month = mar
 }
 
+@ARTICLE{PDG,
+   author = {{Olive}, K.~A. and {Particle Data Group}},
+    title = "{Review of Particle Physics}",
+  journal = {Chinese Physics C},
+archivePrefix = "arXiv",
+   eprint = {1412.1408},
+     year = 2014,
+    month = aug,
+   volume = 38,
+   number = 9,
+      eid = {090001},
+    pages = {090001},
+      doi = {10.1088/1674-1137/38/9/090001},
+   adsurl = {http://adsabs.harvard.edu/abs/2014ChPhC..38i0001O},
+  adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+
 @ARTICLE{Hess,
    author = {{Hess}, V.~F.},
     title = "{Über Beobachtungen der durchdringenden Strahlung bei sieben Freiballonfahrten}",
@@ -111,11 +128,13 @@ archivePrefix = "arXiv",
 }
 
 @book{Longair,
-    author = {{Longair}, M.~S},
-    title = "{High Energy Astrophysics - Volume 2: Stars, the Galaxy and the interstellar medium}",
+    author = {Longair, M. S.},
+    title = {High Energy Astrophysics},
+    volume = {2},
+    subtitle = {Stars, the Galaxy and the interstellar medium},
     year = {2002},
     publisher = {Cambridge University Press},
-    edition = {2nd edition},
+    edition = {2},
 }
 
 @book{Aharonian,
@@ -158,15 +177,17 @@ school = {TU Dortmund}
    author = {{Abdo}, A.~A. and {Ackermann}, M. and {Ajello}, M. and {Baldini}, L. and 
 	{Ballet}, J. and {Barbiellini}, G. and {Bastieri}, D. and {Bechtol}, K. and 
 	{Bellazzini}, R. and {Berenji}, B. and et al.},
-    title = "{Fermi Large Area Telescope Observations of Markarian 421: The Missing Piece of its Spectral Energy Distribution}",
-  journal = {Astrophysical Journal},
-archivePrefix = "arXiv",
+    title = {Fermi Large Area Telescope Observations of Markarian 421},
+    subtitle = {The Missing Piece of its Spectral Energy Distribution},
+  journal = {The Astrophysical Journal},
+      langid = {english},
+archivePrefix = {arXiv},
    eprint = {1106.1348},
- primaryClass = "astro-ph.HE",
+ primaryClass = {astro-ph.HE},
  keywords = {acceleration of particles, BL Lacertae objects: general, BL Lacertae objects: individual: Mrk 421, galaxies: active, gamma rays: general, radiation mechanisms: non-thermal},
-     year = 2011,
-    month = aug,
-   volume = 736,
+     year = {2011},
+    month = {aug},
+   volume = {736},
       eid = {131},
     pages = {131},
       doi = {10.1088/0004-637X/736/2/131},
@@ -181,6 +202,7 @@ archivePrefix = "arXiv",
 archivePrefix = "arXiv",
    eprint = {1302.1397},
  primaryClass = "astro-ph.HE",
+     langid = {english},
  keywords = {Astrophysics - High Energy Astrophysical Phenomena},
      year = 2013,
     month = feb,
@@ -195,6 +217,7 @@ archivePrefix = "arXiv",
 archivePrefix = "arXiv",
    eprint = {1405.5303},
  primaryClass = "astro-ph.HE",
+     langid = {english},
  keywords = {Neutrino muon pion and other elementary particles, cosmic rays, Neutrino muon pion and other elementary particle detectors, cosmic ray detectors},
      year = 2014,
     month = sep,
@@ -229,8 +252,9 @@ archivePrefix = "arXiv",
    author = {{Kraushaar}, W.~L. and {Clark}, G.~W. and {Garmire}, G.~P. and 
 	{Borken}, R. and {Higbie}, P. and {Leong}, V. and {Thorsos}, T.
 	},
-    title = "{High-Energy Cosmic Gamma-Ray Observations from the OSO-3 Satellite}",
-  journal = {Astrophysical Journal},
+    title = {High-Energy Cosmic Gamma-Ray Observations from the OSO-3 Satellite},
+  journal = {The Astrophysical Journal},
+      langid = {english},
      year = 1972,
     month = nov,
    volume = 177,
@@ -247,7 +271,8 @@ archivePrefix = "arXiv",
 	{Bednarek}, W. and {Berger}, K. and {Bigongiari}, C. and {Biland}, A. and 
 	{Bisesi}, E. and et al.},
     title = "{Observation of Gamma Rays from the Galactic Center with the MAGIC Telescope}",
-  journal = {Astrophysical Journal, Letters},
+  journal = {The Astrophysical Journal, Letters},
+      langid = {english},
    eprint = {astro-ph/0512469},
  keywords = {Acceleration of Particles, Galaxy: Center, Gamma Rays: Observations},
      year = 2006,
@@ -381,7 +406,8 @@ archivePrefix = "arXiv",
 	{Vasileiou}, V. and {Walker}, G.~P. and {Williams}, D.~A. and 
 	{Xu}, X.~W. and {Yodh}, G.~B.},
     title = "{TeV Gamma-Ray Sources from a Survey of the Galactic Plane with Milagro}",
-  journal = {Astrophysical Journal, Letters},
+  journal = {The Astrophysical Journal, Letters},
+      langid = {english},
 archivePrefix = "arXiv",
    eprint = {0705.0707},
  keywords = {Gamma Rays: Observations},
@@ -407,7 +433,21 @@ archivePrefix = "arXiv",
   adsnote = {Provided by the SAO/NASA Astrophysics Data System}
 }
 
-
+@ARTICLE{AUGER,
+   author = {{The Pierre Auger Collaboration} and {Aab}, A. and {Abreu}, P. and 
+	{Aglietta}, M. and {Ahlers}, M. and {Ahn}, E.-J. and {Albuquerque}, I. and 
+	{Allekotte}, I. and {Allen}, J. and {Allison}, P. and et al.},
+    title = "{The Pierre Auger Observatory: Contributions to the 33rd International Cosmic Ray Conference (ICRC 2013)}",
+  journal = {ArXiv e-prints},
+archivePrefix = "arXiv",
+   eprint = {1307.5059},
+ primaryClass = "astro-ph.HE",
+ keywords = {Astrophysics - High Energy Astrophysical Phenomena},
+     year = 2013,
+    month = jul,
+   adsurl = {http://adsabs.harvard.edu/abs/2013arXiv1307.5059T},
+  adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
 
 @ARTICLE{Urry_Padovani,
    author = {{Urry}, C.~M. and {Padovani}, P.},
@@ -444,6 +484,46 @@ archivePrefix = "arXiv",
    adsurl = {http://adsabs.harvard.edu/abs/1996Natur.383..319G},
   adsnote = {Provided by the SAO/NASA Astrophysics Data System}
 }
+
+@ARTICLE{EntdeckungWhipple,
+   author = {{Punch}, M. and {Akerlof}, C.~W. and {Cawley}, M.~F. and {Chantell}, M. and 
+	{Fegan}, D.~J. and {Fennell}, S. and {Gaidos}, J.~A. and {Hagan}, J. and 
+	{Hillas}, A.~M. and {Jiang}, Y. and {Kerrick}, A.~D. and {Lamb}, R.~C. and 
+	{Lawrence}, M.~A. and {Lewis}, D.~A. and {Meyer}, D.~I. and 
+	{Mohanty}, G. and {O'Flaherty}, K.~S. and {Reynolds}, P.~T. and 
+	{Rovero}, A.~C. and {Schubnell}, M.~S. and {Sembroski}, G. and 
+	{Weekes}, T.~C. and {Wilson}, C.},
+    title = "{Detection of TeV photons from the active galaxy Markarian 421}",
+  journal = {Nature},
+ keywords = {Active Galaxies, Crab Nebula, Energetic Particles, Markarian Galaxies, Photons, Active Galactic Nuclei, Elliptical Galaxies, Milky Way Galaxy},
+     year = 1992,
+    month = aug,
+   volume = 358,
+    pages = {477},
+      doi = {10.1038/358477a0},
+   adsurl = {http://adsabs.harvard.edu/abs/1992Natur.358..477P},
+  adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+
+@ARTICLE{Mrk421_LC_lang,
+   author = {{Tluczykont}, M. and {Bernardini}, E. and {Satalecka}, K. and 
+	{Clavero}, R. and {Shayduk}, M. and {Kalekin}, O.},
+    title = "{Long-term lightcurves from combined unified very high energy {$\gamma$}-ray data}",
+  journal = {Astronomy and Astrophysics},
+archivePrefix = "arXiv",
+   eprint = {1010.5659},
+ primaryClass = "astro-ph.HE",
+ keywords = {gamma rays: general, galaxies: active, BL Lacertae objects: general, BL Lacertae objects: individual: Mrk 421, BL Lacertae objects: individual: Mrk 501},
+     year = 2010,
+    month = dec,
+   volume = 524,
+      eid = {A48},
+    pages = {A48},
+      doi = {10.1051/0004-6361/201015193},
+   adsurl = {http://adsabs.harvard.edu/abs/2010A%26A...524A..48T},
+  adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+
 
 %------------------------------------------------------------------------------MC-------------------------------------------------------------------%
 
@@ -809,8 +889,9 @@ archivePrefix = "arXiv",
 	{Tashiro}, M. and {Townsley}, L.~K. and {Tueller}, J. and {Turner}, M.~J.~L. and 
 	{Vietri}, M. and {Voges}, W. and {Ward}, M.~J. and {Willingale}, R. and 
 	{Zerbi}, F.~M. and {Zhang}, W.~W.},
-    title = "{The Swift Gamma-Ray Burst Mission}",
+    title = {The Swift Gamma-Ray Burst Mission},
   journal = {The Astrophysical Journal},
+      langid = {english},
  keywords = {Gamma Rays: Bursts, Space Vehicles: Instruments, Telescopes},
      year = 2004,
     month = aug,
@@ -831,6 +912,7 @@ Bustos},
   title={Blazars in the Fermi Era: The OVRO 40 m Telescope Monitoring Program},
   journal={The Astrophysical Journal Supplement Series},
   volume={194},
+      langid = {english},
   number={2},
   pages={29},
   url={http://stacks.iop.org/0067-0049/194/i=2/a=29},
@@ -845,7 +927,7 @@ Bustos},
 	{John}, D. and {Navarro}, S. and {Mujunen}, A. and {Ritakari}, J. and 
 	{Peltonen}, J. and {Sj{\"o}man}, P. and {Oinaskallio}, E. and 
 	{Berton}, M.},
-    title = "{147 GHz VLBI observations: Detection of 3C 273 and 3C 279 on the 3100 km baseline Mets{\"a}hovi - Pico Veleta}",
+    title = {147 GHz VLBI observations: Detection of 3C 273 and 3C 279 on the 3100 km baseline Mets{\"a}hovi - Pico Veleta},
   journal = {Astronomy and Astrophysics},
  keywords = {mm VLBI, galaxies: quasars, galaxies: individual: 3C 273B, 3C 279},
      year = 2002,
@@ -923,8 +1005,9 @@ archivePrefix = "arXiv",
 	{Anderson}, B. and {Axelsson}, M. and {Baldini}, L. and {Ballet}, J. and 
 	{Band}, D.~L. and {Barbiellini}, G. and et al.},
     title = "{The Large Area Telescope on the Fermi Gamma-Ray Space Telescope Mission}",
-  journal = {Astrophysical Journal},
+  journal = {The Astrophysical Journal},
 archivePrefix = "arXiv",
+    langid = {english},
    eprint = {0902.1089},
  primaryClass = "astro-ph.IM",
  keywords = {cosmic rays, galaxies: active, Galaxy: general, gamma rays: observations, Sun: X-rays, gamma rays, telescopes},

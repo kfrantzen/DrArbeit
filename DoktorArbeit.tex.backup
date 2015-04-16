@@ -1,0 +1,106 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%   Vorlage für eine Abschlussarbeit   %%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Erstellt von Maximilian Nöthe, <maximilian.noethe@tu-dortmund.de>
+% ausgelegt für lualatex und Biblatex mit biber
+
+% Kompilieren mit 
+% lualatex dateiname.tex
+% biber dateiname.bcf
+% lualatex dateiname.tex
+% lualatex dateiname.tex
+
+
+% Präambel einbinden:
+
+\input{header.tex}
+
+
+%------------------------------------------------------------------------------
+%-------------------------    Angaben zur Arbeit   ----------------------------
+%------------------------------------------------------------------------------
+
+%Titel der Arbeit
+\newcommand{\thetitle}{\LaTeX-Vorlage für die Bachelorarbeit in TU-Farben}
+\newcommand{\Geburtsort}{Castrop-Rauxel}
+\newcommand{\Jahr}{2014}
+\newcommand{\Lehrstuhl}{Experimentelle Physik V}
+\newcommand{\Betreuer}{Prof. Dr. Erstasdasgutachter}
+\newcommand{\Zweitgutachter}{Prof. Dr. Zweitgutachter}
+\newcommand{\Abgabedatum}{11. Juli 2014}
+
+%Author und Email-Adresse
+\author{
+   Katharina Frantzen\\
+   geboren in \Geburtsort
+}
+
+\titlehead{
+   \includegraphics[height=1.5cm]{logos/tu-logo.pdf}
+}
+\title{\thetitle}
+\date{\Jahr}
+
+\subject{Arbeit zur Erlangung des akademischen Grades\\Bachelor of Science}
+\publishers{Lehrstuhl für \Lehrstuhl \\ Fakultät Physik \\ Technische Universität Dortmund}
+
+
+\begin{document}
+\frontmatter
+\maketitle
+\begin{figure}
+    \centering
+    \includegraphics[width=0.8\textwidth]{./Plots/04_MrkAnalyse/Datenset4/Datenset4_LC_Crab.pdf}
+    \caption{Lichtkurve Crab im Zeitraum vom 15.12.2012 bis zum 23.12.2012.}
+    \label{Datenset4_LC_Crab}
+\end{figure}
+
+%Gutachterseite
+\thispagestyle{empty}
+\vspace*{\fill}
+\begin{tabbing}
+   Erstgutachter: \hspace{3em}\=   \Betreuer \\ 
+   Zweitgutachter: \> \Zweitgutachter\\
+   Abgabedatum: \>\Abgabedatum
+\end{tabbing}
+\newpage
+
+% hier beginnt der Vorspann, nummeriert in römischen Zahlen
+%\input{Inhalt/00_abstract.tex}
+\tableofcontents
+
+\mainmatter
+\begin{figure}
+    \centering
+    \includegraphics[width=0.8\textwidth]{./Plots/04_MrkAnalyse/Datenset4/Datenset4_LC_Crab.pdf}
+    \caption{Lichtkurve Crab im Zeitraum vom 15.12.2012 bis zum 23.12.2012.}
+    \label{Datenset4_LC_Crab}
+\end{figure}
+
+% Hier beginnt der Inhalt mit Seite 1 in arabischen Ziffern
+\input{./Inhalt/01_Einleitung.tex}
+\begin{figure}
+    \centering
+    \includegraphics[width=0.8\textwidth]{./Plots/04_MrkAnalyse/Datenset4/Datenset4_LC_Crab.pdf}
+    \caption{Lichtkurve Crab im Zeitraum vom 15.12.2012 bis zum 23.12.2012.}
+    \label{Datenset4_LC_Crab}
+\end{figure}
+
+\input{./Inhalt/02_Astroteilchenphysik.tex}
+\input{./Inhalt/03_MonteCarlos.tex}
+\input{./Inhalt/04_MrkAnalyse.tex}
+\input{./Inhalt/05_MWL.tex}
+%\input{./Inhalt/06_Zusammenfassung.tex}
+
+%\appendix
+% Hier beginnt der Anhang, nummeriert in lateinischen Buchstaben
+%\input{./Inhalt/a_anhang.tex}
+%\nocite{*}
+\backmatter
+\printbibliography
+
+\cleardoublepage
+\input{./Inhalt/eid_versicherung.tex}
+
+\end{document}

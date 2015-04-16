@@ -5,24 +5,21 @@
 \documentclass[
         paper=a4,               % Papierformat DIN A4
         BCOR=12mm,              % 12mm Binderandkorrektur
-        parskip=false,           % Absätze als halbe Leerzeile
-        headsepline,            % Linie zwischen Kopfzeile und Dokument
-        cleardoublepage=plain,  % Keine Kopf/Fußzeile auf Leerseiten
-        bibliography=totoc,     % Bibliographie als nicht-nummeriertes 
+       parskip=false,           % Absätze als halbe Leerzeile
+       headsepline,            % Linie zwischen Kopfzeile und Dokument
+       cleardoublepage=plain,  % Keine Kopf/Fußzeile auf Leerseiten
+       bibliography=totoc,     % Bibliographie als nicht-nummeriertes 
                                 % Kapitel im Inhaltsverzeichnis
-        open=right,             % Kapitel beginnen immer aufrechten Seiten
-        open=any,               % Kapitel dürfen auf beiden Seiten beginnen
-        numbers=noenddot,       % Keine Punkte nach Abbildungsnummern
-        captions=tableheading,  % Spacing für Captions über Tabellen an
-        titlepage=firstiscover, % Titelseite ist Deckblatt, symmetrische Ränder
-        %headings=normal         % kleinere Überschriften
+       open=right,             % Kapitel beginnen immer aufrechten Seiten
+       open=any,               % Kapitel dürfen auf beiden Seiten beginnen
+       numbers=noenddot,       % Keine Punkte nach Abbildungsnummern
+       captions=tableheading,  % Spacing für Captions über Tabellen an
+       titlepage=firstiscover, % Titelseite ist Deckblatt, symmetrische Ränder
+        headings=normal         % kleinere Überschriften
     ]
     {scrbook}
 
 \setlength\parindent{0pt}	% Keine Einrückungen mehr im gesamten Dokument
-
-
-% Patch für LaTeX laden:
 
 % Warnung, falls erneut kompiliert werden muss:
 \usepackage[aux]{rerunfilecheck}
@@ -33,24 +30,25 @@
 %------------------------------------------------------------------------------
 %------------------------------ Sprache und Schrift: --------------------------
 %------------------------------------------------------------------------------
-
+\usepackage{fontspec}
+\usepackage{microtype}
 % Deutsche Spracheinstellungen
 \usepackage{polyglossia}
 \setdefaultlanguage{german}
+\setotherlanguage{english}
 %\usepackage[ngerman]{babel}	%deutsch!
 
 % stellt den \enquote{} Befehl
 \usepackage[autostyle]{csquotes}
 
-% verbessert das allgemeine Schriftbild:
-\usepackage{microtype}
-
-\usepackage{fontspec}
-\defaultfontfeatures{Ligatures=TeX}
+%\defaultfontfeatures{Ligatures=TeX}
 
 
 \hyphenation{Si-mu-la-tions-ket-te}
 \hyphenation{MCCamera-Run-Data}
+\hyphenation{Mul-ti-wel-len-län-gen-Kam-pag-ne}
+%, As-tro-phy-si-cal, in-ter-stel-lar}
+
 
 %------------------------------------------------------------------------------
 %-------------------------   Kopf/Fußzeile/Farben------------------------------
@@ -80,13 +78,13 @@
 
 % Enable Unicode-Math and follow the ISO-Standards for typesetting math
 \usepackage[
-  math-style=ISO,
-  bold-style=ISO,
-  sans-style=italic,
-  nabla=upright,
-  partial=upright,
+ math-style=ISO,
+ bold-style=ISO,
+ sans-style=italic,
+ nabla=upright,
+ partial=upright,
 ]{unicode-math}
-\setmathfont{Latin Modern Math}
+\setmathfont{latinmodern-math.otf}
 
 % schöne Brüche im Text mit \sfrac{}{}
 \usepackage{xfrac}  
@@ -102,9 +100,9 @@
 %------------------------------------------------------------------------------
 
 \usepackage[
-  locale=DE,
-  separate-uncertainty=true,
-  per-mode=symbol-or-fraction,
+ locale=DE,
+ separate-uncertainty=true,
+ per-mode=symbol-or-fraction,
 ]{siunitx}
 \sisetup{math-micro=\text{µ},text-micro=µ}
 
@@ -134,10 +132,10 @@
 \usepackage{caption}
 \DeclareCaptionFont{tugreen}{\color{tugreen}}
 \captionsetup{%
-            labelfont={bf,tugreen},     % Label fett und in TU-Grün
-            format=plain,               % Caption-Text steht auch unter "Tabelle x"
-            width=0.9\textwidth         % Bereich für Caption schmaler als für Text
-           }
+           labelfont={bf,tugreen},     % Label fett und in TU-Grün
+           format=plain,               % Caption-Text steht auch unter "Tabelle x"
+           width=0.9\textwidth         % Bereich für Caption schmaler als für Text
+          }
 
 \usepackage{subcaption}   % for subfigures
 
@@ -146,24 +144,31 @@
 %------------------------------ Bibliographie ---------------------------------
 %------------------------------------------------------------------------------
 
-\usepackage[backend=biber]{biblatex}    % Biblatex mit biber
-    \addbibresource{references.bib}     % die Bibliographie einbinden
+\usepackage[backend=biber, autolang=hyphen]{biblatex}    % Biblatex mit biber
+\addbibresource{references.bib}     % die Bibliographie einbinden
 
-\DefineBibliographyStrings{ngerman}{andothers = {{et\,al\adddot}}}
+\DefineBibliographyStrings{german}{andothers = {{et\,al\adddot}}}
+
+%\DefineHyphenationExceptions{english}{%
+% As-tro-par-tic-le,
+% As-tro-phy-si-cal,
+%}
+
 
 
 %------------------------------------------------------------------------------
 %------------------------------ Sonstiges: ------------------------------------
 %------------------------------------------------------------------------------
 
-\usepackage{eurosym}
-%\usepackage[hyphens]{url}
+% \usepackage{eurosym}
+% \usepackage[hyphens]{url}
 \usepackage[pdfusetitle,unicode, linkbordercolor=tugreen, german]{hyperref}
 \usepackage{bookmark}
-\usepackage[shortcuts]{extdash}
+%\usepackage[shortcuts]{extdash}
 \usepackage{todonotes}
 
 \usepackage{icomma}	%Kommas in Zahlen werden ohne Leerzeichen danach dargestellt
+% \setotherlanguage{english}
 
 
 

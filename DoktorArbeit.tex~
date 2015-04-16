@@ -23,8 +23,8 @@
 
 %Titel der Arbeit
 \newcommand{\thetitle}{\LaTeX-Vorlage für die Bachelorarbeit in TU-Farben}
-\newcommand{\Jahr}{2014}
 \newcommand{\Geburtsort}{Castrop-Rauxel}
+\newcommand{\Jahr}{2014}
 \newcommand{\Lehrstuhl}{Experimentelle Physik V}
 \newcommand{\Betreuer}{Prof. Dr. Erstasdasgutachter}
 \newcommand{\Zweitgutachter}{Prof. Dr. Zweitgutachter}
@@ -32,19 +32,18 @@
 
 %Author und Email-Adresse
 \author{
-    Katharina Frantzen\\
-    geboren in \Geburtsort
+   Katharina Frantzen\\
+   geboren in \Geburtsort
 }
 
 \titlehead{
-    \includegraphics[height=1.5cm]{logos/tu-logo.pdf}
+   \includegraphics[height=1.5cm]{logos/tu-logo.pdf}
 }
 \title{\thetitle}
 \date{\Jahr}
 
 \subject{Arbeit zur Erlangung des akademischen Grades\\Bachelor of Science}
 \publishers{Lehrstuhl für \Lehrstuhl \\ Fakultät Physik \\ Technische Universität Dortmund}
-
 
 
 \begin{document}
@@ -54,9 +53,9 @@
 \thispagestyle{empty}
 \vspace*{\fill}
 \begin{tabbing}
-    Erstgutachter: \hspace{3em}\=   \Betreuer \\ 
-    Zweitgutachter: \> \Zweitgutachter\\
-    Abgabedatum: \>\Abgabedatum
+   Erstgutachter: \hspace{3em}\=   \Betreuer \\ 
+   Zweitgutachter: \> \Zweitgutachter\\
+   Abgabedatum: \>\Abgabedatum
 \end{tabbing}
 \newpage
 
@@ -67,16 +66,16 @@
 \mainmatter
 % Hier beginnt der Inhalt mit Seite 1 in arabischen Ziffern
 %\input{./Inhalt/01_Einleitung.tex}
-\input{./Inhalt/02_Astroteilchenphysik.tex}
-\input{./Inhalt/03_MonteCarlos.tex}
+%\input{./Inhalt/02_Astroteilchenphysik.tex}
+%\input{./Inhalt/03_MonteCarlos.tex}
 \input{./Inhalt/04_MrkAnalyse.tex}
 \input{./Inhalt/05_MWL.tex}
-% \input{./Inhalt/06_Zusammenfassung.tex}
+%\input{./Inhalt/06_Zusammenfassung.tex}
 
 %\appendix
 % Hier beginnt der Anhang, nummeriert in lateinischen Buchstaben
 %\input{./Inhalt/a_anhang.tex}
-
+%\nocite{*}
 \backmatter
 \printbibliography
 

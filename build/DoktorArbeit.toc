@@ -1,36 +1,94 @@
 \boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
 \defcounter {refsection}{0}\relax 
 \select@language {german}
-\contentsline {chapter}{\numberline {1}Astroteilchenphysik}{1}{chapter.1}
-\contentsline {section}{\numberline {1.1}Kosmische Strahlung}{1}{section.1.1}
-\contentsline {subsection}{\numberline {1.1.1}Die geladene kosmische Strahlung}{3}{subsection.1.1.1}
-\contentsline {subsection}{\numberline {1.1.2}Neutrinos als Botenteilchen}{5}{subsection.1.1.2}
-\contentsline {subsection}{\numberline {1.1.3}Photonen als Botenteilchen}{6}{subsection.1.1.3}
-\contentsline {section}{\numberline {1.2}Quellen kosmischer Strahlung}{6}{section.1.2}
-\contentsline {subsection}{\numberline {1.2.1}Die Galaktische Scheibe und das Galaktische Zentrum}{6}{subsection.1.2.1}
-\contentsline {subsection}{\numberline {1.2.2}Supernovae und Supernovaüberreste}{7}{subsection.1.2.2}
-\contentsline {subsection}{\numberline {1.2.3}Pulsare und Binaries}{7}{subsection.1.2.3}
-\contentsline {subsection}{\numberline {1.2.4}Gammastrahlenausbrüche}{8}{subsection.1.2.4}
-\contentsline {subsection}{\numberline {1.2.5}Aktive Galaktische Kerne}{8}{subsection.1.2.5}
-\contentsline {section}{\numberline {1.3}Beschleunigungsmechanismen}{8}{section.1.3}
-\contentsline {subsection}{\numberline {1.3.1}Fermi-Mechanismus 1. und 2. Art}{9}{subsection.1.3.1}
-\contentsline {subsection}{\numberline {1.3.2}Synchrotronstrahlung}{9}{subsection.1.3.2}
-\contentsline {subsection}{\numberline {1.3.3}Compton-Streuung}{10}{subsection.1.3.3}
-\contentsline {subsection}{\numberline {1.3.4}$\mitgamma \mitgamma $-Absorption und Paar-Produktion}{10}{subsection.1.3.4}
-\contentsline {subsection}{\numberline {1.3.5}$\mitgamma $-Hadron-Wechselwirkungen}{11}{subsection.1.3.5}
-\contentsline {subsection}{\numberline {1.3.6}Elektromagnetische Kaskaden}{12}{subsection.1.3.6}
-\contentsline {section}{\numberline {1.4}Gammaastronomie}{12}{section.1.4}
-\contentsline {paragraph}{\nonumberline Satellitenexperimente}{12}{section*.4}
-\contentsline {paragraph}{\nonumberline Erdgebundene Gammaastronomie}{13}{section*.7}
-\contentsline {section}{\numberline {1.5}Aktive galaktische Kerne}{15}{section.1.5}
-\contentsline {subsection}{\numberline {1.5.1}Klassifikation}{16}{subsection.1.5.1}
-\contentsline {subsection}{\numberline {1.5.2}Spektrale Energieverteilung}{16}{subsection.1.5.2}
-\contentsline {subsection}{\numberline {1.5.3}Variabilität}{16}{subsection.1.5.3}
-\contentsline {subsection}{\numberline {1.5.4}Multiwellenlängenbeobachtungen}{16}{subsection.1.5.4}
-\contentsline {subsection}{\numberline {1.5.5}Modelle für hochenergetische Gamma-Emission}{16}{subsection.1.5.5}
-\contentsline {subsubsection}{\nonumberline Leptonische Modelle}{17}{section*.10}
-\contentsline {subparagraph}{\nonumberline SSC}{17}{section*.11}
-\contentsline {subparagraph}{\nonumberline External Radiation Compton}{17}{section*.12}
-\contentsline {subsection}{\numberline {1.5.6}Hadronische Modelle}{17}{subsection.1.5.6}
-\contentsline {section}{\numberline {1.6}Markarian 421}{18}{section.1.6}
-\contentsline {chapter}{\nonumberline Literatur}{20}{chapter*.14}
+\contentsline {chapter}{\numberline {1}Einleitung}{1}{chapter.1}
+\contentsline {chapter}{\numberline {2}Astroteilchenphysik}{3}{chapter.2}
+\contentsline {section}{\numberline {2.1}Kosmische Strahlung}{3}{section.2.1}
+\contentsline {subsection}{\numberline {2.1.1}Die geladene kosmische Strahlung}{5}{subsection.2.1.1}
+\contentsline {subsection}{\numberline {2.1.2}Neutrinos als Botenteilchen}{7}{subsection.2.1.2}
+\contentsline {subsection}{\numberline {2.1.3}Photonen als Botenteilchen}{8}{subsection.2.1.3}
+\contentsline {section}{\numberline {2.2}Quellen kosmischer Strahlung}{8}{section.2.2}
+\contentsline {subsection}{\numberline {2.2.1}Die Galaktische Scheibe und das Galaktische Zentrum}{8}{subsection.2.2.1}
+\contentsline {subsection}{\numberline {2.2.2}Supernovae und Supernovaüberreste}{9}{subsection.2.2.2}
+\contentsline {subsection}{\numberline {2.2.3}Pulsare und Binäre Systeme}{9}{subsection.2.2.3}
+\contentsline {subsection}{\numberline {2.2.4}Gammastrahlenausbrüche}{10}{subsection.2.2.4}
+\contentsline {subsection}{\numberline {2.2.5}Aktive Galaktische Kerne}{10}{subsection.2.2.5}
+\contentsline {section}{\numberline {2.3}Beschleunigungsmechanismen}{10}{section.2.3}
+\contentsline {subsection}{\numberline {2.3.1}Fermi-Mechanismus 1. und 2. Art}{11}{subsection.2.3.1}
+\contentsline {subsection}{\numberline {2.3.2}Synchrotronstrahlung}{11}{subsection.2.3.2}
+\contentsline {subsection}{\numberline {2.3.3}Compton-Streuung}{12}{subsection.2.3.3}
+\contentsline {subsection}{\numberline {2.3.4}$\mitgamma \mitgamma $-Absorption und Paar-Produktion}{13}{subsection.2.3.4}
+\contentsline {subsection}{\numberline {2.3.5}$\mitgamma $-Hadron-Wechselwirkungen}{13}{subsection.2.3.5}
+\contentsline {subsection}{\numberline {2.3.6}Elektromagnetische Kaskaden}{14}{subsection.2.3.6}
+\contentsline {section}{\numberline {2.4}Gammaastronomie}{14}{section.2.4}
+\contentsline {paragraph}{\nonumberline Satellitenexperimente}{14}{section*.4}
+\contentsline {paragraph}{\nonumberline Erdgebundene Gammaastronomie}{15}{section*.5}
+\contentsline {section}{\numberline {2.5}Aktive galaktische Kerne}{17}{section.2.5}
+\contentsline {subsection}{\numberline {2.5.1}Klassifikation}{18}{subsection.2.5.1}
+\contentsline {subsection}{\numberline {2.5.2}Spektrale Energieverteilung}{19}{subsection.2.5.2}
+\contentsline {subsection}{\numberline {2.5.3}Variabilität}{19}{subsection.2.5.3}
+\contentsline {subsection}{\numberline {2.5.4}Multiwellenlängenbeobachtungen}{19}{subsection.2.5.4}
+\contentsline {subsection}{\numberline {2.5.5}Modelle für hochenergetische Gammaemission}{20}{subsection.2.5.5}
+\contentsline {subsubsection}{\nonumberline Leptonische Modelle}{20}{section*.7}
+\contentsline {subsubsection}{\nonumberline Hadronische Modelle}{20}{section*.8}
+\contentsline {section}{\numberline {2.6}Markarian 421}{21}{section.2.6}
+\contentsline {chapter}{\numberline {3}Monte-Carlo-Simulation}{23}{chapter.3}
+\contentsline {section}{\numberline {3.1}MAGIC}{24}{section.3.1}
+\contentsline {section}{\numberline {3.2}Schauersimulation mit CORSIKA}{26}{section.3.2}
+\contentsline {subsection}{\numberline {3.2.1}Mmcs}{26}{subsection.3.2.1}
+\contentsline {subsection}{\numberline {3.2.2}Inputcards}{26}{subsection.3.2.2}
+\contentsline {section}{\numberline {3.3}Simulation des Reflektors mit \textit {Reflector}}{28}{section.3.3}
+\contentsline {subsection}{\numberline {3.3.1}Inputcards}{28}{subsection.3.3.1}
+\contentsline {section}{\numberline {3.4}Simulation von Kamera und Elektronik mit \textit {Camera}}{29}{section.3.4}
+\contentsline {subsection}{\numberline {3.4.1}StarFieldAdder und StarResponse}{29}{subsection.3.4.1}
+\contentsline {subsection}{\numberline {3.4.2}Simulation von Kamera und Elektronik}{30}{subsection.3.4.2}
+\contentsline {subsection}{\numberline {3.4.3}Inputcard}{31}{subsection.3.4.3}
+\contentsline {section}{\numberline {3.5}Kalibration}{32}{section.3.5}
+\contentsline {subsection}{\numberline {3.5.1}Signalextraktion}{32}{subsection.3.5.1}
+\contentsline {subsection}{\numberline {3.5.2}Ankunftszeitbestimmung}{33}{subsection.3.5.2}
+\contentsline {section}{\numberline {3.6}\textit {Star} - Bildbereinigung und Bildparametrisierung}{34}{section.3.6}
+\contentsline {subsection}{\numberline {3.6.1}Bildbereinigung}{34}{subsection.3.6.1}
+\contentsline {subsection}{\numberline {3.6.2}Bildparametrisierung}{36}{subsection.3.6.2}
+\contentsline {section}{\numberline {3.7}\textit {Superstar} - Stereoskopische Rekonstruktion der Schauer}{38}{section.3.7}
+\contentsline {section}{\numberline {3.8}Automatische MC-Produktionskette an der TU Dortmund}{39}{section.3.8}
+\contentsline {subsection}{\numberline {3.8.1}Überblick über die Datenbank}{40}{subsection.3.8.1}
+\contentsline {subsection}{\numberline {3.8.2}Einblick in den Linux Cluster DOrtmund - LiDO}{42}{subsection.3.8.2}
+\contentsline {subsection}{\numberline {3.8.3}Verfügbarkeit der produzierten MC-Daten}{44}{subsection.3.8.3}
+\contentsline {chapter}{\numberline {4}Analyse der AGN Mrk 421 mit \textit {MARS}}{45}{chapter.4}
+\contentsline {section}{\numberline {4.1}Signal-Untergrund-Trennung und Energieschätzung}{45}{section.4.1}
+\contentsline {subsection}{\numberline {4.1.1}Gamma-Hadron-Separation}{45}{subsection.4.1.1}
+\contentsline {subsection}{\numberline {4.1.2}Energierekonstruktion mit Hilfe von Look-Up-Tables}{46}{subsection.4.1.2}
+\contentsline {subsection}{\numberline {4.1.3}Rekonstruktion der Quellposition}{47}{subsection.4.1.3}
+\contentsline {section}{\numberline {4.2}Berechnung der Lichtkurve}{48}{section.4.2}
+\contentsline {paragraph}{\nonumberline Anzahl der Signalgammas}{48}{section*.24}
+\contentsline {paragraph}{\nonumberline Effektive Beobachtungszeit}{49}{section*.26}
+\contentsline {paragraph}{\nonumberline Effektive Fläche}{49}{section*.27}
+\contentsline {section}{\numberline {4.3}Entfaltung des Energiespektrums}{50}{section.4.3}
+\contentsline {section}{\numberline {4.4}Mrk 421-Analyse}{52}{section.4.4}
+\contentsline {subsection}{\numberline {4.4.1}Überblick über die Daten}{52}{subsection.4.4.1}
+\contentsline {subsection}{\numberline {4.4.2}Datenset 2}{53}{subsection.4.4.2}
+\contentsline {subsubsection}{\nonumberline Daten-Auswahl und Qualitätchecks}{53}{section*.30}
+\contentsline {subsubsection}{\nonumberline \textit {Coach} und \textit {Melibea}}{55}{section*.33}
+\contentsline {subsubsection}{\nonumberline Lichtkurve von Crab}{56}{section*.36}
+\contentsline {subsubsection}{\nonumberline Lichtkurve von Mrk 421}{58}{section*.38}
+\contentsline {subsubsection}{\nonumberline Spektrum von Crab}{59}{section*.41}
+\contentsline {subsubsection}{\nonumberline Spektrum von Mrk 421}{59}{section*.44}
+\contentsline {subsection}{\numberline {4.4.3}Datenset 1}{61}{subsection.4.4.3}
+\contentsline {subsubsection}{\nonumberline Datencheck}{61}{section*.46}
+\contentsline {subsubsection}{\nonumberline Lichtkurve}{62}{section*.49}
+\contentsline {subsubsection}{\nonumberline Spektrum}{63}{section*.52}
+\contentsline {subsection}{\numberline {4.4.4}Datenset 4}{64}{subsection.4.4.4}
+\contentsline {subsubsection}{\nonumberline Datencheck}{64}{section*.54}
+\contentsline {subsubsection}{\nonumberline Lichtkurve}{65}{section*.57}
+\contentsline {subsubsection}{\nonumberline Spektrum}{65}{section*.60}
+\contentsline {subsection}{\numberline {4.4.5}Datenset 3}{67}{subsection.4.4.5}
+\contentsline {subsubsection}{\nonumberline Datencheck}{67}{section*.62}
+\contentsline {subsubsection}{\nonumberline Energieschätzung}{67}{section*.65}
+\contentsline {subsubsection}{\nonumberline Lichtkurve}{68}{section*.66}
+\contentsline {subsubsection}{\nonumberline Spektrum}{68}{section*.68}
+\contentsline {section}{\numberline {4.5}Zusammenfassung der Ergebnisse und Vergleich der Datensets}{69}{section.4.5}
+\contentsline {chapter}{\numberline {5}MWL}{71}{chapter.5}
+\contentsline {section}{\numberline {5.1}Teilnehmer an der MWL-Kampagne}{71}{section.5.1}
+\contentsline {section}{\numberline {5.2}Lichtkurven}{73}{section.5.2}
+\contentsline {section}{\numberline {5.3}Variabilitätsuntersuchung}{75}{section.5.3}
+\contentsline {chapter}{\nonumberline Literatur}{78}{chapter*.75}
