@@ -1,4 +1,5 @@
 \chapter{Zusammenfassung}
+\label{chapter:Ergebnisse}
 Im Rahmen dieser Arbeit wurde zunächst eine Einführung in die Astroteilchenphysik gegeben. 
 Die kosmische Strahlung wurde beschrieben und Quelle dieser Strahlung vorgestellt.
 Anschließend wurden mögliche Beschleunigungsmechanismen dargestellt.
@@ -9,7 +10,7 @@ Ein essenzieller Grundstein für diese Analyse sind die speziell angepassten Mon
 Diese wurden im Zeitraum der Doktorarbeit in Dortmund für die gesamte MAGIC-Kollaboration produziert und an aktuelle Hardwareveränderungen des Teleskops angepasst.
 Beginnend mit der Luftschauersimulation mit \textit{CORSIKA} werden nacheinander die Reflektor-Simulation und die Kamera- und Elektronik-Simulation vorgestellt.
 Diese Programme benötigen spezielle Eingabeparameter, welche ebenfalls beschrieben werden.
-Diesen reinen Simulationsprogrammen folgen die Kalibrationsprogramme, die ebenfalls beschrieben. 
+Diesen reinen Simulationsprogrammen folgen die Kalibrationsprogramme. 
 Nach dem Durchlaufen durch die Simulations- und die Kalibrationsprogramme liegen die Monte-Carlo-Simulationsdaten im gleichen Format vor, wie die realen Daten, welche der Kollaboration zur Verfügung stehen.
 Um eine schnelle Produktion von ausreichend MC-Daten zu gewährleisten wird die an der TU Dortmund implementierte automatische Produktionskette genutzt.
 Diese aus Skripten und einer Datenbank bestehende Kette wurde im Verlaufe der Doktorarbeit betreut und die Skripte an aktuelle Hardwareveränderungen angepasst.
@@ -25,8 +26,8 @@ Ein Datensatz besteht aus Mono-Beobachtung, da die alte Kamera von MAGIC-I ihren
 Aus der Analyse dieser einzelnen Datensätze folgt, dass die Quelle Mrk~421 2012 keine Flares aufweist.
 Ihr Fluss liegt zwischen 24\% und 45\% des Flusses von Crab und somit auf einem für diese Quelle konstant niedrigem Niveau.
 
-Anschließend an die Analyse der Daten mit MAGIC wurden die Daten einer Multiwellenlängenkampagne ausgewertet.
-Diese enthält Beobachtungen unterschiedlicher Instrumente wie boengebundener Teleskope oder Satellitenexperimenten.
+Anschließend an die Analyse der Daten mit MAGIC wurden die Daten einer Multiwellenlängenkampagne, die 2012 ebenfalls stattfand, ausgewertet.
+Diese enthält Beobachtungen unterschiedlicher Instrumente wie bodengebundener Teleskope oder Satellitenexperimenten.
 Die Lichtkurven der einzelnen Instrumente wurden in einem Diagramm dargestellt und ihre Variabilität untersucht.
 Diese Untersuchung hat ergeben, dass die Quelle während der Multiwellenlängenkampagne vor allem variable Gamma- und Röntgenstrahlung emittiert.
 Mit steigender Frequenz steigt auch die Variabilität.
@@ -40,3 +41,4 @@ Dann könnte die Physik im Quelltyp der AGN besser verstanden werden.
 Die essenzielle Wichtigkeit von MC-Simulationen in der Analyse der Daten erfordert eine zeitnahe Simulation.
 Mit Hilfe einer weiterhin schnellen Produktion, die optimal an die Hardware angepasst ist, können gute Analyseergebnisse erzielt werden.
 Technisch gesehen, könnte dies durch eine Aktualisierung der MC-Kette unter Benutzung einer aktuellen Programmiersprache und den Einbau von Fehlermeldungen geschehen.
+Des Weiteren wäre es von großem Vorteil, die Laufzeit von \textit{CORSIKA} zu verringern, da dieses Programm mit Abstand die llängste Laufzeit benötigt.
