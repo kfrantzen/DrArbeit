@@ -22,7 +22,10 @@
 %------------------------------------------------------------------------------
 
 %Titel der Arbeit
-\newcommand{\thetitle}{\LaTeX-Vorlage für die Bachelorarbeit in TU-Farben}
+\newcommand{\thetitle}{Vorlage für die Bachelorarbeit in TU-Farben 2}
+%\newcommand{\thetitle}{\Brot hose}
+%\newcommand{\thesubtitle}{\Brot}
+%\newcommand{\thetitle}{\Analyse der AGN Mrk~421 während des MAGIC-Upgrade 2012}
 \newcommand{\Geburtsort}{Castrop-Rauxel}
 \newcommand{\Jahr}{2014}
 \newcommand{\Lehrstuhl}{Experimentelle Physik V}
@@ -40,6 +43,8 @@
    \includegraphics[height=1.5cm]{logos/tu-logo.pdf}
 }
 \title{\thetitle}
+\subtitle{HOS}
+
 \date{\Jahr}
 
 \subject{Arbeit zur Erlangung des akademischen Grades\\Bachelor of Science}
@@ -49,13 +54,6 @@
 \begin{document}
 \frontmatter
 \maketitle
-\begin{figure}
-    \centering
-    \includegraphics[width=0.8\textwidth]{./Plots/04_MrkAnalyse/Datenset4/Datenset4_LC_Crab.pdf}
-    \caption{Lichtkurve Crab im Zeitraum vom 15.12.2012 bis zum 23.12.2012.}
-    \label{Datenset4_LC_Crab}
-\end{figure}
-
 %Gutachterseite
 \thispagestyle{empty}
 \vspace*{\fill}
@@ -71,27 +69,13 @@
 \tableofcontents
 
 \mainmatter
-\begin{figure}
-    \centering
-    \includegraphics[width=0.8\textwidth]{./Plots/04_MrkAnalyse/Datenset4/Datenset4_LC_Crab.pdf}
-    \caption{Lichtkurve Crab im Zeitraum vom 15.12.2012 bis zum 23.12.2012.}
-    \label{Datenset4_LC_Crab}
-\end{figure}
-
 % Hier beginnt der Inhalt mit Seite 1 in arabischen Ziffern
-\input{./Inhalt/01_Einleitung.tex}
-\begin{figure}
-    \centering
-    \includegraphics[width=0.8\textwidth]{./Plots/04_MrkAnalyse/Datenset4/Datenset4_LC_Crab.pdf}
-    \caption{Lichtkurve Crab im Zeitraum vom 15.12.2012 bis zum 23.12.2012.}
-    \label{Datenset4_LC_Crab}
-\end{figure}
-
-\input{./Inhalt/02_Astroteilchenphysik.tex}
-\input{./Inhalt/03_MonteCarlos.tex}
-\input{./Inhalt/04_MrkAnalyse.tex}
-\input{./Inhalt/05_MWL.tex}
-%\input{./Inhalt/06_Zusammenfassung.tex}
+%\input{./Inhalt/01_Einleitung.tex}
+%\input{./Inhalt/02_Astroteilchenphysik.tex}
+%\input{./Inhalt/03_MonteCarlos.tex}
+%\input{./Inhalt/04_MrkAnalyse.tex}
+%\input{./Inhalt/05_MWL.tex}
+\input{./Inhalt/06_Zusammenfassung.tex}
 
 %\appendix
 % Hier beginnt der Anhang, nummeriert in lateinischen Buchstaben

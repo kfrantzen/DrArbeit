@@ -1,0 +1,33 @@
+\chapter{Zusammenfassung}
+Im Rahmen dieser Arbeit wurde zunächst eine Einführung in die Astroteilchenphysik gegeben. 
+Die kosmische Strahlung wurde beschrieben und Quelle dieser Strahlung vorgestellt.
+Anschließend wurden mögliche Beschleunigungsmechanismen dargestellt.
+Die Überleitung zum Gebiet der Gammaastronomie führt in das eigentliche Forschungsthema dieser Arbeit ein.
+Dieses Thema umfasst die Analyse des Aktiven Galaktischen Kerns (AGN) Markarian~421, welcher nachfolgend vorgestellt wird.
+
+Ein essenzieller Grundstein für diese Analyse sind die speziell angepassten Monte Carlo-Simulationsdaten.
+Diese wurden im Zeitraum der Doktorarbeit in Dortmund für die gesamte MAGIC-Kollaboration produziert und an aktuelle Hardwareveränderungen des Teleskops angepasst.
+Beginnend mit der Luftschauersimulation mit \textit{CORSIKA} werden nacheinander die Reflektor-Simulation und die Kamera- und Elektronik-Simulation vorgestellt.
+Diese Programme benötigen spezielle Eingabeparameter, welche ebenfalls beschrieben werden.
+Diesen reinen Simulationsprogrammen folgen die Kalibrationsprogramme, die ebenfalls beschrieben. 
+Nach dem Durchlaufen durch die Simulations- und die Kalibrationsprogramme liegen die Monte-Carlo-Simulationsdaten im gleichen Format vor, wie die realen Daten, welche der Kollaboration zur Verfügung stehen.
+Um eine schnelle Produktion von ausreichend MC-Daten zu gewährleisten wird die an der TU Dortmund implementierte automatische Produktionskette genutzt.
+Diese aus Skripten und einer Datenbank bestehende Kette wurde im Verlaufe der Doktorarbeit betreut und die Skripte an aktuelle Hardwareveränderungen angepasst.
+
+Im Analyse-Teil dieser Arbeit wird die Bedeutung der MC-Simulationsdaten in den einzelnen Programmen herausgestellt.
+Es wird zunächst die Methode des Random Forests in der Gamma-Hadron-Separation und in der Rekonstruktion der Quellposition vorgestellt.
+Danach wird die Energierekonstruktion mit Hilfe von Look-Up-Tabellen erklärt.
+Abschließend wird noch die Methode der Entfaltung kurz beschrieben.
+Nachdem diese Methoden der Analyse vorgestellt wurden, erfolgt die Analyse der Daten der AGN Mrk~421 von 2012.
+Diese Daten wurden während des Teleskop-Upgrades genommen und weisen deswegen eine größe Lücke in der Datennahme zwischen Juni und Dezember auf. 
+Des Weiteren mussten die Daten aufgrund verschiedener Hardwareveränderungen und Spiegeleigenschaften in vier separate Datensätze getrennt werden, die jeweils vier separate MC-Datensätze erfordern.
+Ein Datensatz besteht aus Mono-Beobachtung, da die alte Kamera von MAGIC-I ihren Geist aufgab und keine stereoskopische Beobachtung mehr möglich war, was wiederum zu einem speziell angepassten MC-Datensatz führte.
+Aus der Analyse dieser einzelnen Datensätze folgt, dass die Quelle Mrk~421 2012 keine Flares aufweist.
+Ihr Fluss liegt zwischen 24\% und 45\% des Flusses von Crab und somit auf einem für diese Quelle konstant niedrigem Niveau.
+
+Anschließend an die Analyse der Daten mit MAGIC wurden die Daten einer Multiwellenlängenkampagne ausgewertet.
+Diese enthält Beobachtungen unterschiedlicher Instrumente wie boengebundener Teleskope oder Satellitenexperimenten.
+Die Lichtkurven der einzelnen Instrumente wurden in einem Diagramm dargestellt und ihre Variabilität untersucht.
+
+
+
