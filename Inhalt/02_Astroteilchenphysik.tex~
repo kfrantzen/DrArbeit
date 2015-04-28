@@ -2,7 +2,7 @@
 \label{chapter:Astroteilchenphysik}
 Die Astroteilchenphysik ist ein noch recht junger Teilbereich der Physik und beinhaltet Fragen der Astrophysik und der Teilchenphysik.
 Verschiedene Botenteilchen, deren Eigenschaften in \autoref{sec:KosmischeStrahlung} beschrieben werden, geben Auskünfte über astrophysikalische Quellen, welche in \autoref{sec:Quellen} erklärt werden.
-Diese Quellen emittieren geladene, bzw.  ungeladene Teilchen, die mit Hilfe von Satelliten im All oder auf der Erde detektiert werden.
+Diese Quellen emittieren geladene, bzw.  ungeladene Teilchen, die mit Hilfe von Satelliten im All oder mit bodengebundenen Experimenten auf der Erde detektiert werden.
 %Die Energie dieser in den Quellen beschleunigten Teilchen übersteigt zum Teil die höchste Energie, die auf der Erde mit Beschleunigern erreicht werden kann.
 Die Modelle für die grundlegenden Beschleunigungsmechanismen der Teilchen, die in \autoref{sec:Beschleunigungsmechanismen} beschrieben werden, müssen noch überprüft bzw. weiterentwickelt werden.
 Im Laufe der Jahre wurden verschiedene Detektionsmethoden entwickelt, die speziell an die zu detektierenden Teilchen angepasst sind.
@@ -37,6 +37,7 @@ Allerdings ist ihre Detektion schwierig, sodass nur Detektoren mit sehr großem 
 Diese Detektion geschieht z.B. mit IceCube, einem Detektor, der in das Eis am Südpol eingeschmolzen, folgendermaßen:
 Ein Neutrino wechselwirkt mit einem Nukleon und erzeugt dabei ein geladenes Lepton. 
 Beim Durchgang durch den Detektor produziert dieses geladene Lepton Cherenkov-Strahlung, die mit Hilfe von Photosensoren detektiert wird.
+
 Photonen besitzen den gleichen Vorteil wie Neutrinos und werden auf dem Weg zum Detektor nicht abgelenkt.
 Allerdings können sie direkt mit Staubwolken oder der niederenergetischen Hintergrundstrahlung (EBL: External Background Light), welche aus Sternenlicht oder Wärmestrahlung aus interstellarem Staub besteht, wechselwirken.
 Hochenergetische Photonen werden von Satellitenexperimenten oder von Luftschauerteleskopen detektiert.
@@ -46,7 +47,7 @@ Wie in \autoref{sec:Gammaastronomie} beschrieben wird, werden die Luftschauer ve
 
 \subsection{Die geladene kosmische Strahlung}
 Die geladene kosmische Strahlung wurde Anfang des 20. Jahrhunderts mit Hilfe von Ballonexperimenten entdeckt \cite{Hess}.
-Aufgrund des Ergebnisses, dass mit steigender Höhe die Ionisation zunahm, schlossen Hess und Kohlhörster \cite{Kohlhoerster}, dass die von ihnen detektierte Strahlung aus dem Weltraum kommt.
+Aufgrund des Ergebnisses, dass mit steigender Höhe die Ionisation der Atmosphäre zunahm, schlossen Hess und Kohlhörster \cite{Kohlhoerster}, dass die von ihnen detektierte Strahlung aus dem Weltraum kommt.
 Diese Strahlung besteht zu 85\% aus Protonen, zu 12\% aus $\alpha$-Teilchen und 3\% aus Elementen mit größerer Kernladung \cite{Grupen}.
 Das Energiespektrum dieser kosmischen Strahlung ist auf einem sehr großen Energiebereich vermessen und wurde sowohl mit erdgebundenen Experimenten als auch mit Satellitenexperimenten bestimmt.
 
@@ -150,7 +151,7 @@ In diesen Prozessen entstehen negativ geladene Pionen, die zerfallen und dabei N
 \end{equation*}
 
 
-In der Quelle wird eine Verteilung der Neutrinos von $(\nu_e:\nu_{\mu}:\nu_{\tau})=(\overline{\nu}_e:\overline{\nu}_{\mu}:\overline{\nu}_{\tau})=(1:2:0)$ erwartet \cite{NeutrinoOszillation}.
+In einer Quelle wie z.B. der Sonne wird eine Verteilung der Neutrinos von $(\nu_e:\nu_{\mu}:\nu_{\tau})=(\overline{\nu}_e:\overline{\nu}_{\mu}:\overline{\nu}_{\tau})=(1:2:0)$ erwartet \cite{NeutrinoOszillation}.
 Aufgrund von Neutrinooszillationen wird auf der Erde ein Verhältnis von $(\nu_e:\nu_{\mu}:\nu_{\tau})=(1:1:1)$ \cite{NeutrinoOszillation} beobachtet.
 
 %Aufgrund der beschriebenen Prozesse erwartet man in der Quelle eine Verteilung der Neutrinos von $(\nu_e:\nu_{\mu}:\nu_{\tau})=(\overline{\nu}_e:\overline{\nu}_{\mu}:\overline{\nu}_{\tau})=(1:2:0)$.
@@ -329,7 +330,7 @@ Zudem tritt noch das Problem der Synchrotron-Selbst-Absorption auf, d.h. Photone
 \subsection{Compton-Streuung}
 Die Streuung von relativistischen Elektronen an einem Strahlungsfeld wird Compton-Streuung genannt.
 Dieser Prozess tritt auch in Strahlungsfeldern von extragalaktischen Jets auf.
-Die Photonenergie $\epsilon$ wird in Abhängigkeit von der Elektron-Ruhemasse $m_e c^2$ angegeben: $\epsilon= \frac{h\nu}{m_e c^2}$. \cite{RelativisticJets}
+Die Photonenergie $\epsilon$ wird in Abhängigkeit von der Elektron\-/Ruhemasse $m_e c^2$ angegeben: $\epsilon= \frac{h\nu}{m_e c^2}$. \cite{RelativisticJets}
  
 In niedrigster Ordnung ist der Energieverlust im Thomson-Limit, d.h. $\gamma \epsilon \ll 1$ gegeben durch:
 
@@ -629,7 +630,7 @@ Die Position dieses Peaks wird durch die Effizienz der Schockbeschleunigung und 
 Im Folgenden werden zwei verschiedene leptonische Modelle vorgestellt.\cite{Weekes}
 
 \begin{itemize}
-\item Im Synchrotron-Selbst-Compton-Modell (SSC-Modell) werden die in Synchrotron-Prozessen abgestrahlten Photonen zu hohen Energien beschleunigt, die nahe an den Elektronenergien sind.
+\item Im Synchrotron-Selbst-Compton-Modell (SSC-Modell) werden die in Synchrotron\-/Prozessen abgestrahlten Photonen zu hohen Energien beschleunigt, die nahe an den Elektronenergien sind.
 Im Thomson-Regime können Photonenergien von $E_{\gamma}\approx \gamma^2 h \nu$ und im Klein-Nishina-Regime $E_{\gamma}\approx \gamma m_e c^2$ erreicht werden.\cite{Weekes}
 \item Im External-Radiation-Compton-Modell (ERC-Modell) werden sogenannte Saat-Photonen benötigt, die dann eine inverse Comptonstreuung erfahren.
 Diese Saat-Photonen werden außerhalb des Jets produziert, z.B. in der Akkretionsscheibe.\cite{Weekes}
@@ -658,7 +659,7 @@ Sie besitzt eine Rotverschiebung von $z=0,0031$ und ist damit die von uns nächs
 
 \begin{figure}
     \centering
-    \includegraphics[width=0.8\textwidth]{./Plots/02_Astroteilchenphysik/SED_Mrk421.png}
+    \includegraphics[width=0.9\textwidth]{./Plots/02_Astroteilchenphysik/SED_Mrk421.png}
     \caption{Die Abbildung zeigt die spektrale Energieverteilung von Mrk 421. Die für Blazare typische doppelhöckrige Struktur ist erkennbar. 
      Des Weiteren ist zu sehen, dass das Maximum des niederenergetischen und des hochenergetischen Höckers einen ähnlichen Fluss aufweist.\cite{Mrk421_SED}}
     \label{Mrk_SED}

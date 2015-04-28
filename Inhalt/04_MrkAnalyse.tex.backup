@@ -219,10 +219,10 @@ Durch die Methode der Entfaltung können diese Probleme berücksichtigt werden.
 Das Problem lässt sich mit einer Fredholmschen Integralgleichung darstellen \cite{Blobel}:
 
 \begin{equation}
- g(y)= \int\limits_c^d M(x,y) f(x) dx + b(y)
+ g(y)= \int\limits_c^d M(x,y) f(x) \mathrm{d}x + b(y)
 \end{equation}
 \begin{center}
-  \small{mit g(y): gemessene Verteilung, f(x): gesuchte Verteilung, M(x,y): Migrationsmatrix bestimmt auf MCs, b(y): Background-Verteilung}
+  \small{mit $g(y)$: gemessene Verteilung, $f(x)$: gesuchte Verteilung, $M(x,y)$: Migrationsmatrix bestimmt auf MCs, $b(y)$: Background-Verteilung}
  \end{center}
 
 Diese Gleichung lässt sich diskretisieren zu:
@@ -411,9 +411,9 @@ Sobald das Training der RFs und das Erstellen der Look-Up-Tables in \textit{Coac
 Das gleiche geschieht auch mit den Crab-Daten und dem anderen Teil der MCs, dem Test-Set.
 
 
-\subsubsection{Lichtkurve von Crab}
+\subsubsection{Lichtkurve: Crab}
 Wie in \autoref{sec:Lichtkurve} beschrieben, wird nun sowohl für die Crab-Daten als auch für die Mrk 421-Daten eine Lichtkurve erstellt.
-Da der Fluss von Crab stabil und bekannt ist, werden mit Hilfe der Crab-Daten die passenden Parameter (Hadroneffizienz und $\theta$-Quadrat-Effizienz) für die Lichtkurven-Bestimmung in diesem Zeitraum für Mrk~421 ausgewählt.
+Da der Fluss von Crab stabil und bekannt ist, werden mit Hilfe der Crab-Daten die passenden Parameter (Hadroneffizienz und $\theta^2$-Effizienz) für die Lichtkurven-Bestimmung in diesem Zeitraum für Mrk~421 ausgewählt.
 
 Wie in \autoref{Datenset2_Flute_Plots_Crab} zu sehen ist, ist es möglich mit \textit{Flute} neben der Lichtkurve (vgl. Abb.\ref{Datenset2_LC_Crab}) auch noch einen $\theta^2$-Plot (vgl. Abb.\ref{Datenset2_theta^2_Crab}), sowie die spektrale Energieverteilung (vgl. Abb.\ref{Datenset2_SED_Crab}) zu berechnen.
 
@@ -448,32 +448,30 @@ Wie in \autoref{Datenset2_Flute_Plots_Crab} zu sehen ist, ist es möglich mit \t
   \end{subfigure}
   \hfill
   %----------------------------------------------------------------------------------------------%
-\caption{\textit{Flute}-Plots für Crab}
+\caption{Genrierte Plots von \textit{Flute} für Crab-Daten}
 \label{Datenset2_Flute_Plots_Crab}
 \end{figure}
 
-In \autoref{Datenset2_theta^2_Crab} ist der $\theta^2$-Plot für Crab zu sehen. Für kleine $\theta$ ist die Anzahl der Signal-Ereignisse wie zu erwarten sehr hoch.
+In \autoref{Datenset2_theta^2_Crab} ist der $\theta^2$-Plot für Crab zu sehen. Für kleine $\theta$ ist die Anzahl der Signal-Ereignisse ca. vier Mal höher als im Off-Bereich.
 
 In \autoref{Datenset2_SpectralShape_Crab} ist das differentielle Energiespektrum zu sehen.
-In blau ist das von HESS gemessene Spektrum von Crab eingezeichnet.
 
 \autoref{Datenset2_SED_Crab} zeigt die spektrale Energieverteilung, d.h. das mit $E^2$ gewichtete Spektrum aus \autoref{Datenset2_SpectralShape_Crab}.
-Das in der Literatur angegebene Spektrum ist durch eine rot gestrichelte Linie gekennzeichnet, die unter dem angenommenen Spektrum, dargestellt als grüne Linie, liegt.
-Zum Vergleich ist ebenfalls wieder ein von HESS gemessenes Spektrum eingezeichnet.
+Das in der Literatur angegebene Spektrum ist durch eine rot gestrichelte Linie gekennzeichnet und wird von dem ermittelten Spektrum überdeckt, welches in grün dargestellt ist.
 
-Wie in Abb.\ref{Datenset2_SpectralShape_Crab} und in Abb.\ref{Datenset2_SED_Crab} zu sehen ist, passt das angenommene Spektrum gut zu den Daten, bzw. zum bekannten Crab-Spektrum.
-Dieses angeonommene Spektrum ist in den beiden Abbildungen durch die grüne Linie gekennzeichnet.
-Angenommen wurde:
+Wie in \autoref{Datenset2_SpectralShape_Crab} und in \autoref{Datenset2_SED_Crab} zu sehen, beschreibt das ermittelte Spektrum die Daten und ist konsistent mit dem bekannten Crab-Spektrum.
+%Dieses angeonommene Spektrum ist in den beiden Abbildungen durch die grüne Linie gekennzeichnet.
+Das ermittelte Spektrum folgt diesem Ausdruck:
 
 \begin{equation}
-\frac{\mathrm{d}N}{\mathrm{d}E}=\left(\frac{x}{\SI{300}{GeV}}\right)^{-2.31-0.26\cdot log_{10}(x/\SI{300}{GeV})}\si{TeV\,cm^{-2}\,s^{-1}}.
+\frac{\mathrm{d}N}{\mathrm{d}E} \propto \left(\frac{x}{\SI{300}{GeV}}\right)^{-2.31-0.26\cdot log_{10}(x/\SI{300}{GeV})}\si{TeV\,cm^{-2}\,s^{-1}}.
  %pow(x/300.,-2.31-0.26*log10(x/300.))
 \end{equation}
 
 Die Lichtkurve in Abb.\ref{Datenset2_LC_Crab} zeigt, dass der Crab-Fluss in diesem Zeitraum um den mittleren Crab-Fluss schwankt.
-Die Parameter, die zum Erstellen der Lichtkurve in \textit{Flute} verwendet wurden, erweisen sich also als vernünftig.
+Die Parameter für den Hadroness-Schnitt bei 0,95 und den $\theta^2$-Schnitt bei 0,9, die zum Erstellen der Lichtkurve in \textit{Flute} verwendet wurden, können somit als korrekt angenommen werden.
 
-\subsubsection{Lichtkurve von Mrk 421}
+\subsubsection{Lichtkurve: Mrk 421}
 Es wird nun mit den gleichen Effizienz-Einstellungen wie für Crab eine Lichtkurve für Mrk 421 angefertigt.
 
 \begin{figure}
@@ -484,12 +482,12 @@ Es wird nun mit den gleichen Effizienz-Einstellungen wie für Crab eine Lichtkur
     \label{Datenset2_LC_Mrk421}
 \end{figure}
 
-Abb.\ref{Datenset2_LC_Mrk421} zeigt, dass der Fluss von Mrk 421 im Vergleich zu Crab wesentlich niedriger ist.
+Die \autoref{Datenset2_LC_Mrk421} zeigt, dass der Fluss von Mrk 421 im Vergleich zu Crab niedriger ist.
 Er schwankt etwa um den halben Crab-Fluss.
-Auch die spektrale Energieverteilung sieht anders aus (vgl. Abb.\ref{Datenset2_SED_Mrk421}), da ein anderes Spektrum angenommen wurde:
+Auch die spektrale Energieverteilung unterscheidet sich von Crab (vgl. Abb.\ref{Datenset2_SED_Mrk421}), da ein anderes Spektrum angenommen wurde:
 
 \begin{equation}
-\frac{\mathrm{d}N}{\mathrm{d}E}=\left(\frac{x}{\SI{300}{GeV}}\right)^{-2.75-0.26 \cdot log_{10}(x/\SI{300}{GeV})}\si{TeV\,cm^{-2}\,s^{-1}}
+\frac{\mathrm{d}N}{\mathrm{d}E}\propto \left(\frac{x}{\SI{300}{GeV}}\right)^{-2.75}\si{TeV\,cm^{-2}\,s^{-1}}
 \end{equation}
 
 
@@ -502,9 +500,9 @@ Auch die spektrale Energieverteilung sieht anders aus (vgl. Abb.\ref{Datenset2_S
 \end{figure}
 
 
-\subsubsection{Spektrum von Crab}
+\subsubsection{Spektrum: Crab}
 Mit Hilfe von \textit{CombUnfold} wird nun das Spektrum von Crab entfaltet.
-\autoref{Datenset2_CombunFold_Crab} zeigt das entfaltete Spektrum von Crab mit Literaturwert berechnet nach \cite{LiteraturreferenzMAGIC}.
+In \autoref{Datenset2_CombunFold_Crab} ist das entfaltete Spektrum von Crab dargestellt, welches mit dem Literaturwert nach \cite{LiteraturreferenzMAGIC} berechnet wurde.
 
 \begin{figure}
     \centering
@@ -513,29 +511,30 @@ Mit Hilfe von \textit{CombUnfold} wird nun das Spektrum von Crab entfaltet.
     \label{Datenset2_CombunFold_Crab}
 \end{figure}
 
-Es zeigt sich, dass die entfalteten Datenpunkte mit Tikhonov-Regularisierung sehr gut zum Literaturwert passen.
+%Es zeigt sich, dass die entfalteten Datenpunkte mit Tikhonov-Regularisierung sehr gut zum Literaturwert passen.
+Anhand dieser Entfaltung ist festzustellen, dass der ermittelte Fluss mit den bisherigen Messungen konsistent ist.
 
-\subsubsection{Spektrum von Mrk 421}
-\autoref{Datenset2_CombunFold_Mrk421} zeigt das entfaltete Spektrum von Mrk 421 mit fünf verschiedenen Regularisierungsmethoden.
-Wie man sieht, zeigen die entfalteten Datenpunkte keine großen Abweichung voneinander. 
-Lediglich bei kleinen Energien unterscheiden sich die Ergebnisse etwas.
+\subsubsection{Spektrum: Mrk 421}
+Die \autoref{Datenset2_CombunFold_Mrk421} zeigt das entfaltete Spektrum von Mrk 421 mit fünf verschiedenen Regularisierungsmethoden.
+Wie man sieht, zeigen die entfalteten Datenpunkte keine signifikanten Abweichungen voneinander. 
+Lediglich bei kleinen Energien ist eine Anweichung zu erkennen, wleche allerdings weiterhin nicht signifikant ist.
 
 \begin{figure}
     \centering
     \includegraphics[width=0.8\textwidth]{./Plots/04_MrkAnalyse/Datenset2/Spektrum_Mrk421.pdf}
-    \caption{Entfaltetes Mrk 421-Spektrum im Zeitraum vom 18.3.2012 bis zum 25.4.2012 mit allen möglichen Regularisierungsmethoden.
+    \caption{Entfaltetes Mrk 421-Spektrum im Zeitraum vom 18.3.2012 bis zum 25.4.2012 mit allen wählbaren Regularisierungsmethoden.
     Die gestrichelte Linie stellt das gefittete Spektrum dar, welches mit Hilfe der Tikhonov-Regularisierung berechnet wurde.}
     \label{Datenset2_CombunFold_Mrk421}
 \end{figure}
 
-Es wurde der Fit, der in der Entfaltung mit Tikhonov-Regularisierung erstellt wurde, zusätzlich dargestellt, da diese Regularisierungsmethode in den meisten Fällen die besten Ergebnisse lieferte.
+Es wurde zusätzlich der Fit dargestellt, der in der Entfaltung mit Tikhonov-Regularisierung erstellt wurde, da diese Regularisierungsmethode in den meisten Fällen die besten Ergebnisse lieferte.
 Folgende Funktion wurde angenommen:
 
 \begin{equation}
  \frac{\mathrm{d}N}{\mathrm{d}E\,\mathrm{d}A\,\mathrm{d}t}=f_0\left( \frac{E}{r} \right)^\alpha.
 \end{equation}
 
-Der Fit lieferte das Ergebnis:
+Die angepasste Funktion ergibt sich somit zu:
 
 \begin{equation}
  \frac{\mathrm{d}N}{\mathrm{d}E\,\mathrm{d}A\,\mathrm{d}t}=(2,74 \pm 0,06) \cdot 10^{-10}\left( \frac{E}{\SI{0,3}{TeV}} \right)^{-2.64 \pm 0,03} \si{TeV^{-1}\,s^{-1}\,cm^{-2}}.
@@ -547,12 +546,12 @@ Der Fit lieferte das Ergebnis:
 \subsection{Datenset 1}
 \label{subsec:Datenset_1}
 Der folgende Teil beschreibt die Analyse der Daten vom 25.2.2012 und 29.2.2012.
-Da diese Daten eine andere PSF haben als die Daten aus dem Datenset 2, gibt es eigene MCs dafür und die Daten müssen getrennt von Datenset 2 analysiert werden.
-Die Daten an diesen zwei Tagen haben ebenfalls einen Zenitbereich unter 35°.
+Da diese Daten eine andere PSF haben als die Daten aus dem Datenset 2, benötigt es eigene MCs und die Daten müssen separat von Datenset 2 analysiert werden.
+Die Daten an diesen zwei Tagen haben ebenfalls einen Zenitbereich von unter 35°.
 
 \subsubsection{Datencheck}
 Der Datencheck für diese Daten geschieht analog zum Datencheck des Datensets 2. 
-Tabelle \ref{tab:Datenset1-Mrk421} zeigt an welchen Tagen Mrk 421-Daten den Datencheck überstanden haben und für die Analyse zur Verfügung stehen. 
+Die Tabelle \ref{tab:Datenset1-Mrk421} zeigt an welchen Tagen Mrk 421-Daten den Datencheck überstanden haben und für die Analyse zur Verfügung stehen. 
 
 \begin{table}[!h]
 \centering
@@ -569,7 +568,7 @@ Februar & 25., 29.\\
 \end{table}
 
 
-Tabelle \ref{tab:Datenset1} zeigt wieviel Mrk 421-/Crab- und Background-Daten den Datencheck überstanden haben.
+Tabelle \ref{tab:Datenset1} zeigt die selektierten Mrk 421-/Crab- und Background-Daten nach dem Datencheck.
 
 
 \begin{table}[!h]
@@ -596,8 +595,8 @@ Tabelle \ref{tab:Datenset1} zeigt wieviel Mrk 421-/Crab- und Background-Daten de
 \end{tabular}
 \end{table}
 
-\subsubsection{Lichtkurve}
-Mit Hilfe von Crab-Daten wurden wieder die Einstellungen für die Lichtkurve von Mrk 421 bestimmt.
+\subsubsection{Lichtkurve: Crab und Mrk~421}
+Mit Hilfe von Crab-Daten wurden die Einstellungen für die Lichtkurve von Mrk 421 bestimmt.
 Es wurde nur an einem Tag zwischen dem 25.2.2012 und dem 29.2.2012 Crab beobachtet.
 Deswegen beinhaltet die Lichtkurve von Crab nur $\SI{20}{min}$ an Crab-Daten (vgl. \autoref{Datenset1_LC_Crab}).
 
@@ -618,15 +617,15 @@ Die Lichtkurve von Mrk 421 befindet sich in Abb.\ref{Datenset1_LC_Mrk421}.
     \label{Datenset1_LC_Mrk421}
 \end{figure}
 
-Es ist zu sehen, dass der Fluss an diesen beiden Tagen verglichen mit den ersten Tagen aus Datenset 2 sehr niedrig ist.
+Es ist zu sehen, dass der Fluss an diesen beiden Tagen verglichen mit den Daten aus Datenset 2 auf einem niedrigen Niveau liegt.
 
 
 
 \FloatBarrier
 
-\subsubsection{Spektrum}
+\subsubsection{Spektrum: Mrk~421}
 Analog zu Datenset 2 wurde auch wieder ein Spektrum bestimmt.
-Das Resultat befindet sich in Abb.\ref{Datenset1_Spektrum_Mrk421}
+Das Resultat befindet sich in Abb.\ref{Datenset1_Spektrum_Mrk421}.
 
 \begin{figure}
     \centering
@@ -636,13 +635,12 @@ Das Resultat befindet sich in Abb.\ref{Datenset1_Spektrum_Mrk421}
     \label{Datenset1_Spektrum_Mrk421}
 \end{figure}
 
-Es ist zu sehen, dass die Entfaltungen ohne Tikhonov-Regularisierung im hohen Energiebereich nicht mehr funktionieren.
-Auch bei kleinen Energien unterscheiden sie sich etwas.
-Aufgrund des großen Energiebereichs, in dem die Entfaltung mit Tikhonov-Regularisierung Ergebnisse liefert, wird wieder dieser Fit der Punkte eingezeichnet.
+Es ist zu sehen, dass die Entfaltungen ohne Tikhonov-Regularisierung im hohen Energiebereich, d.h $E>\SI{9}{TeV}$, keine Ergebnisse liefern .
+Aufgrund des großen Energiebereichs, in dem die Entfaltung mit Tikhonov-Regularisierung Ergebnisse liefert, wird wieder dieser Fit der Daten eingezeichnet.
 Der Fit lieferte folgendes Ergebnis:
 
 \begin{equation}
- \frac{\mathrm{d}F}{\mathrm{d}E}=(1,42 \pm 0,11) \cdot 10^{-11}\left( \frac{E}{0,3 \si{TeV}} \right)^{-3.01\pm 0,14} \si{TeV^{-1}\,s^{-1}\,cm^{-2}}.
+ \frac{\mathrm{d}N}{\mathrm{d}E\mathrm{d}A\mathrm{d}t}=(1,42 \pm 0,11) \cdot 10^{-11}\left( \frac{E}{0,3 \si{TeV}} \right)^{-3.01\pm 0,14} \si{TeV^{-1}\,s^{-1}\,cm^{-2}}.
 \end{equation}
 
 Aufgrund der kurzen Observationszeit wurde keine Entfaltung der Crab-Daten vorgenommen.
@@ -651,13 +649,13 @@ Aufgrund der kurzen Observationszeit wurde keine Entfaltung der Crab-Daten vorge
 
 \subsection{Datenset 4}
 \label{subsec:Datenset_4}
-Dieses Datenset beinhaltet die ersten Daten, die von Mrk 421 nach dem Austausch der MAGIC-I-Kamera genommen wurden. 
-Genauso wie Datenset 1 umfasst dieses Datenset nur wenige Tage. 
+Dieses Datenset beinhaltet die ersten Daten, die von Mrk 421 nach dem Austausch der MAGIC-I-Kamera aufgenommen wurden. 
+Wie das Datenset 1 umfasst dieses Datenset nur wenige Tage. 
 An drei Tagen wurde Mrk 421 im Stereo-Modus observiert. 
 
 \subsubsection{Datencheck}
 Der Datencheck für diese Daten geschieht analog zum Datencheck des Datensets 2. 
-Tabelle \ref{tab:Datenset4} zeigt, welche Mrk 421-/Crab- und Background-Daten nach dem Datencheck übrig sind und Tabelle \ref{tab:Datenset4-Mrk421} an welchen Tage die Mrk 421-Daten genommen wurden.
+Die \autoref{tab:Datenset4} zeigt, welche Mrk 421-/Crab- und Background-Daten nach dem Datencheck vorhanden sind und die \autoref{tab:Datenset4-Mrk421} zeigt, an welchen Tage die Mrk 421-Daten genommen wurden.
 
 \begin{table}[!h]
 \centering
@@ -695,11 +693,11 @@ Dezember & 15., 19., 23.\\
 \end{tabular}
 \end{table}
 
-\subsubsection{Lichtkurve}
+\subsubsection{Lichtkurve: Crab und Mrk~421}
 Die Lichtkurve von Crab befindet sich in \autoref{Datenset4_LC_Crab}. 
 Es ist zu sehen, dass diese Lichtkurve mit dem mittleren Fluss von Crab gut übereinstimmt.
-Die Lichtkurve von Mrk 421 in \autoref{Datenset4_LC_Mrk421} 
-Wie zu sehen ist, liegen auch hier die Flüsse niedrig.
+Die Lichtkurve von Mrk 421 ist in \autoref{Datenset4_LC_Mrk421}. 
+In diesem Zeitraum liegt der Mrk~412-Fluss weiterhin unterhalb des Crab-Flusses.
 
 \begin{figure}
     \centering
@@ -718,7 +716,7 @@ Wie zu sehen ist, liegen auch hier die Flüsse niedrig.
 \end{figure}
 
 
-\subsubsection{Spektrum}
+\subsubsection{Spektrum: Mrk~421}
 Das entfaltete Spektrum von Mrk 421 befindet sich in Abb.~\ref{Datenset4_Spektrum_Mrk421}.
 
 \begin{figure}
@@ -732,7 +730,7 @@ Das entfaltete Spektrum von Mrk 421 befindet sich in Abb.~\ref{Datenset4_Spektru
 Der Fit des entfalteten Spektrums mit Tikhonov-Regularisierung liefert folgendes Ergebnis:
 
 \begin{equation}
- \frac{\mathrm{d}F}{\mathrm{d}E}=(3,14 \pm 0,15) \cdot 10^{-10}\left( \frac{E}{0,3 \si{TeV}} \right)^{-3.16\pm 0,07} \si{TeV^{-1}\,s^{-1}\,cm^{-2}}.
+ \frac{\mathrm{d}N}{\mathrm{d}E\mathrm{d}A\mathrm{d}t}=(3,14 \pm 0,15) \cdot 10^{-10}\left( \frac{E}{0,3 \si{TeV}} \right)^{-3.16\pm 0,07} \si{TeV^{-1}\,s^{-1}\,cm^{-2}}.
 \end{equation}
 
 
@@ -743,9 +741,9 @@ Der Fit des entfalteten Spektrums mit Tikhonov-Regularisierung liefert folgendes
 
 \subsubsection{Datencheck}
 Der Datencheck für die Mono-Daten geschieht analog zum Datencheck der anderen Datensets.
-Die Analyse beruht auf Daten auf Star-Level und nicht Superstar-Level wie vorher.
-Tabelle \ref{tab:Datenset3-Mrk421} und Tabelle \ref{tab:Datenset3} zeigen, welche Mrk 421-und Background-Daten nach dem Datencheck übrig sind.
-Ein Beobachtung von Crab gab es zu diesem Zeitraum nicht.
+Die Analyse beruht auf Daten auf Star-Level und nicht Superstar-Level wie zuvor.
+Tabelle \ref{tab:Datenset3-Mrk421} und Tabelle \ref{tab:Datenset3} zeigen, welche Mrk 421-und Background-Daten nach dem Datencheck vorhanden sind.
+Ein Beobachtung von Crab find in diesem Zeitraum nicht statt.
 
 \begin{table}[!h]
 \centering
@@ -784,15 +782,15 @@ Juni & 15,. 19. \\
 \end{table}
 
 \subsubsection{Energieschätzung}
-Im Vergleich zu der Stereo-Analyse müssen für die Mono-Analyse ältere Programme benutzt werden.
+Im Vergleich zu der Stereo-Analyse müssen für die Mono-Analyse ältere Programme verwendet werden.
 Die RFs für die \texttt{Disp}-Bestimmung und Gamma-Hadron-Separation werden mit Hilfe von \textit{Osteria} erstellt.
 Im Gegensatz zur Standardanalyse werden keine Look-Up-Tables zur Energieschätzung benutzt, sondern ebenfalls ein RF.
 
-\subsubsection{Lichtkurve}
-Nachdem den Ereignissen eine Hadroness, ein \texttt{Disp}-Wert sowie eine geschätzte Energie zugeordnet worden sind, wird nach Anwendung eines Hadroness-Schnittes wieder eine Lichtkurve erstellt.
+\subsubsection{Lichtkurve: Mrk~421}
+Nachdem allen Ereignissen eine Hadroness, ein \texttt{Disp}-Wert sowie eine geschätzte Energie zugeordnet worden sind, wird nach Anwendung eines Hadroness-Schnittes eine Lichtkurve erstellt.
 Dies geschieht mit Hilfe des Programms \textit{Fluxlc}.
 Obwohl keine Crab-Daten zur Verfügung standen, um die Einstellungen für die Lichtkurve mit einem bekannten Fluss zu überprüfen, wird eine Lichtkurve für Mrk 421 erstellt.
-Abb.\ref{Datenset3_LC_Mrk421} zeigt die Lichtkurve für Mrk 421.
+\autoref{Datenset3_LC_Mrk421} zeigt die Lichtkurve für Mrk 421.
 
 \begin{figure}
     \centering
@@ -802,12 +800,17 @@ Abb.\ref{Datenset3_LC_Mrk421} zeigt die Lichtkurve für Mrk 421.
     \label{Datenset3_LC_Mrk421}
 \end{figure}
 
-Es zeigt sich, dass der Fluss von Mrk 421 in diesem Zeitbereich genau wie in den anderen Zeitbereichen ebenfalls sehr niedrig ist.
+Es zeigt sich, dass der Fluss von Mrk 421 in diesem Zeitbereich genau wie in den anderen Zeitbereichen ebenfalls geringer als der Crab-Fluss ist.
 
 
 \subsubsection{Spektrum}
 
-Wie in Abb.\ref{Datenset3_Spektrum_Mrk421} zu sehen ist, werden die Daten abschließend wieder entfaltet.
+In \autoref{Datenset3_Spektrum_Mrk421} ist das entfaltete Spektrum für diesen Zeitraum dargestellt.
+Der Fit an die Datenpunkte nach der Entfaltung mit Tikhonov-Regularisierung liefert folgendes Ergebnis:
+
+\begin{equation}
+ \frac{\mathrm{d}F}{\mathrm{d}E}=(5,42 \pm 0.23) \cdot 10^{-10}\left( \frac{E}{\SI{0,3}{TeV}} \right)^{(-3.25 \pm 0.09)} \si{TeV^{-1}\,s^{-1}\,cm^{-2}}.
+\end{equation}
 
 \begin{figure}
     \centering
@@ -816,12 +819,6 @@ Wie in Abb.\ref{Datenset3_Spektrum_Mrk421} zu sehen ist, werden die Daten abschl
     Die gestrichelte Linie stellt das gefittete Spektrum dar, welches mit Hilfe der Tikhonov-Regularisierung berechnet wurde.}
     \label{Datenset3_Spektrum_Mrk421}
 \end{figure}
-
-Der Fit an die Datenpunkte nach einer Entfaltung mit Tikhonov-Regularisierung liefert folgendes Ergebnis:
-
-\begin{equation}
- \frac{\mathrm{d}F}{\mathrm{d}E}=(5,42 \pm 0.23) \cdot 10^{-10}\left( \frac{E}{\SI{0,3}{TeV}} \right)^{(-3.25 \pm 0.09)} \si{TeV^{-1}\,s^{-1}\,cm^{-2}}.
-\end{equation}
 
 \FloatBarrier
 

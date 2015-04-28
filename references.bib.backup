@@ -846,7 +846,7 @@ school = {IFAE/Universitat Autonoma de Barcelona}
 }
 
 
-@ARTICLE{2008ApJ...674.1037A,
+@ARTICLE{LiteraturreferenzMAGIC,
    author = {{Albert}, J. and {Aliu}, E. and {Anderhub}, H. and {Antoranz}, P. and 
 	{Armada}, A. and {Baixeras}, C. and {Barrio}, J.~A. and {Bartko}, H. and 
 	{Bastieri}, D. and {Becker}, J.~K. and {Bednarek}, W. and {Berger}, K. and 
@@ -899,7 +899,68 @@ archivePrefix = "arXiv",
   adsnote = {Provided by the SAO/NASA Astrophysics Data System}
 }
 
+@article{Bock,
+title = "Methods for multidimensional event classification: a case study using images from a Cherenkov gamma-ray telescope ",
+journal = "Nuclear Instruments and Methods in Physics Research Section A: Accelerators, Spectrometers, Detectors and Associated Equipment ",
+volume = "516",
+number = "2–3",
+pages = "511 - 528",
+year = "2004",
+note = "",
+issn = "0168-9002",
+doi = "http://dx.doi.org/10.1016/j.nima.2003.08.157",
+url = "http://www.sciencedirect.com/science/article/pii/S0168900203025051",
+author = "R.K. Bock and A. Chilingarian and M. Gaug and F. Hakl and T. Hengstebeck and M. Jiřina and J. Klaschka and E. Kotrč and P. Savický and S. Towers and A. Vaiciulis and W. Wittek",
+keywords = "Classification",
+keywords = "Discrimination",
+keywords = "Multivariate",
+keywords = "Neural networks",
+keywords = "Kernel methods",
+keywords = "Nearest-neighbour",
+keywords = "Regression trees ",
+}
 
+
+@MANUAL{EnergieRekonstruktion,
+    title   = {Energy Reconstruction (Theory)},
+    author = {MAGIC},
+    url = {http://wiki.magic.pic.es/index.php/Energy_reconstruction_%28Theory%29},
+    date = {2015},
+}
+
+@MANUAL{Lichtkurve,
+    title   = {Flux Estimation (Theory)},
+    author = {MAGIC},
+    url = {http://wiki.magic.pic.es/index.php/Flux_estimation_%28Theory%29},
+    date = {2015},
+}
+
+
+@MANUAL{UnfoldingTheorie,
+    title   = {Unfolding (Theory)},
+    author = {MAGIC},
+    url = {http://wiki.magic.pic.es/index.php/Unfolding_%28Theory%29},
+    date = {2015},
+}
+
+
+@ARTICLE{CombUnfold,
+    author = {{Wittek}, W.},
+    title   = {Unfolding},
+    journal = {MAGIC-TDAS 05-05 (internal notes)},
+      year = 2006,
+      month = apr,
+}
+
+@book{Blobel,
+      author        = {{Blobel}, V. and {Lohrmann}, E.},
+      title         = "{Statistische und numerische Methoden der Datenanalyse}",
+      publisher     = "Teubner",
+      address       = "Stuttgart",
+      series        = "Teubner Studienbücher Physik",
+      year          = "1998",
+      url           = "https://cds.cern.ch/record/437773",
+}
 
 %------------------------------------------------------------------------------------------------------------MWL---------------------------------------------------------------------------------------------
 

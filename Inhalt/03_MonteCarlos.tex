@@ -4,13 +4,13 @@ Eines der Ziele in der Astroteilchenphysik ist es, Aussagen über die Energiespe
 
 In dieser Arbeit werden Daten analysiert, die von den beiden MAGIC-Teleskopen\cite{MAGIC_Telescopes} aufgenommen wurden, die in \autoref{sec:MAGIC} kurz beschrieben werden.
 
-Aufgrund einer fehlenden Gamma-Kalibrationsquelle sind in der Datenanalyse Monte-Carlo-(MC)-Simulationsdaten von grundlegender Bedeutung.
+Aufgrund einer fehlenden Gamma-Kalibrationsquelle sind in der Datenanalyse Monte\-/Carlo\-/(MC)\-/Simulationsdaten von grundlegender Bedeutung.
 Für die Rekonstruktion eines Energiespektrums einer Gamma-Quelle müssen zunächst Signal-Ereignisse, welche aus der Quelle stammen, von den Untergrund-Ereignissen getrennt werden.
 Hierbei ist das Verhältnis von Signal- zu Untergrund-Ereignissen etwa 1:1000\cite{Weekes}, was eine Herausforderung darstellt.
 Die Trennung geschieht heutzutage mit Klassifikationsalgorithmen, die auf wohlbekannten Beispieldaten, den MC-Simulationsdaten und ausgewählten Untergrunddaten, trainiert werden.
 Auch für die Methode der Entfaltung des Energiespektrums, die in \autoref{sec:Unfolding} beschrieben wird, werden MC-Daten benötig.
 
-Die gesamte Produktion der Gamma-MC-Simulationsdaten für das MAGIC-Experiment wurde im Rahmen dieser Doktorarbeit durchgeführt und wird in diesem Kapitel detailliert beschrieben.
+Die gesamte Produktion der Gamma-MC-Simulationsdaten für das MAGIC\-/Experiment wurde im Rahmen dieser Doktorarbeit durchgeführt und wird in diesem Kapitel detailliert beschrieben.
 
 Zunächst wird ein Einblick in die Programme gegeben, die in der MAGIC-MC-Simulationskette genutzt werden.
 Angefangen mit der Simulation der Luftschauer mit \textit{CORSIKA} \cite{CORSIKA} (\autoref{sec:Corsika}) über die Reflektor-Simulation \cite{Reflector} (\autoref{sec:Reflector}) wird bis hin zur Kamera-Simulation \cite{Camera} (\autoref{sec:Camera}) in diesem Kapitel jeder Simulationsschritt beschrieben.
@@ -643,7 +643,7 @@ Wie in \autoref{LiDo} zu sehen ist, gibt es verschiedene Knotentypen, die sich i
 \begin{itemize}
  \item Die ib-Knoten sind untereinander stark vernetzt und für parallele Jobs reserviert.
  \item eth-Knoten: Auf diesen Knoten werden serielle und parallele Jobs gerechnet, die die GigabitEthernet Connection nutzen.
- \item quad-Knoten: Für Anforderungen an viel Speicher oder parallele OpenMP/Shared Memory Jobs werden die quad Knoten genutzt.
+ \item quad-Knoten: Für Anforderungen an viel Speicher oder parallele OpenMP/ Shared Memory Jobs werden die quad Knoten genutzt.
  \item GPU: Rechnungen auf Graphikkarten finden hier statt.
  \item nehalem: Diese Knoten sind neue Testknoten, die mehr Arbeitsspeicher als die eth-Knoten besitzen.
 \end{itemize}

@@ -1,14 +1,22 @@
 \chapter{Einleitung}
-Terry Pratchett, einer der berühmtesten Fantasyautoren, sagte: \enquote{Das Universum ist ein großer Witz}.
-Da dachte ich mir: \enquote{Na, das wollen wir ja mal sehen}.
+
+\begin{quotation}
+ Terry Pratchett, einer der berühmtesten Fantasy-Autoren, sagte: 
+ 
+ \enquote{Das Universum ist ein großer Witz}.
+ 
+ %Da denkt man sich: \enquote{\textit{Na, das wollen wir ja mal sehen}.}
+ \textit{Ich bin mir da aber noch nicht so sicher...}
+\end{quotation}
+
 
 Vielleicht hilft diese Doktorarbeit dabei, ein kleines bisschen Licht ins Dunkel des Universums zu bringen.
 Mit Hilfe von Teilchen, die wir auf der Erde oder mit Hilfe von Satelliten detektieren, können wir versuchen, so viel wie möglich über das Universum zu erfahren.
 Fragen wie \enquote{Woher kommen die Teilchen, die wir hier messen?}, \enquote{Wie wurden wurden diese Teilchen beschleunigt?} oder \enquote{Was passiert auf dem Weg von der Quelle bis zu uns mit diesem Teilchen?} beschäftigen die Astroteilchenphysiker.
 Um diese Fragen zu klären, stehen verschiedene Botenteilchen mit ihren Vor- und Nachteilen zur Verfügung.
-Im Folgenden werde ich mich auf die Gammastrahlung als Bote beschränken.
+Im Folgenden werde ich mich auf die Gammastrahlung als Bote konzentrieren.\\
 
-Das Konzept der Gammaastronomie wurde in den 50er Jahren entwickelt und in den folgenden Jahren begann die Entwicklung der passenden Teilchendetektoren bis hin zu den abbildenden Luftschauercherenkovdetektoren wie den MAGIC-Teleskopen.
+Das Konzept der Gammaastronomie wurde in den 50er Jahren entwickelt und in den folgenden Jahren begann die Entwicklung der passenden Teilchendetektoren bis hin zu den abbildenden Luftschauer-Cherenkovdetektoren wie den MAGIC-Teleskopen.
 Mit Hilfe dieser beiden Teleskope, die sich auf La Palma befinden, ist es möglich Luftschauer, ausgelöst von sehr hochenergetischer Gammastrahlung, zu detektieren.
 
 Eine mögliche Quelle für hochenergetische Gammastrahlung sind Aktive Galaktische Kerne (AGN).
@@ -31,16 +39,16 @@ Diese Multiwellenlängendaten von verschiedenen Experimenten beleuchten die Quel
 
 Die Arbeit gliedert sich folgendermaßen:
 
-\autoref{chapter:Astroteilchenphysik} gibt einen Einblick in die Astroteilchenphysik. 
+\textbf{\autoref{chapter:Astroteilchenphysik}} gibt einen Einblick in die Astroteilchenphysik. 
 Verschiedene Quellen kosmischer Strahlung und Beschleunigungsmechanismen werden vorgestellt. 
 Des Weiteren wird auf die Gammaastronomie als eigenes Forschungsgebiet in der Astroteilchenphysik eingegangen. 
-Danach wird der Quelltyp des Aktiven Galaktischen Kerns (AGN) näher beschrieben und die in dieser Arbeit analysierte AGN Mrk~421 eingeführt.
+Danach wird der Quelltyp des Aktiven Galaktischen Kerns (AGN) näher beschrieben und die in dieser Arbeit analysierte AGN Mrk~421 vorgestellt.
 
-\autoref{chapter:MC-Simulation} beinhaltet eine Beschreibung der MAGIC-Teleskope und bietet einen Überblick über die Monte Carlo-Produktion.
+\textbf{\autoref{chapter:MC-Simulation}} beinhaltet eine Beschreibung der MAGIC-Teleskope und bietet einen Überblick über die Monte Carlo-Produktion.
 Jedes Simulationsprogramm und die anschließende Kalibration werden beschrieben.
 Abschließend beinhaltet dieses Kapitel noch eine Übersicht über die automatische Produktionsstruktur auf dem Rechencluster LiDO an der TU Dortmund.
 
-In \autoref{chapter:Analyse} befindet sich eine kurze Einführung in die Analyseprogramme, mit denen dann später in diesem Abschnitt die Analyse der AGN Mrk~421 durchgeführt wurde.
+In \textbf{\autoref{chapter:Analyse}} befindet sich eine kurze Einführung in die Analyseprogramme, mit denen dann später in diesem Abschnitt die Analyse der AGN Mrk~421 durchgeführt wurde.
 Für diese Analyse wurde der gesamte Datensatz in vier Teile geteilt, die getrennt voneinander analysiert werden.
 Diese Teile unterscheiden sich in ihren äußeren Bedingungen und benötigen verschiedene Monte-Carlo-Simulationsdaten.
 Es werden für jeden Datensatz einzeln das Energiespektrum und die Lichtkurve bestimmt.
@@ -48,6 +56,6 @@ Datensatz 2 wird zum Verständnis der Analyse beispielhaft genauer diskutiert.
 Eine zusammenfassende Lichtkurve, die den gesamten Datensatz enthält, ist am Ende des Kapitels zu finden.
 
 Eine Multiwellenlängenanalyse der Quelle ist in \autoref{chapter:MWL} zu finden.
-Nach einer Vorstellung der beteiligten Experimente werden die Lichtkurven der einzelnen Teleskope dargestellt sowie die Ergebnisse einer Variabilitätsuntersuchung zwischen den verschiedenen Wellenlängen.
+Nach einer Vorstellung der beteiligten Experimente werden die Lichtkurven der einzelnen Teleskope sowie die Ergebnisse einer Variabilitätsuntersuchung zwischen den verschiedenen Wellenlängen  dargestellt.
 
 In \autoref{chapter:Ergebnisse} werden alle erzielten Ergebnisse zusammengefasst.

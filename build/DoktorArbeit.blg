@@ -1,19 +1,19 @@
 [1] Config.pm:320> INFO - This is Biber 1.9
 [1] Config.pm:323> INFO - Logfile is 'build/DoktorArbeit.blg'
-[59] biber:277> INFO - === Fri Apr 24, 2015, 11:12:40
-[59] Biber.pm:333> INFO - Reading 'build/DoktorArbeit.bcf'
-[176] Biber.pm:635> INFO - Found 71 citekeys in bib section 0
-[211] Biber.pm:3051> INFO - Processing section 0
-[238] Biber.pm:3189> INFO - Looking for bibtex format file 'references.bib' for section 0
-[251] bibtex.pm:990> INFO - Decoding LaTeX character macros into UTF-8
-[265] bibtex.pm:864> INFO - Found BibTeX data source 'references.bib'
-[268] Utils.pm:144> WARN - Possible typo (case mismatch) between datasource keys: 'HESS' and 'Hess' in file 'references.bib'
-[273] Utils.pm:144> WARN - Possible typo (case mismatch) between datasource keys: 'pdg' and 'PDG' in file 'references.bib'
-[698] Utils.pm:144> WARN - The field 'note' in entry 'Bock' cannot be null, deleting it
-[1850] UCollate.pm:66> INFO - Overriding locale 'de-DE' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[1851] UCollate.pm:66> INFO - Overriding locale 'de-DE' defaults 'variable = shifted' with 'variable = non-ignorable'
-[1851] Biber.pm:2928> INFO - Sorting list 'nty' of type 'entry' with scheme 'nty' and locale 'de-DE'
-[1851] Biber.pm:2932> INFO - No sort tailoring available for locale 'de-DE'
-[2318] bbl.pm:517> INFO - Writing 'build/DoktorArbeit.bbl' with encoding 'UTF-8'
-[2354] bbl.pm:606> INFO - Output to build/DoktorArbeit.bbl
-[2415] Biber.pm:106> INFO - WARNINGS: 3
+[57] biber:277> INFO - === Tue Apr 28, 2015, 13:35:25
+[57] Biber.pm:333> INFO - Reading 'build/DoktorArbeit.bcf'
+[178] Biber.pm:635> INFO - Found 71 citekeys in bib section 0
+[214] Biber.pm:3051> INFO - Processing section 0
+[290] Biber.pm:3189> INFO - Looking for bibtex format file 'references.bib' for section 0
+[340] bibtex.pm:990> INFO - Decoding LaTeX character macros into UTF-8
+[353] bibtex.pm:864> INFO - Found BibTeX data source 'references.bib'
+[356] Utils.pm:144> WARN - Possible typo (case mismatch) between datasource keys: 'HESS' and 'Hess' in file 'references.bib'
+[361] Utils.pm:144> WARN - Possible typo (case mismatch) between datasource keys: 'pdg' and 'PDG' in file 'references.bib'
+[969] Utils.pm:144> WARN - The field 'note' in entry 'Bock' cannot be null, deleting it
+[2296] UCollate.pm:66> INFO - Overriding locale 'de-DE' defaults 'variable = shifted' with 'variable = non-ignorable'
+[2296] UCollate.pm:66> INFO - Overriding locale 'de-DE' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[2296] Biber.pm:2928> INFO - Sorting list 'nty' of type 'entry' with scheme 'nty' and locale 'de-DE'
+[2296] Biber.pm:2932> INFO - No sort tailoring available for locale 'de-DE'
+[2998] bbl.pm:517> INFO - Writing 'build/DoktorArbeit.bbl' with encoding 'UTF-8'
+[3070] bbl.pm:606> INFO - Output to build/DoktorArbeit.bbl
+[3116] Biber.pm:106> INFO - WARNINGS: 3

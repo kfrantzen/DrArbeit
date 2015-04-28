@@ -5,7 +5,7 @@
 \documentclass[
         paper=a4,               % Papierformat DIN A4
         BCOR=12mm,              % 12mm Binderandkorrektur
-       parskip=false,           % Absätze als halbe Leerzeile
+       parskip=half,           % Absätze als halbe Leerzeile
        headsepline,            % Linie zwischen Kopfzeile und Dokument
        cleardoublepage=plain,  % Keine Kopf/Fußzeile auf Leerseiten
        bibliography=totoc,     % Bibliographie als nicht-nummeriertes 
@@ -46,7 +46,7 @@
 
 \hyphenation{Si-mu-la-tions-ket-te}
 \hyphenation{MCCamera-Run-Data}
-\hyphenation{Mul-ti-wel-len-län-gen}
+\hyphenation{Mul-ti-wel-len-län-gen-Kam-pag-ne}
 %, As-tro-phy-si-cal, in-ter-stel-lar}
 
 
@@ -169,6 +169,6 @@
 
 \usepackage{icomma}	%Kommas in Zahlen werden ohne Leerzeichen danach dargestellt
 % \setotherlanguage{english}
-
+\usepackage{epigraph}
 
 

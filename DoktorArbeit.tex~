@@ -22,12 +22,12 @@
 %------------------------------------------------------------------------------
 
 %Titel der Arbeit
-\newcommand{\thetitle}{Analyse der AGN Mrk 421\\ während des MAGIC-Upgrades 2012}
-\newcommand{\thesubtitle}{oder\\ Wie ein Teleskop-Upgrade dazu führt, dass in einem Jahr vier MC-Datensätze benötigt werden}
+\newcommand{\thetitle}{Analyse der Quelle Markarian 421\\ während des MAGIC-Upgrades 2012}
+\newcommand{\thesubtitle}{oder\\ Die Rolle der Monte Carlo-Produktion in der MAGIC-Datenanalyse}
 \newcommand{\Geburtsort}{Willich}
 \newcommand{\Jahr}{2015}
 \newcommand{\Lehrstuhl}{Experimentelle Physik V}
-\newcommand{\Betreuer}{Prof. Dr. Erstasdasgutachter}
+\newcommand{\Betreuer}{Prof. Dr. Erstgutachter}
 \newcommand{\Zweitgutachter}{Prof. Dr. Zweitgutachter}
 \newcommand{\Abgabedatum}{11. Juli 2014}
 
@@ -45,7 +45,7 @@
 
 \date{\Jahr}
 
-\subject{Arbeit zur Erlangung des akademischen Grades\\Bachelor of Science}
+\subject{Arbeit zur Erlangung des akademischen Grades eines \\Doktors der Naturwissenschaften \\(Dr. rer. nat.)}
 \publishers{Lehrstuhl für \Lehrstuhl \\ Fakultät Physik \\ Technische Universität Dortmund}
 
 
@@ -82,7 +82,7 @@
 \backmatter
 \printbibliography
 
-\cleardoublepage
-\input{./Inhalt/eid_versicherung.tex}
+%\cleardoublepage
+%\input{./Inhalt/eid_versicherung.tex}
 
 \end{document}
