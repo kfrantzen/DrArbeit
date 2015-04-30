@@ -22,10 +22,15 @@
 %------------------------------------------------------------------------------
 
 %Titel der Arbeit
-\newcommand{\thetitle}{Analyse der Quelle Markarian 421\\ während des MAGIC-Upgrades 2012}
-\newcommand{\thesubtitle}{oder\\ Die Rolle der Monte Carlo-Produktion in der MAGIC-Datenanalyse}
+%\newcommand{\thetitle}{Analyse der Quelle Markarian 421\\ während des MAGIC-Upgrades 2012}
+%\newcommand{\thesubtitle}{oder\\ Die Rolle der Monte Carlo-Produktion in der MAGIC-Datenanalyse}
+
+\newcommand{\thetitle}{Von der Monte-Carlo-Produktion zur Datenanalyse}
+\newcommand{\thesubtitle}{-\\ Eine Analyse der 2012 genommenen Daten des Aktiven Galaktischen Kerns Mrk 421}
+
+
 \newcommand{\Geburtsort}{Willich}
-\newcommand{\Jahr}{2015}
+\newcommand{\Jahr}{Mai 2015}
 \newcommand{\Lehrstuhl}{Experimentelle Physik V}
 \newcommand{\Betreuer}{Prof. Dr. Erstgutachter}
 \newcommand{\Zweitgutachter}{Prof. Dr. Zweitgutachter}
@@ -33,7 +38,7 @@
 
 %Author und Email-Adresse
 \author{
-   Katharina Frantzen\\
+   \textbf{Katharina Frantzen}\\
    geboren in \Geburtsort
 }
 
@@ -68,11 +73,11 @@
 
 \mainmatter
 % Hier beginnt der Inhalt mit Seite 1 in arabischen Ziffern
-%\input{./Inhalt/01_Einleitung.tex}
-%\input{./Inhalt/02_Astroteilchenphysik.tex}
-%\input{./Inhalt/03_MonteCarlos.tex}
-%\input{./Inhalt/04_MrkAnalyse.tex}
-%\input{./Inhalt/05_MWL.tex}
+\input{./Inhalt/01_Einleitung.tex}
+\input{./Inhalt/02_Astroteilchenphysik.tex}
+\input{./Inhalt/03_MonteCarlos.tex}
+\input{./Inhalt/04_MrkAnalyse.tex}
+\input{./Inhalt/05_MWL.tex}
 \input{./Inhalt/06_Zusammenfassung.tex}
 
 %\appendix

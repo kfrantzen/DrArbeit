@@ -2,7 +2,7 @@
 \label{chapter:Analyse}
 
 Im folgenden Kapitel werden die Gamma-Hadron-Separation und Energierekonstruktion (\autoref{sec:GH-Separation}), die Erstellung von Lichtkurven (\autoref{sec:Lichtkurve}) und die Spektrums-Rekonstruktion (\autoref{sec:Unfolding}) erläutert.
-Zu diesem Zweck werden Standard-Analyseprogramme benutzt, die im \textit{MARS} (MAGIC Analysis and Reconstruction Software)-Paket enthalten sind.
+Zu diesem Zweck werden Standard\-/Analyseprogramme benutzt, die im \textit{MARS} (MAGIC Analysis and Reconstruction Software)-Paket enthalten sind.
 Dieses Softwarepaket beinhaltet eine Sammlung von ROOT-Skripten und Macros \cite{MARS}, wie \textit{coach}, womit der Random Forest trainiert wird, \textit{flute}, womit die Lichtkurve bestimmt wird oder \textit{CombUnfold}, was der Entfaltung des Energiespektrums dient. 
 
 Nach einer kurzen Einführung in diese Programme, werden diese in \autoref{Mrk421_Analyse} für die Analyse der 2012 aufgenommenen Daten der AGN Mrk~421 genutzt.
@@ -22,7 +22,7 @@ Weiterhin wird die Benutzung von Look-Up-Tabellen erläutert, welche zum Schätz
 
 \subsection{Gamma-Hadron-Separation}
 Da das Signal-Untergrund-Verhältnis zwischen Gamma-Schauern aus Richtung der Quelle und hadronischen Schauern kleiner als 1:1000 ist, werden effiziente Verfahren benötigt, um das Signal vom Untergrund zu trennen.\cite{Bock}
-Diese geringe Anzahl an Signalereignissen ist sogar für helle Quellen wie Crab vorhanden.
+Diese geringe Anzahl an Signalereignissen stellt sogar für helle Quellen wie Crab eine Herausforderung dar.
 In der Standard-MAGIC-Analysekette übernehmen die Programme \textit{Coach} und \textit{Melibea} diese Aufgabe. 
 Zu diesem Zweck wird ein Random Forest (RF) genutzt \cite{RandomForestForMAGIC}.
 Dieser RF basiert auf einem Ensemble an Entscheidungsbäumen mit zufällig ausgewählten Parametern an ihren Knoten.
@@ -33,7 +33,7 @@ Im Ausgangsknoten eines jeden Entscheidungsbaumes befindet sich der komplette Da
 Dieser Knoten wird dann in zwei Nachfolgeknoten geteilt, indem in einem Bildparameter geschnitten wird.
 Bei diesem Splittingprozess wird eine bestimmte Anzahl an Parametern für den Schnitt zufällig aus einer vorher begrenzten Menge gezogen und der Parameter mit dem minimalen Gini-Index zur Separation genutzt.\cite{RandomForestForMAGIC}
 
-Mit Hilfe des Gini-Index' kann die Ungleichheit der beiden Verteilungen als Funktion des Schnittes angegeben werden.
+Mit Hilfe des Gini-Index kann die Ungleichheit der beiden Verteilungen als Funktion des Schnittes angegeben werden.
 Ist der Gini-Index von einem Knoten null, so ist in diesem Knoten nur noch eine Klasse vorhanden.\cite{RandomForestForMAGIC}
 % So bedeutet ein kleiner Gini-Koeffizient, dass die Verteilungen ähnlich sind und ein großer, dass sie ungleich sind. 
 
@@ -60,7 +60,7 @@ Die Energie der Primärteilchen ist proportional zur Anzahl der Cherenkov-Photon
 Allerdings ist \texttt{size} abhängig vom Zenitwinkel, der Lage des Schauers in der Kamera, dem Impact-Parameter und der Höhe des Schauermaximums.\cite{EnergieRekonstruktion}
 
 Aufgrund dieser Abhängigkeiten wird eine Tabelle erstellt.
-Der MC-Trainingsdatensatz wird in Bins für jeden Parameter, der für die Energierekonstruktion benutzt werden soll, aufgeteilt.
+Der MC\-/Trainingsdatensatz wird in Bins für jeden Parameter, der für die Energierekonstruktion benutzt werden soll, aufgeteilt.
 %So wird eine mehrdimensionale Tabelle mit der gemittelten Energie der MC-Ereignisse, die zu jedem Bin gehört, erstellt.
 Anschließend wird in dieser mehrdimensionalen Tabelle in jedem Bin über die MC-Energien gemittelt sowie der quadratische Mittelwert bestimmt, sodass jedem Bin in dieser Tabelle eine Energie zugeordnet ist.
 Einem realen Ereignis wird anhand seiner Parameter das passende Energie-Bin in der Tabelle zugeteilt und so eine geschätzte Energie (\texttt{Estimated Energy}) zugewiesen.
@@ -68,7 +68,7 @@ Für eine genauere Energierekonstruktion werden noch einige Korrekuren angewandt
 Schauer, die nicht vollständig in der Kamera enthalten sind, bedürfen beispielsweise solch einer Korrektur.\cite{EnergieRekonstruktion}
 
 Für Mono-Daten geschieht die Energierekonstruktion mit Hilfe einer Random Forest Regression.
-Dieser Algoritjmus schätzt keine Klassenzugehörigkeit von Ereignissen, sondern den Wert einer kontinuierlichen Funkion. 
+Dieser Algoritmus schätzt keine Klassenzugehörigkeit von Ereignissen, sondern den Wert einer kontinuierlichen Funkion. 
 In diesem Fall ist der Wert ein Energieschätzer.
 Um den finalen Wert zu bestimmen, wird nach der Anwendung aller Bäume über die Ergebnisse der einzelnen Bäume gemittelt.\cite{EnergieRekonstruktion} 
 
@@ -81,9 +81,9 @@ Zum Einen sind dies sogenannte Ghost-Busting-Methoden, die die Asymmetrie des Sc
 
 Bei den Ghost-Busting-Methoden werden Parameter genutzt, die die Asymmetrie zwischen Schaueranfang und Schauerende in der Kamera charakterisieren.
 %Mit Hilfe des zeitlichen Verlaufs oder des dritten Moments entlang der Hauptachse wird entschieden, aus welcher Richtung der Schauer kommt.
-Mit Hilfe von Zeitgradienten der Ankunftszeiten oder des dritten Moments der Verteilung entlang der großen Halbachse wird entschieden aus welcher Richtung der Schauer kommt.\cite{DispRekonstruktion}
+Mit Hilfe von Zeitgradienten der Ankunftszeiten oder des dritten Moments der Verteilung entlang der großen Halbachse wird entschieden, aus welcher Richtung der Schauer kommt.\cite{DispRekonstruktion}
 
-In einer Standardanalyse geschieht die Rekonstruktion des Parameters \texttt{Disp} für ein Teleskop mit einer Random Forest Regresssion.
+In einer Standardanalyse geschieht die Rekonstruktion des Parameters \texttt{Disp} für ein Teleskop mit einer Random Forest Regression.
 Wie in \autoref{Disp} zu sehen ist, sind zwei Positionen für den Parameter \texttt{Disp} wahrscheinlich.
 Diese befinden sich auf der Schauerachse in den gleichen Entfernungen vom Schauerschwerpunkt.
 Durch Mittelung über die Ergebnisse der Bäume wird der wahrscheinlichere Wert bestimmt.\cite{DispRekonstruktion}
@@ -165,13 +165,13 @@ Dieses Verhalten ist exemplarisch in \autoref{Crab_Theta2} für On-, Off- und Si
 
 Um die Anzahl der realen Signal-Ereignisse zu ermitteln, müssen von den Ereignissen aus der Quellrichtung noch die Background Ereignisse subtrahiert und ein Schnitt in $\theta^2$ angewendet werden.
 
-Dank der ``Wobble-Beobachtung`` ist eine simultane Datennahme von Signal- und Hintergrund möglich.
-Bei dieser Beobachtungsmethode ist das Teleskop nicht direkt auf die Quelle ausgerichtet, sondern die Quellposition ist $0.4°$ vom Kamerazentrum entfernt.
+Dank der \enquote{Wobble-Beobachtung} ist eine simultane Datennahme von Signal- und Hintergrund möglich.
+Bei dieser Beobachtungsmethode ist das Teleskop nicht direkt auf die Quelle ausgerichtet, sondern die Quellposition ist $0,4°$ vom Kamerazentrum entfernt.
 Wegen der Alt-Azimutalen Montierung rotiert die Quelle um das Zentrum in der Kamera und es ist möglich einen Punkt gegenüber der Quelle als Off-Position zu benutzen.
 %Vorteil dieser Methode ist, dass es keine separate Off-Datennahme geben muss.
 Es muss gewährleistet werden, dass die Off-Positionen symmetrisch verteilt sind, um Kamerainhomogenitäten entgegenzuwirken.
 Allerdings tauchen bei dieser Methode die Photonen aus der Quelle auch in der Off-$\theta^2$-Verteilung auf, haben aber ein großes $\theta^2$.
-Eine Off-Position, die zu nahe an der Quelle ist, ist aufgrund der beschriebenen Nachteile ungünstig.\cite{Lichtkurve}
+Eine Off-Position, die zu nah an der Quelle ist, ist aufgrund der beschriebenen Nachteile ungünstig.\cite{Lichtkurve}
 
 \paragraph{Effektive Beobachtungszeit}
 Die effektive Beobachtungszeit berücksichtigt die Totzeit in der Datennahme.
@@ -527,7 +527,7 @@ Lediglich bei kleinen Energien ist eine Anweichung zu erkennen, wleche allerding
     \label{Datenset2_CombunFold_Mrk421}
 \end{figure}
 
-Es wurde zusätzlich der Fit dargestellt, der in der Entfaltung mit Tikhonov-Regularisierung erstellt wurde, da diese Regularisierungsmethode in den meisten Fällen die besten Ergebnisse lieferte.
+Es wurde zusätzlich der Fit dargestellt, der in der Entfaltung mit Tikhonov\-/Regularisierung erstellt wurde, da diese Regularisierungsmethode in den meisten Fällen die besten Ergebnisse lieferte.
 Folgende Funktion wurde angenommen:
 
 \begin{equation}
@@ -630,7 +630,7 @@ Das Resultat befindet sich in Abb.\ref{Datenset1_Spektrum_Mrk421}.
 \begin{figure}
     \centering
     \includegraphics[width=0.8\textwidth]{./Plots/04_MrkAnalyse/Datenset1/Spektrum_Mrk421.pdf}
-    \caption{Entfaltetes Spektrum von Mrk 421 im Zeitraum vom 25.2.2012 bis zum 29.2.2012.
+    \caption{Entfaltetes Spektrum von Mrk 421 im Zeitraum vom 25.2.2012 bis zum 29.2.2012 mit allen wählbaren Regularisierungsmethoden.
     Die gestrichelte Linie stellt das gefittete Spektrum dar, welches mit Hilfe der Tikhonov-Regularisierung berechnet wurde.}
     \label{Datenset1_Spektrum_Mrk421}
 \end{figure}
@@ -651,7 +651,7 @@ Aufgrund der kurzen Observationszeit wurde keine Entfaltung der Crab-Daten vorge
 \label{subsec:Datenset_4}
 Dieses Datenset beinhaltet die ersten Daten, die von Mrk 421 nach dem Austausch der MAGIC-I-Kamera aufgenommen wurden. 
 Wie das Datenset 1 umfasst dieses Datenset nur wenige Tage. 
-An drei Tagen wurde Mrk 421 im Stereo-Modus observiert. 
+An drei Tagen wurde Mrk~421 im Stereo-Modus observiert. 
 
 \subsubsection{Datencheck}
 Der Datencheck für diese Daten geschieht analog zum Datencheck des Datensets 2. 
@@ -722,7 +722,7 @@ Das entfaltete Spektrum von Mrk 421 befindet sich in Abb.~\ref{Datenset4_Spektru
 \begin{figure}
     \centering
     \includegraphics[width=0.8\textwidth]{./Plots/04_MrkAnalyse/Datenset4/Datenset4_Spektrum_Mrk421.pdf}
-    \caption{Entfaltetes Spektrum von Mrk 421 im Zeitraum vom 15.12.2012 bis zum 23.12.2012.
+    \caption{Entfaltetes Spektrum von Mrk 421 im Zeitraum vom 15.12.2012 bis zum 23.12.2012 mit allen wählbaren Regularisierungsmethoden.
     Die gestrichelte Linie stellt das gefittete Spektrum dar, welches mit Hilfe der Tikhonov-Regularisierung berechnet wurde.}
     \label{Datenset4_Spektrum_Mrk421}
 \end{figure}
@@ -809,13 +809,13 @@ In \autoref{Datenset3_Spektrum_Mrk421} ist das entfaltete Spektrum für diesen Z
 Der Fit an die Datenpunkte nach der Entfaltung mit Tikhonov-Regularisierung liefert folgendes Ergebnis:
 
 \begin{equation}
- \frac{\mathrm{d}F}{\mathrm{d}E}=(5,42 \pm 0.23) \cdot 10^{-10}\left( \frac{E}{\SI{0,3}{TeV}} \right)^{(-3.25 \pm 0.09)} \si{TeV^{-1}\,s^{-1}\,cm^{-2}}.
+ \frac{\mathrm{d}N}{\mathrm{d}E\mathrm{d}A\mathrm{d}t}=(5,42 \pm 0.23) \cdot 10^{-10}\left( \frac{E}{\SI{0,3}{TeV}} \right)^{(-3.25 \pm 0.09)} \si{TeV^{-1}\,s^{-1}\,cm^{-2}}.
 \end{equation}
 
 \begin{figure}
     \centering
     \includegraphics[width=0.8\textwidth]{./Plots/04_MrkAnalyse/Datenset3/Datenset3_Mrk421_Spektrum.pdf}
-    \caption{Spektrum Mrk 421 im Zeitraum vom 23.05.2012 bis zum 19.06.2012.
+    \caption{Spektrum von Mrk 421 im Zeitraum vom 23.05.2012 bis zum 19.06.2012 mit allen wählbaren Regularisierungsmethoden.
     Die gestrichelte Linie stellt das gefittete Spektrum dar, welches mit Hilfe der Tikhonov-Regularisierung berechnet wurde.}
     \label{Datenset3_Spektrum_Mrk421}
 \end{figure}
@@ -826,30 +826,30 @@ Der Fit an die Datenpunkte nach der Entfaltung mit Tikhonov-Regularisierung lief
 \section{Zusammenfassung der Ergebnisse und Vergleich der Datensets}
 \label{LC_Alles}
 
-Nachdem für jedes Datenset einzelne Lichtkurven erstellt worden sind, sieht man in Abb.\ref{Alles_LC_Mrk421} nun alle Daten in einer Lichtkurve dargestellt.
-Da zwischen dem 20.06.2012 und dem 10.12.2012 keine Daten von Mrk 421 genommen wurden, weil die MAGIC-I-Kamera außer Betrieb war und das Upgrade durchgeführt wurde, befindet sich eine große Lücke in der Lichtkurve.
+Nachdem für jedes Datenset einzelne Lichtkurven erstellt worden sind, sind in \autoref{Alles_LC_Mrk421} nun alle Daten in einer Lichtkurve dargestellt.
+Da zwischen dem 20.06.2012 und dem 10.12.2012 keine Daten von Mrk 421 genommen wurden, weil die MAGIC-I-Kamera außer Betrieb war, das Upgrade durchgeführt wurde und Mrk~421 zwischen Juli und November nicht beobachtbar ist, befindet sich eine Lücke in der Lichtkurve.
 
 \begin{figure}
     \centering
     \includegraphics[width=0.8\textwidth]{./Plots/04_MrkAnalyse/Alles_LC.pdf}
     \caption{Zusammenfassende Lichtkurve der Mrk~421-Daten.
-    Es sind alle vorher berechneten Lichtkurven-Werte in einem Diagramm dargestellt. 
-    Es ist zu sehen, dass der Fluss von Crab im gesamten Jahr 2012 unterhalb des mittleren Flusses von Crab liegt, allerdings durchaus zeitliche Variabilitäten aufweist.}
+    Es sind alle vorher berechneten Lichtkurven-Daten in einem Diagramm dargestellt. 
+    Es ist zu sehen, dass der Fluss von Mrk~421 im gesamten Jahr 2012 unterhalb des mittleren Flusses von Crab liegt, allerdings durchaus zeitliche Variabilitäten aufweist, die nachfolgend untersucht wird.}
     \label{Alles_LC_Mrk421}
 \end{figure}
 
-Es ist zu sehen, dass alle Datenpunkte etwa auf dem gleichen niedrigen Niveau liegen.
+Anhand der Abbildung ist zu sehen, dass alle Datenpunkte etwa auf dem gleichen niedrigen Niveau liegen.
 Der Fluss von Crab wird zu keinem Zeitpunkt erreicht.
 Physikalisch interessante Phänomene wie Flares wurden im gesamten Jahr 2012 von MAGIC nicht beobachtet.
 %Im April 2013 trat beispielsweise ein Flare auf.
-Verglichen mit dem gesamten Fluss von MAGIC zwischen Dezember 2004 und Dezember 2009 in \cite{DissBackes} ist der Fluss 2012 auf einem niedrigen Niveau.
-Im Dezember 2006 war er an vielen Tagen genauso niedrig.
+Verglichen mit dem gesamten Fluss von MAGIC zwischen Dezember 2004 und Dezember 2009 \cite{DissBackes} ist der Fluss von 2012 auf einem niedrigen Niveau.
+Im Dezember 2006 war er an vielen Tagen auf einem ähnlich niedrigen Niveau.
 
-Im Gegensatz zu den Flares 2007 und 2008, bei denen der Fluss bis zu 20 mal so hoch war wie zu ruhigen Zeiten \cite{DissBackes}, ist der Fluss 2012 konstant niedrig.
+Im Gegensatz zu den Flares von 2007 und 2008, bei denen der Fluss bis zu 20 mal so hoch wie zu ruhigen Zeiten \cite{DissBackes}  war, ist der Fluss 2012 konstant niedrig.
 
-Ein Vergleich mit dem Fluss zwischen Januar und Mai 2009 \cite{DissDiego} liefert ebenfalls das Ergebnis, dass sich sich Mrk 421 in einem ruhigen Zustand befindet.
+Ein Vergleich mit dem Fluss zwischen Januar und Mai 2009 \cite{DissDiego} liefert ebenfalls das Ergebnis, dass sich Mrk 421 2012 in einem ruhigen Zustand befand.
 
-In Tabelle \ref{tab:SpektraleIndizes} befinden sich die spektralen Indizes der Entfaltung der einzelnen Datensets.
+In \autoref{tab:SpektraleIndizes} sind die spektralen Indizes der Entfaltung der einzelnen Datensets zusammengefasst.
 Die spektralen Indizes der Datensets 1,3 und 4 beschreiben ein steiles Spektrum mit relativ niedrigem hochenergetischem Fluss.
 Datenset 2 hat einen kleineren spektralen Index, d.h. das Spektrum ist härter, wobei der Fluss wie oben erwähnt, den Crab-Fluss nicht erreicht.
 

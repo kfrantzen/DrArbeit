@@ -18,7 +18,7 @@ Im \autoref{sec:AGN} wird noch einmal der spezielle Quelltyp des Aktiven Galakti
 \begin{figure}
     \centering
     \includegraphics[width=0.8\textwidth]{./Plots/02_Astroteilchenphysik/Astroteilchen.png}
-    \caption{Schematische Darstellung der Wechselwirkungen, sowie der Detektion der Botenteilchen auf dem Weg von der Quelle zum Beobachter.
+    \caption{Schematische Darstellung der Wechselwirkungen der Botenteilchen auf dem Weg von der Quelle zum Beobachter sowie ihrer Detektion.
     Auf ihrem Weg unterliegen die unterschiedlichen Botenteilchen unterschiedlichen Wechselwirkungen. 
     Geladene Teilchen wechselwirken mit Staubwolken und werden von Magnetfeldern abgelenkt, Neutrinos und hochenergetische Photonen behalten ihre Richtungsinformation bei.
     Photonen wechselwirken ebenfalls mit Staubwolken oder mit niederenergetischen Hintergrundphotonen und werden dann abhängig von ihrer Energie mit unterschiedlichen Detektoren gemessen. 
@@ -26,20 +26,18 @@ Im \autoref{sec:AGN} wird noch einmal der spezielle Quelltyp des Aktiven Galakti
     \label{Astroteilchen}
 \end{figure}
 
-
-\autoref{Astroteilchen} zeigt eine schematische Darstellung verschiedener Botenteilchen, die von einer astrophysikalischen Quelle emittiert werden können.
-
+%\autoref{Astroteilchen} zeigt eine schematische Darstellung verschiedener Botenteilchen, die von einer astrophysikalischen Quelle emittiert werden können.
 In \autoref{Astroteilchen} werden schematisch die Eigenschaften der Botenteilchen auf ihrem Weg von der Quelle zum Beobachter dargestellt.
 Geladene Teilchen wie Protonen oder Elektronen wechselwirken im Allgemeinen mit intergalaktischen oder interstellaren Magnetfeldern.
 Dadurch stellt die Rekonstruktion ihrer Ursprungsrichtung eine Herausforderung dar.
 Im Gegensatz zu den geladenen Teilchen, können Neutrinos aufgrund ihrer geringen Wechselwirkungswahrscheinlichkeit diese Strecke nahezu ungehindert zurücklegen. 
 Allerdings ist ihre Detektion schwierig, sodass nur Detektoren mit sehr großem Volumen sie indirekt über ihre Sekundärteilchen detektieren können.
-Diese Detektion geschieht z.B. mit IceCube, einem Detektor, der in das Eis am Südpol eingeschmolzen, folgendermaßen:
+Diese Detektion geschieht z.B. mit IceCube, einem Detektor, der in das Eis am Südpol eingeschmolzen wurde, folgendermaßen:
 Ein Neutrino wechselwirkt mit einem Nukleon und erzeugt dabei ein geladenes Lepton. 
 Beim Durchgang durch den Detektor produziert dieses geladene Lepton Cherenkov-Strahlung, die mit Hilfe von Photosensoren detektiert wird.
 
 Photonen besitzen den gleichen Vorteil wie Neutrinos und werden auf dem Weg zum Detektor nicht abgelenkt.
-Allerdings können sie direkt mit Staubwolken oder der niederenergetischen Hintergrundstrahlung (EBL: External Background Light), welche aus Sternenlicht oder Wärmestrahlung aus interstellarem Staub besteht, wechselwirken.
+Allerdings können sie direkt mit Staubwolken oder der niederenergetischen Hintergrundstrahlung (EBL: External Background Light), welche aus Sternenlicht oder Wärmestrahlung von interstellarem Staub besteht, wechselwirken.
 Hochenergetische Photonen werden von Satellitenexperimenten oder von Luftschauerteleskopen detektiert.
 Die Detektion mit Satellitenexperimenten geschieht direkt, während Luftschauerteleskope die Teilchen indirekt detektieren.
 Wie in \autoref{sec:Gammaastronomie} beschrieben wird, werden die Luftschauer vermessen und daraus auf die Eigenschaften des Primärteilchens geschlossen.
@@ -57,8 +55,8 @@ Das Energiespektrum dieser kosmischen Strahlung ist auf einem sehr großen Energ
     \includegraphics[width=0.9\textwidth]{./Plots/02_Astroteilchenphysik/CosmicRaySpectrum2.png}
     \caption{Spektrum der kosmischen Strahlung. 
       Aufgetragen ist der mit $E^{2,6}$ gewichtete Fluss der Teilchen gegen die Primärteilchenenergie. 
-      Bei der Energie $E=10^{6,4}\,\si{GeV}$ befindet sich das sogenannte "Knie" und bei der Energie $E=10^{9,5}\,\si{GeV}$ die "Ferse" des Spektrums. 
-      Bei der Energie $E=4\cdot 10^8\,\si{GeV}$ \cite{Knie} wird das zweite Knie erwartet.\cite{PDG}}
+      Bei der Energie $E=10^{15,4}\,\si{GeV}$ befindet sich das sogenannte "Knie" und bei der Energie $E=10^{18,5}\,\si{GeV}$ die "Ferse" des Spektrums. 
+      Bei der Energie $E=4\cdot 10^{17}\,\si{GeV}$ \cite{Knie} wird das zweite Knie erwartet.\cite{PDG}}
     \label{CR-Spektrum}
 \end{figure}
 
@@ -86,8 +84,8 @@ mit \cite{Knie}
 
 Die Existenz eines zweiten Knies bei $E=4\cdot 10^8\,\si{GeV}$\cite{Knie} wird noch untersucht.
 
-Größere Energien als $\SI{5e19}{eV}$ können aufgrund des GZK-Cutoffs \cite{Greisen}\cite{ZatsepinKuzmin} nur schwer gemessen werden, da sie auf großen Propagationslängen stark unterdrückt sind . 
-Dieser Cutoff tritt auf, wenn Protonen mit dem kosmischen Mikrowellenhintergrund (CMB) wechselwirken \cite{Greisen}\cite{ZatsepinKuzmin}: 
+Größere Energien als $\SI{5e19}{eV}$ können aufgrund des GZK-Cutoffs \cite{Greisen}\cite{ZatsepinKuzmin} nur schwer gemessen werden, da sie auf großen Propagationslängen stark unterdrückt sind. 
+Dieser Cutoff tritt auf, wenn Protonen mit dem kosmischen Mikrowellenhintergrund (CMB: Cosmic Microwave Background ) wechselwirken \cite{Greisen}\cite{ZatsepinKuzmin}: 
 
 \begin{equation*}
 p\gamma_{CMB}=	
@@ -106,7 +104,7 @@ Deswegen wird vermutet, dass diese Teilchen extragalaktischen Ursprungs sind, wo
 \subsection{Neutrinos als Botenteilchen}
 Neutrinos sind leichte Teilchen, die eine sehr geringe Wechselwirkungswahrscheinlichkeit aufweisen und daher nur in großen Experimenten wie IceCube \cite{Icecube} oder ANTARES \cite{ANTARES} indirekt über ihre leptonischen Partner nachgewiesen werden können.
 Es gibt verschiedene Quellen, in denen Neutrinos entstehen können.
-Kosmogene Neutrinos werden in Wechselwirkungen von hochenergetischen Protonen mit dem kosmischen Mikrowellenhintergrund (CMB: Cosmic Miocrowave Background) und dem darauffolgenden Zerfall von geladenen Pionen erzeugt.
+Kosmogene Neutrinos werden in Wechselwirkungen von hochenergetischen Protonen mit dem kosmischen Mikrowellenhintergrund und dem darauffolgenden Zerfall von geladenen Pionen erzeugt.
 Galaktische Neutrinos können in hadronischen Beschleunigungsprozessen erzeugt werden.
 Es wird auch vermutet, dass in Gammastrahlenausbrüchen oder in hadronischen Beschleunigungsprozessen in AGNs Neutrinos entstehen können.
 
@@ -121,10 +119,10 @@ p\, \gamma \rightarrow \Delta^+ \, \rightarrow
 \left\{
 \begin{aligned}
 & p \, \pi^0 & \qquad (2/3) \\
-& n \, \pi^+ & \qquad (1/3)
+& n \, \pi^+ & \qquad (1/3).
 \end{aligned}
 \right.
-\end{equation*}.
+\end{equation*}
 
 Oder ein Proton wechselwirkt mit einem anderen Proton \cite{DissBecker}:
 
@@ -164,8 +162,8 @@ Genau wie die Neutrinos besitzen Photonen den Vorteil, dass sie nicht von Magnet
 Allerdings können aufgrund der Absorption in der Atmosphäre auf der Erde nur Photonen im optischen und im Radiobereich direkt detektiert werden.
 Deswegen hat sich die optische Astronomie und die Radioastronomie zuerst entwickelt. 
 %Deswegen wurden diese Wellenlängen in der Astronomie auch als erstes benutzt. 
-Danach kamen dann Astronomie mit anderen Wellenlängen wie Röntgenstrahlung oder Gammastrahlung hinzu.
-Gammastrahlung lässt sich anhand der Energie in nieder- bis mittelenergetische Gammastrahlung ($\SI{0,1}{MeV}$ - $\SI{30}{MeV}$), hochenergetische Gammastrahlung ($\SI{30}{MeV}$ -$\SI{100}{GeV}$), sehr hochenergetische Gammastrahlung ($\SI{100}{GeV}$-$\SI{100}{TeV}$) und ultrahochenergetische Gammastrahlung ($E>\SI{100}{TeV}$) einteilen.
+Danach kam dann die Beobachtung von Strahlung anderer Wellenlängen wie Röntgenstrahlung oder Gammastrahlung hinzu.
+Gammastrahlung lässt sich anhand der Energie in nieder- bis mittelenergetische Gammastrahlung ($\SI{0,1}{MeV}$-$\SI{30}{MeV}$), hochenergetische Gammastrahlung ($\SI{30}{MeV}$-$\SI{100}{GeV}$), sehr hochenergetische Gammastrahlung ($\SI{100}{GeV}$-$\SI{100}{TeV}$) und ultrahochenergetische Gammastrahlung ($E>\SI{100}{TeV}$) einteilen.\cite{Weekes}
 
 % Der Energiebereich bis ca. 100GeV lässt sich nur mit Satellitenexperimente nachweisen.
 % Die sehr hochenergetische und die ultrahochenergetische Strahlung lässt sich wiederum mit Hilfe von Luftschauerteleskopen auf der Erde detektieren.\cite{Weekes}
@@ -201,10 +199,10 @@ Im Zerfall von neutralen Pionen zu Photonen werden Photonen mittlerer Energie er
 %  \item Kosmische Elektronen überleben eine inverse Comptonstreuung an niederenergetischen Gammaphotonen und erzeugen Photonen mit hohen Energien.
 % \end{itemize}
 
-Das Galaktische Zentrum enthält mehrere massive Objekte, wie junge Supernova-Überreste, die hochenergetische Gammastrahlen emittieren.
+Das Galaktische Zentrum enthält mehrere massive Objekte, wie junge Supernova-Überreste, die hochenergetische Gammastrahlung emittieren.
 So befindet sich in einem Radius von $\SI{10}{pc}$ um das Galaktische Zentrum eine Masse von $3\cdot 10^7$ Sonnenmassen. 
 %Das dynamische Zentrum wurde mit der kompakten Radioquelle Sgr $A^*$ assoziiert, welche vermutlich ein supermassives schwarzes Loch ist.
-Dem Satellitenexperiment EGRET gelang die Detektion einer Quelle - 3EG J1745-2852 - von hochenergetischer Gammastrahlung.
+Dem Satellitenexperiment EGRET gelang die Detektion der Quelle 3EG J1745-2852, welche hochenergetischer Gammastrahlung emittiert.
 Allerdings ist die Natur dieser Quelle noch unbekannt.\cite{GalacticCenter}\cite{Weekes}
 
 
@@ -217,7 +215,7 @@ Allerdings ist die Natur dieser Quelle noch unbekannt.\cite{GalacticCenter}\cite
 \subsection{Supernovae und Supernovaüberreste}
 Die Explosion eines Sterns wird als Supernova (SN) bezeichnet.
 Gammastrahlung, die aus einer SN kommt, wird entweder in den ersten Sekunden der Explosion als Gammastrahlungsausbruch (GRB: Gamma Ray Burst) emittiert.
-Falls nach dem GRB ein Pulsar entsteht, kann sie aber auch auch als stete periodische Emission dieses Pulsars abgestrahltt werden.
+Oder sie kann, falls nach dem GRB ein Pulsar entsteht, als periodische Emission abgestrahlt werden.
 Es ist auch möglich, dass die Photonen aus der sich ausbreitenden Hülle des ehemaligen Sterns (SNR: Supernova Remnant) stammen. 
 Diese galaktischen Quellen liefern kosmische Strahlung bis zu Energien von $\SI{100}{TeV}$ \cite{Weekes}.
 Eine Beschleunigung von Teilchen auf Energien von $10^{20}\,\si{eV}$ durch SN und SNR ist nicht möglich.
@@ -253,12 +251,12 @@ Die Variabilität kann im Bereich von Millisekunden bis zu Jahren liegen und per
 
 \subsection{Gammastrahlenausbrüche}
 Gammastrahlenausbrüche (GRB: Gamma Ray Burst) wurden während des kalten Kriegs von den amerikanischen \textit{Vela}-Satelliten, die Atombombenexplosionen aufspüren sollten, entdeckt.
-16 GRBs mit Zeitspannen von $\SI{0,1}{s}$ - $\SI{30}{s}$ und Teilchenflüssen zwischen $(10^{-5}-10^{-4}\,\frac{\si{erg}}{\si{s}}$ wurden detektiert.
+16 GRBs mit Zeitspannen von $\SI{0,1}{s}$ - $\SI{30}{s}$ und Teilchenflüssen zwischen $(10^{-5}-10^{-4})\,\frac{\si{erg}}{\si{s}}$ wurden detektiert.
 
 Im Allgemeinen dauern GRBs zwischen Millisekunden und einigen tausend Sekunden an und sind isotrop verteilt.
-Sie werden in kurzweilige Ausbrüche ($t<\SI{2}{s}$) und den Rest unterteilt.
-Fast die gesamte emittierte Energie ist größer als $\SI{50}{keV}$.
-Mit Satellitenexperimenten wurden GRBs auch bei Energien von Gammastrahlung (bis ca. $\SI{30}{GeV}$) detektiert, der Fluss, d.h. die Anzahl der Teilchen pro Fläche und Zeit, ist aber sehr niedrig.
+Sie werden in kurzweilige Ausbrüche ($t<\SI{2}{s}$) und den Rest unterteilt und zu Beginn wurden Energien von $\SI{50}{keV}$ bis $\SI{1}{MeV}$ detektiert.
+Mit Satellitenexperimenten wurden GRBs auch bei Energien von Gammastrahlung (bis ca. $\SI{30}{GeV}$) detektiert.
+Der Fluss, d.h. die Anzahl der Teilchen pro Fläche und Zeit, ist aber sehr niedrig.
 Bodengebundene Teleskope, z.B. MAGIC, betreiben GRB-Programme, allerdings kam es bisher noch zu keiner Detektion.\cite{Weekes}
 
 
@@ -270,14 +268,14 @@ Eine genauere Darstellung dieses Quelltyps, zu dem auch die in dieser Arbeit ana
 
 \section{Beschleunigungsmechanismen} 
 \label{sec:Beschleunigungsmechanismen}
-Im Folgenden werden die Beschleunigungsmechanismen vorgestellt, die in den relativstischen Jets von AGNs oder GRBs relevant sind.
+Im Folgenden werden die Beschleunigungsmechanismen vorgestellt, die in den relativistischen Jets von AGNs oder GRBs relevant sind.
 Dafür wird zunächst der Fermi-Mechanismus vorgestellt, mit dessen Hilfe geladene Teilchen beschleunigt werden.
 Danach werden die Prozesse zur Erzeugung, bzw. Abschwächung von hochenergetischer Gammastrahlung beschrieben.
-Auf Grund der geringen Teilchendichte in Jets ($n\leq 10^{-3}\,\frac{1}{\text{cm}^3}$) sind Prozesse wie Coulombstreuung oder Bremsstrahlung in AGNs nicht relevant und werden nicht beschrieben.
+Auf Grund der geringen Teilchendichte in Jets ($n\leq 10^{-3}\,\frac{1}{\text{cm}^3}$) \cite{RelativisticJets} sind Prozesse wie Coulombstreuung oder Bremsstrahlung in AGNs nicht relevant und werden nicht beschrieben.
 
 \subsection{Fermi-Mechanismus 1. und 2. Art}
-Die Fermi-Beschleunigung 1.Art beschreibt die Schockbeschleunigung.
-Die in einer SN abgestoßene Hülle repräsentiert eine Schockfront, die sich mit einer Geschwindigkeit $u_1$ durch das interstellare Medium (ISM) fortbewegt. 
+Die Fermi-Beschleunigung 1. Art beschreibt die Schockbeschleunigung.
+Die in einer SN abgestoßene Hülle repräsentiert eine Schockfront, die sich mit einer Geschwindigkeit $u_1$ durch das Interstellare Medium (ISM) fortbewegt. 
 Hinter der Schockfront strömt Gas mit der Geschwindigkeit $u_2$ in die entgegengesetzte Richtung.
 %Dahinter strömt das Gas mit einer Geschwindigkeit $u_2$ weg.
 Kollidiert nun ein Teilchen, welches sich mit der Geschwindigkeit $c$ bewegt, mit dieser Schockfront und wird dabei reflektiert, so gewinnt es die relative Energie
@@ -286,7 +284,7 @@ Kollidiert nun ein Teilchen, welches sich mit der Geschwindigkeit $c$ bewegt, mi
  \frac{\Delta E}{E}\propto \frac{u_1-u_2}{c}.
 \end{equation}
 
-Diese Art der Beschleunigung ist somit linear in der Geschwindigkeit und es können maximale Energien von etwa $100\si{TeV}$ erreicht werden.\cite{Grupen}\cite{Longair}
+Diese Art der Beschleunigung ist somit linear in der Geschwindigkeit und es können maximale Energien von etwa $\SI{100}{TeV}$ erreicht werden.\cite{Grupen}\cite{Longair}
 
 Die Fermi-Beschleunigung 2. Art beschreibt die Wechselwirkung eines Teilchens mit Geschwindigkeit $c$ mit magnetischen Gaswolken, die sich mit der Geschwindigkeit $u$ bewegen.
 Der relative Energiegewinn bei diesem Beschleunigungsmechanismus beträgt:
@@ -321,7 +319,7 @@ wobei
 \end{equation}
 
 Daraus folgt, dass Elektronen größere Energieverluste durch Synchrotronstrahlung erfahren als Protonen.
-Für den gleichen Energieverlust müsste ein Proton $6,2\cdot10^9$ mal mehr Energie haben als ein Elektron.
+Für den gleichen Energieverlust müsste ein Proton $\num{6,2e9}$ mal mehr Energie haben als ein Elektron.
 Ein Nachteil von Elektronen ist, dass sie, nachdem sie zu ultrarelativistischen Energien beschleunigt worden sind, ihre Energie sehr schnell wieder verlieren.
 Protonen und schwerere Teilchen können einfacher beschleunigt werden,  müssen aber auf extrem hohe Energien beschleunigt werden, um Photonen mit nennenswerter Energie abstrahlen zu können.
 
@@ -379,7 +377,7 @@ Diese Reaktion tritt auf, sobald die Schwerpunktsenergie groß genug ist:
 \end{equation}
 
 Die Photo-Mesonproduktion von z.B. Pionen tritt auf, sobald die Schwerpunktsenergie $s \geq (m_p c^2 +2 m_{\pi^0} c^2)^2 \approx \SI{1,16}{GeV^2}$ überschreitet.
-Dominant ist die Pion-Produktion in photohadronischen Interaktionen, wobei das $\pi^0$ mit einer Halbwertszeit von $t_{1/2}\approx 8,4\cdot 10^{-17}\,\si{s}$ in zwei Photonen zerfällt und die geladenen Pionen nach einer Halbwertszeit von $t_{1/2}\approx 2,6\cdot 10^{-8}\,\si{s}$ in Myonen und Neutrinos.
+Dominant ist die Pion-Produktion in photohadronischen Interaktionen, wobei das $\pi^0$ mit einer Halbwertszeit von $t_{1/2}\approx 8,4\cdot 10^{-17}\,\si{s}$ in zwei Photonen und die geladenen Pionen nach einer Halbwertszeit von $t_{1/2}\approx 2,6\cdot 10^{-8}\,\si{s}$ in Myonen und Neutrinos zerfallen.
 Die Produktion und der Zerfall von Kaonen und $\eta$-Mesonen trägt (10-20)\% zur gesamten Photonen-, Leptonen- und Neutrinoproduktion bei.\cite{RelativisticJets}
 
 % \subsection{Photodisintegration}
@@ -392,7 +390,7 @@ Die Produktion und der Zerfall von Kaonen und $\eta$-Mesonen trägt (10-20)\% zu
 \subsection{Elektromagnetische Kaskaden}
 In einer photohadronischen Quelle ist die Lichtundurchlässigkeit für primäre Gammastrahlung aus $\pi^0$-Zerfällen oder Compton-Streuung groß, weil sonst keine photohadronischen Wechselwirkungen stattfinden könnten.
 Solche primären Photonen verursachen eine elektromagnetische Kaskade, in der Paarproduktion, Synchrotronstrahlung, Comptonstreuung und Bremsstrahlung die wichtigen Prozesse sind.
-Solche eine Kaskade kann innerhalb von Jets auftreten, sobald die Photonen genug Energie für die Paarproduktion besitzen und die Dichte an Umgebungsphotonen hoch genug ist.
+Solch eine Kaskade kann innerhalb von Jets auftreten, sobald die Photonen genug Energie für die Paarproduktion besitzen und die Dichte an Umgebungsphotonen hoch genug ist.
 Sobald die Energie der Photonen nicht mehr ausreichend für die Paarproduktion ist, verschwindet die Kaskade.\cite{RelativisticJets}
 
 
@@ -466,7 +464,7 @@ Auch diese Teleskope sind von einer Veto-Umhüllung umgeben.\cite{Weekes}
 Die erdgebundenen Experimente beruhen auf der Entwicklung einer elektromagnetischen Kaskade in der Atmosphäre.
 Trifft ein Photon mit einer Energie, die größer als $\SI{10}{MeV}$ ist, auf die Atmosphäre, dann produziert es typischerweise in einer Höhe von ca. $\SI{20}{km}$ ein Elektron-Positron-Paar.
 Diese Paarproduktion erfolgt in Vorwärtsrichtung.
-In dem typischen Energiebereich für erdgebundene Gammaaastronomie $E>\SI{10}{GeV}$ wechselwirkt dieses Paar mit den Molekülen der Luft.
+In dem typischen Energiebereich für erdgebundene Gammaastronomie $E>\SI{10}{GeV}$ wechselwirkt dieses Paar mit den Molekülen der Luft.
 Dabei entstehen in Bremsstrahlungsprozessen Photonen, die wiederum weitere Paare produzieren.
 So entsteht eine elektromagnetische Kaskade in der Atmosphäre.
 Diese Kaskade wächst so lange bis Ionisations- und Strahlungsverluste gleich groß sind und das Schauermaximum erreicht ist.
@@ -474,9 +472,9 @@ Danach stirbt der Schauer langsam aus.
 Begleitet wird der Schauer von Cherenkovphotonen.
 Diese entstehen sobald die Energie der Sekundärelektronen oberhalb der Schwelle für Cherenkovemission liegt.
 Photonen werden in Vorwärtsrichtung unter dem sogenannten Cherenkovwinkel emittiert. 
-Dieser Winkel beträgt auf Meereshöhe ca. $1.3°$.\cite{Weekes}
+Dieser Winkel beträgt auf Meereshöhe ca. $1,3°$.\cite{Weekes}
 
-Nur ein kleiner Teil Primärteilchenenergie ($<10^{-6}$) geht in die Emission des sichtbaren Cherenkovlichts.
+Nur ein kleiner Teil der Primärteilchenenergie ($<10^{-6}$) geht in die Emission des sichtbaren Cherenkovlichts.
 Allerdings ist dieses Licht mit Hilfe eines Spiegels und PMTs einfach zu detektieren.
 Weiterhin ist es möglich aus dem Cherenkovlicht Rückschlüsse auf den Ursprung, die Energie, sowie die Ankunftszeit des Primärteilchens zu ziehen.
 Bei den für Cherenkovteleskope interessanten Energien ($E\gtrsim \SI{100}{GeV}$) verhält sich die Atmosphäre wie ein großes Kalorimeter und die Helligkeit des Cherenkovlichtkegels am Boden bietet ein gutes Maß für die Primärteilchenenergie.
@@ -488,14 +486,14 @@ Die letzten $25\%$ werden von Schauerteilchen unterhalb von $\SI{6}{km}$ emittie
 
 Die Grundidee der atmosphärischen Cherenkovtechnik ist einfach.
 Es wird ein Lichtdetektor benötigt, der sich in der Fokalebene eines Spiegels befindet, sowie schnelle Ausleseelektronik.
-Schon mit solch einem einfachen Detektor mit einer Lichtsammelfläche von $\SI{2}{km^2}$ und einer Integrationszeit von $\SI{10}{ns}$ ist es möglich, ein Lichtsignal eines Schauers mit Primärteilchenergie $\SI{1}{TeV}$ zu detektieren.
+Schon mit solch einem einfachen Detektor mit einer Lichtsammelfläche von $\SI{2}{m^2}$ und einer Integrationszeit von $\SI{10}{ns}$ ist es möglich, ein Lichtsignal eines Schauers mit Primärteilchenergie $\SI{1}{TeV}$ zu detektieren.
 Allerdings ist die Unterscheidung zwischen einem elektromagnetischen Schauer, ausgelöst von Gammastrahlung, und einem Schauer ausgelöst von kosmischer Strahlung schwierig.\cite{Weekes}
 
 Die Ionen und Protonen der kosmischen Strahlung wechselwirken ebenfalls in der Atmosphäre und lösen hadronische Kaskaden aus, die den elektromagnetischen Kaskaden sehr ähnlich sind.
 Auch Teilchen dieser hadronischen Schauer emittieren Cherenkovlicht, sodass Teleskope der ersten Generation diese Schauer nicht voneinander unterscheiden konnten.
 Außerdem ist zu beachten, dass der hadronische Untergrund ca. $10^3$ mal so groß ist.
 Von Vorteil ist, dass sich hadronische Schauer von elektromagnetischen in einigen Eigenschaften leicht unterscheiden.
-So besitzen diese beiden Arten von Schaueren unterschiedliche laterale Verteilungen, zeitliche Verteilungen, eine anderes Lichtspektrum, sowie eine andere Winkelverteilung.\cite{Weekes}
+So besitzen diese beiden Arten von Schaueren unterschiedliche laterale Verteilungen, zeitliche Verteilungen, ein anderes Lichtspektrum, sowie eine andere Winkelverteilung.\cite{Weekes}
 
 Um einen Schauer detektieren zu können, sind einige Eigenschaften des Detektors bzw. der Umgebung von großer Bedeutung.
 Die Atmosphäre spielt eine grundlegende Rolle, stellt den Beobachter aber vor Herausforderungen. 
@@ -540,7 +538,7 @@ Mit diesen beiden Teleskoparten können die Eigenschaften der detektierten Schau
 % Die BLR und die zentrale Region sind von einem Staubtorus umgeben.
 % Senkrecht zur Scheibe werden zwei Jets in entgegengesetzte Richtungen emittiert.\cite{Weekes}
 
-Aktive galaktische Keren produzieren sehr hohe Luminositäten in einem sehr konzentrierten Volumen.
+Aktive galaktische Kerne produzieren sehr hohe Luminositäten in einem sehr konzentrierten Volumen.
 Die Prozesse, die dazu führen, sind vermutlich andere Prozesse als die Kernfusion in ``normalen Sternen''.
 Wie in \autoref{AGN_Bild} zu sehen ist, befindet sich im Zentrum einer AGN ein supermassives Schwarzes Loch, welches von einer Akkretionsscheibe umgeben ist.
 Die Materie dieser Scheibe wird vom Schwarzen Loch akkretiert und verliert dabei Drehimpuls.
@@ -548,10 +546,10 @@ Von der Akkretionsscheibe wird UV-Licht und manchmal auch schwache Röntgenstrah
 Auch harte Röntgenstrahlung wird sehr nahe am Schwarzen Loch produziert.
 Durch die Rotation kann das Schwarze Loch Energie emittieren.
 Umhüllt sind das zentrale Schwarze Loch und die Akkretionsscheibe von einem Staubtorus.
-Im Potential des Schwarzen Lochs befinden sich Gaswolken, die sich schnell bewegen und dabei starke optische und ultraviolette Emissionslinien produzieren, die abhängig von der Sichtlinie und der Lage des Staubtorusses beobachtet werden können. 
+Im Potential des Schwarzen Lochs befinden sich Gaswolken, die sich schnell bewegen und dabei starke optische und ultraviolette Emissionslinien produzieren, die abhängig von der Sichtlinie und der Lage des Staubtorus beobachtet werden können. 
 Diese Wolken werden ``Broad Line Clouds'' genannt.
 Außerhalb des Torus sind Gaswolken, die sich langsamer bewegen und schmale Emissionslinien produzieren.
-Eine Emission von energiereichen Teilchen erfolgt in Form zweier Jets, die in entgegengesetzten Richtungen emittiert werden.
+Eine Emission von energiereichen Teilchen erfolgt in Form zweier Jets, die in entgegengesetzte Richtungen emittiert werden.
 In diesen Jets strömt das Plasma mit hohen Geschwindigkeiten und strahlt relativistisch in Vorwärtsrichtung.
 Die Achsensymmetrie dieses Modells impliziert, dass AGNs abhängig von der Lage zum Beobachter unterschiedlich aussehen und sich unterschiedlich verhalten.
 Anhand dieser Eigenschaften können AGNs klassifiziert werden (siehe \autoref{subsec:Klassifikation}).
@@ -573,9 +571,9 @@ Der Quelltyp der AGN umfasst einen Zoo an unterschiedlichen Subtypen mit verschi
 Wie \autoref{AGN_Bild} zeigt, werden nach Urry und Padovani \cite{Urry_Padovani} AGNs in radiolaute, AGNs mit Radioemission, und radioleise Vertreter, AGNs ohne Radioemission, unterteilt.
 Des Weiteren erfolgt eine Unterscheidung in Typ I mit breiten Emissionslinien und Typ II mit schmalen Emissionslinien.
 Innerhalb dieser Gruppen erfolgt eine weitere Unterteilung anhand der Luminosität.
-Insgesamt sind ca. 15-20\% \cite{Urry_Padovani} der AGN radiolaut.
+Insgesamt sind ca. 15-20\% \cite{Urry_Padovani} der AGNs radiolaut.
 Mit wenigen Ausnahmen sind die Spektren im optischen und ultravioletten, sowie im Infraroten bis zu weicher Röntgenstrahlung bei allen AGNs ähnlich.
-Die Radioemission hängt vermutlich zusammen mit dem Host-Galaxie-Typ oder dem Spin des Schwarzen Lochs, womit die Produktion von Jets erklärt werden kann.
+Die Radioemission hängt vermutlich mit dem Host-Galaxie-Typ oder dem Spin des Schwarzen Lochs zusammen, womit die Produktion von Jets erklärt werden kann.
 Basierend auf den optischen und ultravioletten Emissionslinien können AGNs in drei Typen eingeteilt werden \cite{Urry_Padovani}:
 
 \begin{itemize}
@@ -584,9 +582,9 @@ Basierend auf den optischen und ultravioletten Emissionslinien können AGNs in d
  Die radiolauten Vertreter werden zum einen Broad Line Radio Galaxy (BLRG) genannt und sind ebenfalls durch niedrige Luminosität gekennzeichnet. 
  Zum anderen gibt es die radiolauten Quasare mit hoher Luminosität, hier Quasi-stellar Object (QSO), genannt.
  \item Typ 2 beinhaltet die AGNs mit schmalen Emissionslinien, die von langsamem Gas emittiert werden, bzw. die Sichtlinie auf die Emission schneller Gasteilchen wird durch den Staubtorus blockiert.
- Die radioleisen Vertreter dieses Typs werden Seyfert 2 genannt und zeichnen sich duch geringe Luminosität aus.
+ Die radioleisen Vertreter dieses Typs werden Seyfert 2 genannt und zeichnen sich durch geringe Luminosität aus.
  Die radiolauten AGNs werden Narrow Line Radio Galaxy (NLRG) bezeichnet und Fanaroff und Riley haben diese wiederum unterteilt in zwei Subtypen.
- Diese sind zu einen die Fanaroff \& Riley I (FR I), welche von geringer Luminosität geprägt sind und deren symmetrischen Radiojets in der Intensität nach außen hin abnehmen.
+ Diese sind zum einen die Fanaroff \& Riley I (FR I), welche von geringer Luminosität geprägt sind und deren symmetrische Radiojets in der Intensität nach außen hin abnehmen.
  Zum anderen gibt es noch den Fanaroff \& Riley II-Typ, dessen Jets gebündelt sind und in Radiolobes enden, in denen heiße Dichteschwankungen, genannt Hot Spots, sind.
  \item Der Typ 0 wird im Allgemeinen als Blazar bezeichnet und ist charakterisiert durch den sehr kleinen Winkel zwischen Jet und Beobachter.
  Dieser Typ beinhaltet den Flat Spectrum Radio Quasar (FSRQ), der sehr variabel ist und breite Emissionslinien wie Typ I-Objekte besitzt.
@@ -601,7 +599,7 @@ Basierend auf den optischen und ultravioletten Emissionslinien können AGNs in d
 \subsection{Spektrale Energieverteilung}
 Eine spektrale Energieverteilung (SED: Spectral Energy Distribution) beschreibt die Emission einer Quelle in Abhängigkeit von den verschiedenen Wellenlängen.
 Die SEDs von Blazaren besitzen eine charakteristische Struktur mit zwei Höckern.
-Bei sehr hochenergetischen Blazaren, wie z.B. Mrk 421 und Mrk 501, befindet sich ein Peak bei Röntgenenergien und ein anderer Peak bei (10-250)$\si{GeV}$.
+Bei sehr hochenergetischen Blazaren, wie z.B. Mrk 421 und Mrk 501, befindet sich ein Peak bei Röntgenenergien und ein anderer Peak bei (10-250)$\,\si{GeV}$.
 Beide Peaks sind vergleichbar hoch, was charakteristisch für diesen Quelltyp ist.\cite{Weekes}
 
 
@@ -612,7 +610,7 @@ Whipple beobachtete einen Flussanstieg von Mrk~421 auf den zehnfachen Wert.\cite
 
 \subsection{Multiwellenlängenbeobachtungen}
 Die simultane Beobachtung einer Quelle mit mehreren Teleskopen zur genauen Aufnahme der Aktivität in allen Wellenlängen wird Multiwellenlängenbeobachtung (MWL-Beobachtung) genannt. 
-Diese Beobachtungen dienen u.a. dazu, Rückschlüssen auf die Beschleunigungsmechanismen in den Quellen zu ziehen.
+Diese Beobachtungen dienen u.a. dazu, Rückschlüsse auf die Beschleunigungsmechanismen in den Quellen zu ziehen.
 Es können Korrelationen der Flüsse in verschiedenen Wellenlängen untersucht werden.
 Die erste MWL-Kampagne wurde 1995 organisiert; Ziel war die Quelle Mrk~421.\cite{Weekes}
 
@@ -630,7 +628,7 @@ Die Position dieses Peaks wird durch die Effizienz der Schockbeschleunigung und 
 Im Folgenden werden zwei verschiedene leptonische Modelle vorgestellt.\cite{Weekes}
 
 \begin{itemize}
-\item Im Synchrotron-Selbst-Compton-Modell (SSC-Modell) werden die in Synchrotron\-/Prozessen abgestrahlten Photonen zu hohen Energien beschleunigt, die nahe an den Elektronenergien sind.
+\item Im Synchrotron-Selbst-Compton-Modell (SSC-Modell) werden die in Synchrotron\-/Prozessen abgestrahlten Photonen zu hohen Energien beschleunigt, die nahe an den Elektronenergien liegen.
 Im Thomson-Regime können Photonenergien von $E_{\gamma}\approx \gamma^2 h \nu$ und im Klein-Nishina-Regime $E_{\gamma}\approx \gamma m_e c^2$ erreicht werden.\cite{Weekes}
 \item Im External-Radiation-Compton-Modell (ERC-Modell) werden sogenannte Saat-Photonen benötigt, die dann eine inverse Comptonstreuung erfahren.
 Diese Saat-Photonen werden außerhalb des Jets produziert, z.B. in der Akkretionsscheibe.\cite{Weekes}
@@ -667,7 +665,7 @@ Sie besitzt eine Rotverschiebung von $z=0,0031$ und ist damit die von uns nächs
 
 \autoref{Mrk_SED} zeigt die spektrale Energieverteilung von Mrk~421, mit Daten einer MWL-Kampagne zwischen dem 19.1.2009 und dem 1.6.2009. 
 Es wurde der Energiebereich von Radiowellen bis sehr hochenergetischer Gammastrahlung einbezogen.
-Die für BL-Lacs charakteristische doppelhöckrige Struktur ist zu sehen mit Peaks bei keV-Energien und bei GeV-TeV-Energien.
+Die für BL-Lacs charakteristische doppelhöckrige Struktur ist zu sehen mit Peaks bei keV-Energien und bei (GeV-TeV)-Energien.
 Die SED kann mit Hilfe von SSC-Modellen beschrieben werden, allerdings sind hadronische Modelle trotzdem nicht auszuschließen.
 
 \begin{figure}
@@ -681,7 +679,7 @@ Die SED kann mit Hilfe von SSC-Modellen beschrieben werden, allerdings sind hadr
 \autoref{Mrk421_LC_Alles} zeigt eine Lichtkurve von Mrk~421, die zwischen 1992 und 2009 aufgenommen wurde.
 Deutlich sind die Unterschiede zwischen Zeiten niedriger und hoher Aktivität zu erkennen. 
 Das Jahr 2001 ist geprägt von hoher Aktivität und der Fluss liegt zwischendurch bei mehr als dem zehnfachen Fluss von Crab.\cite{Mrk421_LC_lang}
-Die Kurzzeitvariabilität dieser Quelle ist ebenfalls so ausgeprägt, dass eine Verdopplung des Flusses in $\SI{15}{min}$ beobachtet werden konnte.\cite{Weekes}
+Die Kurzzeitvariabilität dieser Quelle ist ebenfalls so ausgeprägt, dass eine Verdopplung des Flusses innerhalb von $\SI{15}{min}$ beobachtet werden konnte.\cite{Weekes}
 
 Mit Hilfe von MWL-Kampagnen konnten sowohl während aktiver als auch während nicht aktiver Zeiten Korrelationen zwischen der Röntgen- und Gammastrahlungsemission gefunden werden.
 Aus diesen Multiwellenlängenbeobachtungen wird geschlossen, dass mit Hilfe eines leptonischen Modells die Emission der Quelle gut beschrieben werden kann.\cite{MWL2009}

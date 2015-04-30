@@ -33,7 +33,7 @@
 \contentsline {subsubsection}{\nonumberline Hadronische Modelle}{23}{section*.8}
 \contentsline {section}{\numberline {2.6}Markarian 421}{24}{section.2.6}
 \contentsline {chapter}{\numberline {3}Monte-Carlo-Simulation}{26}{chapter.3}
-\contentsline {section}{\numberline {3.1}MAGIC}{27}{section.3.1}
+\contentsline {section}{\numberline {3.1}Die MAGIC-Teleskope}{27}{section.3.1}
 \contentsline {section}{\numberline {3.2}Schauersimulation mit CORSIKA}{29}{section.3.2}
 \contentsline {subsection}{\numberline {3.2.1}Mmcs}{31}{subsection.3.2.1}
 \contentsline {subsection}{\numberline {3.2.2}Inputcards}{31}{subsection.3.2.2}
@@ -64,33 +64,32 @@
 \contentsline {paragraph}{\nonumberline Effektive Beobachtungszeit}{56}{section*.26}
 \contentsline {paragraph}{\nonumberline Effektive Fläche}{56}{section*.27}
 \contentsline {section}{\numberline {4.3}Entfaltung des Energiespektrums}{56}{section.4.3}
-\contentsline {section}{\numberline {4.4}Mrk 421-Analyse}{58}{section.4.4}
+\contentsline {section}{\numberline {4.4}Mrk 421-Analyse}{59}{section.4.4}
 \contentsline {subsection}{\numberline {4.4.1}Überblick über die Daten}{59}{subsection.4.4.1}
-\contentsline {subsection}{\numberline {4.4.2}Datenset 2}{59}{subsection.4.4.2}
+\contentsline {subsection}{\numberline {4.4.2}Datenset 2}{60}{subsection.4.4.2}
 \contentsline {subsubsection}{\nonumberline Daten-Auswahl und Qualitätchecks}{60}{section*.30}
 \contentsline {subsubsection}{\nonumberline \textit {Coach} und \textit {Melibea}}{62}{section*.33}
-\contentsline {subsubsection}{\nonumberline Lichtkurve: Crab}{63}{section*.36}
+\contentsline {subsubsection}{\nonumberline Lichtkurve: Crab}{62}{section*.36}
 \contentsline {subsubsection}{\nonumberline Lichtkurve: Mrk 421}{65}{section*.38}
 \contentsline {subsubsection}{\nonumberline Spektrum: Crab}{66}{section*.41}
-\contentsline {subsubsection}{\nonumberline Spektrum: Mrk 421}{66}{section*.43}
+\contentsline {subsubsection}{\nonumberline Spektrum: Mrk 421}{68}{section*.43}
 \contentsline {subsection}{\numberline {4.4.3}Datenset 1}{69}{subsection.4.4.3}
 \contentsline {subsubsection}{\nonumberline Datencheck}{69}{section*.45}
-\contentsline {subsubsection}{\nonumberline Lichtkurve: Crab und Mrk~421}{70}{section*.48}
-\contentsline {subsubsection}{\nonumberline Spektrum: Mrk~421}{71}{section*.51}
+\contentsline {subsubsection}{\nonumberline Lichtkurve: Crab und Mrk~421}{69}{section*.48}
+\contentsline {subsubsection}{\nonumberline Spektrum: Mrk~421}{72}{section*.51}
 \contentsline {subsection}{\numberline {4.4.4}Datenset 4}{73}{subsection.4.4.4}
 \contentsline {subsubsection}{\nonumberline Datencheck}{73}{section*.53}
 \contentsline {subsubsection}{\nonumberline Lichtkurve: Crab und Mrk~421}{73}{section*.56}
-\contentsline {subsubsection}{\nonumberline Spektrum: Mrk~421}{75}{section*.59}
-\contentsline {subsection}{\numberline {4.4.5}Datenset 3}{75}{subsection.4.4.5}
-\contentsline {subsubsection}{\nonumberline Datencheck}{75}{section*.61}
-\contentsline {subsubsection}{\nonumberline Energieschätzung}{76}{section*.64}
-\contentsline {subsubsection}{\nonumberline Lichtkurve: Mrk~421}{76}{section*.65}
-\contentsline {subsubsection}{\nonumberline Spektrum}{77}{section*.67}
+\contentsline {subsubsection}{\nonumberline Spektrum: Mrk~421}{76}{section*.59}
+\contentsline {subsection}{\numberline {4.4.5}Datenset 3}{77}{subsection.4.4.5}
+\contentsline {subsubsection}{\nonumberline Datencheck}{77}{section*.61}
+\contentsline {subsubsection}{\nonumberline Energieschätzung}{77}{section*.64}
+\contentsline {subsubsection}{\nonumberline Lichtkurve: Mrk~421}{78}{section*.65}
+\contentsline {subsubsection}{\nonumberline Spektrum}{78}{section*.67}
 \contentsline {section}{\numberline {4.5}Zusammenfassung der Ergebnisse und Vergleich der Datensets}{79}{section.4.5}
-\contentsline {chapter}{\numberline {5}Multiwellenlängen-Untersuchungen}{81}{chapter.5}
-\contentsline {section}{\numberline {5.1}Teilnehmende Experimente an der MWL-Kampagne}{81}{section.5.1}
-\contentsline {section}{\numberline {5.2}Vergleich der Lichtkurven}{83}{section.5.2}
-\contentsline {section}{\numberline {5.3}Variabilitätsuntersuchung}{85}{section.5.3}
-\contentsline {chapter}{\numberline {6}Zusammenfassung}{88}{chapter.6}
-\contentsline {section}{\numberline {6.1}Ausblick}{89}{section.6.1}
-\contentsline {chapter}{\nonumberline Literatur}{91}{chapter*.74}
+\contentsline {chapter}{\numberline {5}Multiwellenlängen-Untersuchungen}{82}{chapter.5}
+\contentsline {section}{\numberline {5.1}Teilnehmende Experimente an der MWL-Kampagne}{82}{section.5.1}
+\contentsline {section}{\numberline {5.2}Vergleich der Lichtkurven}{84}{section.5.2}
+\contentsline {section}{\numberline {5.3}Variabilitätsuntersuchung}{86}{section.5.3}
+\contentsline {chapter}{\numberline {6}Zusammenfassung und Ausblick}{90}{chapter.6}
+\contentsline {chapter}{\nonumberline Literatur}{93}{chapter*.75}

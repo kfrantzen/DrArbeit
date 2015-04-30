@@ -164,11 +164,11 @@
 % \usepackage[hyphens]{url}
 \usepackage[pdfusetitle,unicode, linkbordercolor=tugreen, german]{hyperref}
 \usepackage{bookmark}
-%\usepackage[shortcuts]{extdash}
+\usepackage[shortcuts]{extdash}
 \usepackage{todonotes}
 
 \usepackage{icomma}	%Kommas in Zahlen werden ohne Leerzeichen danach dargestellt
 % \setotherlanguage{english}
 \usepackage{epigraph}
-
+\usepackage[hyphenbreaks]{breakurl}
 

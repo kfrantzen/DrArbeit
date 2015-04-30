@@ -1,4 +1,4 @@
-\chapter{Zusammenfassung}
+\chapter{Zusammenfassung und Ausblick}
 \label{chapter:Ergebnisse}
 Im Rahmen dieser Arbeit wurde zunächst eine Einführung in die Astroteilchenphysik gegeben. 
 Die kosmische Strahlung wurde beschrieben und die möglichen Quellen dieser Strahlung vorgestellt.
@@ -21,15 +21,15 @@ Danach wird die Energierekonstruktion mit Hilfe von Look-Up-Tabellen erklärt.
 Abschließend wird noch die Methode der Entfaltung kurz beschrieben.
 Nachdem diese Methoden der Analyse vorgestellt wurden, erfolgt die Analyse der Daten der AGN Mrk~421 aus dem Jahr 2012.
 Diese Daten wurden während des Teleskop-Upgrades genommen, was zu einer geringeren Menge an Daten im Vergleich zum Normalbetrieb führte.
-Da die Quelle von bodengebondenen Teleskopen generell zwischen Juli und November nicht beobachtet werden kann, weist die Datennahme in diesem Zeitraum eine große Lücke auf. 
+Da die Quelle von bodengebundenen Teleskopen generell zwischen Juli und November nicht beobachtet werden kann, weist die Datennahme in diesem Zeitraum eine große Lücke auf. 
 Des Weiteren mussten die Daten aufgrund verschiedener Hardwareveränderungen und Spiegeleigenschaften in vier separate Datensätze getrennt werden, die jeweils vier separate MC-Datensätze erfordern.
-Ein Datensatz besteht aus Mono-Beobachtungen, da die alte Kamera von MAGIC-I kurz bevor sie durch eine neue Kamera ersetzt werden sollte defekt war.
+Ein Datensatz besteht aus Mono-Beobachtungen, da die alte Kamera von MAGIC-I, kurz bevor sie durch eine neue Kamera ersetzt werden sollte, defekt war.
 Aufgrund dieser Tatsache waren keine stereoskopische Beobachtung mehr möglich und es musste wiederum ein speziell angepasster MC-Datensatz verwendet werden.
 Aus der Analyse dieser einzelnen Datensätze folgt, dass die Quelle Mrk~421 im Jahr 2012 keine Flares aufweist.
 Ihr Fluss liegt zwischen 24\% und 45\% des Flusses von Crab und somit auf einem für diese Quelle konstant niedrigen Niveau.
 
 Anschließend an die Analyse der Daten mit MAGIC wurden die Daten einer Multiwellenlängenkampagne, die 2012 durchgeführt wurde, ausgewertet.
-Diese enthält Beobachtungen unterschiedlicher Instrumente wie bodengebundener Teleskope oder Satellitenexperimenten.
+Diese enthält Beobachtungen unterschiedlicher Instrumente wie bodengebundener Teleskope oder Satellitenexperimente.
 Die Lichtkurven der einzelnen Instrumente wurden in einem Diagramm dargestellt und ihre Variabilität untersucht.
 Diese Untersuchung hat ergeben, dass die Quelle während der Multiwellenlängenkampagne vor allem variable Gamma- und Röntgenstrahlung emittiert.
 Mit steigender Frequenz steigt auch die Variabilität.
@@ -37,14 +37,14 @@ Diese Ergebnisse sind vergleichbar zu den Ergebnissen, die eine MWL-Studie 2009 
 Die hohe Variabilität für Röntgenstrahlung lässt Hinweise auf das SSC-Modell zu.
 Allerdings sind hadronische Modelle auch noch nicht ausgeschlossen, da eine erfolgreiche Beobachtung dieser Quelle mit Neutrinoteleskopen noch nicht gelang.
 
-\section{Ausblick}
+\paragraph{Ausblick}
 Die möglichst schnelle Verfügbarkeit von MC-Simulationen für die Analyse der Daten erfordert eine zeitnahe Produktion.
 Mit Hilfe einer weiterhin schnellen Produktion, die optimal an die Hardware angepasst ist, können gute Analyseergebnisse erzielt werden.
 Technisch gesehen könnte dies durch eine Aktualisierung der MC-Kette unter Benutzung einer aktuellen Programmiersprache geschehen.
 Sinnvoll wäre auch der Einbau von mehr Fehlermeldungen in der Produktionsstruktur.
 Des Weiteren wäre es von großem Vorteil, die Laufzeit von \textit{CORSIKA} zu verringern, da dieses Programm mit Abstand die längste Laufzeit benötigt.
 
-In Zukunft könnten Neutrinoteleskope Aufschlüsse über die Emissionsmodelle in extragalaktischen Quellen geben, sofern sie Neutrinos detektieren.
+In Zukunft könnten Neutrinoteleskope Aufschlüsse über die Emissionsmodelle in extragalaktischen Quellen geben, sofern sie mit Sicherheit Neutrinos detektieren oder nicht detektieren.
 Mit deren Hilfe und mit Hilfe weiterer Multiwellenlängenkampagnen könnte die Physik im Quelltyp der AGN besser verstanden werden.
 So könnte es damit dann möglich sein, die bis jetzt bekanntesten AGNs, Mrk~421 und Mrk~501, genau zu beschreiben.
 
@@ -52,4 +52,4 @@ Mit Gammateleskop\-/Arrays der neueren Generation wie CTA kann die Sensitivität
 Es wird möglich sein schwache Quellen zu detektieren, die große Entfernungen zu uns haben.
 Dann ist es wahrscheinlich, mit Hilfe der Gammaastronomie in neue Bereiche vorzudringen: %\textit{Viele Lichtjahre von der Erde entfernt [...] in Galaxien, die nie ein Mensch zuvor gesehen hat} [Star Trek].
 
-\enquote{\textit{Der Weltraum, unendliche Weiten. Wir schreiben das Jahr [ca.] 2200. [...] Viele Lichtjahre von der Erde entfernt dringt [die Gammaastronomie] in Galaxien vor, die nie ein Mensch zuvor gesehen hat}}. [StarTrek]
+\enquote{\textit{Der Weltraum, unendliche Weiten. Wir schreiben das Jahr [ca.] 2200. [...] Viele Lichtjahre von der Erde entfernt dringt [die Gammaastronomie] in Galaxien vor, die nie ein Mensch zuvor gesehen hat}}. Star Trek

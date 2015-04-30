@@ -12,7 +12,7 @@
 
 Vielleicht hilft diese Doktorarbeit dabei, ein kleines bisschen Licht ins Dunkel des Universums zu bringen.
 Mit Hilfe von Teilchen, die wir auf der Erde oder mit Hilfe von Satelliten detektieren, können wir versuchen, so viel wie möglich über das Universum zu erfahren.
-Fragen wie \enquote{Woher kommen die Teilchen, die wir hier messen?}, \enquote{Wie wurden wurden diese Teilchen beschleunigt?} oder \enquote{Was passiert auf dem Weg von der Quelle bis zu uns mit diesem Teilchen?} beschäftigen die Astroteilchenphysiker.
+Fragen wie \enquote{Woher kommen die Teilchen, die wir hier messen?}, \enquote{Wie wurden diese Teilchen beschleunigt?} oder \enquote{Was passiert auf dem Weg von der Quelle bis zu uns mit diesen Teilchen?} beschäftigen die Astroteilchenphysiker.
 Um diese Fragen zu klären, stehen verschiedene Botenteilchen mit ihren Vor- und Nachteilen zur Verfügung.
 Im Folgenden werde ich mich auf die Gammastrahlung als Bote konzentrieren.\\
 
@@ -24,18 +24,22 @@ Die Quellen Markarian~421 (Mrk~421) und Markarian~501 (Mrk~501) waren die ersten
 Mrk~421 besitzt eine Rotverschiebung von $z=0.031$ und wurde als Gammastrahlung-emittierende Quelle in den 90er Jahren vom Whipple-Teleskop entdeckt.
 
 Um die physikalischen Prozesse in diesen Quellen zu verstehen, werden Modelle für die Teilchenproduktion und -beschleunigung benötigt.
-Die Analyse einer solchen AGN hat immer zum Ziel, das Energiespektrum der emittierten Strahlung zu bestimmen.
+Die Analyse einer solchen AGN hat unter anderem zum Ziel, das Energiespektrum der emittierten Strahlung zu bestimmen oder eine Lichtkurve anzufertigen, welche die zeitliche Entwicklung des Flusses darstellt.
 Dabei gibt es einige Herausforderungen:
-
-Da das Verhältnis von Signal (Gammastrahlung aus der Quelle) zu Untergrund (hadronische Schauer) ca. 1:1000 beträgt, werden gute Algorithmen zur Signal-Untergrund-Trennung benötigt.
-Diese Klassifikationsalgorithmen werden mit Hilfe von Monte Carlo-Simulationen trainiert.
+Da das Verhältnis von Signal (Gammastrahlung aus der Quelle) zu Untergrund (hadronische Schauer) im besten Fall ca. 1:1000 beträgt, werden effiziente Algorithmen zur Signal-Untergrund-Trennung benötigt.
+Diese Klassifikationsalgorithmen werden mit Hilfe von Monte-Carlo-Simulationen trainiert.
 Eine genaue Simulation der Primärteilchen, die einen Teilchenschauer auslösen und vom Experiment detektiert werden, ist wichtig.
-Alle Schritte von der Schauerproduktion, über die Reflexion der Photonen am Teleskopspiegel bis zur Detektion in der Kamera müssen möglichst genau simuliert werden.
-Die gesamte Monte Carlo-Produktion für das MAGIC-Experiment wurde im Laufe dieser Doktorarbeit in Dortmund durchgeführt.
+Alle Simulationsschritte von der Schauersimulation, über die Simulation der Reflexion der Photonen am Teleskopspiegel bis zur Simulation der Kamera und der Elektronik müssen möglichst genau durchgeführt werden.
+Dies erfordert die stetige Anpassung der Simulation an die aktuellen Gegebenheiten.
+Veränderungen der abbildenden Eigenschaften der Spiegel, sowie Veränderungen in der Elektronik müssen in der Simulation berücksichtigt werden.
+Dies führt dazu, dass bei Veränderungen an der Hardware des Teleskops eine neue Monte-Carlo-Produktion angefertigt werden muss.
+Die gesamte Monte-Carlo-Produktion für das MAGIC-Experiment wurde im Laufe dieser Doktorarbeit in Dortmund durchgeführt.
 
-Mit Hilfe der Monte Carlo-Simulationsdaten wird die Analyse der AGN Mrk~421 durchgeführt mit dem Ziel, ein Energiespektrum dieser Quelle zu bestimmen.
+Mit Hilfe der Monte-Carlo-Simulationsdaten wird die Analyse der AGN Mrk~421 durchgeführt.
+Die zeitliche Entwicklung des Flusses sowie das Energiespektrum dieser Quelle sind die Analyseergebnisse.
 Zudem bietet sich die Möglichkeit, eine Quelle in unterschiedlichen Wellenlängen simultan zu observieren.
-Diese Multiwellenlängendaten von verschiedenen Experimenten beleuchten die Quelle in einem anderen Licht und können dabei helfen, physikalische Prozesse wie Beschleunigungsmechanismen zu verstehen.\newline
+Diese Multiwellenlängendaten von verschiedenen Experimenten beleuchten die Quelle jeweils in einem anderen Licht und können dabei helfen, physikalische Prozesse wie Beschleunigungsmechanismen und die Produktion von Gammastrahlung zu untersuchen.
+Es existieren zwei grundsätzlich unterschiedliche Modelle für die Produktion von Gammastrahlung in diesem Quelltyp, von denen bisher noch keines bestätigt oder ausgeschlossen werden konnte.\newline
 
 Die Arbeit gliedert sich folgendermaßen:
 
@@ -44,18 +48,18 @@ Verschiedene Quellen kosmischer Strahlung und Beschleunigungsmechanismen werden 
 Des Weiteren wird auf die Gammaastronomie als eigenes Forschungsgebiet in der Astroteilchenphysik eingegangen. 
 Danach wird der Quelltyp des Aktiven Galaktischen Kerns (AGN) näher beschrieben und die in dieser Arbeit analysierte AGN Mrk~421 vorgestellt.
 
-\textbf{\autoref{chapter:MC-Simulation}} beinhaltet eine Beschreibung der MAGIC-Teleskope und bietet einen Überblick über die Monte Carlo-Produktion.
+\textbf{\autoref{chapter:MC-Simulation}} beinhaltet eine Beschreibung der MAGIC-Teleskope und bietet einen Überblick über die Monte-Carlo-Produktion.
 Jedes Simulationsprogramm und die anschließende Kalibration werden beschrieben.
 Abschließend beinhaltet dieses Kapitel noch eine Übersicht über die automatische Produktionsstruktur auf dem Rechencluster LiDO an der TU Dortmund.
 
-In \textbf{\autoref{chapter:Analyse}} befindet sich eine kurze Einführung in die Analyseprogramme, mit denen dann später in diesem Abschnitt die Analyse der AGN Mrk~421 durchgeführt wurde.
-Für diese Analyse wurde der gesamte Datensatz in vier Teile geteilt, die getrennt voneinander analysiert werden.
+In \textbf{\autoref{chapter:Analyse}} befindet sich eine kurze Einführung in die Analyseprogramme, mit denen dann die Analyse der AGN Mrk~421 durchgeführt wird.
+Für diese Analyse wird der gesamte Datensatz in vier Teile geteilt, die getrennt voneinander analysiert werden.
 Diese Teile unterscheiden sich in ihren äußeren Bedingungen und benötigen verschiedene Monte-Carlo-Simulationsdaten.
 Es werden für jeden Datensatz einzeln das Energiespektrum und die Lichtkurve bestimmt.
 Datensatz 2 wird zum Verständnis der Analyse beispielhaft genauer diskutiert.
 Eine zusammenfassende Lichtkurve, die den gesamten Datensatz enthält, ist am Ende des Kapitels zu finden.
 
-Eine Multiwellenlängenanalyse der Quelle ist in \autoref{chapter:MWL} zu finden.
+Eine Multiwellenlängenanalyse der Quelle ist in \textbf{\autoref{chapter:MWL}} zu finden.
 Nach einer Vorstellung der beteiligten Experimente werden die Lichtkurven der einzelnen Teleskope sowie die Ergebnisse einer Variabilitätsuntersuchung zwischen den verschiedenen Wellenlängen  dargestellt.
 
-In \autoref{chapter:Ergebnisse} werden alle erzielten Ergebnisse zusammengefasst.
+In \textbf{\autoref{chapter:Ergebnisse}} werden alle erzielten Ergebnisse zusammengefasst.
