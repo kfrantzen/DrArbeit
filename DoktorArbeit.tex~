@@ -26,15 +26,15 @@
 %\newcommand{\thesubtitle}{oder\\ Die Rolle der Monte Carlo-Produktion in der MAGIC-Datenanalyse}
 
 \newcommand{\thetitle}{Von der Monte-Carlo-Produktion zur Datenanalyse}
-\newcommand{\thesubtitle}{-\\ Eine Analyse der 2012 genommenen Daten des Aktiven Galaktischen Kerns Mrk 421}
+\newcommand{\thesubtitle}{Eine Analyse der 2012 genommenen Daten \\ des Aktiven Galaktischen Kerns Mrk 421}
 
 
 \newcommand{\Geburtsort}{Willich}
 \newcommand{\Jahr}{Mai 2015}
 \newcommand{\Lehrstuhl}{Experimentelle Physik V}
-\newcommand{\Betreuer}{Prof. Dr. Erstgutachter}
-\newcommand{\Zweitgutachter}{Prof. Dr. Zweitgutachter}
-\newcommand{\Abgabedatum}{11. Juli 2014}
+\newcommand{\Betreuer}{Prof. Dr. Dr. Wolfgang Rhode}
+\newcommand{\Zweitgutachter}{Prof. Dr. Carsten Westphal}
+\newcommand{\Abgabedatum}{6. Mai 2014}
 
 %Author und Email-Adresse
 \author{
@@ -82,11 +82,11 @@
 
 %\appendix
 % Hier beginnt der Anhang, nummeriert in lateinischen Buchstaben
-%\input{./Inhalt/a_anhang.tex}
+
 %\nocite{*}
 \backmatter
 \printbibliography
-
+\input{./Inhalt/Danksagung.tex}
 %\cleardoublepage
 %\input{./Inhalt/eid_versicherung.tex}
 

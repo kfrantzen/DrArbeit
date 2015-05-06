@@ -5,7 +5,7 @@ Im folgenden Kapitel werden die Gamma-Hadron-Separation und Energierekonstruktio
 Zu diesem Zweck werden Standard\-/Analyseprogramme benutzt, die im \textit{MARS} (MAGIC Analysis and Reconstruction Software)-Paket enthalten sind.
 Dieses Softwarepaket beinhaltet eine Sammlung von ROOT-Skripten und Macros \cite{MARS}, wie \textit{coach}, womit der Random Forest trainiert wird, \textit{flute}, womit die Lichtkurve bestimmt wird oder \textit{CombUnfold}, was der Entfaltung des Energiespektrums dient. 
 
-Nach einer kurzen Einführung in diese Programme, werden diese in \autoref{Mrk421_Analyse} für die Analyse der 2012 aufgenommenen Daten der AGN Mrk~421 genutzt.
+Nach einer kurzen Einführung in diese Programme werden diese in \autoref{Mrk421_Analyse} für die Analyse der 2012 aufgenommenen Daten der AGN Mrk~421 genutzt.
 Der Datensatz des gesamten Jahres 2012 wird auf Grund von Änderungen der abbildenden Eigenschaften des Teleskops und Hardwareänderungen in vier Teile geteilt und einzeln analysiert. 
 Für jeden Einzeldatensatz werden dedizierte MC-Daten benötigt.
 
@@ -64,17 +64,17 @@ Der MC\-/Trainingsdatensatz wird in Bins für jeden Parameter, der für die Ener
 %So wird eine mehrdimensionale Tabelle mit der gemittelten Energie der MC-Ereignisse, die zu jedem Bin gehört, erstellt.
 Anschließend wird in dieser mehrdimensionalen Tabelle in jedem Bin über die MC-Energien gemittelt sowie der quadratische Mittelwert bestimmt, sodass jedem Bin in dieser Tabelle eine Energie zugeordnet ist.
 Einem realen Ereignis wird anhand seiner Parameter das passende Energie-Bin in der Tabelle zugeteilt und so eine geschätzte Energie (\texttt{Estimated Energy}) zugewiesen.
-Für eine genauere Energierekonstruktion werden noch einige Korrekuren angewandt.
+Für eine genauere Energierekonstruktion werden noch einige Korrekturen angewandt.
 Schauer, die nicht vollständig in der Kamera enthalten sind, bedürfen beispielsweise solch einer Korrektur.\cite{EnergieRekonstruktion}
 
 Für Mono-Daten geschieht die Energierekonstruktion mit Hilfe einer Random Forest Regression.
-Dieser Algoritmus schätzt keine Klassenzugehörigkeit von Ereignissen, sondern den Wert einer kontinuierlichen Funkion. 
+Dieser Algorithmus schätzt keine Klassenzugehörigkeit von Ereignissen, sondern den Wert einer kontinuierlichen Funktion. 
 In diesem Fall ist der Wert ein Energieschätzer.
 Um den finalen Wert zu bestimmen, wird nach der Anwendung aller Bäume über die Ergebnisse der einzelnen Bäume gemittelt.\cite{EnergieRekonstruktion} 
 
 
 \subsection{Rekonstruktion der Quellposition}
-In diesem Abschnitt wird die Bestimmung des Parmeters \texttt{Disp} beschrieben, mit Hilfe dessen die Herkunft des Primärteilchens rekonstruieren werden kann. 
+In diesem Abschnitt wird die Bestimmung des Parmeters \texttt{Disp} beschrieben, mit Hilfe dessen die Herkunft des Primärteilchens rekonstruiert werden kann. 
 Der Parameter \texttt{Disp} bezeichnet den Abstand zwischen dem Schauerschwerpunkt und der Quellposition in der Kamera.
 Für Beobachtungen mit nur einem Teleskop gibt es zwei Möglichkeiten, diesen Parameter zu rekonstruieren. 
 Zum Einen sind dies sogenannte Ghost-Busting-Methoden, die die Asymmetrie des Schauers charakterisieren und zum Anderen eine Random Forest Regression.\cite{DispRekonstruktion}
@@ -273,7 +273,7 @@ Zum Testen ist dies eine gute Alternative, allerdings keine richtige Entfaltung,
 In diesem Abschnitt wird die Analyse der Daten beschrieben, wobei für jede der vier Datenepochen sowohl die Lichtkurve als auch das Spektrum gezeigt werden.
 Dabei wird die Analyse des Datensets 2 der Daten exemplarisch für die Stereo-Analyse erklärt (\autoref{subsec:Datenset_2}), während die anderen Zeitabschnitte des Jahres mit stereoskopischer Beobachtung (\autoref{subsec:Datenset_1} und \autoref{subsec:Datenset_4}) analog ausgewertet werden.
 Auf die Mono-Datenanalyse wird in \autoref{subsec:Datenset_3} eingegangen.
-Zusammenfassend wird noch eine Lichtkurve aller Daten gezeigt.
+Zusammenfassend wird eine Lichtkurve aller Daten gezeigt.
 
 
 \subsection{Überblick über die Daten}
@@ -319,7 +319,7 @@ Diese Daten wurden in einem Zenitwinkelbereich zwischen 12° und 30° genommen (
 
 Da dieser Datensatz die meisten Daten beinhaltet, wird die Analyse exemplarisch hiermit durchgeführt.
 Als Background-Daten dienen Daten anderer Quellen, welche in der gleichen Zeitspanne wie die zu analysierenden Daten liegen.
-Dadurch wird gewährleistet, dass das Teleskop die gleichen Eigenschaften, wie z.B. PSF, hat wie bei der Datennahme der zu analysierenden Quelle. 
+Dadurch wird gewährleistet, dass das Teleskop die gleichen Eigenschaften (z.B. PSF, Reflektivität der Spiegel, etc.) hat wie bei der Datennahme der zu analysierenden Quelle. 
 Mit Hilfe von Crab-Daten werden die Einstellungen für die Lichtkurvenbestimmung bestimmt, da Crab als Standardkerze dient und einen bekannten stabilen Fluss hat. 
 
 
@@ -333,7 +333,7 @@ Außerdem wurden die Mittelwerte der Rate, der Parameter \texttt{Number of Islan
 
 Diese Kriterien für den Datencheck wurden für die Mrk 421-Daten, die Crab-Daten und die Background-Daten angewendet.
 
-In der Tabelle \ref{tab:Datenset2-Mrk421} ist aufgelistet, an welchen Tagen Mrk 421-Daten nach dem Datencheck für die Analyse zur Verfügung stehen.
+In der \autoref{tab:Datenset2-Mrk421} ist aufgelistet, an welchen Tagen Mrk 421-Daten nach dem Datencheck für die Analyse zur Verfügung stehen.
 
 
 \begin{table}[!h]
@@ -356,7 +356,7 @@ Auf eine tageweise Auflistung der Background- und Crab-Daten wird an dieser Stel
 
 \begin{table}[!h]
 \centering
-\caption{Übersicht über alle nach dem Datencheck zur Verfügung stehenden Daten von Mrk~421-, Crab- und Background aus Datenset 2.}
+\caption{Übersicht über alle nach dem Datencheck zur Verfügung stehenden Daten von Mrk~421, Crab und Background aus Datenset 2.}
 \label{tab:Datenset2}
 \begin{tabular}{lc}
   \toprule
@@ -377,7 +377,7 @@ Auf eine tageweise Auflistung der Background- und Crab-Daten wird an dieser Stel
 \end{tabular}
 \end{table}
 
-Für diesen Teil der Analyse werden die in Dortmund produzierten Standard-MC-Daten im Zenitbereich 5°-35° verwendet, in denen die alte MAGIC-I Kamera simuliert wurde.
+Für diesen Teil der Analyse werden die in Dortmund produzierten Standard-MC-Daten im Zenitbereich $5°$-$\,35°$ verwendet, in denen die alte MAGIC-I Kamera simuliert wurde.
 Die PSF für MAGIC-I beträgt hierbei $\SI{10,5}{mm}$ und die Mirror Fraction 0,58, während diese Werte für MAGIC-II $\SI{10,2}{mm}$ für die PSF und 0,70 für die Mirror Fraction sind.
 
 Es ist zu beachten, dass für alle Daten (Mrk 421/Crab/Background) und die MCs das gleiche Cleaning benutzt wird, da zu dieser Zeit zwei verschiedene Cleaning-Schwellen im Next-Neighbor-Cleaning gebräuchlich waren.
@@ -507,7 +507,7 @@ In \autoref{Datenset2_CombunFold_Crab} ist das entfaltete Spektrum von Crab darg
 \begin{figure}
     \centering
     \includegraphics[width=0.9\textwidth]{./Plots/04_MrkAnalyse/Datenset2/Crab_mit_Literatur.pdf}
-    \caption{Entfaltetes Crab-Spektrum im Zeitraum vom 18.3.2012 bis zum 25.4.2012 mit einem Literarurvergleich (siehe \cite{LiteraturreferenzMAGIC}).}
+    \caption{Entfaltetes Crab-Spektrum im Zeitraum vom 18.3.2012 bis zum 25.4.2012 mit einem Literaturvergleich (siehe \cite{LiteraturreferenzMAGIC}).}
     \label{Datenset2_CombunFold_Crab}
 \end{figure}
 
@@ -577,7 +577,7 @@ Tabelle \ref{tab:Datenset1} zeigt die selektierten Mrk 421-/Crab- und Background
 \label{tab:Datenset1}
 \begin{tabular}{lc}
   \toprule
-  Quelle & Obersvationszeit [min]\\
+  Quelle & Observationszeit [min]\\
   \midrule
   \midrule
   Mrk 421 & 70\\
@@ -623,7 +623,7 @@ Es ist zu sehen, dass der Fluss an diesen beiden Tagen verglichen mit den Daten 
 \FloatBarrier
 
 \subsubsection{Spektrum: Mrk~421}
-Analog zu Datenset 2 wurde auch wieder ein Spektrum bestimmt.
+Analog zu Datenset 2 wurde wieder ein Spektrum bestimmt.
 Das Resultat befindet sich in \autoref{Datenset1_Spektrum_Mrk421}.
 
 \begin{figure}
@@ -673,7 +673,7 @@ Dezember & 15., 19., 23.\\
 
 \begin{table}[!h]
 \centering
-\caption{Übersicht über alle an nach dem Datencheck zur Verfügung stehenden Daten von Mrk~421, Crab und Background aus Datenset 4.}
+\caption{Übersicht über alle nach dem Datencheck zur Verfügung stehenden Daten von Mrk~421, Crab und Background aus Datenset 4.}
 \label{tab:Datenset4}
 \begin{tabular}{lc}
   \toprule
@@ -700,8 +700,7 @@ In diesem Zeitraum liegt der Mrk~412-Fluss weiterhin unterhalb des Crab-Flusses.
 \begin{figure}
     \centering
     \includegraphics[width=0.9\textwidth]{./Plots/04_MrkAnalyse/Datenset4/Datenset4_LC_Crab.pdf}
-    \caption{Lichtkurve von Crab im Zeitraum vom 15.12.2012 bis zum 23.12.2012.
-    Die Werte liegen nah am mittleren Fluss von Crab mit dem mittleren Crab-Fluss (nach \cite{LiteraturreferenzMAGIC})}
+    \caption{Lichtkurve von Crab im Zeitraum vom 15.12.2012 bis zum 23.12.2012 mit dem mittleren Crab-Fluss (nach \cite{LiteraturreferenzMAGIC}).}
     \label{Datenset4_LC_Crab}
 \end{figure}
 
@@ -792,7 +791,7 @@ Obwohl keine Crab-Daten zur Verfügung standen, um die Einstellungen für die Li
 \begin{figure}
     \centering
     \includegraphics[width=0.9\textwidth]{./Plots/04_MrkAnalyse/Datenset3/Datenset3_Mrk421_LC.pdf}
-    \caption{Lichtkurve von Mrk 421 im Zeitraum vom 23.05.2012 bis zum 19.05.2012.
+    \caption{Lichtkurve von Mrk 421 im Zeitraum vom 23.05.2012 bis zum 19.06.2012.
     Der Fluss von Mrk~421 liegt im Durchschnitt bei 45\% des Flusses von Crab, den die rosane Linie darstellt.}
     \label{Datenset3_LC_Mrk421}
 \end{figure}

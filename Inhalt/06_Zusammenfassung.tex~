@@ -18,7 +18,7 @@ Diese aus Skripten und einer Datenbank bestehende Kette wurde im Verlaufe dieser
 Im Analyse-Teil dieser Arbeit wird die Bedeutung der MC-Simulationsdaten in den einzelnen Programmen herausgestellt.
 Es wird zunächst die Methode des Random Forests in der Gamma-Hadron-Separation und in der Rekonstruktion der Quellposition vorgestellt.
 Danach wird die Energierekonstruktion mit Hilfe von Look-Up-Tabellen erklärt.
-Abschließend wird noch die Methode der Entfaltung kurz beschrieben.
+Abschließend wird die Methode der Entfaltung kurz beschrieben.
 Nachdem diese Methoden der Analyse vorgestellt wurden, erfolgt die Analyse der Daten der AGN Mrk~421 aus dem Jahr 2012.
 Diese Daten wurden während des Teleskop-Upgrades genommen, was zu einer geringeren Menge an Daten im Vergleich zum Normalbetrieb führte.
 Da die Quelle von bodengebundenen Teleskopen generell zwischen Juli und November nicht beobachtet werden kann, weist die Datennahme in diesem Zeitraum eine große Lücke auf. 
@@ -37,7 +37,7 @@ Diese Ergebnisse sind vergleichbar zu den Ergebnissen, die eine MWL-Studie 2009 
 Die hohe Variabilität für Röntgenstrahlung lässt Hinweise auf das SSC-Modell zu.
 Allerdings sind hadronische Modelle auch noch nicht ausgeschlossen, da eine erfolgreiche Beobachtung dieser Quelle mit Neutrinoteleskopen noch nicht gelang.
 
-\paragraph{Ausblick}
+\section*{Ausblick}
 Die möglichst schnelle Verfügbarkeit von MC-Simulationen für die Analyse der Daten erfordert eine zeitnahe Produktion.
 Mit Hilfe einer weiterhin schnellen Produktion, die optimal an die Hardware angepasst ist, können gute Analyseergebnisse erzielt werden.
 Technisch gesehen könnte dies durch eine Aktualisierung der MC-Kette unter Benutzung einer aktuellen Programmiersprache geschehen.

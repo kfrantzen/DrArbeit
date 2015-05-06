@@ -47,6 +47,7 @@
 \hyphenation{Si-mu-la-tions-ket-te}
 \hyphenation{MCCamera-Run-Data}
 \hyphenation{Mul-ti-wel-len-län-gen-Kam-pag-ne}
+\hyphenation{Schwer-punkts-ener-gie}
 %, As-tro-phy-si-cal, in-ter-stel-lar}
 
 
@@ -170,5 +171,5 @@
 \usepackage{icomma}	%Kommas in Zahlen werden ohne Leerzeichen danach dargestellt
 % \setotherlanguage{english}
 \usepackage{epigraph}
-\usepackage[hyphenbreaks]{breakurl}
+
 

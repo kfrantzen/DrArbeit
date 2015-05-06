@@ -512,6 +512,8 @@ INPUT ./Plots/05_MWL/PlotVariabilities.pdf
 INPUT ./Plots/05_MWL/PlotVariabilities.pdf
 INPUT ./Inhalt/06_Zusammenfassung.tex
 INPUT ./Inhalt/06_Zusammenfassung.tex
+INPUT ./Inhalt/Danksagung.tex
+INPUT ./Inhalt/Danksagung.tex
 INPUT build/DoktorArbeit.aux
 INPUT build/DoktorArbeit.run.xml
 OUTPUT build/DoktorArbeit.run.xml

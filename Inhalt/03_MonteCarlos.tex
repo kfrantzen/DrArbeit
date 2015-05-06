@@ -189,7 +189,7 @@ Mit \textit{Reflector} wird zuerst die atmosphärische Absorption der Cherenkovs
 Dabei werden Rayleigh-Streuung, Mie-Streuung und die Absorption an Ozon simuliert.
 Nachfolgend wird mit Hilfe von Ray-Tracing simuliert, ob die Cherenkovphotonen die Spiegelfläche treffen.
 Für die auftreffenden Photonen wird die Absorption der Aluminium-, bzw. Glasspiegel berücksichtigt und die Photonen reflektiert.
-Nach der Reflexion am Spiegel wird nacheinander überprüft, ob die Photonen die Kamera treffen und letztendlich die Ankunftszeiten in der Kamera bestimmt.
+Nach der Reflexion am Spiegel wird nacheinander überprüft, ob die Photonen die Kamera treffen und letztendlich werden die Ankunftszeiten in der Kamera bestimmt.
 
 \subsection{Inputcards}
 Für diese Simulationsschritte werden bestimmte Inputparameter, bzw. Inputdateien benötigt, die die Eigenschaften des Reflektors beschreiben.
@@ -199,7 +199,7 @@ Die wichtigsten werden im Folgenden kurz erklärt.
 
 Teleskopstandort und Wobble-Position müssen angegeben werden.
 
-Die folgenden Dateien beinhalten Daten zu den einzelnen Spiegel der Teleskope.
+Die folgenden Dateien beinhalten Daten zu den einzelnen Spiegeln der Teleskope.
 So wird pro Teleskop ein \texttt{mirror\_definition\_file} für die verschiedenen Spiegel (Glas und Aluminium) benötigt.
 In dieser Datei sind grundlegende Eigenschaften des Teleskops wie zum Beispiel der Abstand zwischen Spiegel und Kamera festgelegt. 
 Des Weiteren wird der Kameraradius angegeben und die Anzahl der Spiegel mit ihrer jeweilige Größe.
@@ -236,7 +236,7 @@ Das Programm \textit{StarFieldAdder} berechnet anhand eines Kataloges, welche St
 Der Output wird im \textit{CORSIKA}-Format geschrieben und muss von \textit{Reflector} verarbeitet werden, bevor er von \textit{Camera} benutzt werden kann.
 Eine Simulation der Sterne im FoV wird in der Standard-MC-Simulation nicht durchgeführt, da die MC-Daten für alle Quellen in einem bestimmten Zenitbereich benutzt werden sollen und nicht für jede Quelle eigene MC-Daten produziert werden.
 
-Um die Simulation zu beschleunigen und damit nicht für jedes Ereignis der diffuse NSB neu berechnen werden muss, wird mit \textit{StarResponse} eine NSB-Datenbank generiert und daraus das NSB-Rauschen berechnet, welches zusammen mit dem Cherenkovphotonensignal zum Trigger gelangt.
+Um die Simulation zu beschleunigen und damit nicht für jedes Ereignis der diffuse NSB neu berechnet werden muss, wird mit \textit{StarResponse} eine NSB-Datenbank generiert und daraus das NSB-Rauschen berechnet, welches zusammen mit dem Cherenkovphotonensignal zum Trigger gelangt.
 
 \subsection{Simulation von Kamera und Elektronik}
 Nachdem alle Parameter aus der Inputcard eingelesen worden sind und für jeden Pixel individuell NSB simuliert wurde, erfolgt die eigentliche Verarbeitung der zuvor simulierten \textit{Reflector}-Daten.
@@ -245,7 +245,7 @@ Die Photonen aus den Schauern werden eingelesen und für jedes Photon werden fol
 \begin{itemize}
  \item Pixelization: In welchem Pixel kommt das Photon an.
  \item PhE-Produktion: Unter Berücksichtigung der wellenlängenabhängigen Quanteneffizienz jedes Photomultiplier Tubes (PMT) und den sich darauf befindenden Lichtleiter (Winston Cones) wird entschieden, ob ein Photoelektron erzeugt wird.
- \item Channel Response: Für jedes Photoelektron, was die Photokathode verlässt, wird das Analogsignals des PMTs simuliert.
+ \item Channel Response: Für jedes Photoelektron, was die Photokathode verlässt, wird das Analogsignal des PMTs simuliert.
 \end{itemize}
 
 Danach werden die Signale und Ankunftszeiten aller Photonen eines Pixel superponiert.
@@ -356,7 +356,7 @@ Es wird in einem Bereich von 60 time slices  nach dem Pulse gesucht und dann üb
 Nachdem man nun das Signal extrahiert hat, wird es noch von ``readout counts'' in Photoelektronen umgerechnet.
 
 \subsection{Ankunftszeitbestimmung}
-Die Zeitinformation über die Pulse sind in time slices gespeichert, wobei eine time slice bei einer Sampling Frequenz von $\SI{2}{GHz}$ $\SI{0,5}{ns}$ lang ist.
+Die Zeitinformationen über die Pulse sind in time slices gespeichert, wobei eine time slice bei einer Sampling Frequenz von $\SI{2}{GHz}$ $\SI{0,5}{ns}$ lang ist.
 Die Ankunftszeit des Pulses wird als mittlere time slice des integrierten Fensters berechnet und mit enthaltenen Signal gewichtet:
 
 \begin{equation}
@@ -389,7 +389,7 @@ Im Folgenden werden diese beiden Schritte näher erläutert.
 
 Wird ein Ereignis getriggert, werden die Signale der einzelnen Pixel gespeichert.
 Sowohl NSB als auch elektronisches Rauschen sind dann noch in dem Ereignisbild enthalten (siehe \autoref{Kamera-Bild}).
-Ziel der Bildbereinigung ist es, das Bild von allem Untergrund zu bereinigen, sodass nur noch das Signal des eigentlichen Schauers übrig bleibt, sodass eine robuste und stabile Parametrisierung dieses Schauerbildes durchgeführt werden kann.
+Ziel der Bildbereinigung ist es, das Bild von allem Untergrund zu bereinigen, sodass nur noch das Signal des eigentlichen Schauers übrig bleibt, damit eine robuste und stabile Parametrisierung dieses Schauerbildes durchgeführt werden kann.
 Einerseits können Pixel, die nicht zum eigentlichen Schauer gehören und das Image Cleaning überleben, zu einer falschen Rekonstruktion führen, andererseits ist es zu vermeiden, dass zu viele Pixel im Cleaning wegfallen. 
 Dies führt zu einem Signalverlust, welcher ebenfalls zu einer schlechteren Rekonstruktion führt.
 Diese komplexe Problemstellung erfordert das Anwenden von fortschrittlichen Algorithmen.
@@ -440,7 +440,7 @@ Im Folgenden werden einige wichtige Bildparameter aufgelistet und beschrieben (v
  \item \texttt{CoG} (Center of Gravity): Das Center of Gravity des Schauers bezeichnet die Position des gewichteten mittleren Signals entlang der X- und Y-Achse in der Kamera. 
  X und Y sind die ersten Momente der Ladungsverteilung und werden \texttt{MeanX}, bzw. \texttt{MeanY} genannt.
  \item \texttt{Width}: Die halbe Breite der kleinen Halbachse der Schauerellipse wird als \texttt{Width} bezeichnet. 
- Mit Hilfe dieses Paramters lassen sich Aussagen über die transversale Ausbreitung des Schauers und damit auch über den Ursprung des Schauers (hadronisch oder elektromagnetisch) treffen. 
+ Mit Hilfe dieses Parameters lassen sich Aussagen über die transversale Ausbreitung des Schauers und damit auch über den Ursprung des Schauers (hadronisch oder elektromagnetisch) treffen. 
  Dieser Parameter ist somit ein guter Trennparameter.
  \item \texttt{Length}: Die halbe Länge der großen Halbachse wird mit dem Parameter \texttt{Length} bezeichnet.
  Dieser Parameter trifft eine Aussage über die longitudinale Entwicklung des Schauers.
@@ -451,7 +451,7 @@ Im Folgenden werden einige wichtige Bildparameter aufgelistet und beschrieben (v
  Mit diesem Parameter ist es möglich den Signalverlust zu beschreiben und zu entscheiden, ob der Schauer noch rekonstruiert werden kann.
  \item \texttt{M3Long}: Dieser Parameter ist das dritte Moment entlang der großen Halbachse und beschreibt die Asymmetrie des Schauers.
  Es lässt sich damit auf die Herkunftsrichtung des Schauers schließen. 
- \texttt{M3Long} ist positiv wenn der Schauerschwerpunkt in Richtung des Kamerazentrums liegt, ansonsten negativ.
+ \texttt{M3Long} ist positiv wenn der Schauerschwerpunkt in Richtung des Kamerazentrums liegt, ansonsten ist er negativ.
  \item \texttt{Number\_of\_Islands}: Dieser Parameter bezeichnet die Anzahl der Inseln, die nach der Bildbereinigung übrig geblieben sind. 
  Je größer dieser Wert ist, umso mehr Inseln sind noch vorhanden und umso wahrscheinlicher ist der Schauer hadronischen Ursprungs.
 \end{itemize}
@@ -480,14 +480,15 @@ Außerdem gibt es noch einige Parameter, die die Zeitinformationen der Cherenkov
  Dann wird ein Graph der Ankunftszeiten der einzelnen Pixel erstellt und mit einer linearen Funktion gefittet.
  Die Steigung dieser gefitteten Geraden wird dann als Time Gradient bezeichnet.
  \item \texttt{TimeRMS}: So wird der ``Arrivaltime Spread'' der Cherenkovphotonen in den Bildpixeln bezeichnet:
- 
+  
+  \newpage
+  
 \begin{equation}
  Time-RMS=\sqrt{\sum_{i=1}^k (t_i-t_{mean})^2}
 \end{equation}
  \begin{center}
   \small{mit k: Anzahl der Pixel, $t_i$: Ankunftszeit im i-ten Pixel und $t_{mean}$:mittlere Ankunftszeit}
  \end{center}
-
 
 \end{itemize}
 
@@ -554,7 +555,7 @@ Das ist schematisch in \autoref{Jobmanager} dargestellt.
 
 
 Bei einer neuen Anfrage für MC Daten werden mit Hilfe des mcinsertintodb-Skripts die für die gewünschte Produktion benötigten Inputcard-Parameter in die Datenbank geschrieben.
-Im Hintergrund läuft die ganze Zeit das jobmanager-Skript, welches überprüft, ob in der Datenbank ein neuer Auftrag (Job) eingegangen sind.
+Im Hintergrund läuft die ganze Zeit das jobmanager-Skript, welches überprüft, ob in der Datenbank ein neuer Auftrag (Job) eingegangen ist.
 Falls dies der Fall ist, startet das jobmanager-Skript automatisch das runcorsika-Skript, welches wiederum \textit{CORSIKA} für diesen neuen Job mit den gewählten Einstellungen startet.
 Sobald \textit{CORSIKA} beendet ist, wird dies in die Datenbank geschrieben, sodass das nächste Programm in der Monte-Carlo-Kette gestartet werden kann.
 Für das nächste Programm in der Kette sind alle benötigten Parameter schon bei der Inauftraggabe des Jobs in der Datenbank gespeichert worden.
@@ -609,7 +610,7 @@ Diese Datenbank beinhaltet die Tabellen, welche in \autoref{MYSQL_Tabellen} aufg
 
 
 Die Tabelle MCJobs bietet eine Übersicht über alle Jobs. 
-Enthalten sind in dieser Tabelle u.a. die JobID, die jedem Job individuell zugewiesen wird, die erste und letzte RunNumber eines Jobs, wann der Job gestartet wurde, wann \textit{Camera} und \textit{Star} beendet wurden und den Pfad zu den Daten.\newline
+Enthalten sind in dieser Tabelle u.a. die JobID, die jedem Job individuell zugewiesen wird, die erste und letzte RunNumber eines Jobs, wann der Job gestartet wurde, wann \textit{Camera} und \textit{Star} beendet wurden und der Pfad zu den Daten.\newline
 Die Tabellen M1CalibrationProcessStatus und M2CalibrationProcessStatus enthalten ebenfalls die JobID, und die Zeitpunkte wann \textit{Camera}, \textit{Sorcerer} und \textit{Star} beendet worden sind. 
 Des Weiteren kann man den Startzeitpunkt und den Zeitpunkt eines Abbruchs des Jobs, sowie den zugehörigen Fehlercode sehen, der Rückschlüsse über die Ursache des Fehlers bietet.
 
@@ -652,14 +653,14 @@ Wie in \autoref{LiDo} zu sehen ist, gibt es verschiedene Knotentypen, die sich i
 
 Die meisten Knoten haben drei verschiedene Queues, die sich in ihrer maximal zur Verfügung stehenden Walltime, das heißt der Zeit, die einem Job zur Verfügung steht, unterscheiden.
 Es gibt die short Queues (eth, ib, quad) mit einer maximalen Walltime von $\SI{1}{h}$, die medium Queues (eth, eth\_nhm, ib, quad) mit einer Walltime von $\SI{8}{h}$ und die long Queues mit einer maximalen Walltime von $\SI{48}{h}$. 
-Falls es ein Job eine noch längere Bearbeitungszeit benötigt, kann er die ultralong Queue (eth) mit einer maximalen Walltime von $\SI{2688}{h}$ nutzen.
+Falls ein Job eine noch längere Bearbeitungszeit benötigt, kann er die ultralong Queue (eth) mit einer maximalen Walltime von $\SI{2688}{h}$ nutzen.
 Um also einen Job zu starten, gibt man den benötigten Speicher und eine maximale Walltime an und verschickt den Job an das Queuingsystem.
 
 Für die MAGIC MC Produktion werden die eth-Knoten benutzt und pro Run 1000 \textit{CORSIKA}-Ereignisse produziert und weiter prozessiert. 
 Ein Standardjob von 2Mio \textit{CORSIKA}-Ereignissen wird also in 2000 Runs mit je 1000 Ereignissen aufgeteilt und somit werden 2000 Runs nacheinander an das Queuingsystem verschickt.
 
 
-Tabelle \autoref{tab:LiDO} zeigt das Speichervolumen, welches zur Zeit auf dem LiDO für die Daten nach den verschiedenen Programmen genutzt wird.
+\autoref{tab:LiDO} zeigt das Speichervolumen, welches zur Zeit auf dem LiDO für die Daten nach den verschiedenen Programmen genutzt wird.
 
 \begin{table}[h!]
     \centering
@@ -674,7 +675,7 @@ Tabelle \autoref{tab:LiDO} zeigt das Speichervolumen, welches zur Zeit auf dem L
     \end{tabular}
 \end{table}
 
-Alternativ kann auch noch der PhiDo Cluster für Testproduktionen, bzw. früher für dezidierte Protonsimulationen benutzt werden. 
+Alternativ kann auch noch der PhiDo Cluster für Testproduktionen, bzw. früher für dezidierte Protonsimulationen, benutzt werden. 
 Dieser Cluster stellt ca. 1200 CPUs und ca. $\SI{200}{TB}$ Speicher zur Verfügung, hat allerdings auch eine größere Auslastung, was dazu führt, dass eine komplette Produktion wesentlich länger dauert.
 
 
